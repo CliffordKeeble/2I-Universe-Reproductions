@@ -1,0 +1,8 @@
+# Reproducibility environment for neutrino-mass-null
+# Run 4 June 2026.
+
+python 3.13.13
+
+# Standard library only (csv, random). No numpy, no network, no data files.
+# Run:
+#   python neutrino_mass_null.py   # prints both tests, writes matches.csv
