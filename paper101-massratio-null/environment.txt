@@ -1,0 +1,10 @@
+# Reproducibility environment for paper101-massratio-null
+# Pinned versions used for the reconstruction run (4 June 2026).
+
+python 3.13.13
+numpy 2.3.4
+
+# Only the standard library (csv, random, itertools) plus numpy are used.
+# No network, no external data files. Run:
+#   python spectrum.py        # reproduces section 4.3 spectrum
+#   python massratio_null.py  # reproduces section 5.3 null (writes matches.csv)
