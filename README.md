@@ -42,11 +42,17 @@ the search space *before* the result — then run the script.
 │   ├── findings.md                #   -> OUTCOME 1 (conditional). Cures neutron,
 │   ├── twoI_character_table.csv   #   deuteron, and nitrogen-14 together.
 │   └── environment.txt
-└── paper92-hodge-dual/           # Paper 92 follow-up: is the bridge node the
-    ├── PRE-REGISTRATION.md        #   Hodge dual of the proton, p* = *(proton)?
-    ├── hodge_dual.py              #   Corpus: *(proton) = electron. LANDING 3
-    ├── findings.md                #   (clash bites): magnetic moment not cured
-    └── environment.txt            #   (~1836x), form-degree != spin grading.
+├── paper92-hodge-dual/           # Paper 92 follow-up: is the bridge node the
+│   ├── PRE-REGISTRATION.md        #   Hodge dual of the proton, p* = *(proton)?
+│   ├── hodge_dual.py              #   Corpus: *(proton) = electron. LANDING 3
+│   ├── findings.md                #   (clash bites): magnetic moment not cured
+│   └── environment.txt            #   (~1836x), form-degree != spin grading.
+└── paper92-odd-sector/           # Papers 92+174: the spinorial spectrum 174
+    ├── PRE-REGISTRATION.md        #   skipped -- "where the actors live."
+    ├── spinorial_spectrum.py      #   Spinorial Molien (E8 exponents), Galois
+    ├── beat_exchange.py           #   2<->2'. LANDING B: proton=spinor-2 is
+    ├── findings.md                #   permitted not forced. Spin-0 beat is the
+    └── environment.txt            #   DUAL (2x2), not Galois; d!=nn from Fermi.
 ```
 
 Each directory is named to match the citation string used by the paper it supports, so
