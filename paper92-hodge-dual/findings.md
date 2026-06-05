@@ -98,6 +98,19 @@ of picking the wrong construction.
   proton/electron are spinors that the Hodge Quartet *labels* by a cohomology
   sector; the label does not change their parity. The form bundle provably
   carries no spinorial content, so the spin-½ cannot come from the form-degree.
+- **The corpus describes the node as "an electron core," not p\*.** Paper 121
+  §9 (PREDICTION 1) states the deuteron is "a P-e-P standing-wave configuration
+  of two protons sharing **an electron core**" — the Hodge Quartet paper itself
+  reads the bridge node as the electron, not a proton-dual. And §2.2(ii) calls
+  proton and electron "the same handle viewed from opposite ends" (explicit
+  Poincaré/Hodge duals); §6 ties the 0-form/3-form pair to μ = m_p/m_e = 1836.
+  Every corroboration runs the same way: ∗(proton) is the electron.
+- **The Hodge-star facts used are textbook.** ∗ acts on differential forms
+  (sections of Λᵏ T\*M — bosonic/tensor objects), *not* spinors; ∗∗ =
+  (−1)^{k(n−k)}·s with s=+1 Riemannian, giving +1 for all k on n=3; ∗ induces
+  the isomorphism Hᵏ → H^{n−k} (Poincaré duality) on harmonic forms. (Standard
+  Hodge theory, e.g. Hodge 1941; the ∗∗ sign and the form-vs-spinor domain are
+  the two pillars of the clash, and both are bedrock, not framework-specific.)
 - **Status flags.** ∗²=+1, the exterior-power characters, Λ\*'s zero spinorial
   content, and ∗(proton)=electron's moment scale: **DERIVED** (exact). The
   Dirac–Kähler boundary: **STRUCTURAL** (reasoned from the representation facts,
@@ -109,9 +122,18 @@ of picking the wrong construction.
 The spin lemma's result is **unchanged**: P-e-P consistent ⟺ bound core
 parity-even, with neutrino ejection forcing it **conditionally** (W-102). The
 Hodge reframe does not lift that conditional and does not cure the magnetic
-moment. The electron-core reading and its ≈1836× moment problem remain the
-paper's ceiling. A clean negative — the construction decided, the feeling did
-not.
+moment. A clean negative — the construction decided, the feeling did not.
+
+**Lead, not a claim — the live route to Gate 1(c) is the spin-0 core, not p\*.**
+Gate 1(c)'s "≈1836 μ_N" problem *presupposes the core carries an unpaired
+spin-½* (a Bohr magneton). But the spin lemma's Outcome 1 says the bound core is
+**parity-even (spin-0)** — and a spin-0 object has **no intrinsic magnetic
+moment at all**. So the Bohr disaster may not arise: not because the moment is
+nuclear-scale (the failed Hodge hope), but because a spin-0 core contributes
+**zero**, leaving the deuteron's 0.857 μ_N to the two protons. Whether two
+protons + a spin-0 core actually reproduce 0.857 μ_N is the **deuteron
+magnetic-moment derivation** — still owed, now motivated by Outcome 1, and
+distinct from the dead p\* route. Flagged for CinC's call; not started here.
 
 ## Reproduce
 ```
