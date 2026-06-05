@@ -1,0 +1,5 @@
+python 3.13.13
+platform: Windows 11 (win32)
+deps: standard library only (fractions, os, sys) -- no numpy/sympy
+reuses ../paper92-spin-statistics/twoI_character_table.py for the 2I backbone
+exact over Q(sqrt5); no floating point in the group/rep maths; no RNG; deterministic

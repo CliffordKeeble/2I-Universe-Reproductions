@@ -35,13 +35,18 @@ the search space *before* the result — then run the script.
 │   ├── massratio_null.py
 │   ├── findings.md
 │   └── environment.txt
-└── paper92-spin-statistics/      # Paper 92 gate: does the 2I P-e-P standing
-    ├── PRE-REGISTRATION.md        #   wave give the right spin & statistics?
-    ├── twoI_character_table.py    #   DERIVED: consistent iff bound core is
-    ├── composite_parity.py        #   integer-spin; neutrino ejection forces it
-    ├── findings.md                #   -> OUTCOME 1 (conditional). Cures neutron,
-    ├── twoI_character_table.csv   #   deuteron, and nitrogen-14 together.
-    └── environment.txt
+├── paper92-spin-statistics/      # Paper 92 gate: does the 2I P-e-P standing
+│   ├── PRE-REGISTRATION.md        #   wave give the right spin & statistics?
+│   ├── twoI_character_table.py    #   DERIVED: consistent iff bound core is
+│   ├── composite_parity.py        #   integer-spin; neutrino ejection forces it
+│   ├── findings.md                #   -> OUTCOME 1 (conditional). Cures neutron,
+│   ├── twoI_character_table.csv   #   deuteron, and nitrogen-14 together.
+│   └── environment.txt
+└── paper92-hodge-dual/           # Paper 92 follow-up: is the bridge node the
+    ├── PRE-REGISTRATION.md        #   Hodge dual of the proton, p* = *(proton)?
+    ├── hodge_dual.py              #   Corpus: *(proton) = electron. LANDING 3
+    ├── findings.md                #   (clash bites): magnetic moment not cured
+    └── environment.txt            #   (~1836x), form-degree != spin grading.
 ```
 
 Each directory is named to match the citation string used by the paper it supports, so
