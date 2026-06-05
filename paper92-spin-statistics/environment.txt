@@ -1,0 +1,4 @@
+python 3.13.13
+platform: Windows 11 (win32)
+deps: standard library only (fractions, csv) -- no numpy/sympy required
+exact arithmetic over Q(sqrt5); no floating point, no RNG, fully deterministic

@@ -29,11 +29,18 @@ the search space *before* the result — then run the script.
 2I-Universe-Reproductions/
 ├── README.md
 ├── LICENSE
-└── paper101-massratio-null/      # Paper 101 §5.3: the 2I mode l=42 (λ=1848)
-    ├── PRE-REGISTRATION.md        #   minus icosahedral 12 lands on m_p/m_e = 1836,
-    ├── spectrum.py                #   uniquely, at the 0.01% window.
-    ├── massratio_null.py
-    ├── findings.md
+├── paper101-massratio-null/      # Paper 101 §5.3: the 2I mode l=42 (λ=1848)
+│   ├── PRE-REGISTRATION.md        #   minus icosahedral 12 lands on m_p/m_e = 1836,
+│   ├── spectrum.py                #   uniquely, at the 0.01% window.
+│   ├── massratio_null.py
+│   ├── findings.md
+│   └── environment.txt
+└── paper92-spin-statistics/      # Paper 92 gate: does the 2I P-e-P standing
+    ├── PRE-REGISTRATION.md        #   wave give the right spin & statistics?
+    ├── twoI_character_table.py    #   DERIVED: consistent iff bound core is
+    ├── composite_parity.py        #   integer-spin; neutrino ejection forces it
+    ├── findings.md                #   -> OUTCOME 1 (conditional). Cures neutron,
+    ├── twoI_character_table.csv   #   deuteron, and nitrogen-14 together.
     └── environment.txt
 ```
 
