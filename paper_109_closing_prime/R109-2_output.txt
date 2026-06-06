@@ -1,0 +1,49 @@
+=== R109-2 audit trail (Paper 109 breathing pattern, third-breath search) ===
+
+--- GATE V: --verify cross-check of the peeling engine vs R109-1 (exhaustive m<=24) ---
+m= 3: lengths=[] expected=[] [ok]  (0.3s)
+m= 4: lengths=[] expected=[] [ok]  (0.0s)
+m= 5: lengths=[] expected=[] [ok]  (0.0s)
+m= 6: lengths=[] expected=[] [ok]  (0.0s)
+m= 7: lengths=[] expected=[] [ok]  (0.0s)
+m= 8: lengths=[] expected=[] [ok]  (0.0s)
+m= 9: lengths=[] expected=[] [ok]  (0.0s)
+m=10: lengths=[26] expected=[26] [ok]  (0.0s)
+m=11: lengths=[25] expected=[25] [ok]  (0.0s)
+m=12: lengths=[6, 7] expected=[6, 7] [ok]  (0.0s)
+m=13: lengths=[] expected=[] [ok]  (0.0s)
+m=14: lengths=[] expected=[] [ok]  (0.0s)
+m=15: lengths=[] expected=[] [ok]  (0.0s)
+m=16: lengths=[] expected=[] [ok]  (0.0s)
+m=17: lengths=[] expected=[] [ok]  (0.0s)
+m=18: lengths=[] expected=[] [ok]  (0.0s)
+m=19: lengths=[] expected=[] [ok]  (0.1s)
+m=20: lengths=[22] expected=[22] [ok]  (0.2s)
+m=21: lengths=[] expected=[] [ok]  (0.4s)
+m=22: lengths=[] expected=[] [ok]  (0.8s)
+m=23: lengths=[] expected=[] [ok]  (2.3s)
+m=24: lengths=[] expected=[] [ok]  (4.3s)
+
+R109-2 CROSS-CHECK VERIFIED -- peeling algorithm agrees with R109-1 to m=24.
+
+--- Exhaustive high-m search, m=25..30 (goal: predicted third-breath level 3(D+M_D)=30) ---
+R109-2  exhaustive breathing search, m=25..30
+m  | states 2^(m-1) | #cyc | lengths            | time(s)
+---+----------------+------+--------------------+--------
+25 |     16,777,216 |  0   | []                 |    11.4
+26 |     33,554,432 |  0   | []                 |    22.9
+27 |     67,108,864 |  0   | []                 |    54.4
+28 |    134,217,728 |  0   | []                 |    97.0
+29 |    268,435,456 |  0   | []                 |   239.3
+30 |    536,870,912 |  0   | []                 |   446.4
+
+*** NO THIRD BREATH found exhaustively through m=30 (in particular m=30 if reached).
+
+--- Bonus exhaustive search, m=31..32 ---
+R109-2  exhaustive breathing search, m=31..32
+m  | states 2^(m-1) | #cyc | lengths            | time(s)
+---+----------------+------+--------------------+--------
+31 |  1,073,741,824 |  0   | []                 |  1194.2
+32 |  2,147,483,648 |  0   | []                 |  2744.2
+
+*** NO THIRD BREATH found exhaustively through m=32 (in particular m=30 if reached).
