@@ -1,0 +1,85 @@
+=== R109-3 audit trail (Paper 109 breathing pattern: convention-robustness NULL) ===
+
+--- GATE: --verify (null gate; PASS = the three reductions DISAGREE / convention-dependent) ---
+  A min-rep               : [10, 11, 12, 20]   expected [10, 11, 12, 20]   [ok]
+  B reduce-then-strip     : [9, 11, 12, 13]   expected [9, 11, 12, 13]   [ok]
+  C shifted-rep           : [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]   expected [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]   [ok]
+
+R109-3 NULL VERIFIED -- breath levels differ across reductions; the D+M_D structural reading is convention-dependent and is correctly withdrawn in Paper 109.
+
+--- Full exhaustive run, m=3..20, all three reductions ---
+Convention-robustness null, 3n+1 Syracuse, exhaustive m=3..20
+
+=== Reduction A min-rep ===
+m  | #cyc | lengths
+ 3 |  0   | []
+ 4 |  0   | []
+ 5 |  0   | []
+ 6 |  0   | []
+ 7 |  0   | []
+ 8 |  0   | []
+ 9 |  0   | []
+10 |  1   | [26]
+11 |  1   | [25]
+12 |  2   | [6, 7]
+13 |  0   | []
+14 |  0   | []
+15 |  0   | []
+16 |  0   | []
+17 |  0   | []
+18 |  0   | []
+19 |  0   | []
+20 |  1   | [22]
+  -> breathes at m = [10, 11, 12, 20]
+
+=== Reduction B reduce-then-strip ===
+m  | #cyc | lengths
+ 3 |  0   | []
+ 4 |  0   | []
+ 5 |  0   | []
+ 6 |  0   | []
+ 7 |  0   | []
+ 8 |  0   | []
+ 9 |  1   | [10]
+10 |  0   | []
+11 |  1   | [26]
+12 |  1   | [25]
+13 |  2   | [6, 7]
+14 |  0   | []
+15 |  0   | []
+16 |  0   | []
+17 |  0   | []
+18 |  0   | []
+19 |  0   | []
+20 |  0   | []
+  -> breathes at m = [9, 11, 12, 13]
+
+=== Reduction C shifted-rep ===
+m  | #cyc | lengths
+ 3 |  2   | [1, 1]
+ 4 |  2   | [1, 4]
+ 5 |  2   | [1, 3]
+ 6 |  3   | [1, 3, 5]
+ 7 |  3   | [1, 1, 10]
+ 8 |  2   | [1, 13]
+ 9 |  4   | [1, 1, 13, 16]
+10 |  3   | [1, 2, 44]
+11 |  7   | [1, 1, 6, 7, 23, 41, 73]
+12 |  4   | [1, 12, 34, 47]
+13 |  6   | [1, 3, 4, 16, 30, 64]
+14 |  7   | [1, 1, 2, 2, 5, 64, 77]
+15 |  8   | [1, 1, 5, 7, 13, 17, 74, 83]
+16 |  6   | [1, 3, 4, 20, 146, 384]
+17 |  6   | [1, 4, 4, 29, 50, 154]
+18 |  2   | [1, 237]
+19 |  5   | [1, 1, 5, 12, 465]
+20 |  6   | [1, 6, 11, 48, 481, 483]
+  -> breathes at m = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+====================================================
+SUMMARY: m-levels with non-trivial cycles, per reduction
+  A min-rep               : [10, 11, 12, 20]
+  B reduce-then-strip     : [9, 11, 12, 13]
+  C shifted-rep           : [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+CONVENTION-DEPENDENT: the breathing levels DIFFER across reductions -> the D+M_D reading is an artifact of the chosen lift.
