@@ -1,0 +1,38 @@
+  [ok] no loop common to all three (A&B&C == 0)   (got A&B&C=0, A&C=0, B&C=0, A&B=4)
+  [ok] C disjoint from A (A&C == 0)   (got A&B&C=0, A&C=0, B&C=0, A&B=4)
+  [ok] C disjoint from B (B&C == 0)   (got A&B&C=0, A&C=0, B&C=0, A&B=4)
+  [ok] A and B share loops (A&B == 4)   (got A&B&C=0, A&C=0, B&C=0, A&B=4)
+
+INVARIANCE NULL VERIFIED -- no reduction-independent cycle; §12.6 outcome (i) negative (PRELIMINARY: still owes Scout + Adversary).
+
+--- Full report, exhaustive m=3..20 ---
+Convention-invariance null, exhaustive integer-loops m=3..20
+
+Distinct integer-loops captured per reduction:
+   A min-rep               : 5
+   B reduce-then-strip     : 5
+   C shifted-rep           : 78
+
+Loops common to ALL THREE (A AND B AND C): 0
+Pairwise: A&B=4   A&C=0   B&C=0
+
+NULL CONFIRMED: no integer-loop is captured by all three reductions, so there is
+no reduction-independent modular cycle -> no convention-invariant functional of a
+cycle -> §12.6 outcome (i) NEGATIVE: the cycle-based covering-space mechanism (§11)
+has no object to act on. (A clean self-kill -- to be hardened by Scout/Mr Code/Adversary.)
+
+--- Optional range-extension, exhaustive m=3..22 (A&B&C must stay 0) ---
+Convention-invariance null, exhaustive integer-loops m=3..22
+
+Distinct integer-loops captured per reduction:
+   A min-rep               : 5
+   B reduce-then-strip     : 5
+   C shifted-rep           : 90
+
+Loops common to ALL THREE (A AND B AND C): 0
+Pairwise: A&B=4   A&C=0   B&C=0
+
+NULL CONFIRMED: no integer-loop is captured by all three reductions, so there is
+no reduction-independent modular cycle -> no convention-invariant functional of a
+cycle -> §12.6 outcome (i) NEGATIVE: the cycle-based covering-space mechanism (§11)
+has no object to act on. (A clean self-kill -- to be hardened by Scout/Mr Code/Adversary.)
