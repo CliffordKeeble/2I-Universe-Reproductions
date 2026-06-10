@@ -26,8 +26,17 @@ The brief's objects are read against the repo's established vocabulary:
   `(1−t⁶⁰)/((1−t¹²)(1−t²⁰)(1−t³⁰))`, multiplicities a_ℓ, eigenvalue λ_ℓ = ℓ(ℓ+2)
   (the §4.3 / `spectrum.py` spectrum).
 
-If Tor intended a different u_vert, the *computations* below still hold verbatim —
-only the labelling moves. **This seam is for CinC to confirm.**
+**Seam status — u_vert confirmed.** The `Fizz → Tor` −12/−11 seam brief
+(10 June 2026) fixes u_vert independently: "proton-as-0-form and electron-as-
+volume-form are both trivial-rep objects", and ⋆:Ω⁰→Ω³ "sends the vertex module
+into the volume (trivial) sector … the one transferring dimension is the
+proton↔electron channel itself, not a stray curvature unit." So u_vert = the
+trivial/0-form vertex mode (the proton), and "the trivial mode's transfer is
+non-mass" = that proton↔electron ⋆ channel — exactly the ledger (ii) closes.
+The remaining reconstruction is only that "f₃₀·u_vert" means the *ring product*
+f₃₀·f₁₂ (today's Tor brief, downstream of the seam brief); if Tor intended a
+different operation the computations below still hold verbatim, only the labelling
+moves.
 
 ## (i) — f₁₂ vanishes on the order-5 exceptional fibres (DERIVED)
 
