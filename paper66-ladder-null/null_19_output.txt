@@ -1,0 +1,12 @@
+u = 0.052577 fm
+
+Q1 — counts for physically defined ranges vs the decimal convention:
+  proton rms charge radius           r=0.8409 fm  N= 15.99  nearest int 16 (dist 0.01)
+  charged-pion Yukawa hbar/m_pi c    r=1.4138 fm  N= 26.89  nearest int 27 (dist 0.11)
+  neutral-pion Yukawa                r=1.4619 fm  N= 27.81  nearest int 28 (dist 0.19)
+  DECIMAL CONVENTION 1.000 fm        r=1.0000 fm  N= 19.02  nearest int 19 (dist 0.02)
+
+Q2 — class-C spellings, integers 12..29:
+  12:5,003  13:1,297  14:2,301  15:2,171  16:2,886  17:1,343  18:4,036  19:1,324  20:3,498  21:2,104  22:2,236  23:1,350  24:5,048  25:1,353  26:2,303  27:2,139  28:2,872  29:1,335
+
+  19 carries 1,324 in-class spellings — same promiscuity as the ladder.
