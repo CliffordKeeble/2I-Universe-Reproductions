@@ -112,3 +112,76 @@ verified here, and it is the content that the correction mechanism rests on.
 
 ## Outputs
 - `orbit_index_matches.csv` — survivors at each window for the orbit-index family.
+
+---
+
+# Addendum — the product-divisor gate (Mr A, fifth star)
+
+**Date:** 12 June 2026
+**Brief:** Fizz 🌀 via CinC, "Divisor of the PRODUCT f₁₂·f₃₀ (not the factor)."
+**Script:** `product_divisor.py`.
+**Verdict (one line):** **PASS.** div(f₁₂·f₃₀) = (12 vertices) ⊔ (30 edge-midpoints),
+a **disjoint** union; f₁₂ is nonzero on the edges and f₃₀ nonzero on the vertices; the
+product is nonzero on the 20 faces; and the mass-channel blocking, being sampled on the
+vertex orbit only, remains exactly the 12-dimensional vertex orbit. **One flag** (below)
+on the real-avatar construction.
+
+## FLAG — the real ℝ³ "edge form" does not isolate the edges
+
+The brief asked to build f₃₀'s avatar "by the same Reynolds construction Task 2 used for
+f₁₂." That construction does **not** transfer to the edges, and this is worth the paper
+knowing:
+
+- Task 2's vertex avatar `f_vert` is degree **6**, where the invariant space {r⁶, I₆} is
+  2-dimensional — enough freedom to vanish on the vertices and stay nonzero on faces/edges.
+- The edge avatar would be the unique degree-**15** real invariant `I₁₅`, which is (up to
+  scale) the **product of the 15 two-fold-axis = mirror-plane linear forms**. Every special
+  axis lies on icosahedral mirror planes (a vertex on 5, a face on 3, an edge on 2), so
+  **I₁₅ vanishes on all three orbits — 12 vertices, 30 edges, AND 20 faces** (verified
+  exactly: all zero). It is therefore **not** a clean edge form in ℝ³.
+
+> The clean edge-form divisor is intrinsically a **binary (ℂP¹) statement**, where the
+> vertex/edge/face point-sets are distinct and the Klein generators are coprime. The
+> mirror-coincidence that spoils the real ℝ³ picture does not occur on ℂP¹.
+
+## The rigorous product divisor (binary Klein generators, exact over ℤ)
+
+The standard Klein generators (integer coefficients) `f₁₂` (vertices), `H₂₀` (faces),
+`T₃₀` (edges) were verified to be the genuine icosahedral forms and pairwise coprime:
+
+- **Hierarchy:** `Hessian(f₁₂) = 121·H₂₀`, `Jacobian(f₁₂, H₂₀) = 20·T₃₀`.
+- **Icosahedral syzygy:** `H₂₀³ + T₃₀² = 1728·f₁₂⁵` (the classical relation, exact).
+- **Squarefree:** f₁₂, H₂₀, T₃₀ have 12, 20, 30 **distinct** roots respectively.
+- **Pairwise coprime:** `gcd(f₁₂,T₃₀) = gcd(f₁₂,H₂₀) = gcd(H₂₀,T₃₀) = 1`.
+
+> **Bare result.** Coprimality ⇒ the three root-sets are pairwise **disjoint**. Hence
+> `div(f₁₂·T₃₀) = (12 vertices) ⊔ (30 edges)`, with:
+> - **12 vertices:** f₁₂ = 0, T₃₀ ≠ 0 → product **0**.
+> - **30 edges:** T₃₀ = 0, f₁₂ ≠ 0 → product **0** (this is the edge-vanishing Mr A flagged).
+> - **20 faces:** f₁₂ ≠ 0 and T₃₀ ≠ 0 → product **≠ 0**.
+
+## The structural resolution (step 3 — does the edge locus enter the mass channel?)
+
+The vertex-curvature module ρ_vert is supported on the **vertex orbit** (the 12-point
+permutation module ℂ[2I/C₁₀] of `findings_minus12_index`). The blocking inner product is
+
+  ⟨f₁₂·f₃₀, ρ_vert element⟩ = Σ over the **12 vertices** of f₁₂(vᵢ)·f₃₀(vᵢ)·cᵢ = **0**,
+
+term by term, because **f₁₂(vᵢ) = 0** at every vertex (Task 2). The product's extra zeros
+on the 30 edges are a **disjoint** locus (coprimality, above) that a vertex-supported module
+never samples. So the edge-vanishing of f₃₀ does **not** enlarge the blocked module: the
+blocked content in the mass channel is exactly the **12-dimensional vertex orbit**.
+
+**Confirmed §5.1 addition (as proposed in the brief):**
+> *The product f₁₂·f₃₀ also vanishes on the 30 edge-midpoints via its f₃₀ factor; this
+> locus is disjoint from the vertex orbit and is not sampled by the vertex-curvature
+> module, so the blocked content in the mass channel remains exactly the 12-dimensional
+> vertex orbit.*
+
+## Status flags (addendum)
+
+- I₁₅ vanishes on all three orbits (real avatar fails to isolate edges): **DERIVED** (exact ℚ(√5)) — **flag**.
+- Klein hierarchy, syzygy, squarefreeness, pairwise coprimality: **DERIVED** (exact over ℤ).
+- div(f₁₂·f₃₀) = vertices ⊔ edges, nonzero on faces: **DERIVED** (from coprimality).
+- Mass-channel blocking is vertex-supported ⇒ 12-dim: **STRUCTURAL** (rests on Task 2's
+  f₁₂(vᵢ)=0 and the orbit disjointness).
