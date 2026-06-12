@@ -1,0 +1,12 @@
+u = 0.052577 fm
+Lambda (MeV)   length (fm)   N = len/u   nearest int (dist)
+    210        0.9397        17.872    18 (0.128)
+    250        0.7893        15.012    15 (0.012)
+    263        0.7503        14.270    14 (0.270)
+    290        0.6804        12.942    13 (0.058)
+    332        0.5944        11.304    11 (0.304)
+    340        0.5804        11.038    11 (0.038)
+
+Verdict: N sweeps ~11-19 across schemes, including a spuriously sharp
+15.012 at Lambda=250 MeV -- definitional promiscuity demonstrated on the
+nearest physical rival. Strengthens the Sec 3.2 no-claim demotion (rule R4).
