@@ -185,3 +185,94 @@ blocked content in the mass channel is exactly the **12-dimensional vertex orbit
 - div(f₁₂·f₃₀) = vertices ⊔ edges, nonzero on faces: **DERIVED** (from coprimality).
 - Mass-channel blocking is vertex-supported ⇒ 12-dim: **STRUCTURAL** (rests on Task 2's
   f₁₂(vᵢ)=0 and the orbit disjointness).
+
+---
+
+# Addendum — the live-cell recount (Mr A's null-arithmetic fix, FIX D)
+
+**Date:** 12 June 2026
+**Brief:** Fizz 🌀 via CinC, "The live-cell recount" — gates the fifth star (FIX D).
+**Script:** `live_cell_recount.py`. **Output:** `live_cell_recount.csv`.
+**Verdict (one line):** **PASS.** Mr A is right that "5,400 cells" flatters the null:
+of the five targets only **m_p/m_e** is reachable by an integer-minus-integer value at
+0.01%, so **N_live = 1,080** (orbit-index family) of the 5,400-cell grid — the other
+4,320 cells sat on four unreachable targets and were dead before the run. Exactly one
+live cell fired (1848 − 12 = 1836). One refinement-flag below on the tau.
+
+## Why the cells die: candidates are integers, the window is sub-integer
+
+Every candidate value λ_l ± c is an **integer** (integer eigenvalue ∓ integer correction).
+The 0.01% window around a target t is [t(1−w), t(1+w)], a band of half-width t·w. At the
+proton scale t·w ≈ 0.18. An integer can land in that band **only if t has an integer
+within t·w of it.** Mr A's necessary condition.
+
+## Per-target nearest-integer distances (window 0.01%)
+
+| target | value | nearest int | dist to int | window t·w | integer in window? |
+|---|---|---|---|---|---|
+| m_p/m_e | 1836.152673 | 1836 | **0.15267** | 0.18362 | **YES** |
+| m_n/m_e | 1838.683662 | 1839 | 0.31634 | 0.18387 | no |
+| m_μ/m_e | 206.768283 | 207 | 0.23172 | 0.02068 | no |
+| m_π/m_e | 273.132440 | 273 | 0.13244 | 0.02731 | no |
+| m_τ/m_e | 3477.228280 | 3477 | 0.22828 | **0.34772** | **YES** |
+
+Mr A's envelope reproduced exactly: m_p/m_e ≈ 1836.153 sits 0.153 from 1836, inside its
+0.184 window. The neutron sits 0.316 from 1839 — **outside** its window (it only enters at
+0.05%, where 1848 − 10 = 1838 hits; that is the 0.05% second survivor of Task 1, dead at
+0.01%). Muon and pion sit ≫ window from their nearest integers (their windows are tiny,
+~0.02–0.03, because they live near ~200–270). **Dead before the run, exactly as charged.**
+
+## The tau refinement (FLAG — Mr A's envelope is slightly too generous to itself)
+
+The brief's envelope says "only m_p/m_e sits ~0.15 from an integer." That is true for the
+*distance*, but liveness is distance-relative-to-window, and **m_τ/m_e's window is wide**
+(t·w = 0.348 because t ≈ 3477). So m_τ/m_e **does** have an integer (3477) inside its
+0.01% window — it passes Mr A's stated near-integer condition. It is nonetheless **dead**,
+for a stronger reason: 3477 is **not a producible candidate.** The surrounding surviving
+eigenvalues are λ = 3363, 3480, 3599; reaching 3477 needs a correction of 3, 114 or 122,
+none of which is in either family. So the full liveness test (definition (2): *an actual
+λ_l ± c lands in window*) kills the tau where the near-integer heuristic would have spared
+it. Net effect on the verdict: **none** — the tau was dead either way; the honest reason is
+"the in-window integer is unreachable," not "no integer is in window."
+
+This is why the script reports **two** liveness columns:
+- **(A) near-integer** (Mr A's necessary condition): live targets = {m_p/m_e, m_τ/m_e}.
+- **(B) reachable** (the full condition): live targets = {m_p/m_e} only.
+(B) ⊂ (A); the tau is the gap. The recount uses **(B)** — a cell is live iff its target is
+actually reachable by a candidate.
+
+## The recounted denominators
+
+| family | grid (full) | cells/target | reachable targets | **N_live** | dead-before-run | fired |
+|---|---|---|---|---|---|---|
+| flat declared-integer (15) | 6,750 = 45×15×2×5 | 1,350 | {m_p/m_e} | **1,350** | 5,400 | 1 |
+| **orbit-index (12)** | **5,400** = 45×12×2×5 | 1,080 | {m_p/m_e} | **1,080** | 4,320 | 1 |
+
+Mr A's "~4/5 of the 5,400 were dead" is confirmed exactly for the orbit-index family:
+4,320 / 5,400 = 4/5 dead (the four unreachable targets), 1,080 / 5,400 = 1/5 live (the one
+reachable target). One of those 1,080 live cells fired.
+
+## The one-line headline to replace "5,400 cells, one survivor" in §5.3
+
+> Of **1,080 live cells** (those on a target an integer-minus-integer value can reach at
+> 0.01% — only m_p/m_e among the five), exactly one fired: 1848 − 12 = 1836 on m_p/m_e.
+> The full grid is 5,400 cells, but the other four targets sit no closer to a *reachable*
+> integer than 0.23 (neutron, muon, tau) at sub-integer windows, so 4,320 cells were dead
+> before the run. "5,400" is the full grid (most cells unreachable), not the live
+> denominator.
+
+## What this does NOT change
+
+The decision rule (one expected hit per target) and the verdict (one survivor) stand
+unchanged; this corrects the *reported denominator*, not the result. The −12 correction's
+structural distinction (Task 1) and the divisor mechanism (Task 2, addendum) are untouched.
+The ex-ante frozen-registry run is separate and not affected.
+
+## Status flags (FIX D)
+
+- Per-target nearest-integer distances: **DERIVED** (exact arithmetic).
+- m_p/m_e the unique reachable target at 0.01%, both families: **DERIVED** (exhaustive
+  enumeration, identical to §5.3 / Task 1).
+- N_live = 1,080 (orbit) / 1,350 (flat); 4,320 / 5,400 dead-before-run: **DERIVED**.
+- Tau near-integer-but-unreachable (3477 not a producible candidate): **DERIVED** — **flag**
+  (refines Mr A's envelope; verdict unchanged).

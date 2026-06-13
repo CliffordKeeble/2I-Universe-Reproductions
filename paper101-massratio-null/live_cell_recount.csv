@@ -1,0 +1,11 @@
+family,target,value,nearest_int,dist,window_halfwidth,near_integer_A,reachable_B,n_fired,cells_per_target
+flat declared-integer set (15),m_p/m_e,1836.152673,1836,0.152673,0.183615,1,1,1,1350
+flat declared-integer set (15),m_n/m_e,1838.683662,1839,0.316338,0.183868,0,0,0,1350
+flat declared-integer set (15),m_mu/m_e,206.768283,207,0.231717,0.020677,0,0,0,1350
+flat declared-integer set (15),m_pi/m_e,273.132440,273,0.132440,0.027313,0,0,0,1350
+flat declared-integer set (15),m_tau/m_e,3477.228280,3477,0.228280,0.347723,1,0,0,1350
+"orbit-index set (12)  [headline 5,400]",m_p/m_e,1836.152673,1836,0.152673,0.183615,1,1,1,1080
+"orbit-index set (12)  [headline 5,400]",m_n/m_e,1838.683662,1839,0.316338,0.183868,0,0,0,1080
+"orbit-index set (12)  [headline 5,400]",m_mu/m_e,206.768283,207,0.231717,0.020677,0,0,0,1080
+"orbit-index set (12)  [headline 5,400]",m_pi/m_e,273.132440,273,0.132440,0.027313,0,0,0,1080
+"orbit-index set (12)  [headline 5,400]",m_tau/m_e,3477.228280,3477,0.228280,0.347723,1,0,0,1080
