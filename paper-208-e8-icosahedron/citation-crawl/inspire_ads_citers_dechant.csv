@@ -1,0 +1,11 @@
+recid,arxiv,primary_cat,all_cats,title,first_author,venue,year,doi,communities,cites_anchor
+1427769,1603.04805,math.RT,math.RT|hep-th|math-ph|math.GR|math.MP|math.QA,The E$_{8}$ Geometry from a Clifford Perspective,"Dechant, Pierre-Philippe",Adv.Appl.Clifford Algebras,2016,10.1007/s00006-016-0675-9,P,Dechant2016
+1514749,1702.06824,physics.gen-ph,physics.gen-ph|hep-th,Emergence of an aperiodic Dirichlet space from the tetrahedral units of an icosahedral internal space,"Sen, Amrik",Mathematics,2017,10.3390/math5020029,P,Dechant2016
+1707613,1812.02804,math-ph,math-ph|hep-th|math.GR|math.MP|math.RT,"From the Trinity $(A_3, B_3, H_3)$ to an ADE correspondence","Dechant, Pierre-Philippe",Proc.Roy.Soc.Lond.A,2018,10.1098/rspa.2018.0034,P,Dechant2016+Dechant2017
+1851687,2103.07817,math.GR,math.GR|hep-th|math-ph|math.MP,Clifford Spinors and Root System Induction: $H_4$ and the Grand Antiprism,"Dechant, Pierre-Philippe",Adv.Appl.Clifford Algebras,2021,10.1007/s00006-021-01139-2,P,Dechant2017
+2033853,,,,New Applications of Clifford’s Geometric Algebra,"Breuils, Stephane",Adv.Appl.Clifford Algebras,2022,10.1007/s00006-021-01196-7,P,Dechant2017
+2066247,2204.05718,math-ph,math-ph|math.GR|math.MP|math.QA|q-bio.BM,Root systems & Clifford algebras: from symmetries of viruses to $E_8$& ADE correspondences,"Dechant, Pierre-Philippe",,2022,,P,Dechant2017
+2705182,2310.00041,cs.LG,cs.LG|hep-th|math-ph|math.GR|math.MP|math.RT,Machine Learning Clifford Invariants of ADE Coxeter Elements,"Chen, Siqi",Adv.Appl.Clifford Algebras,2023,10.1007/s00006-024-01325-y,P,Dechant2016+Dechant2017
+2718815,2311.01486,math.GR,math.GR|hep-th,The Isomorphism of $H_4$ and $E_8$,"Moxness, J.G.",,2023,,P,Dechant2016
+3102674,,,,AdS/CFT Integrability and Machine Learning Combinatorial Structures,"Riabchenko, Dmitrii",,2025,,,Dechant2016+Dechant2017
+3119814,,,,AdS/CFT Integrability and Machine Learning Combinatorial Structures,"Riabchenko, D.",,2025,,,Dechant2016+Dechant2017

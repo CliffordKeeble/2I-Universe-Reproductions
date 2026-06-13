@@ -1,0 +1,3606 @@
+{
+ "hits": {
+  "hits": [
+   {
+    "updated": "2023-03-10T00:03:12.973742+00:00",
+    "created": "2009-10-07T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/833281?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/833281?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/833281?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/833281?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/833281?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/833281?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A833281"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "12",
+       "artid": "004",
+       "year": 2009,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213103"
+       },
+       "page_start": "004",
+       "journal_title": "JHEP"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Paccetti Correia, Filipe"
+      }
+     ],
+     "number_of_pages": 17,
+     "control_number": 833281,
+     "dois": [
+      {
+       "value": "10.1088/1126-6708/2009/12/004"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "0910.1096"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Hermitian Yang-Mills instantons on Calabi-Yau cones"
+      },
+      {
+       "source": "arXiv",
+       "title": "Hermitian Yang-Mills instantons on Calabi-Yau cones"
+      }
+     ],
+     "earliest_date": "2009-10"
+    },
+    "id": "833281"
+   },
+   {
+    "updated": "2023-03-06T14:15:13.034500+00:00",
+    "created": "2002-01-16T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/581773?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/581773?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/581773?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/581773?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/581773?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/581773?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A581773"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "50",
+       "page_end": "998",
+       "year": 2002,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214746"
+       },
+       "page_start": "992",
+       "journal_title": "Fortsch.Phys."
+      },
+      {
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/973754"
+       },
+       "parent_record": {
+        "$ref": "https://inspirehep.net/api/literature/601054"
+       },
+       "cnum": "C01-09-13"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Tanzini, Alessandro"
+      }
+     ],
+     "number_of_pages": 6,
+     "control_number": 581773,
+     "dois": [
+      {
+       "value": "10.1002/1521-3978(200209)50:8/9<992::AID-PROP992>3.0.CO;2-B"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0201102"
+      }
+     ],
+     "titles": [
+      {
+       "title": "D instantons on orbifolds and gauge / gravity correspondence"
+      },
+      {
+       "source": "arXiv",
+       "title": "D-instantons on orbifolds and gauge / gravity correspondence."
+      },
+      {
+       "source": "arXiv",
+       "title": "D-instantons on orbifolds and gauge/gravity correspondence"
+      }
+     ],
+     "earliest_date": "2002-01"
+    },
+    "id": "581773"
+   },
+   {
+    "updated": "2023-03-06T17:21:05.135741+00:00",
+    "created": "2010-07-16T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/861618?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/861618?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/861618?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/861618?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/861618?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/861618?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A861618"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "25",
+       "page_end": "2733",
+       "year": 2010,
+       "page_start": "2699",
+       "journal_title": "Int.J.Mod.Phys.A"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Efremov, Vladimir N."
+      },
+      {
+       "full_name": "Hernandez Magdaleno, Alfonso M."
+      },
+      {
+       "full_name": "Moreno, Claudia"
+      }
+     ],
+     "number_of_pages": 35,
+     "control_number": 861618,
+     "dois": [
+      {
+       "value": "10.1142/S0217751X10048482"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Topological origin of the coupling constants hierarchy in Kaluza-Klein approach"
+      }
+     ],
+     "earliest_date": "2010"
+    },
+    "id": "861618"
+   },
+   {
+    "updated": "2023-03-06T17:16:56.076487+00:00",
+    "created": "2007-12-10T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/770050?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/770050?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/770050?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/770050?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/770050?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/770050?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A770050"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "03",
+       "artid": "013",
+       "year": 2008,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213103"
+       },
+       "page_start": "013",
+       "journal_title": "JHEP"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Dijkgraaf, Robbert"
+      },
+      {
+       "full_name": "Sulkowski, Piotr"
+      }
+     ],
+     "number_of_pages": 28,
+     "control_number": 770050,
+     "dois": [
+      {
+       "value": "10.1088/1126-6708/2008/03/013"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "0712.1427"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Instantons on ALE spaces and orbifold partitions"
+      },
+      {
+       "source": "arXiv",
+       "title": "Instantons on ALE spaces and orbifold partitions"
+      }
+     ],
+     "earliest_date": "2007-12"
+    },
+    "id": "770050"
+   },
+   {
+    "updated": "2023-03-10T08:38:40.121153+00:00",
+    "created": "2010-09-05T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/867091?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/867091?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/867091?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/867091?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/867091?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/867091?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A867091"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "02",
+       "artid": "054",
+       "year": 2011,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213103"
+       },
+       "page_start": "054",
+       "journal_title": "JHEP"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Paccetti Correia, Filipe"
+      }
+     ],
+     "number_of_pages": 20,
+     "control_number": 867091,
+     "dois": [
+      {
+       "value": "10.1007/JHEP02(2011)054"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "1009.0526"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Hermitian Yang-Mills instantons on resolutions of Calabi-Yau cones"
+      },
+      {
+       "source": "arXiv",
+       "title": "Hermitian Yang-Mills instantons on resolutions of Calabi-Yau cones"
+      }
+     ],
+     "earliest_date": "2010-09"
+    },
+    "id": "867091"
+   },
+   {
+    "updated": "2024-08-28T02:50:35.789254+00:00",
+    "created": "2001-05-15T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/556534?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/556534?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/556534?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/556534?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/556534?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/556534?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A556534"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "514",
+       "page_end": "199",
+       "year": 2001,
+       "page_start": "189",
+       "journal_title": "Phys.Lett.B"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Etesi, Gabor"
+      },
+      {
+       "full_name": "Hausel, Tamas"
+      }
+     ],
+     "number_of_pages": 13,
+     "control_number": 556534,
+     "dois": [
+      {
+       "value": "10.1016/S0370-2693(01)00821-8"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0105118"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Geometric construction of new Taub - NUT instantons"
+      },
+      {
+       "title": "NEWMAN-UNTI-TAMBORINO"
+      },
+      {
+       "title": "TAUB NUT"
+      },
+      {
+       "source": "arXiv",
+       "title": "Geometric construction of new Taub-NUT instantons."
+      }
+     ],
+     "earliest_date": "2001-05"
+    },
+    "id": "556534"
+   },
+   {
+    "updated": "2023-03-06T16:39:55.006237+00:00",
+    "created": "2000-08-30T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/532579?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/532579?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/532579?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/532579?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/532579?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/532579?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A532579"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "611",
+       "page_end": "226",
+       "year": 2001,
+       "page_start": "205",
+       "journal_title": "Nucl.Phys.B"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Bruzzo, Ugo"
+      },
+      {
+       "full_name": "Fucito, Francesco"
+      },
+      {
+       "full_name": "Tanzini, Alessandro"
+      },
+      {
+       "full_name": "Travaglini, Gabriele"
+      }
+     ],
+     "number_of_pages": 28,
+     "control_number": 532579,
+     "dois": [
+      {
+       "value": "10.1016/S0550-3213(01)00349-2"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0008225"
+      }
+     ],
+     "titles": [
+      {
+       "title": "On the multi - instanton measure for superYang-Mills theories"
+      },
+      {
+       "title": "MULTIINSTANTON"
+      },
+      {
+       "title": "SUPERSYMMETRIC YANG-MILLS"
+      },
+      {
+       "source": "arXiv",
+       "title": "On the multi-instanton measure for super Yang-Mills theories."
+      }
+     ],
+     "earliest_date": "2000-08"
+    },
+    "id": "532579"
+   },
+   {
+    "updated": "2024-08-28T02:53:47.080188+00:00",
+    "created": "2002-07-23T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/591064?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/591064?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/591064?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/591064?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/591064?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/591064?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A591064"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "235",
+       "page_end": "288",
+       "year": 2003,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214791"
+       },
+       "page_start": "275",
+       "journal_title": "Commun.Math.Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Etesi, Gabor"
+      },
+      {
+       "full_name": "Hausel, Tamas"
+      }
+     ],
+     "number_of_pages": 14,
+     "control_number": 591064,
+     "dois": [
+      {
+       "value": "10.1007/s00220-003-0806-8"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0207196"
+      }
+     ],
+     "titles": [
+      {
+       "title": "New Yang-Mills instantons on multicentered gravitational instantons"
+      },
+      {
+       "source": "arXiv",
+       "title": "New Yang-Mills instantons over multi-centered gravitational instantons."
+      }
+     ],
+     "earliest_date": "2002-07"
+    },
+    "id": "591064"
+   },
+   {
+    "updated": "2024-08-28T02:43:32.427326+00:00",
+    "created": "1998-09-16T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/476370?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/476370?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/476370?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/476370?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/476370?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/476370?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A476370"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "16",
+       "page_end": "1815",
+       "year": 1999,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214779"
+       },
+       "page_start": "1805",
+       "journal_title": "Class.Quant.Grav."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Carpi, Cristiano"
+      },
+      {
+       "full_name": "Fucito, Francesco"
+      }
+     ],
+     "number_of_pages": 19,
+     "control_number": 476370,
+     "dois": [
+      {
+       "value": "10.1088/0264-9381/16/6/314"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/9809107"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Gauge zero modes on ALE manifolds"
+      },
+      {
+       "title": "Asymptotically locally Euclidean"
+      },
+      {
+       "source": "arXiv",
+       "title": "Gauge zero-modes on ALE manifolds."
+      }
+     ],
+     "earliest_date": "1998-09"
+    },
+    "id": "476370"
+   },
+   {
+    "updated": "2024-08-28T00:24:06.231878+00:00",
+    "created": "2014-12-16T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1334403?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1334403?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1334403?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1334403?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1334403?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1334403?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1334403"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "20",
+       "pubinfo_freetext": "Adv. Theor. Math. Phys. 20 (2016) 821-882",
+       "page_end": "882",
+       "year": 2016,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212914"
+       },
+       "page_start": "821",
+       "journal_title": "Adv.Theor.Math.Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Lechtenfeld, Olaf"
+      },
+      {
+       "full_name": "Popov, Alexander D."
+      },
+      {
+       "full_name": "Szabo, Richard J."
+      }
+     ],
+     "number_of_pages": 62,
+     "control_number": 1334403,
+     "dois": [
+      {
+       "source": "bibmatch",
+       "value": "10.4310/ATMP.2016.v20.n4.a4"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "math-ph",
+        "math.DG",
+        "math.MP",
+        "math.RT",
+        "math.SG"
+       ],
+       "value": "1412.4409"
+      }
+     ],
+     "titles": [
+      {
+       "source": "International Press",
+       "title": "Sasakian quiver gauge theories and instantons on Calabi-Yau cones"
+      },
+      {
+       "source": "arXiv",
+       "title": "Sasakian quiver gauge theories and instantons on Calabi-Yau cones"
+      }
+     ],
+     "earliest_date": "2014-12-14"
+    },
+    "id": "1334403"
+   },
+   {
+    "updated": "2024-08-28T03:00:02.400186+00:00",
+    "created": "2004-06-28T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/653185?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/653185?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/653185?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/653185?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/653185?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/653185?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A653185"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "703",
+       "page_end": "536",
+       "year": 2004,
+       "page_start": "518",
+       "journal_title": "Nucl.Phys.B"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Fucito, Francesco"
+      },
+      {
+       "full_name": "Morales, Jose F."
+      },
+      {
+       "full_name": "Poghossian, Rubik"
+      }
+     ],
+     "number_of_pages": 27,
+     "control_number": 653185,
+     "dois": [
+      {
+       "value": "10.1016/j.nuclphysb.2004.09.014"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0406243"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Multi instanton calculus on ALE spaces"
+      },
+      {
+       "title": "ASYMPTOTICALLY LOCALLY EUCLIDEAN"
+      },
+      {
+       "source": "arXiv",
+       "title": "Multi instanton calculus on ALE spaces."
+      }
+     ],
+     "earliest_date": "2004-06"
+    },
+    "id": "653185"
+   },
+   {
+    "updated": "2023-03-06T14:30:04.996576+00:00",
+    "created": "2011-07-18T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/918976?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/918976?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/918976?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/918976?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/918976?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/918976?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A918976"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "08",
+       "artid": "098",
+       "year": 2011,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213103"
+       },
+       "page_start": "098",
+       "journal_title": "JHEP"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Gava, Edi"
+      },
+      {
+       "full_name": "Karndumri, Parinya"
+      },
+      {
+       "full_name": "Narain, K.S."
+      }
+     ],
+     "number_of_pages": 34,
+     "control_number": 918976,
+     "dois": [
+      {
+       "value": "10.1007/JHEP08(2011)098"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "1107.3413"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Gravitational and Yang-Mills instantons in holographic RG flows"
+      },
+      {
+       "source": "arXiv",
+       "title": "Gravitational and Yang-Mills instantons in holographic RG flows"
+      }
+     ],
+     "earliest_date": "2011-07"
+    },
+    "id": "918976"
+   },
+   {
+    "updated": "2023-03-06T16:21:42.609117+00:00",
+    "created": "1998-08-07T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/474351?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/474351?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/474351?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/474351?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/474351?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/474351?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A474351"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "68",
+       "page_end": "139",
+       "year": 1998,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213378"
+       },
+       "page_start": "128",
+       "journal_title": "Nucl.Phys.B Proc.Suppl."
+      },
+      {
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/970718"
+       },
+       "parent_record": {
+        "$ref": "https://inspirehep.net/api/literature/481913"
+       },
+       "cnum": "C97-06-16.3"
+      },
+      {
+       "pubinfo_freetext": "In *Amsterdam 1997, Strings'97* 128-139"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Aldazabal, G."
+      },
+      {
+       "full_name": "Font, A."
+      },
+      {
+       "full_name": "Ibanez, Luis E."
+      },
+      {
+       "full_name": "Uranga, A."
+      },
+      {
+       "full_name": "Violero, G."
+      }
+     ],
+     "number_of_pages": 12,
+     "control_number": 474351,
+     "dois": [
+      {
+       "value": "10.1016/S0920-5632(98)00147-9"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Giving up modular invariance constraints in heterotic orbifold vacua"
+      },
+      {
+       "source": "arXiv",
+       "title": "Giving up modular invariance constraints in heterotic orbifold vacua."
+      }
+     ],
+     "earliest_date": "1998"
+    },
+    "id": "474351"
+   },
+   {
+    "updated": "2023-03-06T14:30:18.082167+00:00",
+    "created": "2011-03-01T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/890991?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/890991?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/890991?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/890991?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/890991?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/890991?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A890991"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "322",
+       "page_end": "17",
+       "year": 2013,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214791"
+       },
+       "page_start": "1",
+       "journal_title": "Commun.Math.Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Etesi, Gabor"
+      }
+     ],
+     "number_of_pages": 18,
+     "control_number": 890991,
+     "dois": [
+      {
+       "value": "10.1007/s00220-013-1754-6"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "math.DG"
+       ],
+       "value": "1103.0241"
+      }
+     ],
+     "titles": [
+      {
+       "title": "On the energy spectrum of Yang-Mills instantons over asymptotically locally flat spaces"
+      },
+      {
+       "source": "arXiv",
+       "title": "On the energy spectrum of Yang--Mills instantons over asymptotically locally flat spaces"
+      }
+     ],
+     "earliest_date": "2011-02"
+    },
+    "id": "890991"
+   },
+   {
+    "updated": "2024-08-28T03:07:54.018313+00:00",
+    "created": "2006-10-15T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/729004?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/729004?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/729004?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/729004?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/729004?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/729004?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A729004"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "12",
+       "artid": "073",
+       "year": 2006,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213103"
+       },
+       "page_start": "073",
+       "journal_title": "JHEP"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Fucito, Francesco"
+      },
+      {
+       "full_name": "Morales, Jose F."
+      },
+      {
+       "full_name": "Poghossian, Rubik"
+      }
+     ],
+     "number_of_pages": 32,
+     "control_number": 729004,
+     "dois": [
+      {
+       "value": "10.1088/1126-6708/2006/12/073"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0610154"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Instanton on toric singularities and black hole countings"
+      },
+      {
+       "source": "arXiv",
+       "title": "Instanton on toric singularities and black hole countings."
+      }
+     ],
+     "earliest_date": "2006-10"
+    },
+    "id": "729004"
+   },
+   {
+    "updated": "2024-08-28T00:15:01.863405+00:00",
+    "created": "2013-10-14T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1258152?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1258152?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1258152?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1258152?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1258152?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1258152?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1258152"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "88",
+       "artid": "105026",
+       "year": 2013,
+       "journal_title": "Phys.Rev.D"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Ivanova, Tatiana A."
+      },
+      {
+       "full_name": "Lechtenfeld, Olaf"
+      },
+      {
+       "full_name": "Popov, Alexander D."
+      },
+      {
+       "full_name": "Szabo, Richard J."
+      }
+     ],
+     "number_of_pages": 10,
+     "control_number": 1258152,
+     "dois": [
+      {
+       "source": "bibmatch",
+       "value": "10.1103/PhysRevD.88.105026"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "math-ph",
+        "math.DG",
+        "math.MP"
+       ],
+       "value": "1310.3028"
+      }
+     ],
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Orbifold instantons, moment maps and Yang-Mills theory with sources"
+      }
+     ],
+     "earliest_date": "2013-10-11"
+    },
+    "id": "1258152"
+   },
+   {
+    "updated": "2023-03-10T15:33:01.615922+00:00",
+    "created": "1996-10-21T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/424847?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/424847?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/424847?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/424847?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/424847?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/424847?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A424847"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "55",
+       "page_end": "6393",
+       "year": 1997,
+       "page_start": "6382",
+       "journal_title": "Phys.Rev.D"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Johnson, Clifford V."
+      },
+      {
+       "full_name": "Myers, Robert C."
+      }
+     ],
+     "number_of_pages": 26,
+     "control_number": 424847,
+     "dois": [
+      {
+       "value": "10.1103/PhysRevD.55.6382"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/9610140"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Aspects of type IIB theory on ALE spaces"
+      },
+      {
+       "title": "Asymptotically locally Euclidean"
+      },
+      {
+       "source": "arXiv",
+       "title": "Aspects of type IIB theory on ALE spaces."
+      }
+     ],
+     "earliest_date": "1996-10"
+    },
+    "id": "424847"
+   },
+   {
+    "updated": "2023-12-08T13:00:15.716577+00:00",
+    "created": "2023-08-29T03:00:39.669817+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2691328?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2691328?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2691328?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2691328?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2691328?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2691328?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2691328"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Fr\u00e9, Pietro G."
+      }
+     ],
+     "number_of_pages": 173,
+     "control_number": 2691328,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Lectures on resolutions \u00e0 la Kronheimer of orbifold singularities, McKay quivers for Gauge Theories on D3 branes, and the issue of Ricci flat metrics on the resolved three-folds"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "math-ph",
+        "math.AG",
+        "math.GR",
+        "math.MP"
+       ],
+       "value": "2308.14022"
+      }
+     ],
+     "earliest_date": "2023-08-27"
+    },
+    "id": "2691328"
+   },
+   {
+    "updated": "2024-08-28T03:17:34.018900+00:00",
+    "created": "2009-03-01T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/814319?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/814319?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/814319?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/814319?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/814319?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/814319?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A814319"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "14",
+       "page_end": "642",
+       "year": 2010,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212914"
+       },
+       "page_start": "609",
+       "journal_issue": "2",
+       "journal_title": "Adv.Theor.Math.Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Cherkis, Sergey A."
+      }
+     ],
+     "number_of_pages": 34,
+     "control_number": 814319,
+     "dois": [
+      {
+       "value": "10.4310/ATMP.2010.v14.n2.a7"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "0902.4724"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Instantons on the Taub-NUT Space"
+      },
+      {
+       "source": "arXiv",
+       "title": "Instantons on the Taub-NUT Space"
+      }
+     ],
+     "earliest_date": "2009-02"
+    },
+    "id": "814319"
+   },
+   {
+    "updated": "2023-10-03T08:23:51.743009+00:00",
+    "created": "2019-02-05T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1718374?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1718374?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1718374?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1718374?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1718374?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1718374?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1718374"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "145",
+       "artid": "103467",
+       "year": 2019,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214078"
+       },
+       "journal_title": "J.Geom.Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Bruzzo, Ugo"
+      },
+      {
+       "full_name": "Fino, Anna"
+      },
+      {
+       "full_name": "Fr\u00e9, Pietro"
+      },
+      {
+       "full_name": "Grassi, Pietro Antonio"
+      },
+      {
+       "full_name": "Markushevich, Dimitri"
+      }
+     ],
+     "number_of_pages": 71,
+     "control_number": 1718374,
+     "dois": [
+      {
+       "source": "bibmatch",
+       "value": "10.1016/j.geomphys.2019.06.018"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "math.AG"
+       ],
+       "value": "1902.01060"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Elsevier",
+       "title": "Crepant resolutions of $\\mathbb{C}^3/\\mathbb{Z}_4$ and the generalized Kronheimer construction (in view of the gauge/gravity correspondence)"
+      },
+      {
+       "source": "arXiv",
+       "title": "Crepant Resolutions of $\\mathbb{C}^3/\\mathbb{Z}_4$ and the Generalized Kronheimer Construction (in view of the Gauge/Gravity Correspondence)"
+      }
+     ],
+     "earliest_date": "2019-02-04"
+    },
+    "id": "1718374"
+   },
+   {
+    "updated": "2026-06-04T08:16:48.618439+00:00",
+    "created": "2026-05-27T04:19:16.061270+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/3160234?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/3160234?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/3160234?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/3160234?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/3160234?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/3160234?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A3160234"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Anber, Mohamed M."
+      }
+     ],
+     "number_of_pages": 55,
+     "control_number": 3160234,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "$S$-duality, boundary states, and higher-form symmetries on ALE spaces"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "cond-mat.str-el",
+        "math-ph",
+        "math.MP"
+       ],
+       "value": "2605.26224"
+      }
+     ],
+     "earliest_date": "2026-05-25"
+    },
+    "id": "3160234"
+   },
+   {
+    "updated": "2024-08-28T02:41:40.408375+00:00",
+    "created": "1997-12-24T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/452821?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/452821?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/452821?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/452821?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/452821?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/452821?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A452821"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "58",
+       "artid": "025008",
+       "year": 1998,
+       "journal_title": "Phys.Rev.D"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Bellisai, Diego"
+      },
+      {
+       "full_name": "Travaglini, Gabriele"
+      }
+     ],
+     "number_of_pages": 13,
+     "control_number": 452821,
+     "dois": [
+      {
+       "value": "10.1103/PhysRevD.58.025008"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/9712218"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Instanton calculus and SUSY gauge theories on ALE manifolds"
+      },
+      {
+       "title": "Supersymmetry"
+      },
+      {
+       "title": "Asymptotically locally Euclidean"
+      },
+      {
+       "source": "arXiv",
+       "title": "Instanton calculus and SUSY gauge theories on ALE manifolds."
+      }
+     ],
+     "earliest_date": "1997-12"
+    },
+    "id": "452821"
+   },
+   {
+    "updated": "2023-03-07T00:09:54.239749+00:00",
+    "created": "2005-10-30T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/696349?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/696349?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/696349?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/696349?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/696349?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/696349?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A696349"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "634",
+       "page_end": "433",
+       "year": 2006,
+       "page_start": "427",
+       "journal_title": "Phys.Lett.B"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Salizzoni, Mario"
+      },
+      {
+       "full_name": "Torrielli, Alessandro"
+      },
+      {
+       "full_name": "Yang, Hyun Seok"
+      }
+     ],
+     "number_of_pages": 15,
+     "control_number": 696349,
+     "dois": [
+      {
+       "value": "10.1016/j.physletb.2006.01.072"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0510249"
+      }
+     ],
+     "titles": [
+      {
+       "title": "ALE spaces from noncommutative U(1) instantons via exact Seiberg-Witten map"
+      },
+      {
+       "title": "ASYMPTOTICALLY LOCALLY EUCLIDEAN"
+      },
+      {
+       "source": "arXiv",
+       "title": "ALE spaces from noncommutative U(1) instantons via exact Seiberg-Witten map."
+      }
+     ],
+     "earliest_date": "2005-10"
+    },
+    "id": "696349"
+   },
+   {
+    "updated": "2025-07-15T14:26:39.038550+00:00",
+    "created": "1996-03-26T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/417064?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/417064?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/417064?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/417064?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/417064?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/417064?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A417064"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Douglas, Michael R."
+      },
+      {
+       "full_name": "Moore, Gregory W."
+      }
+     ],
+     "number_of_pages": 50,
+     "control_number": 417064,
+     "titles": [
+      {
+       "title": "D-branes, quivers, and ALE instantons"
+      },
+      {
+       "title": "asymptotically locally Euclidean"
+      },
+      {
+       "source": "arXiv",
+       "title": "D-branes, Quivers, and ALE Instantons"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/9603167"
+      }
+     ],
+     "earliest_date": "1996-03"
+    },
+    "id": "417064"
+   },
+   {
+    "updated": "2023-03-06T17:35:52.756423+00:00",
+    "created": "2000-03-30T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/525556?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/525556?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/525556?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/525556?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/525556?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/525556?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A525556"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "07",
+       "artid": "017",
+       "year": 2000,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213103"
+       },
+       "page_start": "017",
+       "journal_title": "JHEP"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Bellisai, Diego"
+      },
+      {
+       "full_name": "Fucito, Francesco"
+      },
+      {
+       "full_name": "Tanzini, Alessandro"
+      },
+      {
+       "full_name": "Travaglini, Gabriele"
+      }
+     ],
+     "number_of_pages": 67,
+     "control_number": 525556,
+     "dois": [
+      {
+       "value": "10.1088/1126-6708/2000/07/017"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0003272"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Instanton calculus, topological field theories and N=2 superYang-Mills theories"
+      },
+      {
+       "title": "SUPERSYMMETRIC YANG-MILLS"
+      },
+      {
+       "source": "arXiv",
+       "title": "Instanton calculus, topological field theories and N = 2 super Yang-Mills theories."
+      }
+     ],
+     "earliest_date": "2000-03"
+    },
+    "id": "525556"
+   },
+   {
+    "updated": "2025-09-22T07:34:17.501600+00:00",
+    "created": "2021-08-13T03:08:03.335808+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1904070?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1904070?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1904070?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1904070?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1904070?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1904070?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1904070"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "82",
+       "artid": "596",
+       "year": 2022,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1613946"
+       },
+       "page_start": "596",
+       "journal_issue": "7",
+       "journal_title": "Eur.Phys.J.C"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Chen, Zhe"
+      },
+      {
+       "full_name": "Kobakhidze, Archil"
+      }
+     ],
+     "number_of_pages": 5,
+     "control_number": 1904070,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1140/epjc/s10052-022-10542-3"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1140/epjc/s10052-022-10542-3"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-ph",
+        "hep-th"
+       ],
+       "value": "2108.05549"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "Coloured gravitational instantons, the strong CP problem and the companion axion solution"
+      },
+      {
+       "source": "arXiv",
+       "title": "Coloured gravitational instantons, the strong CP problem and the companion axion solution"
+      }
+     ],
+     "earliest_date": "2021-08-12"
+    },
+    "id": "1904070"
+   },
+   {
+    "updated": "2024-08-28T00:01:02.771185+00:00",
+    "created": "2011-12-13T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1081227?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1081227?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1081227?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1081227?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1081227?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1081227?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1081227"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "103",
+       "page_end": "841",
+       "year": 2013,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214594"
+       },
+       "page_start": "817",
+       "journal_title": "Lett.Math.Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Krefl, Daniel"
+      },
+      {
+       "full_name": "Shih, Sheng-Yu Darren"
+      }
+     ],
+     "number_of_pages": 28,
+     "control_number": 1081227,
+     "dois": [
+      {
+       "value": "10.1007/s11005-013-0617-6"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "1112.2718"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Holomorphic Anomaly in Gauge Theory on ALE space"
+      },
+      {
+       "source": "arXiv",
+       "title": "Holomorphic Anomaly in Gauge Theory on ALE space"
+      }
+     ],
+     "earliest_date": "2011-12"
+    },
+    "id": "1081227"
+   },
+   {
+    "updated": "2024-08-28T03:16:55.388004+00:00",
+    "created": "2008-05-11T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/809971?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/809971?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/809971?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/809971?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/809971?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/809971?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A809971"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "290",
+       "page_end": "736",
+       "year": 2009,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214791"
+       },
+       "page_start": "719",
+       "journal_title": "Commun.Math.Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Cherkis, Sergey A."
+      }
+     ],
+     "number_of_pages": 26,
+     "control_number": 809971,
+     "dois": [
+      {
+       "value": "10.1007/s00220-009-0863-8"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "0805.1245"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Moduli Spaces of Instantons on the Taub-NUT Space"
+      },
+      {
+       "source": "arXiv",
+       "title": "Moduli Spaces of Instantons on the Taub-NUT Space"
+      }
+     ],
+     "earliest_date": "2009-07-17"
+    },
+    "id": "809971"
+   },
+   {
+    "updated": "2024-08-28T00:49:47.832267+00:00",
+    "created": "2017-07-17T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1610035?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1610035?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1610035?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1610035?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1610035?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1610035?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1610035"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "09",
+       "artid": "144",
+       "year": 2017,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213103"
+       },
+       "page_start": "144",
+       "journal_title": "JHEP"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Mekareeya, Noppadol"
+      },
+      {
+       "full_name": "Ohmori, Kantaro"
+      },
+      {
+       "full_name": "Tachikawa, Yuji"
+      },
+      {
+       "full_name": "Zafrir, Gabi"
+      }
+     ],
+     "number_of_pages": 37,
+     "control_number": 1610035,
+     "dois": [
+      {
+       "source": "bibmatch",
+       "value": "10.1007/JHEP09(2017)144"
+      },
+      {
+       "value": "10.1007/JHEP09(2017)144"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "1707.04370"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "E$_{8}$ instantons on type-A ALE spaces and supersymmetric field theories"
+      },
+      {
+       "source": "arXiv",
+       "title": "$E_8$ instantons on type-A ALE spaces and supersymmetric field theories"
+      }
+     ],
+     "earliest_date": "2017-07-13"
+    },
+    "id": "1610035"
+   },
+   {
+    "updated": "2024-08-28T00:37:04.255318+00:00",
+    "created": "2016-04-20T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1449071?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1449071?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1449071?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1449071?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1449071?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1449071?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1449071"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Houston, N."
+      }
+     ],
+     "number_of_pages": 17,
+     "control_number": 1449071,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Fermionic instantons"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "gr-qc"
+       ],
+       "value": "1604.05400"
+      }
+     ],
+     "earliest_date": "2016-04-18"
+    },
+    "id": "1449071"
+   },
+   {
+    "updated": "2023-03-10T04:24:15.464559+00:00",
+    "created": "1997-06-24T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/444668?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/444668?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/444668?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/444668?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/444668?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/444668?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A444668"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "519",
+       "page_end": "281",
+       "year": 1998,
+       "page_start": "239",
+       "journal_title": "Nucl.Phys.B"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Aldazabal, G."
+      },
+      {
+       "full_name": "Font, A."
+      },
+      {
+       "full_name": "Ibanez, Luis E."
+      },
+      {
+       "full_name": "Uranga, A.M."
+      },
+      {
+       "full_name": "Violero, G."
+      }
+     ],
+     "number_of_pages": 58,
+     "control_number": 444668,
+     "dois": [
+      {
+       "value": "10.1016/S0550-3213(98)00007-8"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/9706158"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Nonperturbative heterotic D = 6, D = 4, N=1 orbifold vacua"
+      },
+      {
+       "title": "D=6"
+      },
+      {
+       "source": "arXiv",
+       "title": "Non-perturbative heterotic D = 6,4, N = 1 orbifold vacua."
+      },
+      {
+       "source": "arXiv",
+       "title": "Non-Perturbative Heterotic D=6,4 Orbifold Vacua"
+      }
+     ],
+     "earliest_date": "1997-06"
+    },
+    "id": "444668"
+   },
+   {
+    "updated": "2024-08-28T03:23:37.866714+00:00",
+    "created": "2010-07-01T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/860047?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/860047?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/860047?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/860047?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/860047?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/860047?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A860047"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "306",
+       "page_end": "483",
+       "year": 2011,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214791"
+       },
+       "page_start": "449",
+       "journal_title": "Commun.Math.Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Cherkis, Sergey A."
+      }
+     ],
+     "number_of_pages": 43,
+     "control_number": 860047,
+     "dois": [
+      {
+       "value": "10.1007/s00220-011-1293-y"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "1007.0044"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Instantons on Gravitons"
+      },
+      {
+       "source": "arXiv",
+       "title": "Instantons on Gravitons"
+      }
+     ],
+     "earliest_date": "2010-07"
+    },
+    "id": "860047"
+   },
+   {
+    "updated": "2023-10-03T08:04:27.425640+00:00",
+    "created": "2012-02-02T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1087240?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1087240?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1087240?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1087240?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1087240?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1087240?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1087240"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "01",
+       "artid": "023",
+       "year": 2013,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213103"
+       },
+       "page_start": "023",
+       "journal_title": "JHEP"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Grimm, Thomas W."
+      },
+      {
+       "full_name": "Klevers, Denis"
+      },
+      {
+       "full_name": "Poretschkin, Maximilian"
+      }
+     ],
+     "number_of_pages": 47,
+     "control_number": 1087240,
+     "dois": [
+      {
+       "value": "10.1007/JHEP01(2013)023"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "1202.0285"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Fluxes and Warping for Gauge Couplings in F-theory"
+      },
+      {
+       "source": "arXiv",
+       "title": "Fluxes and Warping for Gauge Couplings in F-theory"
+      }
+     ],
+     "earliest_date": "2012-02"
+    },
+    "id": "1087240"
+   },
+   {
+    "updated": "2025-12-17T13:50:43.574304+00:00",
+    "created": "2025-12-16T04:18:47.522550+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/3092760?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/3092760?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/3092760?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/3092760?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/3092760?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/3092760?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A3092760"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Anber, Mohamed M."
+      }
+     ],
+     "number_of_pages": 67,
+     "control_number": 3092760,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Anomalies on ALE spaces and phases of gauge theory"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "cond-mat.str-el",
+        "hep-ph"
+       ],
+       "value": "2512.11970"
+      }
+     ],
+     "earliest_date": "2025-12-12"
+    },
+    "id": "3092760"
+   },
+   {
+    "updated": "2025-11-17T12:13:00.766904+00:00",
+    "created": "2023-10-06T02:47:27.449160+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2706467?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2706467?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2706467?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2706467?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2706467?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2706467?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2706467"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "35",
+       "artid": "393",
+       "year": 2025,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213323"
+       },
+       "page_start": "393",
+       "journal_issue": "12",
+       "journal_title": "J.Geom.Anal."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Galdeano, Mateo"
+      },
+      {
+       "full_name": "Platt, Daniel"
+      },
+      {
+       "full_name": "Tanaka, Yuuji"
+      },
+      {
+       "full_name": "Wang, Luya"
+      }
+     ],
+     "number_of_pages": 58,
+     "control_number": 2706467,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1007/s12220-025-02217-8"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "math.DG",
+        "hep-th"
+       ],
+       "value": "2310.03451"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "Spin(7)-Instantons on Joyce\u2019s First Examples of Compact Spin(7)-Manifolds"
+      },
+      {
+       "source": "arXiv",
+       "title": "Spin(7)-instantons on Joyce's first examples of compact Spin(7)-manifolds"
+      }
+     ],
+     "earliest_date": "2023-10-05"
+    },
+    "id": "2706467"
+   },
+   {
+    "updated": "2024-08-28T03:15:34.169100+00:00",
+    "created": "2008-09-25T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/797647?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/797647?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/797647?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/797647?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/797647?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/797647?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A797647"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "11",
+       "artid": "044",
+       "year": 2008,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213103"
+       },
+       "page_start": "044",
+       "journal_title": "JHEP"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Groot Nibbelink, Stefan"
+      },
+      {
+       "full_name": "Paccetti Correia, Filipe"
+      },
+      {
+       "full_name": "Trapletti, Michele"
+      }
+     ],
+     "number_of_pages": 33,
+     "control_number": 797647,
+     "dois": [
+      {
+       "value": "10.1088/1126-6708/2008/11/044"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "0809.4430"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Non-Abelian bundles on heterotic non-compact K3 orbifold blowups"
+      },
+      {
+       "source": "arXiv",
+       "title": "Non-Abelian bundles on heterotic non-compact K3 orbifold blowups"
+      }
+     ],
+     "earliest_date": "2008-09"
+    },
+    "id": "797647"
+   },
+   {
+    "updated": "2024-08-28T00:14:29.374794+00:00",
+    "created": "2013-09-05T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1252737?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1252737?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1252737?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1252737?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1252737?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1252737?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1252737"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "01",
+       "artid": "182",
+       "year": 2014,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213103"
+       },
+       "page_start": "182",
+       "journal_title": "JHEP"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Dey, Anindya"
+      },
+      {
+       "full_name": "Hanany, Amihay"
+      },
+      {
+       "full_name": "Mekareeya, Noppadol"
+      },
+      {
+       "full_name": "Rodr\u00edguez-G\u00f3mez, Diego"
+      },
+      {
+       "full_name": "Seong, Rak-Kyeong"
+      }
+     ],
+     "number_of_pages": 103,
+     "control_number": 1252737,
+     "dois": [
+      {
+       "value": "10.1007/JHEP01(2014)182"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "1309.0812"
+      }
+     ],
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Hilbert Series for Moduli Spaces of Instantons on $C^2/Z_n$"
+      },
+      {
+       "source": "arXiv",
+       "title": "Hilbert Series for Moduli Spaces of Instantons on C^2/Z_n"
+      }
+     ],
+     "earliest_date": "2013-09-03"
+    },
+    "id": "1252737"
+   },
+   {
+    "updated": "2024-08-28T02:50:46.419402+00:00",
+    "created": "2001-06-08T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/557950?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/557950?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/557950?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/557950?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/557950?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/557950?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A557950"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "07",
+       "artid": "012",
+       "year": 2001,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213103"
+       },
+       "page_start": "012",
+       "journal_title": "JHEP"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Fucito, Francesco"
+      },
+      {
+       "full_name": "Morales, Jose F."
+      },
+      {
+       "full_name": "Tanzini, Alessandro"
+      }
+     ],
+     "number_of_pages": 27,
+     "control_number": 557950,
+     "dois": [
+      {
+       "value": "10.1088/1126-6708/2001/07/012"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0106061"
+      }
+     ],
+     "titles": [
+      {
+       "title": "D instanton probes of non conformal geometries"
+      },
+      {
+       "source": "arXiv",
+       "title": "D-instanton probes of non-conformal geometries."
+      }
+     ],
+     "earliest_date": "2001-06"
+    },
+    "id": "557950"
+   },
+   {
+    "updated": "2023-03-07T01:19:03.759533+00:00",
+    "created": "2011-01-09T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/883720?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/883720?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/883720?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/883720?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/883720?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/883720?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A883720"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "04",
+       "artid": "087",
+       "year": 2011,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213103"
+       },
+       "page_start": "087",
+       "journal_title": "JHEP"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Oh, John J."
+      },
+      {
+       "full_name": "Park, Chanyong"
+      },
+      {
+       "full_name": "Yang, Hyun Seok"
+      }
+     ],
+     "number_of_pages": 37,
+     "control_number": 883720,
+     "dois": [
+      {
+       "value": "10.1007/JHEP04(2011)087"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "1101.1357"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Yang-Mills Instantons from Gravitational Instantons"
+      },
+      {
+       "source": "arXiv",
+       "title": "Yang-Mills Instantons from Gravitational Instantons"
+      }
+     ],
+     "earliest_date": "2011-01"
+    },
+    "id": "883720"
+   },
+   {
+    "updated": "2024-08-28T00:30:04.526729+00:00",
+    "created": "2015-08-28T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1390143?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1390143?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1390143?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1390143?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1390143?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1390143?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1390143"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "12",
+       "artid": "174",
+       "year": 2015,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213103"
+       },
+       "page_start": "174",
+       "journal_title": "JHEP"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Mekareeya, Noppadol"
+      }
+     ],
+     "number_of_pages": 32,
+     "control_number": 1390143,
+     "dois": [
+      {
+       "source": "bibmatch",
+       "value": "10.1007/JHEP12(2015)174"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1007/JHEP12(2015)174"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "1508.06813"
+      }
+     ],
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "The moduli space of instantons on an ALE space from 3d $\\mathcal{N}=4$ field theories"
+      }
+     ],
+     "earliest_date": "2015-08-27"
+    },
+    "id": "1390143"
+   },
+   {
+    "updated": "2023-03-07T00:09:04.705492+00:00",
+    "created": "2004-04-09T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/647862?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/647862?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/647862?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/647862?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/647862?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/647862?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A647862"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "708",
+       "page_end": "450",
+       "year": 2005,
+       "page_start": "434",
+       "journal_title": "Nucl.Phys.B"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Banerjee, Rabin"
+      },
+      {
+       "full_name": "Yang, Hyun Seok"
+      }
+     ],
+     "number_of_pages": 19,
+     "control_number": 647862,
+     "dois": [
+      {
+       "value": "10.1016/j.nuclphysb.2004.12.003"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0404064"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Exact Seiberg-Witten map, induced gravity and topological invariants in noncommutative field theories"
+      },
+      {
+       "source": "arXiv",
+       "title": "Exact Seiberg-Witten map, induced gravity and topological invariants in noncommutative field theories."
+      }
+     ],
+     "earliest_date": "2004-04"
+    },
+    "id": "647862"
+   },
+   {
+    "updated": "2024-08-28T03:28:36.109846+00:00",
+    "created": "2011-05-31T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/902059?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/902059?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/902059?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/902059?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/902059?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/902059?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A902059"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "09",
+       "artid": "015",
+       "year": 2011,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213103"
+       },
+       "page_start": "015",
+       "journal_title": "JHEP"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Kimura, Taro"
+      }
+     ],
+     "number_of_pages": 34,
+     "control_number": 902059,
+     "dois": [
+      {
+       "value": "10.1007/JHEP09(2011)015"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "1105.6091"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Matrix model from N = 2 orbifold partition function"
+      },
+      {
+       "source": "arXiv",
+       "title": "Matrix model from N = 2 orbifold partition function"
+      }
+     ],
+     "earliest_date": "2011-05"
+    },
+    "id": "902059"
+   },
+   {
+    "updated": "2024-08-28T03:30:00.666890+00:00",
+    "created": "2011-08-25T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/925063?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/925063?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/925063?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/925063?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/925063?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/925063?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A925063"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "85",
+       "artid": "046004",
+       "year": 2012,
+       "journal_title": "Phys.Rev.D"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Benini, Francesco"
+      },
+      {
+       "full_name": "Dymarsky, Anatoly"
+      }
+     ],
+     "number_of_pages": 60,
+     "control_number": 925063,
+     "dois": [
+      {
+       "value": "10.1103/PhysRevD.85.046004"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "1108.4931"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Remarks on the ${\\cal N}=1 SU(M+p)\\times SU(p)$ quiver gauge theory with flavor"
+      },
+      {
+       "source": "arXiv",
+       "title": "Comments on the N=1 SU(M+p)xSU(p) quiver gauge theory with flavor"
+      }
+     ],
+     "earliest_date": "2011-08"
+    },
+    "id": "925063"
+   },
+   {
+    "updated": "2026-03-03T10:29:53.825696+00:00",
+    "created": "2025-09-30T04:20:14.124930+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2974402?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2974402?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2974402?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2974402?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2974402?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2974402?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2974402"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "02",
+       "artid": "225",
+       "year": 2026,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213103"
+       },
+       "page_start": "225",
+       "journal_title": "JHEP"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Anber, Mohamed M."
+      }
+     ],
+     "number_of_pages": 65,
+     "control_number": 2974402,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1007/JHEP02(2026)225"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "gr-qc",
+        "hep-ph"
+       ],
+       "value": "2509.22788"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "Gauging the Standard Model 1-form symmetry via gravitational instantons"
+      },
+      {
+       "source": "arXiv",
+       "title": "Gauging the Standard Model 1-form symmetry via gravitational instantons"
+      }
+     ],
+     "earliest_date": "2025-09-26"
+    },
+    "id": "2974402"
+   },
+   {
+    "updated": "2023-03-10T13:41:05.679982+00:00",
+    "created": "1997-12-03T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/451831?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/451831?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/451831?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/451831?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/451831?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/451831?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A451831"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "33",
+       "page_end": "S519",
+       "year": 1998,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213892"
+       },
+       "page_start": "S510",
+       "journal_title": "J.Korean Phys.Soc."
+      },
+      {
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/971274"
+       },
+       "parent_record": {
+        "$ref": "https://inspirehep.net/api/literature/491925"
+       },
+       "cnum": "C97-09-01.10"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Bianchi, Massimo"
+      }
+     ],
+     "number_of_pages": 17,
+     "control_number": 451831,
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/9712020"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Open strings and dualities"
+      },
+      {
+       "source": "arXiv",
+       "title": "Open strings and dualities."
+      }
+     ],
+     "earliest_date": "1997-09"
+    },
+    "id": "451831"
+   },
+   {
+    "updated": "2023-03-06T14:48:13.190576+00:00",
+    "created": "1997-11-11T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/450914?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/450914?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/450914?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/450914?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/450914?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/450914?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A450914"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "523",
+       "page_end": "210",
+       "year": 1998,
+       "page_start": "193",
+       "journal_title": "Nucl.Phys.B"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Bianchi, Massimo"
+      },
+      {
+       "full_name": "Stanev, Yassen S."
+      }
+     ],
+     "number_of_pages": 22,
+     "control_number": 450914,
+     "dois": [
+      {
+       "value": "10.1016/S0550-3213(98)00281-8"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/9711069"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Open strings on the Neveu-Schwarz penta-brane"
+      },
+      {
+       "source": "arXiv",
+       "title": "Open strings on the Neveu-Schwarz pentabrane."
+      },
+      {
+       "source": "arXiv",
+       "title": "Open Strings on the Neveu-Schwarz Pentabrane"
+      }
+     ],
+     "earliest_date": "1997-11"
+    },
+    "id": "450914"
+   },
+   {
+    "updated": "2023-10-03T07:29:29.551850+00:00",
+    "created": "2020-03-24T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1787489?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1787489?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1787489?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1787489?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1787489?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1787489?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1787489"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "07",
+       "artid": "015",
+       "year": 2020,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213103"
+       },
+       "page_start": "015",
+       "journal_title": "JHEP"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Bianchi, Massimo"
+      },
+      {
+       "full_name": "Bufalini, Davide"
+      },
+      {
+       "full_name": "Mancani, Salvo"
+      },
+      {
+       "full_name": "Riccioni, Fabio"
+      }
+     ],
+     "number_of_pages": 59,
+     "control_number": 1787489,
+     "dois": [
+      {
+       "source": "bibmatch",
+       "value": "10.1007/JHEP07(2020)015"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1007/JHEP07(2020)015"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "2003.09620"
+      }
+     ],
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Mass deformations of unoriented quiver theories"
+      },
+      {
+       "source": "arXiv",
+       "title": "Mass Deformations of Unoriented Quiver Theories"
+      }
+     ],
+     "earliest_date": "2020-03-21"
+    },
+    "id": "1787489"
+   },
+   {
+    "updated": "2025-06-06T09:12:58.802228+00:00",
+    "created": "2007-09-27T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/762310?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/762310?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/762310?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/762310?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/762310?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/762310?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A762310"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "02",
+       "artid": "106",
+       "year": 2008,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213103"
+       },
+       "page_start": "106",
+       "journal_title": "JHEP"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Dijkgraaf, Robbert"
+      },
+      {
+       "full_name": "Hollands, Lotte"
+      },
+      {
+       "full_name": "Sulkowski, Piotr"
+      },
+      {
+       "full_name": "Vafa, Cumrun"
+      }
+     ],
+     "number_of_pages": 67,
+     "control_number": 762310,
+     "dois": [
+      {
+       "value": "10.1088/1126-6708/2008/02/106"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "0709.4446"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Supersymmetric gauge theories, intersecting branes and free fermions"
+      },
+      {
+       "source": "arXiv",
+       "title": "Supersymmetric Gauge Theories, Intersecting Branes and Free Fermions"
+      }
+     ],
+     "earliest_date": "2007-09"
+    },
+    "id": "762310"
+   },
+   {
+    "updated": "2024-08-28T02:41:28.261444+00:00",
+    "created": "1997-11-12T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/450955?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/450955?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/450955?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/450955?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/450955?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/450955?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A450955"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "521",
+       "page_end": "116",
+       "year": 1998,
+       "page_start": "71",
+       "journal_title": "Nucl.Phys.B"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Johnson, Clifford V."
+      }
+     ],
+     "number_of_pages": 55,
+     "control_number": 450955,
+     "dois": [
+      {
+       "value": "10.1016/S0550-3213(98)00129-1"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/9711082"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Anatomy of a duality"
+      },
+      {
+       "source": "arXiv",
+       "title": "Anatomy of a duality."
+      }
+     ],
+     "earliest_date": "1997-11"
+    },
+    "id": "450955"
+   },
+   {
+    "updated": "2023-10-03T08:50:47.826045+00:00",
+    "created": "2020-01-03T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1773862?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1773862?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1773862?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1773862?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1773862?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1773862?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1773862"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "101",
+       "pubinfo_freetext": "Phys. Rev. D 101, 106008 (2020)",
+       "artid": "106008",
+       "material": "publication",
+       "year": 2020,
+       "journal_issue": "10",
+       "journal_title": "Phys.Rev.D"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Apruzzi, Fabio"
+      },
+      {
+       "full_name": "Giacomelli, Simone"
+      },
+      {
+       "full_name": "Sch\u00e4fer-Nameki, Sakura"
+      }
+     ],
+     "number_of_pages": 19,
+     "control_number": 1773862,
+     "dois": [
+      {
+       "value": "10.1103/PhysRevD.101.106008"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1103/PhysRevD.101.106008"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "2001.00533"
+      }
+     ],
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "4d $\\mathcal{N}=2$ S-folds"
+      },
+      {
+       "source": "APS",
+       "title": "4d $\\mathcal{N}=2$ S-folds"
+      }
+     ],
+     "earliest_date": "2020-01-02"
+    },
+    "id": "1773862"
+   },
+   {
+    "updated": "2024-08-28T01:20:17.122921+00:00",
+    "created": "2020-07-13T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1806449?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1806449?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1806449?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1806449?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1806449?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1806449?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1806449"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "09",
+       "artid": "161",
+       "year": 2020,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213103"
+       },
+       "page_start": "161",
+       "journal_title": "JHEP"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Beratto, Emanuele"
+      },
+      {
+       "full_name": "Giacomelli, Simone"
+      },
+      {
+       "full_name": "Mekareeya, Noppadol"
+      },
+      {
+       "full_name": "Sacchi, Matteo"
+      }
+     ],
+     "number_of_pages": 53,
+     "control_number": 1806449,
+     "dois": [
+      {
+       "source": "bibmatch",
+       "value": "10.1007/JHEP09(2020)161"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1007/JHEP09(2020)161"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "2007.05019"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "3d mirrors of the circle reduction of twisted A$_{2N}$ theories of class S"
+      },
+      {
+       "source": "arXiv",
+       "title": "3d mirrors of the circle reduction of twisted $A_{2N}$ theories of class $\\mathsf{S}$"
+      }
+     ],
+     "earliest_date": "2020-07-20"
+    },
+    "id": "1806449"
+   },
+   {
+    "updated": "2023-03-06T17:00:16.323553+00:00",
+    "created": "2022-08-19T07:02:52.151747+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2139052?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2139052?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2139052?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2139052?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2139052?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2139052?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2139052"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "year": 2022
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Mancani, Salvatore Innocenzo"
+      }
+     ],
+     "number_of_pages": 152,
+     "control_number": 2139052,
+     "titles": [
+      {
+       "source": "Rome U.",
+       "title": "Unoriented dualities in mass deformed toric gauge theories"
+      }
+     ],
+     "earliest_date": "2022-05-20"
+    },
+    "id": "2139052"
+   },
+   {
+    "updated": "2023-03-06T16:48:24.629324+00:00",
+    "created": "2009-07-09T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/825256?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/825256?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/825256?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/825256?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/825256?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/825256?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A825256"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/979584"
+       },
+       "cnum": "C08-08-25.10"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Radu, Eugen"
+      },
+      {
+       "full_name": "Tchrakian, D.H."
+      }
+     ],
+     "number_of_pages": 21,
+     "control_number": 825256,
+     "titles": [
+      {
+       "title": "Gravitating Yang-Mills fields in all dimensions"
+      },
+      {
+       "source": "arXiv",
+       "title": "Gravitating Yang--Mills fields in all dimensions"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "gr-qc"
+       ],
+       "value": "0907.1452"
+      }
+     ],
+     "earliest_date": "2009-07"
+    },
+    "id": "825256"
+   },
+   {
+    "updated": "2024-08-28T00:21:39.224162+00:00",
+    "created": "2014-08-29T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1312877?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1312877?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1312877?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1312877?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1312877?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1312877?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1312877"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Karndumri, Parinya"
+      }
+     ],
+     "number_of_pages": 199,
+     "control_number": 1312877,
+     "titles": [
+      {
+       "title": "On Holographic RG Flows"
+      }
+     ],
+     "earliest_date": "2011-09"
+    },
+    "id": "1312877"
+   },
+   {
+    "updated": "2025-07-17T14:47:45.661062+00:00",
+    "created": "2020-02-27T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1782467?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1782467?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1782467?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1782467?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1782467?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1782467?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1782467"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Poretschkin, Maximilian"
+      }
+     ],
+     "number_of_pages": 227,
+     "control_number": 1782467,
+     "titles": [
+      {
+       "title": "Calculating Corrections in F-Theory from Refined BPS Invariants and Backreacted Geometries"
+      }
+     ],
+     "earliest_date": "2015"
+    },
+    "id": "1782467"
+   },
+   {
+    "updated": "2024-10-06T23:42:55.015369+00:00",
+    "created": "2023-03-13T06:54:30.834707+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2640823?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2640823?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2640823?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2640823?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2640823?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2640823?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2640823"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "year": 2023
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Beratto, Emanuele"
+      }
+     ],
+     "number_of_pages": 249,
+     "control_number": 2640823,
+     "titles": [
+      {
+       "source": "UNITesi",
+       "title": "Infrared properties of three dimensional gauge theories via supersymmetric indices"
+      },
+      {
+       "source": "Milan Bicocca U.",
+       "title": "Infrared properties of three dimensional gauge theories via supersymmetric indices"
+      }
+     ],
+     "earliest_date": "2023-01-24"
+    },
+    "id": "2640823"
+   },
+   {
+    "updated": "2024-09-02T11:25:40.804251+00:00",
+    "created": "2003-04-01T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/616133?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/616133?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/616133?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/616133?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/616133?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/616133?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A616133"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Hamanaka, Masashi"
+      }
+     ],
+     "number_of_pages": 117,
+     "control_number": 616133,
+     "titles": [
+      {
+       "title": "Noncommutative solitons and D-branes"
+      },
+      {
+       "source": "arXiv",
+       "title": "Noncommutative solitons and D-branes."
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0303256"
+      }
+     ],
+     "earliest_date": "2003-04"
+    },
+    "id": "616133"
+   },
+   {
+    "updated": "2023-03-06T23:29:17.358266+00:00",
+    "created": "2014-07-11T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1305650?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1305650?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1305650?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1305650?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1305650?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1305650?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1305650"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "12",
+       "artid": "089",
+       "year": 2014,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213103"
+       },
+       "page_start": "089",
+       "journal_title": "JHEP"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Addazi, Andrea"
+      },
+      {
+       "full_name": "Bianchi, Massimo"
+      }
+     ],
+     "number_of_pages": 35,
+     "control_number": 1305650,
+     "dois": [
+      {
+       "source": "bibmatch",
+       "value": "10.1007/JHEP12(2014)089"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-ph",
+        "hep-th"
+       ],
+       "value": "1407.2897"
+      }
+     ],
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Neutron Majorana mass from exotic instantons"
+      }
+     ],
+     "earliest_date": "2014-07-10"
+    },
+    "id": "1305650"
+   },
+   {
+    "updated": "2025-07-18T17:19:12.180760+00:00",
+    "created": "2009-11-18T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/837219?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/837219?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/837219?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/837219?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/837219?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/837219?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A837219"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Hollands, Lotte"
+      }
+     ],
+     "number_of_pages": 308,
+     "control_number": 837219,
+     "titles": [
+      {
+       "title": "Topological Strings and Quantum Curves"
+      },
+      {
+       "source": "arXiv",
+       "title": "Topological Strings and Quantum Curves"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "0911.3413"
+      }
+     ],
+     "earliest_date": "2009-09-03"
+    },
+    "id": "837219"
+   },
+   {
+    "updated": "2024-08-28T02:54:35.901443+00:00",
+    "created": "2002-09-30T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/598130?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/598130?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/598130?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/598130?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/598130?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/598130?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A598130"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "He, Yang-Hui"
+      }
+     ],
+     "number_of_pages": 513,
+     "control_number": 598130,
+     "titles": [
+      {
+       "title": "On algebraic singularities, finite graphs and D-brane gauge theories: A String theoretic perspective"
+      },
+      {
+       "source": "arXiv",
+       "title": "On algebraic singularities, finite graphs and D-brane gauge theories: A string theoretic perspective."
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0209230"
+      }
+     ],
+     "earliest_date": "2002-09"
+    },
+    "id": "598130"
+   },
+   {
+    "updated": "2023-03-07T01:39:18.940239+00:00",
+    "created": "2007-03-15T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/746578?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/746578?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/746578?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/746578?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/746578?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/746578?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A746578"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "737",
+       "page_end": "470",
+       "year": 2008,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212738"
+       },
+       "page_start": "303",
+       "journal_title": "Lect.Notes Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Bianchi, Massimo"
+      },
+      {
+       "full_name": "Kovacs, Stefano"
+      },
+      {
+       "full_name": "Rossi, Giancarlo"
+      }
+     ],
+     "number_of_pages": 170,
+     "control_number": 746578,
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0703142"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Instantons and Supersymmetry"
+      },
+      {
+       "source": "arXiv",
+       "title": "Instantons and supersymmetry."
+      }
+     ],
+     "earliest_date": "2007-03"
+    },
+    "id": "746578"
+   }
+  ],
+  "total": 61
+ },
+ "links": {
+  "self": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A415625&size=1000&page=1&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages",
+  "bibtex": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A415625&size=1000&page=1&format=bibtex",
+  "latex-eu": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A415625&size=1000&page=1&format=latex-eu",
+  "latex-us": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A415625&size=1000&page=1&format=latex-us",
+  "json": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A415625&size=1000&page=1&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages&format=json",
+  "json-expanded": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A415625&size=1000&page=1&format=json-expanded",
+  "cv": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A415625&size=1000&page=1&format=cv"
+ }
+}

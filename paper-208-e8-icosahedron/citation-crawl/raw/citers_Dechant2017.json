@@ -1,0 +1,391 @@
+{
+ "hits": {
+  "hits": [
+   {
+    "updated": "2023-10-03T07:37:31.345374+00:00",
+    "created": "2021-03-16T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1851687?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1851687?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1851687?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1851687?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1851687?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1851687?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1851687"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "31",
+       "pubinfo_freetext": "Adv. Appl. Clifford Algebras 31, 57 (2021)",
+       "artid": "57",
+       "material": "publication",
+       "year": 2021,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212855"
+       },
+       "page_start": "57",
+       "journal_issue": "3",
+       "journal_title": "Adv.Appl.Clifford Algebras"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Dechant, Pierre-Philippe"
+      }
+     ],
+     "number_of_pages": 32,
+     "control_number": 1851687,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1007/s00006-021-01139-2"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1007/s00006-021-01139-2"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "math.GR",
+        "hep-th",
+        "math-ph",
+        "math.MP"
+       ],
+       "value": "2103.07817"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "Clifford Spinors and Root System Induction: $H_4$ and the Grand Antiprism"
+      },
+      {
+       "source": "arXiv",
+       "title": "Clifford spinors and root system induction: $H_4$ and the Grand Antiprism"
+      }
+     ],
+     "earliest_date": "2021-03-13"
+    },
+    "id": "1851687"
+   },
+   {
+    "updated": "2023-03-10T14:49:35.574201+00:00",
+    "created": "2022-04-13T05:49:18.831236+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2066247?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2066247?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2066247?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2066247?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2066247?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2066247?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2066247"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Dechant, Pierre-Philippe"
+      }
+     ],
+     "number_of_pages": 22,
+     "control_number": 2066247,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Root systems & Clifford algebras: from symmetries of viruses to $E_8$& ADE correspondences"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "math-ph",
+        "math.GR",
+        "math.MP",
+        "math.QA",
+        "q-bio.BM"
+       ],
+       "value": "2204.05718"
+      }
+     ],
+     "earliest_date": "2022-04-12"
+    },
+    "id": "2066247"
+   },
+   {
+    "updated": "2023-10-03T07:39:11.358501+00:00",
+    "created": "2018-12-10T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1707613?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1707613?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1707613?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1707613?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1707613?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1707613?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1707613"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "474",
+       "artid": "20180034",
+       "year": 2018,
+       "journal_issue": "2220",
+       "journal_title": "Proc.Roy.Soc.Lond.A"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Dechant, Pierre-Philippe"
+      }
+     ],
+     "number_of_pages": 25,
+     "control_number": 1707613,
+     "dois": [
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1098/rspa.2018.0034"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "math-ph",
+        "hep-th",
+        "math.GR",
+        "math.MP",
+        "math.RT"
+       ],
+       "value": "1812.02804"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Royal Society",
+       "title": "From the Trinity $(A_3, B_3, H_3)$ to an ADE correspondence"
+      }
+     ],
+     "earliest_date": "2018-12-05"
+    },
+    "id": "1707613"
+   },
+   {
+    "updated": "2025-07-11T18:30:09.011619+00:00",
+    "created": "2022-02-17T06:37:58.659163+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2033853?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2033853?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2033853?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2033853?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2033853?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2033853?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2033853"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "32",
+       "artid": "17",
+       "year": 2022,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212855"
+       },
+       "page_start": "17",
+       "journal_issue": "2",
+       "journal_title": "Adv.Appl.Clifford Algebras"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Breuils, Stephane"
+      },
+      {
+       "full_name": "Tachibana, Kanta"
+      },
+      {
+       "full_name": "Hitzer, Eckhard"
+      }
+     ],
+     "control_number": 2033853,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1007/s00006-021-01196-7"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "New Applications of Clifford\u2019s Geometric Algebra"
+      }
+     ],
+     "earliest_date": "2022-02-14"
+    },
+    "id": "2033853"
+   },
+   {
+    "updated": "2026-03-02T23:44:59.605055+00:00",
+    "created": "2023-10-03T02:43:20.146255+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2705182?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2705182?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2705182?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2705182?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2705182?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2705182?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2705182"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "34",
+       "artid": "20",
+       "year": 2024,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212855"
+       },
+       "page_start": "20",
+       "journal_issue": "3",
+       "journal_title": "Adv.Appl.Clifford Algebras"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Chen, Siqi"
+      },
+      {
+       "full_name": "Dechant, Pierre-Philippe"
+      },
+      {
+       "full_name": "He, Yang-Hui"
+      },
+      {
+       "full_name": "Heyes, Elli"
+      },
+      {
+       "full_name": "Hirst, Edward"
+      },
+      {
+       "full_name": "Riabchenko, Dmitrii"
+      }
+     ],
+     "number_of_pages": 34,
+     "control_number": 2705182,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1007/s00006-024-01325-y"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1007/s00006-024-01325-y"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "cs.LG",
+        "hep-th",
+        "math-ph",
+        "math.GR",
+        "math.MP",
+        "math.RT"
+       ],
+       "value": "2310.00041"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "Machine Learning Clifford Invariants of ADE Coxeter Elements"
+      },
+      {
+       "source": "arXiv",
+       "title": "Machine Learning Clifford invariants of ADE Coxeter elements"
+      }
+     ],
+     "earliest_date": "2023-09-29"
+    },
+    "id": "2705182"
+   },
+   {
+    "updated": "2026-01-12T20:19:56.819796+00:00",
+    "created": "2026-01-12T20:19:56.363186+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/3102674?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/3102674?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/3102674?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/3102674?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/3102674?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/3102674?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A3102674"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Riabchenko, Dmitrii"
+      }
+     ],
+     "control_number": 3102674,
+     "titles": [
+      {
+       "source": "submitter",
+       "title": "AdS/CFT Integrability and Machine Learning Combinatorial Structures"
+      }
+     ],
+     "earliest_date": "2025"
+    },
+    "id": "3102674"
+   },
+   {
+    "updated": "2026-02-13T16:05:31.140229+00:00",
+    "created": "2026-02-13T16:05:23.016902+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/3119814?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/3119814?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/3119814?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/3119814?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/3119814?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/3119814?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A3119814"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "year": 2025
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Riabchenko, D."
+      }
+     ],
+     "number_of_pages": 157,
+     "control_number": 3119814,
+     "titles": [
+      {
+       "source": "London, City U.",
+       "title": "AdS/CFT Integrability and Machine Learning Combinatorial Structures"
+      }
+     ],
+     "earliest_date": "2025-08"
+    },
+    "id": "3119814"
+   }
+  ],
+  "total": 7
+ },
+ "links": {
+  "self": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1427769&size=200&page=1&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages",
+  "bibtex": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1427769&size=200&page=1&format=bibtex",
+  "latex-eu": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1427769&size=200&page=1&format=latex-eu",
+  "latex-us": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1427769&size=200&page=1&format=latex-us",
+  "json": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1427769&size=200&page=1&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages&format=json",
+  "json-expanded": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1427769&size=200&page=1&format=json-expanded",
+  "cv": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1427769&size=200&page=1&format=cv"
+ }
+}

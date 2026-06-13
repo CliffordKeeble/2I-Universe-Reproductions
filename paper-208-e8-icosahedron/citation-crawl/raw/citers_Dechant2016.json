@@ -1,0 +1,395 @@
+{
+ "hits": {
+  "hits": [
+   {
+    "updated": "2025-04-10T10:06:14.225563+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2718815?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2718815?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2718815?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2718815?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2718815?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2718815?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2718815"
+    },
+    "created": "2023-11-06T02:36:05.795265+00:00",
+    "id": "2718815",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Moxness, J.G."
+      }
+     ],
+     "control_number": 2718815,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "The Isomorphism of $H_4$ and $E_8$"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "math.GR",
+        "hep-th"
+       ],
+       "value": "2311.01486"
+      }
+     ],
+     "earliest_date": "2023-11-02"
+    }
+   },
+   {
+    "updated": "2023-03-09T18:44:53.713024+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1427769?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1427769?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1427769?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1427769?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1427769?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1427769?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1427769"
+    },
+    "created": "2016-03-16T00:00:00+00:00",
+    "id": "1427769",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Dechant, Pierre-Philippe"
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "27",
+       "page_end": "421",
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/1516252"
+       },
+       "year": 2017,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212855"
+       },
+       "page_start": "397",
+       "journal_issue": "1",
+       "journal_title": "Adv.Appl.Clifford Algebras",
+       "parent_record": {
+        "$ref": "https://inspirehep.net/api/literature/1516267"
+       },
+       "cnum": "C15-07-29.1"
+      }
+     ],
+     "number_of_pages": 25,
+     "control_number": 1427769,
+     "dois": [
+      {
+       "value": "10.1007/s00006-016-0675-9"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "math.RT",
+        "hep-th",
+        "math-ph",
+        "math.GR",
+        "math.MP",
+        "math.QA"
+       ],
+       "value": "1603.04805"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "The E$_{8}$ Geometry from a Clifford Perspective"
+      },
+      {
+       "source": "arXiv",
+       "title": "The $E_8$ geometry from a Clifford perspective"
+      }
+     ],
+     "earliest_date": "2016-02-18"
+    }
+   },
+   {
+    "updated": "2023-06-26T13:45:40.575039+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1514749?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1514749?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1514749?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1514749?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1514749?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1514749?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1514749"
+    },
+    "created": "2017-02-23T00:00:00+00:00",
+    "id": "1514749",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Sen, Amrik"
+      },
+      {
+       "full_name": "Aschheim, Raymond"
+      },
+      {
+       "full_name": "Irwin, Klee"
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "5",
+       "artid": "29",
+       "year": 2017,
+       "page_start": "29",
+       "journal_issue": "2",
+       "journal_title": "Mathematics"
+      }
+     ],
+     "number_of_pages": 21,
+     "control_number": 1514749,
+     "dois": [
+      {
+       "source": "bibmatch",
+       "value": "10.3390/math5020029"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "physics.gen-ph",
+        "hep-th"
+       ],
+       "value": "1702.06824"
+      }
+     ],
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Emergence of an aperiodic Dirichlet space from the tetrahedral units of an icosahedral internal space"
+      }
+     ],
+     "earliest_date": "2017-02-20"
+    }
+   },
+   {
+    "updated": "2023-10-03T07:39:11.358501+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1707613?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1707613?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1707613?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1707613?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1707613?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1707613?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1707613"
+    },
+    "created": "2018-12-10T00:00:00+00:00",
+    "id": "1707613",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Dechant, Pierre-Philippe"
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "474",
+       "artid": "20180034",
+       "year": 2018,
+       "journal_issue": "2220",
+       "journal_title": "Proc.Roy.Soc.Lond.A"
+      }
+     ],
+     "number_of_pages": 25,
+     "control_number": 1707613,
+     "dois": [
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1098/rspa.2018.0034"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "math-ph",
+        "hep-th",
+        "math.GR",
+        "math.MP",
+        "math.RT"
+       ],
+       "value": "1812.02804"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Royal Society",
+       "title": "From the Trinity $(A_3, B_3, H_3)$ to an ADE correspondence"
+      }
+     ],
+     "earliest_date": "2018-12-05"
+    }
+   },
+   {
+    "updated": "2026-03-02T23:44:59.605055+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2705182?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2705182?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2705182?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2705182?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2705182?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2705182?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2705182"
+    },
+    "created": "2023-10-03T02:43:20.146255+00:00",
+    "id": "2705182",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Chen, Siqi"
+      },
+      {
+       "full_name": "Dechant, Pierre-Philippe"
+      },
+      {
+       "full_name": "He, Yang-Hui"
+      },
+      {
+       "full_name": "Heyes, Elli"
+      },
+      {
+       "full_name": "Hirst, Edward"
+      },
+      {
+       "full_name": "Riabchenko, Dmitrii"
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "34",
+       "artid": "20",
+       "year": 2024,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212855"
+       },
+       "page_start": "20",
+       "journal_issue": "3",
+       "journal_title": "Adv.Appl.Clifford Algebras"
+      }
+     ],
+     "number_of_pages": 34,
+     "control_number": 2705182,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1007/s00006-024-01325-y"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1007/s00006-024-01325-y"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "cs.LG",
+        "hep-th",
+        "math-ph",
+        "math.GR",
+        "math.MP",
+        "math.RT"
+       ],
+       "value": "2310.00041"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "Machine Learning Clifford Invariants of ADE Coxeter Elements"
+      },
+      {
+       "source": "arXiv",
+       "title": "Machine Learning Clifford invariants of ADE Coxeter elements"
+      }
+     ],
+     "earliest_date": "2023-09-29"
+    }
+   },
+   {
+    "updated": "2026-01-12T20:19:56.819796+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/3102674?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/3102674?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/3102674?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/3102674?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/3102674?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/3102674?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A3102674"
+    },
+    "created": "2026-01-12T20:19:56.363186+00:00",
+    "id": "3102674",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Riabchenko, Dmitrii"
+      }
+     ],
+     "control_number": 3102674,
+     "titles": [
+      {
+       "source": "submitter",
+       "title": "AdS/CFT Integrability and Machine Learning Combinatorial Structures"
+      }
+     ],
+     "earliest_date": "2025"
+    }
+   },
+   {
+    "updated": "2026-02-13T16:05:31.140229+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/3119814?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/3119814?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/3119814?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/3119814?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/3119814?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/3119814?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A3119814"
+    },
+    "created": "2026-02-13T16:05:23.016902+00:00",
+    "id": "3119814",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Riabchenko, D."
+      }
+     ],
+     "publication_info": [
+      {
+       "year": 2025
+      }
+     ],
+     "number_of_pages": 157,
+     "control_number": 3119814,
+     "titles": [
+      {
+       "source": "London, City U.",
+       "title": "AdS/CFT Integrability and Machine Learning Combinatorial Structures"
+      }
+     ],
+     "earliest_date": "2025-08"
+    }
+   }
+  ],
+  "total": 7
+ },
+ "links": {
+  "self": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1422619&size=200&page=1&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages",
+  "bibtex": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1422619&size=200&page=1&format=bibtex",
+  "latex-eu": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1422619&size=200&page=1&format=latex-eu",
+  "latex-us": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1422619&size=200&page=1&format=latex-us",
+  "json": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1422619&size=200&page=1&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages&format=json",
+  "json-expanded": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1422619&size=200&page=1&format=json-expanded",
+  "cv": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1422619&size=200&page=1&format=cv"
+ }
+}

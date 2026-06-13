@@ -1,0 +1,73 @@
+{
+ "hits": {
+  "hits": [
+   {
+    "id": "396016",
+    "updated": "2023-03-07T01:21:18.338924+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/396016?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/396016?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/396016?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/396016?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/396016?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/396016?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A396016"
+    },
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "52",
+       "page_end": "7173",
+       "year": 1995,
+       "page_start": "7168",
+       "journal_title": "Phys.Rev.D"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Chaudhuri, Shyamoli"
+      },
+      {
+       "full_name": "Polchinski, Joseph"
+      }
+     ],
+     "number_of_pages": 13,
+     "control_number": 396016,
+     "dois": [
+      {
+       "value": "10.1103/PhysRevD.52.7168"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/9506048"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Moduli space of CHL strings"
+      },
+      {
+       "title": "Chaudhuri-Hockney-Lykken"
+      }
+     ],
+     "earliest_date": "1995-06"
+    },
+    "created": "1995-06-13T00:00:00+00:00"
+   }
+  ],
+  "total": 1
+ },
+ "links": {
+  "self": "https://inspirehep.net/api/literature/?q=arxiv%3Ahep-th%2F9506048&size=3&page=1&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages",
+  "bibtex": "https://inspirehep.net/api/literature/?q=arxiv%3Ahep-th%2F9506048&size=3&page=1&format=bibtex",
+  "latex-eu": "https://inspirehep.net/api/literature/?q=arxiv%3Ahep-th%2F9506048&size=3&page=1&format=latex-eu",
+  "latex-us": "https://inspirehep.net/api/literature/?q=arxiv%3Ahep-th%2F9506048&size=3&page=1&format=latex-us",
+  "json": "https://inspirehep.net/api/literature/?q=arxiv%3Ahep-th%2F9506048&size=3&page=1&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages&format=json",
+  "json-expanded": "https://inspirehep.net/api/literature/?q=arxiv%3Ahep-th%2F9506048&size=3&page=1&format=json-expanded",
+  "cv": "https://inspirehep.net/api/literature/?q=arxiv%3Ahep-th%2F9506048&size=3&page=1&format=cv"
+ }
+}

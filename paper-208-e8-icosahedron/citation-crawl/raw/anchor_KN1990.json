@@ -1,0 +1,183 @@
+{
+ "hits": {
+  "hits": [
+   {
+    "created": "1996-01-31T00:00:00+00:00",
+    "updated": "2024-08-28T02:38:31.016187+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/415625?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/415625?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/415625?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/415625?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/415625?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/415625?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A415625"
+    },
+    "id": "415625",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "473",
+       "page_end": "404",
+       "year": 1996,
+       "page_start": "367",
+       "journal_title": "Nucl.Phys.B"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Bianchi, Massimo"
+      },
+      {
+       "full_name": "Fucito, Francesco"
+      },
+      {
+       "full_name": "Rossi, Giancarlo"
+      },
+      {
+       "full_name": "Martellini, Maurizio"
+      }
+     ],
+     "number_of_pages": 59,
+     "control_number": 415625,
+     "dois": [
+      {
+       "value": "10.1016/0550-3213(96)00240-4"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/9601162"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Explicit construction of Yang-Mills instantons on ALE spaces"
+      },
+      {
+       "title": "asymptotically locally Euclidean"
+      },
+      {
+       "source": "arXiv",
+       "title": "Explicit Construction of Yang-Mills Instantons on ALE Spaces"
+      }
+     ],
+     "earliest_date": "1996-01"
+    }
+   },
+   {
+    "created": "2024-08-27T17:44:25.399964+00:00",
+    "updated": "2024-09-17T08:32:18.107670+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2822050?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2822050?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2822050?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2822050?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2822050?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2822050?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2822050"
+    },
+    "id": "2822050",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "288",
+       "page_end": "307",
+       "year": 1990,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214592"
+       },
+       "page_start": "263",
+       "journal_issue": "1",
+       "journal_title": "Math.Ann."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Peter B. Kronheimer"
+      },
+      {
+       "full_name": "Nakajima, Hiraku"
+      }
+     ],
+     "number_of_pages": 45,
+     "control_number": 2822050,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1007/BF01444534"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "Yang-Mills instantons on ALE gravitational instantons"
+      }
+     ],
+     "earliest_date": "1990-12-01"
+    }
+   },
+   {
+    "created": "1996-03-26T00:00:00+00:00",
+    "updated": "2025-07-15T14:26:39.038550+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/417064?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/417064?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/417064?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/417064?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/417064?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/417064?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A417064"
+    },
+    "id": "417064",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Douglas, Michael R."
+      },
+      {
+       "full_name": "Moore, Gregory W."
+      }
+     ],
+     "number_of_pages": 50,
+     "control_number": 417064,
+     "titles": [
+      {
+       "title": "D-branes, quivers, and ALE instantons"
+      },
+      {
+       "title": "asymptotically locally Euclidean"
+      },
+      {
+       "source": "arXiv",
+       "title": "D-branes, Quivers, and ALE Instantons"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/9603167"
+      }
+     ],
+     "earliest_date": "1996-03"
+    }
+   }
+  ],
+  "total": 4
+ },
+ "links": {
+  "self": "https://inspirehep.net/api/literature/?q=Kronheimer%20Nakajima%20Yang-Mills%20instantons%20ALE&size=3&page=1&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages",
+  "next": "https://inspirehep.net/api/literature/?q=Kronheimer%20Nakajima%20Yang-Mills%20instantons%20ALE&size=3&page=2&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages",
+  "bibtex": "https://inspirehep.net/api/literature/?q=Kronheimer%20Nakajima%20Yang-Mills%20instantons%20ALE&size=3&page=1&format=bibtex",
+  "latex-eu": "https://inspirehep.net/api/literature/?q=Kronheimer%20Nakajima%20Yang-Mills%20instantons%20ALE&size=3&page=1&format=latex-eu",
+  "latex-us": "https://inspirehep.net/api/literature/?q=Kronheimer%20Nakajima%20Yang-Mills%20instantons%20ALE&size=3&page=1&format=latex-us",
+  "json": "https://inspirehep.net/api/literature/?q=Kronheimer%20Nakajima%20Yang-Mills%20instantons%20ALE&size=3&page=1&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages&format=json",
+  "json-expanded": "https://inspirehep.net/api/literature/?q=Kronheimer%20Nakajima%20Yang-Mills%20instantons%20ALE&size=3&page=1&format=json-expanded",
+  "cv": "https://inspirehep.net/api/literature/?q=Kronheimer%20Nakajima%20Yang-Mills%20instantons%20ALE&size=3&page=1&format=cv"
+ }
+}

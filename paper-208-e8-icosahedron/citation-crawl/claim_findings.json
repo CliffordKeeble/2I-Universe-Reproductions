@@ -1,0 +1,88 @@
+{
+  "recids": {
+    "Dechant2016": 1422619,
+    "Dechant2017": 1427769,
+    "CHL1995": 396016,
+    "KN1990": 415625
+  },
+  "side_anchors": {
+    "KN_ALE": [
+      415625
+    ],
+    "heterotic_E8": [
+      213013,
+      207031
+    ],
+    "twin_Higgs": [
+      685922,
+      699848
+    ],
+    "emergent_E8": [
+      842444
+    ],
+    "EJA_octonion": [
+      2095962,
+      2667356,
+      1658866,
+      555166
+    ]
+  },
+  "n_citers_union": 10,
+  "community_hist": {
+    "P": 8,
+    "_": 2
+  },
+  "claim_34_intersection": [],
+  "claim_44_intersection": [],
+  "claim_46_intersection": [
+    [
+      2876584,
+      "Exceptional Periodicity and Magic Star algebras",
+      ""
+    ]
+  ],
+  "claim_48_physcat_citers": [
+    [
+      1427769,
+      "1603.04805",
+      "math.RT",
+      "The E$_{8}$ Geometry from a Clifford Perspective",
+      "P"
+    ],
+    [
+      1514749,
+      "1702.06824",
+      "physics.gen-ph",
+      "Emergence of an aperiodic Dirichlet space from the tetrahedral units of an icosahedral internal space",
+      "P"
+    ],
+    [
+      1707613,
+      "1812.02804",
+      "math-ph",
+      "From the Trinity $(A_3, B_3, H_3)$ to an ADE correspondence",
+      "P"
+    ],
+    [
+      1851687,
+      "2103.07817",
+      "math.GR",
+      "Clifford Spinors and Root System Induction: $H_4$ and the Grand Antiprism",
+      "P"
+    ],
+    [
+      2705182,
+      "2310.00041",
+      "cs.LG",
+      "Machine Learning Clifford Invariants of ADE Coxeter Elements",
+      "P"
+    ],
+    [
+      2718815,
+      "2311.01486",
+      "math.GR",
+      "The Isomorphism of $H_4$ and $E_8$",
+      "P"
+    ]
+  ]
+}

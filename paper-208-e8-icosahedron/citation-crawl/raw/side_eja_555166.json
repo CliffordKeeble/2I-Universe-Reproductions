@@ -1,0 +1,2738 @@
+{
+ "hits": {
+  "hits": [
+   {
+    "created": "2005-03-02T00:00:00+00:00",
+    "updated": "2023-03-10T07:40:59.343581+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/677644?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/677644?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/677644?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/677644?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/677644?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/677644?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A677644"
+    },
+    "id": "677644",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Rios, Michael"
+      }
+     ],
+     "number_of_pages": 6,
+     "control_number": 677644,
+     "titles": [
+      {
+       "title": "Grassmann variables in Jordan matrix models"
+      },
+      {
+       "source": "arXiv",
+       "title": "Grassmann variables in Jordan matrix models."
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0503017"
+      }
+     ],
+     "earliest_date": "2005-03"
+    }
+   },
+   {
+    "created": "2018-11-29T00:00:00+00:00",
+    "updated": "2023-03-06T14:08:59.058177+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1705665?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1705665?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1705665?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1705665?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1705665?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1705665?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1705665"
+    },
+    "id": "1705665",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "1194",
+       "artid": "012106",
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/1704251"
+       },
+       "year": 2019,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212279"
+       },
+       "journal_issue": "1",
+       "journal_title": "J.Phys.Conf.Ser.",
+       "parent_record": {
+        "$ref": "https://inspirehep.net/api/literature/1732444"
+       },
+       "cnum": "C18-07-09.9"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Truini, Piero"
+      },
+      {
+       "full_name": "Marrani, Alessio"
+      },
+      {
+       "full_name": "Rios, Michael"
+      }
+     ],
+     "number_of_pages": 10,
+     "control_number": 1705665,
+     "dois": [
+      {
+       "source": "bibmatch",
+       "value": "10.1088/1742-6596/1194/1/012106"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1088/1742-6596/1194/1/012106"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "math-ph",
+        "math.MP",
+        "math.RA",
+        "math.RT"
+       ],
+       "value": "1811.11202"
+      }
+     ],
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Magic Star and Exceptional Periodicity: an approach to Quantum Gravity"
+      }
+     ],
+     "earliest_date": "2018-11-27"
+    }
+   },
+   {
+    "created": "2005-10-31T00:00:00+00:00",
+    "updated": "2023-03-06T13:55:44.861529+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/696473?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/696473?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/696473?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/696473?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/696473?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/696473?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A696473"
+    },
+    "id": "696473",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "115",
+       "page_end": "659",
+       "year": 2006,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214441"
+       },
+       "page_start": "625",
+       "journal_title": "Prog.Theor.Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Ohwashi, Yuhi"
+      }
+     ],
+     "number_of_pages": 41,
+     "control_number": 696473,
+     "dois": [
+      {
+       "value": "10.1143/PTP.115.625"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0510252"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Sp(4,H) / Z(2) pair universe in E(6) matrix models"
+      },
+      {
+       "source": "arXiv",
+       "title": "Sp(4,H)/Z(2) pair universe in E(6) matrix models."
+      }
+     ],
+     "earliest_date": "2005-10"
+    }
+   },
+   {
+    "created": "2012-04-09T00:00:00+00:00",
+    "updated": "2023-03-06T16:03:54.861887+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1107702?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1107702?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1107702?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1107702?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1107702?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1107702?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1107702"
+    },
+    "id": "1107702",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "46",
+       "artid": "032306",
+       "year": 2005,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214658"
+       },
+       "journal_title": "J.Math.Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Varga, Peter"
+      }
+     ],
+     "number_of_pages": 5,
+     "control_number": 1107702,
+     "dois": [
+      {
+       "value": "10.1063/1.1857032"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Matrix theory of unoriented membranes and Jordan algebras"
+      }
+     ],
+     "earliest_date": "2005"
+    }
+   },
+   {
+    "created": "2011-06-15T00:00:00+00:00",
+    "updated": "2026-02-06T10:40:46.123932+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/913800?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/913800?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/913800?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/913800?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/913800?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/913800?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A913800"
+    },
+    "id": "913800",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Bronoff, Stephane A."
+      }
+     ],
+     "number_of_pages": 10,
+     "control_number": 913800,
+     "titles": [
+      {
+       "title": "On the dynamics of unobserved Universe"
+      },
+      {
+       "source": "arXiv",
+       "title": "On the dynamics of unobserved Universe"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "physics.gen-ph"
+       ],
+       "value": "1106.2133"
+      }
+     ],
+     "earliest_date": "2011-06"
+    }
+   },
+   {
+    "created": "2007-03-27T00:00:00+00:00",
+    "updated": "2023-03-06T13:59:50.253707+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/747289?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/747289?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/747289?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/747289?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/747289?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/747289?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A747289"
+    },
+    "id": "747289",
+    "metadata": {
+     "publication_info": [
+      {
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/977651"
+       },
+       "cnum": "C06-06-26.5"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Rios, Michael"
+      }
+     ],
+     "number_of_pages": 11,
+     "control_number": 747289,
+     "titles": [
+      {
+       "title": "Jordan Algebras and Extremal Black Holes"
+      },
+      {
+       "source": "arXiv",
+       "title": "Jordan algebras and extremal black holes."
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0703238"
+      }
+     ],
+     "earliest_date": "2007-03"
+    }
+   },
+   {
+    "created": "2001-10-12T00:00:00+00:00",
+    "updated": "2023-03-06T14:10:18.815016+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/564128?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/564128?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/564128?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/564128?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/564128?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/564128?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A564128"
+    },
+    "id": "564128",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "108",
+       "page_end": "782",
+       "year": 2002,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214441"
+       },
+       "page_start": "755",
+       "journal_title": "Prog.Theor.Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Ohwashi, Yuhi"
+      }
+     ],
+     "number_of_pages": 30,
+     "control_number": 564128,
+     "dois": [
+      {
+       "value": "10.1143/PTP.108.755"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0110106"
+      }
+     ],
+     "titles": [
+      {
+       "title": "E(6) matrix model"
+      },
+      {
+       "source": "arXiv",
+       "title": "E(6) matrix model."
+      }
+     ],
+     "earliest_date": "2001-10"
+    }
+   },
+   {
+    "created": "2003-01-09T00:00:00+00:00",
+    "updated": "2023-03-06T16:31:21.725429+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/611310?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/611310?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/611310?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/611310?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/611310?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/611310?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A611310"
+    },
+    "id": "611310",
+    "metadata": {
+     "publication_info": [
+      {
+       "page_end": "138",
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/973981"
+       },
+       "page_start": "129",
+       "parent_record": {
+        "$ref": "https://inspirehep.net/api/literature/637514"
+       },
+       "cnum": "C02-07-15.1"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Ramond, Pierre"
+      }
+     ],
+     "number_of_pages": 9,
+     "control_number": 611310,
+     "titles": [
+      {
+       "title": "Exceptional groups and physics"
+      },
+      {
+       "source": "arXiv",
+       "title": "Exceptional groups and physics."
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0301050"
+      }
+     ],
+     "earliest_date": "2003-01"
+    }
+   },
+   {
+    "created": "2006-02-08T00:00:00+00:00",
+    "updated": "2025-09-30T15:19:43.961849+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/710042?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/710042?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/710042?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/710042?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/710042?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/710042?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A710042"
+    },
+    "id": "710042",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Dzhunushaliev, Vladimir"
+      }
+     ],
+     "number_of_pages": 8,
+     "control_number": 710042,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Hamilton's equations in a non-associative quantum theory"
+      },
+      {
+       "title": "Hamilton's equations in a non-associative quantum theory"
+      },
+      {
+       "title": "NONASSOCIATIVE"
+      },
+      {
+       "source": "arXiv",
+       "title": "Hamilton's equations in a non-associative quantum theory."
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "math.RA",
+        "quant-ph"
+       ],
+       "value": "hep-th/0602047"
+      }
+     ],
+     "earliest_date": "2006-02"
+    }
+   },
+   {
+    "created": "2003-01-23T00:00:00+00:00",
+    "updated": "2025-07-18T16:46:02.717395+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/612088?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/612088?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/612088?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/612088?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/612088?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/612088?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A612088"
+    },
+    "id": "612088",
+    "metadata": {
+     "publication_info": [
+      {
+       "artid": "unesp2002/039",
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/974072"
+       },
+       "parent_record": {
+        "$ref": "https://inspirehep.net/api/literature/610606"
+       },
+       "cnum": "C02-07-01.2"
+      },
+      {
+       "journal_volume": "unesp2002",
+       "artid": "039",
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/974072"
+       },
+       "year": 2002,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213080"
+       },
+       "page_start": "039",
+       "journal_title": "PoS",
+       "parent_record": {
+        "$ref": "https://inspirehep.net/api/literature/610606"
+       },
+       "cnum": "C02-07-01.2"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Toppan, Francesco"
+      }
+     ],
+     "number_of_pages": 17,
+     "control_number": 612088,
+     "dois": [
+      {
+       "value": "10.22323/1.008.0039"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0301163"
+      }
+     ],
+     "titles": [
+      {
+       "title": "On the octonionic M superalgebra"
+      },
+      {
+       "source": "arXiv",
+       "title": "On the octonionic M-superalgebra."
+      }
+     ],
+     "earliest_date": "2002"
+    }
+   },
+   {
+    "created": "2002-01-08T00:00:00+00:00",
+    "updated": "2025-10-01T11:13:03.706695+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/569145?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/569145?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/569145?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/569145?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/569145?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/569145?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A569145"
+    },
+    "id": "569145",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "607",
+       "page_end": "261",
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/973433"
+       },
+       "year": 2002,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213302"
+       },
+       "page_start": "244",
+       "journal_issue": "1",
+       "journal_title": "AIP Conf.Proc.",
+       "parent_record": {
+        "$ref": "https://inspirehep.net/api/literature/588081"
+       },
+       "cnum": "C01-07-03.2"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Smolin, Lee"
+      }
+     ],
+     "number_of_pages": 25,
+     "control_number": 569145,
+     "dois": [
+      {
+       "source": "ADS",
+       "value": "10.1063/1.1454379"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1063/1.1454379"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "cond-mat.stat-mech",
+        "gr-qc",
+        "quant-ph"
+       ],
+       "value": "hep-th/0201031"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Matrix models as nonlocal hidden variables theories"
+      },
+      {
+       "source": "arXiv",
+       "title": "Matrix models as non-local hidden variables theories."
+      },
+      {
+       "source": "arXiv",
+       "title": "Matrix models as non-local hidden variables theories"
+      }
+     ],
+     "earliest_date": "2001-12"
+    }
+   },
+   {
+    "created": "2002-06-13T00:00:00+00:00",
+    "updated": "2025-10-02T13:40:17.230857+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/588277?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/588277?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/588277?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/588277?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/588277?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/588277?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A588277"
+    },
+    "id": "588277",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "674",
+       "page_end": "552",
+       "year": 2003,
+       "page_start": "533",
+       "journal_title": "Nucl.Phys.B"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Starodubtsev, Artem"
+      }
+     ],
+     "number_of_pages": 22,
+     "control_number": 588277,
+     "dois": [
+      {
+       "value": "10.1016/j.nuclphysb.2003.09.053"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1016/j.nuclphysb.2003.09.053"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "gr-qc",
+        "quant-ph"
+       ],
+       "value": "hep-th/0206097"
+      }
+     ],
+     "titles": [
+      {
+       "title": "A Note on quantization of matrix models"
+      },
+      {
+       "source": "arXiv",
+       "title": "A note on quantization of matrix models."
+      },
+      {
+       "source": "arXiv",
+       "title": "A note on quantization of matrix models"
+      }
+     ],
+     "earliest_date": "2002-06"
+    }
+   },
+   {
+    "created": "2002-04-30T00:00:00+00:00",
+    "updated": "2023-03-06T23:32:11.471122+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/586089?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/586089?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/586089?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/586089?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/586089?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/586089?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A586089"
+    },
+    "id": "586089",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "647",
+       "page_end": "189",
+       "year": 2002,
+       "page_start": "153",
+       "journal_title": "Nucl.Phys.B"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Kawai, H."
+      },
+      {
+       "full_name": "Kawamoto, Shoichi"
+      },
+      {
+       "full_name": "Kuroki, Tsunehide"
+      },
+      {
+       "full_name": "Matsuo, T."
+      },
+      {
+       "full_name": "Shinohara, S."
+      }
+     ],
+     "number_of_pages": 43,
+     "control_number": 586089,
+     "dois": [
+      {
+       "value": "10.1016/S0550-3213(02)00908-2"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0204240"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Mean field approximation of IIB matrix model and emergence of four-dimensional space-time"
+      },
+      {
+       "source": "arXiv",
+       "title": "Mean field approximation of IIB matrix model and emergence of four dimensional space-time."
+      }
+     ],
+     "earliest_date": "2002-04"
+    }
+   },
+   {
+    "created": "2003-02-18T00:00:00+00:00",
+    "updated": "2025-05-18T13:12:08.244637+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/613477?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/613477?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/613477?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/613477?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/613477?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/613477?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A613477"
+    },
+    "id": "613477",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "04",
+       "artid": "040",
+       "year": 2003,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213103"
+       },
+       "page_start": "040",
+       "journal_title": "JHEP"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Carrion, H.L."
+      },
+      {
+       "full_name": "Rojas, M."
+      },
+      {
+       "full_name": "Toppan, F."
+      }
+     ],
+     "number_of_pages": 24,
+     "control_number": 613477,
+     "dois": [
+      {
+       "value": "10.1088/1126-6708/2003/04/040"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0302113"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Quaternionic and octonionic spinors: A Classification"
+      },
+      {
+       "source": "arXiv",
+       "title": "Quaternionic and octonionic spinors: A classification."
+      }
+     ],
+     "earliest_date": "2003-02"
+    }
+   },
+   {
+    "created": "2020-07-14T00:00:00+00:00",
+    "updated": "2025-10-03T16:05:04.440578+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1806586?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1806586?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1806586?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1806586?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1806586?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1806586?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1806586"
+    },
+    "id": "1806586",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Smolin, Lee"
+      }
+     ],
+     "number_of_pages": 20,
+     "control_number": 1806586,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Quantum reference frames and triality"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "quant-ph"
+       ],
+       "value": "2007.05957"
+      }
+     ],
+     "earliest_date": "2020-07-12"
+    }
+   },
+   {
+    "created": "2003-12-03T00:00:00+00:00",
+    "updated": "2023-03-06T13:33:39.866803+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/634400?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/634400?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/634400?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/634400?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/634400?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/634400?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A634400"
+    },
+    "id": "634400",
+    "metadata": {
+     "publication_info": [
+      {
+       "page_end": "262",
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/974823"
+       },
+       "year": 2004,
+       "page_start": "253",
+       "parent_record": {
+        "$ref": "https://inspirehep.net/api/literature/1384391"
+       },
+       "cnum": "C03-07-24"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Toppan, Francesco"
+      }
+     ],
+     "number_of_pages": 10,
+     "control_number": 634400,
+     "titles": [
+      {
+       "title": "Exceptional structures in mathematics and physics and the role of the octonions"
+      },
+      {
+       "source": "arXiv",
+       "title": "Exceptional structures in mathematics and physics and the role of the octonions."
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0312023"
+      }
+     ],
+     "earliest_date": "2003-12"
+    }
+   },
+   {
+    "created": "2002-12-05T00:00:00+00:00",
+    "updated": "2023-03-06T19:50:52.406863+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/603742?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/603742?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/603742?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/603742?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/603742?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/603742?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A603742"
+    },
+    "id": "603742",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Livine, Etera R."
+      },
+      {
+       "full_name": "Smolin, Lee"
+      }
+     ],
+     "number_of_pages": 9,
+     "control_number": 603742,
+     "titles": [
+      {
+       "title": "BRST quantization of matrix Chern-Simons theory"
+      },
+      {
+       "title": "Becchi-Rouet-Stora-Tyutin"
+      },
+      {
+       "source": "arXiv",
+       "title": "BRST quantization of matrix Chern-Simons theory."
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0212043"
+      }
+     ],
+     "earliest_date": "2002-12"
+    }
+   },
+   {
+    "created": "2020-06-26T00:00:00+00:00",
+    "updated": "2023-10-03T07:34:18.196179+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1803025?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1803025?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1803025?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1803025?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1803025?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1803025?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1803025"
+    },
+    "id": "1803025",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "17",
+       "artid": "2050071",
+       "year": 2020,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212411"
+       },
+       "journal_issue": "5",
+       "journal_title": "Int.J.Geom.Meth.Mod.Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Castro Perelman, Carlos"
+      }
+     ],
+     "number_of_pages": 12,
+     "control_number": 1803025,
+     "dois": [
+      {
+       "source": "WSP",
+       "value": "10.1142/S0219887820500711"
+      }
+     ],
+     "titles": [
+      {
+       "source": "WSP",
+       "title": "A note on Jordan algebras, three generations and exceptional periodicity"
+      }
+     ],
+     "earliest_date": "2020-04-28"
+    }
+   },
+   {
+    "created": "2002-11-29T00:00:00+00:00",
+    "updated": "2023-03-06T16:47:29.770122+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/603273?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/603273?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/603273?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/603273?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/603273?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/603273?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A603273"
+    },
+    "id": "603273",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "109",
+       "page_end": "132",
+       "year": 2003,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214441"
+       },
+       "page_start": "115",
+       "journal_title": "Prog.Theor.Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Kawai, H."
+      },
+      {
+       "full_name": "Kawamoto, Shoichi"
+      },
+      {
+       "full_name": "Kuroki, Tsunehide"
+      },
+      {
+       "full_name": "Shinohara, S."
+      }
+     ],
+     "number_of_pages": 22,
+     "control_number": 603273,
+     "dois": [
+      {
+       "value": "10.1143/PTP.109.115"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0211272"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Improved perturbation theory and four-dimensional space-time in IIB matrix model"
+      },
+      {
+       "source": "arXiv",
+       "title": "Improved perturbation theory and four-dimensional space-time in IIB matrix model."
+      }
+     ],
+     "earliest_date": "2002-11"
+    }
+   },
+   {
+    "created": "2021-05-31T00:00:00+00:00",
+    "updated": "2023-10-03T07:46:12.681266+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1866065?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1866065?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1866065?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1866065?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1866065?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1866065?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1866065"
+    },
+    "id": "1866065",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "167",
+       "artid": "104268",
+       "material": "publication",
+       "year": 2021,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214078"
+       },
+       "journal_title": "J.Geom.Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Perelman, Carlos Castro"
+      }
+     ],
+     "control_number": 1866065,
+     "dois": [
+      {
+       "material": "publication",
+       "source": "Elsevier B.V.",
+       "value": "10.1016/j.geomphys.2021.104268"
+      },
+      {
+       "source": "Elsevier",
+       "value": "10.1016/j.geomphys.2021.104268"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Elsevier B.V.",
+       "title": "Exceptional Jordan matrix models, octonionic strings/branes and star product deformations"
+      },
+      {
+       "source": "Elsevier",
+       "title": "Exceptional Jordan matrix models, octonionic strings/branes and star product deformations"
+      }
+     ],
+     "earliest_date": "2021-09"
+    }
+   },
+   {
+    "created": "2018-11-16T00:00:00+00:00",
+    "updated": "2023-10-03T07:56:45.627850+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1703787?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1703787?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1703787?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1703787?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1703787?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1703787?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1703787"
+    },
+    "id": "1703787",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "99",
+       "pubinfo_freetext": "Phys. Rev. D 99, 046004 (2019)",
+       "artid": "046004",
+       "material": "publication",
+       "year": 2019,
+       "journal_issue": "4",
+       "journal_title": "Phys.Rev.D"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Rios, Michael"
+      },
+      {
+       "full_name": "Marrani, Alessio"
+      },
+      {
+       "full_name": "Chester, David"
+      }
+     ],
+     "number_of_pages": 11,
+     "control_number": 1703787,
+     "dois": [
+      {
+       "value": "10.1103/PhysRevD.99.046004"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1103/PhysRevD.99.046004"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "math-ph",
+        "math.MP"
+       ],
+       "value": "1811.06101"
+      }
+     ],
+     "titles": [
+      {
+       "source": "APS",
+       "title": "Geometry of exceptional super Yang-Mills theories"
+      },
+      {
+       "source": "arXiv",
+       "title": "The Geometry of Exceptional Super Yang-Mills Theories"
+      }
+     ],
+     "earliest_date": "2018-11-14"
+    }
+   },
+   {
+    "created": "2011-09-05T00:00:00+00:00",
+    "updated": "2026-05-18T00:15:20.060640+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/926312?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/926312?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/926312?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/926312?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/926312?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/926312?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A926312"
+    },
+    "id": "926312",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "343",
+       "artid": "012026",
+       "year": 2012,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212279"
+       },
+       "journal_title": "J.Phys.Conf.Ser."
+      },
+      {
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/981273"
+       },
+       "parent_record": {
+        "$ref": "https://inspirehep.net/api/literature/1112066"
+       },
+       "cnum": "C11-08-07"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "da Rocha, Roldao"
+      },
+      {
+       "full_name": "Traesel, Marcio A."
+      }
+     ],
+     "number_of_pages": 36,
+     "control_number": 926312,
+     "dois": [
+      {
+       "value": "10.1088/1742-6596/343/1/012026"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "math-ph"
+       ],
+       "value": "1109.0859"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Generalized non-associative structures on the 7-sphere"
+      },
+      {
+       "source": "arXiv",
+       "title": "Generalized non-associative structures on the 7-sphere"
+      }
+     ],
+     "earliest_date": "2011-09"
+    }
+   },
+   {
+    "created": "2015-03-05T00:00:00+00:00",
+    "updated": "2023-03-06T14:34:10.265766+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1347260?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1347260?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1347260?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1347260?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1347260?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1347260?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1347260"
+    },
+    "id": "1347260",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "56",
+       "page_end": "231",
+       "year": 2017,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214707"
+       },
+       "page_start": "221",
+       "journal_issue": "1",
+       "journal_title": "Int.J.Theor.Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Smolin, Lee"
+      }
+     ],
+     "number_of_pages": 11,
+     "control_number": 1347260,
+     "dois": [
+      {
+       "value": "10.1007/s10773-016-3168-7"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "gr-qc"
+       ],
+       "value": "1503.01424"
+      }
+     ],
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Extending dualities to trialities deepens the foundations of dynamics"
+      }
+     ],
+     "earliest_date": "2015-03-04"
+    }
+   },
+   {
+    "created": "2007-02-09T00:00:00+00:00",
+    "updated": "2023-03-06T19:20:07.960818+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/736655?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/736655?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/736655?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/736655?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/736655?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/736655?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A736655"
+    },
+    "id": "736655",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "47",
+       "artid": "112301",
+       "year": 2006,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214658"
+       },
+       "journal_title": "J.Math.Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Castro, C."
+      }
+     ],
+     "number_of_pages": 18,
+     "control_number": 736655,
+     "dois": [
+      {
+       "value": "10.1063/1.2363257"
+      }
+     ],
+     "titles": [
+      {
+       "title": "On Chern-Simons (super) gravity, E(8) Yang-Mills and polyvector-valued gauge theories in Clifford spaces"
+      },
+      {
+       "title": "SUPERGRAVITY"
+      }
+     ],
+     "earliest_date": "2006"
+    }
+   },
+   {
+    "created": "2021-06-16T00:00:00+00:00",
+    "updated": "2023-10-03T07:49:45.937366+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1868535?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1868535?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1868535?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1868535?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1868535?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1868535?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1868535"
+    },
+    "id": "1868535",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "31",
+       "artid": "53",
+       "year": 2021,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212855"
+       },
+       "page_start": "53",
+       "journal_issue": "3",
+       "journal_title": "Adv.Appl.Clifford Algebras"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Castro Perelman, Carlos"
+      }
+     ],
+     "number_of_pages": 18,
+     "control_number": 1868535,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1007/s00006-021-01136-5"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "On Jordan\u2013Clifford Algebras, Three Fermion Generations with Higgs Fields and a ${{\\mathrm {SU}(3) \\times \\mathrm {SU}(2)_L \\times \\mathrm {SU}(2)_R \\times \\mathrm {U}(1)}}$ Model"
+      }
+     ],
+     "earliest_date": "2021-06-11"
+    }
+   },
+   {
+    "created": "2017-11-22T00:00:00+00:00",
+    "updated": "2024-12-05T18:57:14.584811+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1637408?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1637408?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1637408?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1637408?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1637408?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1637408?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1637408"
+    },
+    "id": "1637408",
+    "metadata": {
+     "publication_info": [
+      {
+       "pubinfo_freetext": "Contemporary Mathematics, vol. 721, American Mathematical Society,\n  Providence, RI, 2019",
+       "material": "publication"
+      },
+      {
+       "parent_record": {
+        "$ref": "https://inspirehep.net/api/literature/2856106"
+       }
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Truini, Piero"
+      },
+      {
+       "full_name": "Rios, Michael"
+      },
+      {
+       "full_name": "Marrani, Alessio"
+      }
+     ],
+     "number_of_pages": 18,
+     "control_number": 1637408,
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "math-ph",
+        "math.MP",
+        "math.RA",
+        "math.RT"
+       ],
+       "value": "1711.07881"
+      }
+     ],
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "The Magic Star of Exceptional Periodicity"
+      }
+     ],
+     "earliest_date": "2017-11-21"
+    }
+   },
+   {
+    "created": "2013-10-11T00:00:00+00:00",
+    "updated": "2023-03-06T18:28:21.329911+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1258076?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1258076?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1258076?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1258076?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1258076?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1258076?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1258076"
+    },
+    "id": "1258076",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Kawamoto, Shoichi"
+      }
+     ],
+     "number_of_pages": 108,
+     "control_number": 1258076,
+     "titles": [
+      {
+       "title": "Spontaneous Symmetry Breakdown in the IIB Matrix Model"
+      }
+     ],
+     "earliest_date": "2003-01-06"
+    }
+   },
+   {
+    "created": "2019-01-25T00:00:00+00:00",
+    "updated": "2023-10-03T08:31:13.961534+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1716748?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1716748?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1716748?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1716748?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1716748?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1716748?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1716748"
+    },
+    "id": "1716748",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "29",
+       "artid": "22",
+       "year": 2019,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212855"
+       },
+       "page_start": "22",
+       "journal_issue": "1",
+       "journal_title": "Adv.Appl.Clifford Algebras"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Castro Perelman, Carlos"
+      }
+     ],
+     "control_number": 1716748,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1007/s00006-019-0937-4"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "R $\\otimes $ C $\\otimes $ H $\\otimes $ O-Valued Gravity as a Grand Unified Field Theory"
+      }
+     ],
+     "earliest_date": "2019-01-22"
+    }
+   },
+   {
+    "created": "2007-05-31T00:00:00+00:00",
+    "updated": "2023-03-06T19:51:16.221570+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/751809?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/751809?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/751809?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/751809?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/751809?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/751809?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A751809"
+    },
+    "id": "751809",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "57",
+       "page_end": "1949",
+       "year": 2007,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214078"
+       },
+       "page_start": "1941",
+       "journal_title": "J.Geom.Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Castro, Carlos"
+      }
+     ],
+     "number_of_pages": 9,
+     "control_number": 751809,
+     "dois": [
+      {
+       "value": "10.1016/j.geomphys.2007.03.007"
+      }
+     ],
+     "titles": [
+      {
+       "title": "The Large N limit of Exceptional Jordan Matrix Models and M, F Theory"
+      },
+      {
+       "title": "F-THEORY"
+      }
+     ],
+     "earliest_date": "2007-04"
+    }
+   },
+   {
+    "created": "2015-08-30T00:00:00+00:00",
+    "updated": "2023-03-06T16:46:53.429986+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1390912?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1390912?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1390912?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1390912?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1390912?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1390912?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1390912"
+    },
+    "id": "1390912",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Shinohara, Shun'ichi"
+      }
+     ],
+     "number_of_pages": 107,
+     "control_number": 1390912,
+     "titles": [
+      {
+       "title": "Improved Mean Field Approximation and Improved Taylor Expansion: approximation schemes to extract non-perturbative dynamics from IIB matrix mode"
+      }
+     ],
+     "earliest_date": "2015-08-30"
+    }
+   },
+   {
+    "created": "2005-03-17T00:00:00+00:00",
+    "updated": "2023-03-10T09:56:22.635209+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/678638?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/678638?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/678638?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/678638?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/678638?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/678638?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A678638"
+    },
+    "id": "678638",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "739",
+       "page_end": "185",
+       "year": 2006,
+       "page_start": "169",
+       "journal_title": "Nucl.Phys.B"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Smolin, Lee"
+      }
+     ],
+     "number_of_pages": 20,
+     "control_number": 678638,
+     "dois": [
+      {
+       "value": "10.1016/j.nuclphysb.2006.01.016"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0503140"
+      }
+     ],
+     "titles": [
+      {
+       "title": "A Quantization of topological M theory"
+      },
+      {
+       "title": "M-THEORY"
+      },
+      {
+       "source": "arXiv",
+       "title": "A quantization of topological M theory."
+      }
+     ],
+     "earliest_date": "2005-03"
+    }
+   },
+   {
+    "created": "2008-03-20T00:00:00+00:00",
+    "updated": "2026-02-06T10:19:18.707227+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/781751?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/781751?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/781751?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/781751?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/781751?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/781751?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A781751"
+    },
+    "id": "781751",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Smolin, Lee"
+      }
+     ],
+     "number_of_pages": 21,
+     "control_number": 781751,
+     "titles": [
+      {
+       "title": "Matrix universality of gauge field and gravitational dynamics"
+      },
+      {
+       "source": "arXiv",
+       "title": "Matrix universality of gauge field and gravitational dynamics"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "0803.2926"
+      }
+     ],
+     "earliest_date": "2008-03"
+    }
+   },
+   {
+    "created": "2001-12-14T00:00:00+00:00",
+    "updated": "2023-03-06T14:01:50.345690+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/568277?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/568277?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/568277?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/568277?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/568277?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/568277?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A568277"
+    },
+    "id": "568277",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Fuji, Hiroyuki"
+      }
+     ],
+     "number_of_pages": 48,
+     "control_number": 568277,
+     "titles": [
+      {
+       "title": "Open superstring on symmetric product"
+      },
+      {
+       "source": "arXiv",
+       "title": "Open superstring on symmetric product."
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0112116"
+      }
+     ],
+     "earliest_date": "2001-12"
+    }
+   },
+   {
+    "created": "2022-02-02T03:10:08.709291+00:00",
+    "updated": "2026-02-09T12:14:25.944194+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2023723?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2023723?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2023723?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2023723?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2023723?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2023723?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2023723"
+    },
+    "id": "2023723",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Smolin, Lee"
+      }
+     ],
+     "number_of_pages": 27,
+     "control_number": 2023723,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Views, variety and celestial spheres"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "gr-qc"
+       ],
+       "value": "2202.00594"
+      }
+     ],
+     "earliest_date": "2022-02-01"
+    }
+   },
+   {
+    "created": "2019-09-04T00:00:00+00:00",
+    "updated": "2023-03-09T20:37:27.593683+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1752317?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1752317?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1752317?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1752317?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1752317?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1752317?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1752317"
+    },
+    "id": "1752317",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Truini, Piero"
+      },
+      {
+       "full_name": "Marrani, Alessio"
+      },
+      {
+       "full_name": "Rios, Michael"
+      }
+     ],
+     "number_of_pages": 23,
+     "control_number": 1752317,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Exceptional Periodicity and Magic Star Algebras. I : Foundations"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "math.RT",
+        "hep-th",
+        "math-ph",
+        "math.MP",
+        "math.RA"
+       ],
+       "value": "1909.00357"
+      }
+     ],
+     "earliest_date": "2019-09-01"
+    }
+   },
+   {
+    "created": "2020-09-14T00:00:00+00:00",
+    "updated": "2026-02-09T11:39:37.170377+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1816718?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1816718?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1816718?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1816718?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1816718?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1816718?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1816718"
+    },
+    "id": "1816718",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "76",
+       "page_end": "162",
+       "year": 2021,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213138"
+       },
+       "page_start": "131",
+       "journal_issue": "2",
+       "journal_title": "Z.Naturforsch.A"
+      },
+      {
+       "journal_volume": "76",
+       "pubinfo_freetext": "Z. Naturforsch. A 76 (2021) 131",
+       "artid": "131",
+       "material": "publication",
+       "year": 2021,
+       "page_start": "131",
+       "journal_title": "Z.Naturforsch.A"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Singh, Tejinder P."
+      }
+     ],
+     "number_of_pages": 70,
+     "control_number": 1816718,
+     "dois": [
+      {
+       "source": "De Gruyter",
+       "value": "10.1515/zna-2020-0255"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1515/zna-2020-0255"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "gr-qc",
+        "quant-ph"
+       ],
+       "value": "2009.05574"
+      }
+     ],
+     "titles": [
+      {
+       "source": "De Gruyter",
+       "title": "Trace dynamics and division algebras: towards quantum gravity and unification"
+      },
+      {
+       "source": "arXiv",
+       "title": "Trace dynamics and division algebras: towards quantum gravity and unification"
+      }
+     ],
+     "earliest_date": "2020-09-10"
+    }
+   },
+   {
+    "created": "2025-02-05T20:08:41.758195+00:00",
+    "updated": "2025-04-10T18:52:54.559646+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2876584?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2876584?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2876584?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2876584?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2876584?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2876584?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2876584"
+    },
+    "id": "2876584",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "43",
+       "artid": "125621",
+       "material": "publication",
+       "year": 2025,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214161"
+       },
+       "journal_title": "Expo.Math."
+      },
+      {
+       "artid": "125621",
+       "year": 2024,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214161"
+       },
+       "page_start": "125621",
+       "journal_title": "Expo.Math."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Truini, Piero"
+      },
+      {
+       "full_name": "Marrani, Alessio"
+      },
+      {
+       "full_name": "Rios, Michael"
+      },
+      {
+       "full_name": "de Graaf, Willem"
+      }
+     ],
+     "control_number": 2876584,
+     "dois": [
+      {
+       "material": "publication",
+       "source": "Elsevier GmbH",
+       "value": "10.1016/j.exmath.2024.125621"
+      },
+      {
+       "value": "10.1016/j.exmath.2024.125621"
+      }
+     ],
+     "titles": [
+      {
+       "subtitle": "Generalized roots, gradings, Hermitian Vinberg T-algebras and their derivations",
+       "source": "Elsevier GmbH",
+       "title": "Exceptional Periodicity and Magic Star algebras"
+      },
+      {
+       "source": "submitter",
+       "title": "Exceptional Periodicity and Magic Star algebras"
+      }
+     ],
+     "earliest_date": "2024-10-17"
+    }
+   },
+   {
+    "created": "2008-01-09T00:00:00+00:00",
+    "updated": "2024-02-12T08:23:41.007722+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/771777?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/771777?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/771777?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/771777?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/771777?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/771777?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A771777"
+    },
+    "id": "771777",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "4",
+       "page_end": "1257",
+       "year": 2007,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212411"
+       },
+       "page_start": "1239",
+       "journal_title": "Int.J.Geom.Meth.Mod.Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Castro, Carlos"
+      }
+     ],
+     "number_of_pages": 19,
+     "control_number": 771777,
+     "dois": [
+      {
+       "value": "10.1142/S0219887807002545"
+      }
+     ],
+     "titles": [
+      {
+       "title": "A Chern-Simons E(8) Gauge Theory of Gravity in D = 15, Grand Unification and Generalized Gravity in Clifford spaces"
+      }
+     ],
+     "earliest_date": "2007-12"
+    }
+   },
+   {
+    "created": "2004-01-20T00:00:00+00:00",
+    "updated": "2023-03-06T16:48:26.548224+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/642936?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/642936?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/642936?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/642936?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/642936?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/642936?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A642936"
+    },
+    "id": "642936",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Azuma, Takehiro"
+      }
+     ],
+     "number_of_pages": 96,
+     "control_number": 642936,
+     "titles": [
+      {
+       "title": "Matrix models and the gravitational interaction"
+      },
+      {
+       "source": "arXiv",
+       "title": "Matrix models and the gravitational interaction."
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0401120"
+      }
+     ],
+     "earliest_date": "2004-01"
+    }
+   },
+   {
+    "created": "2009-06-17T00:00:00+00:00",
+    "updated": "2023-03-10T01:25:57.468738+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/823324?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/823324?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/823324?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/823324?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/823324?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/823324?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A823324"
+    },
+    "id": "823324",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "6",
+       "page_end": "417",
+       "year": 2009,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212411"
+       },
+       "page_start": "385",
+       "journal_title": "Int.J.Geom.Meth.Mod.Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Castro, Carlos"
+      }
+     ],
+     "number_of_pages": 33,
+     "control_number": 823324,
+     "dois": [
+      {
+       "value": "10.1142/S0219887809003588"
+      }
+     ],
+     "titles": [
+      {
+       "title": "THE EXCEPTIONAL E_8 GEOMETRY OF CLIFFORD (16) SUPERSPACE AND CONFORMAL GRAVITY YANG MILLS GRAND UNIFICATION"
+      }
+     ],
+     "earliest_date": "2009-05"
+    }
+   },
+   {
+    "created": "2005-07-25T00:00:00+00:00",
+    "updated": "2023-03-07T00:14:56.771277+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/688162?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/688162?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/688162?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/688162?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/688162?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/688162?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A688162"
+    },
+    "id": "688162",
+    "metadata": {
+     "publication_info": [
+      {
+       "page_end": "239",
+       "page_start": "196",
+       "parent_record": {
+        "$ref": "https://inspirehep.net/api/literature/739789"
+       }
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Smolin, Lee"
+      }
+     ],
+     "number_of_pages": 46,
+     "control_number": 688162,
+     "titles": [
+      {
+       "title": "The Case for background independence"
+      },
+      {
+       "source": "arXiv",
+       "title": "The case for background independence."
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0507235"
+      }
+     ],
+     "earliest_date": "2005-07"
+    }
+   },
+   {
+    "created": "2006-04-18T00:00:00+00:00",
+    "updated": "2023-03-06T18:15:58.702714+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/714548?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/714548?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/714548?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/714548?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/714548?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/714548?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A714548"
+    },
+    "id": "714548",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "321",
+       "page_end": "839",
+       "year": 2006,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214855"
+       },
+       "page_start": "813",
+       "journal_title": "Annals Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Castro, Carlos"
+      }
+     ],
+     "number_of_pages": 27,
+     "control_number": 714548,
+     "dois": [
+      {
+       "value": "10.1016/j.aop.2005.11.008"
+      }
+     ],
+     "titles": [
+      {
+       "title": "On generalized Yang-Mills theories and extensions of the standard model in Clifford (tensorial) spaces"
+      }
+     ],
+     "earliest_date": "2006"
+    }
+   },
+   {
+    "created": "2007-09-13T00:00:00+00:00",
+    "updated": "2023-03-06T18:43:37.312928+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/760707?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/760707?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/760707?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/760707?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/760707?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/760707?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A760707"
+    },
+    "id": "760707",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "48",
+       "artid": "073517",
+       "year": 2007,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214658"
+       },
+       "journal_title": "J.Math.Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Castro, Carlos"
+      }
+     ],
+     "number_of_pages": 15,
+     "control_number": 760707,
+     "dois": [
+      {
+       "value": "10.1063/1.2752013"
+      }
+     ],
+     "titles": [
+      {
+       "title": "On the Noncommutative and Nonassociative Geometry of Octonionic Spacetime, Modified Dispersion Relations and Grand Unification"
+      }
+     ],
+     "earliest_date": "2007-07"
+    }
+   },
+   {
+    "created": "2004-08-06T00:00:00+00:00",
+    "updated": "2023-03-10T00:12:26.428115+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/655988?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/655988?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/655988?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/655988?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/655988?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/655988?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A655988"
+    },
+    "id": "655988",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "McGuigan, Michael"
+      }
+     ],
+     "number_of_pages": 44,
+     "control_number": 655988,
+     "titles": [
+      {
+       "title": "Noncritical M-theory: Three dimensions"
+      },
+      {
+       "title": "THREE-DIMENSIONS"
+      },
+      {
+       "source": "arXiv",
+       "title": "Noncritical M-theory: Three dimensions."
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0408041"
+      }
+     ],
+     "earliest_date": "2004-08"
+    }
+   },
+   {
+    "created": "2002-09-11T00:00:00+00:00",
+    "updated": "2023-03-06T22:08:21.138953+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/594715?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/594715?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/594715?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/594715?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/594715?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/594715?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A594715"
+    },
+    "id": "594715",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Smolin, Lee"
+      }
+     ],
+     "number_of_pages": 59,
+     "control_number": 594715,
+     "titles": [
+      {
+       "title": "Quantum gravity with a positive cosmological constant"
+      },
+      {
+       "source": "arXiv",
+       "title": "Quantum gravity with a positive cosmological constant."
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0209079"
+      }
+     ],
+     "earliest_date": "2002-09"
+    }
+   },
+   {
+    "created": "2002-10-29T00:00:00+00:00",
+    "updated": "2023-03-10T15:21:33.360197+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/600708?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/600708?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/600708?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/600708?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/600708?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/600708?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A600708"
+    },
+    "id": "600708",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "631",
+       "page_end": "135",
+       "year": 2003,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212738"
+       },
+       "page_start": "41",
+       "journal_title": "Lect.Notes Phys."
+      },
+      {
+       "page_end": "135",
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/974010"
+       },
+       "page_start": "41",
+       "parent_record": {
+        "$ref": "https://inspirehep.net/api/literature/636614"
+       },
+       "cnum": "C02-02-25.1"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Thiemann, Thomas"
+      }
+     ],
+     "number_of_pages": 90,
+     "control_number": 600708,
+     "dois": [
+      {
+       "value": "10.1007/978-3-540-45230-0_3"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "gr-qc"
+       ],
+       "value": "gr-qc/0210094"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Lectures on loop quantum gravity"
+      },
+      {
+       "source": "arXiv",
+       "title": "Lectures on loop quantum gravity."
+      },
+      {
+       "source": "arXiv",
+       "title": "Lectures on Loop Quantum Gravity"
+      }
+     ],
+     "earliest_date": "2002-10"
+    }
+   },
+   {
+    "created": "2021-04-22T00:00:00+00:00",
+    "updated": "2026-02-09T11:51:53.858320+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1859606?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1859606?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1859606?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1859606?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1859606?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1859606?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1859606"
+    },
+    "id": "1859606",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Dahanayake, Duminda"
+      }
+     ],
+     "number_of_pages": 178,
+     "control_number": 1859606,
+     "dois": [
+      {
+       "source": "Imperial Coll., London",
+       "value": "10.25560/6060"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Imperial Coll., London",
+       "title": "The role of supersymmetry in the black hole/qubit correspondence"
+      }
+     ],
+     "earliest_date": "2010-09"
+    }
+   },
+   {
+    "created": "2008-09-28T00:00:00+00:00",
+    "updated": "2026-02-06T10:21:53.162271+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/797762?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/797762?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/797762?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/797762?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/797762?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/797762?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A797762"
+    },
+    "id": "797762",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "471",
+       "page_end": "219",
+       "year": 2009,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214494"
+       },
+       "page_start": "113",
+       "journal_title": "Phys.Rept."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Borsten, L."
+      },
+      {
+       "full_name": "Dahanayake, D."
+      },
+      {
+       "full_name": "Duff, M.J."
+      },
+      {
+       "full_name": "Ebrahim, H."
+      },
+      {
+       "full_name": "Rubens, W."
+      }
+     ],
+     "number_of_pages": 143,
+     "control_number": 797762,
+     "dois": [
+      {
+       "value": "10.1016/j.physrep.2008.11.002"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1016/j.physrep.2008.11.002"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "gr-qc",
+        "quant-ph"
+       ],
+       "value": "0809.4685"
+      }
+     ],
+     "titles": [
+      {
+       "title": "Black Holes, Qubits and Octonions"
+      },
+      {
+       "source": "arXiv",
+       "title": "Black Holes, Qubits and Octonions"
+      }
+     ],
+     "earliest_date": "2008-09"
+    }
+   },
+   {
+    "created": "2004-08-06T00:00:00+00:00",
+    "updated": "2023-03-10T14:45:46.265060+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/655994?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/655994?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/655994?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/655994?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/655994?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/655994?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A655994"
+    },
+    "id": "655994",
+    "metadata": {
+     "publication_info": [
+      {
+       "page_end": "682",
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/974552"
+       },
+       "page_start": "655",
+       "parent_record": {
+        "$ref": "https://inspirehep.net/api/literature/672983"
+       },
+       "cnum": "C03-09-10"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Smolin, Lee"
+      }
+     ],
+     "number_of_pages": 51,
+     "control_number": 655994,
+     "dois": [
+      {
+       "value": "10.1142/9789812702340_0078"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0408048"
+      }
+     ],
+     "titles": [
+      {
+       "title": "An Invitation to loop quantum gravity"
+      },
+      {
+       "source": "arXiv",
+       "title": "An invitation to loop quantum gravity."
+      },
+      {
+       "source": "arXiv",
+       "title": "An invitation to loop quantum gravity"
+      }
+     ],
+     "earliest_date": "2004-08"
+    }
+   },
+   {
+    "created": "2003-03-21T00:00:00+00:00",
+    "updated": "2023-03-07T01:04:14.747230+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/615514?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/615514?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/615514?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/615514?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/615514?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/615514?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A615514"
+    },
+    "id": "615514",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Smolin, Lee"
+      }
+     ],
+     "number_of_pages": 84,
+     "control_number": 615514,
+     "titles": [
+      {
+       "title": "How far are we from the quantum theory of gravity?"
+      },
+      {
+       "source": "arXiv",
+       "title": "How far are we from the quantum theory of gravity?"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "hep-th/0303185"
+      }
+     ],
+     "earliest_date": "2003-03"
+    }
+   },
+   {
+    "created": "2008-02-09T00:00:00+00:00",
+    "updated": "2025-09-30T13:29:50.683494+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/773699?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/773699?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/773699?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/773699?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/773699?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/773699?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A773699"
+    },
+    "id": "773699",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Thiemann, Thomas"
+      }
+     ],
+     "number_of_pages": 301,
+     "control_number": 773699,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Introduction to Modern Canonical Quantum General Relativity"
+      },
+      {
+       "title": "Modern canonical quantum general relativity"
+      },
+      {
+       "title": "Introduction to modern canonical quantum general relativity"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "gr-qc",
+        "hep-th",
+        "math-ph",
+        "math.FA",
+        "math.MP",
+        "math.OA",
+        "math.SG",
+        "quant-ph"
+       ],
+       "value": "gr-qc/0110034"
+      }
+     ],
+     "earliest_date": "2001"
+    }
+   }
+  ],
+  "total": 51
+ },
+ "links": {
+  "self": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A555166&size=1000&page=1&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages",
+  "bibtex": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A555166&size=1000&page=1&format=bibtex",
+  "latex-eu": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A555166&size=1000&page=1&format=latex-eu",
+  "latex-us": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A555166&size=1000&page=1&format=latex-us",
+  "json": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A555166&size=1000&page=1&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages&format=json",
+  "json-expanded": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A555166&size=1000&page=1&format=json-expanded",
+  "cv": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A555166&size=1000&page=1&format=cv"
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "hits": {
+  "hits": [
+   {
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1427769?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1427769?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1427769?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1427769?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1427769?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1427769?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1427769"
+    },
+    "created": "2016-03-16T00:00:00+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "27",
+       "page_end": "421",
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/1516252"
+       },
+       "year": 2017,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212855"
+       },
+       "page_start": "397",
+       "journal_issue": "1",
+       "journal_title": "Adv.Appl.Clifford Algebras",
+       "parent_record": {
+        "$ref": "https://inspirehep.net/api/literature/1516267"
+       },
+       "cnum": "C15-07-29.1"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Dechant, Pierre-Philippe"
+      }
+     ],
+     "number_of_pages": 25,
+     "control_number": 1427769,
+     "dois": [
+      {
+       "value": "10.1007/s00006-016-0675-9"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "math.RT",
+        "hep-th",
+        "math-ph",
+        "math.GR",
+        "math.MP",
+        "math.QA"
+       ],
+       "value": "1603.04805"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "The E$_{8}$ Geometry from a Clifford Perspective"
+      },
+      {
+       "source": "arXiv",
+       "title": "The $E_8$ geometry from a Clifford perspective"
+      }
+     ],
+     "earliest_date": "2016-02-18"
+    },
+    "updated": "2023-03-09T18:44:53.713024+00:00",
+    "id": "1427769"
+   }
+  ],
+  "total": 1
+ },
+ "links": {
+  "self": "https://inspirehep.net/api/literature/?q=arxiv%3A1603.04805&size=3&page=1&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages",
+  "bibtex": "https://inspirehep.net/api/literature/?q=arxiv%3A1603.04805&size=3&page=1&format=bibtex",
+  "latex-eu": "https://inspirehep.net/api/literature/?q=arxiv%3A1603.04805&size=3&page=1&format=latex-eu",
+  "latex-us": "https://inspirehep.net/api/literature/?q=arxiv%3A1603.04805&size=3&page=1&format=latex-us",
+  "json": "https://inspirehep.net/api/literature/?q=arxiv%3A1603.04805&size=3&page=1&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages&format=json",
+  "json-expanded": "https://inspirehep.net/api/literature/?q=arxiv%3A1603.04805&size=3&page=1&format=json-expanded",
+  "cv": "https://inspirehep.net/api/literature/?q=arxiv%3A1603.04805&size=3&page=1&format=cv"
+ }
+}

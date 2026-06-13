@@ -1,0 +1,6 @@
+# Bulky, re-derivable API caches for the large §4.4 side-anchors (string/twin,
+# ~9 MB). The script re-fetches these live on each run; the §4.4 result is a
+# count (0 intersection) that reproduces in seconds. Small spine/EJA/KN raw
+# files ARE committed as provenance for the §3.4 EMPTY and §4.6 HIT.
+raw/side_het_*.json
+raw/side_twin_*.json

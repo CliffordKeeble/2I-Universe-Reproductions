@@ -1,0 +1,1459 @@
+{
+ "hits": {
+  "hits": [
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Singh, Tejinder P."
+      }
+     ],
+     "number_of_pages": 12,
+     "control_number": 2649032,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "The exceptional Jordan algebra, and its implications for our understanding of gravitation and the weak force"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "physics.gen-ph"
+       ],
+       "value": "2304.01213"
+      }
+     ],
+     "earliest_date": "2023-03-28"
+    },
+    "id": "2649032",
+    "updated": "2023-04-25T07:28:17.143336+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2649032?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2649032?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2649032?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2649032?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2649032?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2649032?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2649032"
+    },
+    "created": "2023-04-05T05:24:08.195963+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Singh, Tejinder P."
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "2912",
+       "artid": "012009",
+       "year": 2024,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212279"
+       },
+       "journal_issue": "1",
+       "journal_title": "J.Phys.Conf.Ser."
+      },
+      {
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/2858639"
+       },
+       "cnum": "C24-07-01.17"
+      }
+     ],
+     "number_of_pages": 12,
+     "control_number": 2858647,
+     "dois": [
+      {
+       "source": "IOP",
+       "value": "10.1088/1742-6596/2912/1/012009"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "physics.gen-ph",
+        "hep-ph"
+       ],
+       "value": "2501.18139"
+      }
+     ],
+     "titles": [
+      {
+       "source": "IOP",
+       "title": "Trace dynamics, octonions and unification: An E$_{8}$ \u00d7 E$_{8}$ theory of unification"
+      },
+      {
+       "source": "arXiv",
+       "title": "Trace dynamics, octonions, and unification: An $E_8 \\times E_8$ theory of unification"
+      }
+     ],
+     "earliest_date": "2024"
+    },
+    "id": "2858647",
+    "updated": "2025-02-01T04:09:12.184303+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2858647?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2858647?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2858647?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2858647?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2858647?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2858647?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2858647"
+    },
+    "created": "2024-12-12T20:08:06.553195+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Ahmed, Rabsan G."
+      },
+      {
+       "full_name": "Singh, Tejinder P."
+      }
+     ],
+     "number_of_pages": 8,
+     "control_number": 2131925,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "A violation of the Tsirelson bound in the pre-quantum theory of trace dynamics"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "quant-ph",
+        "hep-th"
+       ],
+       "value": "2208.02209"
+      }
+     ],
+     "earliest_date": "2022-08-03"
+    },
+    "id": "2131925",
+    "updated": "2025-10-04T00:20:36.543233+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2131925?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2131925?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2131925?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2131925?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2131925?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2131925?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2131925"
+    },
+    "created": "2022-08-04T03:12:49.999655+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Kakade, Kartik"
+      },
+      {
+       "full_name": "Singh, Avnish"
+      },
+      {
+       "full_name": "Singh, Tejinder P."
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "490",
+       "pubinfo_freetext": "Phys. Lett. A 490 (2023) 129191",
+       "artid": "129191",
+       "material": "publication",
+       "year": 2023,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1613965"
+       },
+       "journal_title": "Phys.Lett.A"
+      }
+     ],
+     "number_of_pages": 7,
+     "control_number": 2658984,
+     "dois": [
+      {
+       "material": "publication",
+       "source": "Elsevier B.V.",
+       "value": "10.1016/j.physleta.2023.129191"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1016/j.physleta.2023.129191"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "quant-ph"
+       ],
+       "value": "2305.06706"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Elsevier B.V.",
+       "title": "Spontaneous localisation from a coarse-grained deterministic and non-unitary dynamics"
+      },
+      {
+       "source": "arXiv",
+       "title": "Spontaneous localisation from a coarse-grained deterministic and non-unitary dynamics"
+      }
+     ],
+     "earliest_date": "2023-05-11"
+    },
+    "id": "2658984",
+    "updated": "2026-02-09T13:08:45.112099+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2658984?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2658984?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2658984?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2658984?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2658984?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2658984?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2658984"
+    },
+    "created": "2023-05-12T02:58:16.748383+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Singh, Tejinder P."
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "34",
+       "artid": "2450064",
+       "year": 2025,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1613976"
+       },
+       "journal_issue": "01",
+       "journal_title": "Int.J.Mod.Phys.D"
+      }
+     ],
+     "number_of_pages": 12,
+     "control_number": 2894072,
+     "dois": [
+      {
+       "source": "WSP",
+       "value": "10.1142/S0218271824500640"
+      }
+     ],
+     "titles": [
+      {
+       "source": "WSP",
+       "title": "Two dark clouds on the spacetime horizon"
+      }
+     ],
+     "earliest_date": "2024-12-19"
+    },
+    "id": "2894072",
+    "updated": "2025-02-25T08:14:57.727076+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2894072?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2894072?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2894072?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2894072?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2894072?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2894072?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2894072"
+    },
+    "created": "2025-02-25T08:14:57.138365+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Singh, Tejinder P."
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "2533",
+       "artid": "012013",
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/2630046"
+       },
+       "year": 2023,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212279"
+       },
+       "journal_issue": "1",
+       "journal_title": "J.Phys.Conf.Ser.",
+       "cnum": "C22-09-19.12"
+      }
+     ],
+     "number_of_pages": 19,
+     "control_number": 2673636,
+     "dois": [
+      {
+       "source": "IOP",
+       "value": "10.1088/1742-6596/2533/1/012013"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1088/1742-6596/2533/1/012013"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "physics.gen-ph"
+       ],
+       "value": "2308.16216"
+      }
+     ],
+     "titles": [
+      {
+       "source": "IOP",
+       "title": "Gravitation, and quantum theory, as emergent phenomena"
+      },
+      {
+       "source": "arXiv",
+       "title": "Gravitation, and quantum theory, as emergent phenomena"
+      }
+     ],
+     "earliest_date": "2023-08-30"
+    },
+    "id": "2673636",
+    "updated": "2023-09-02T02:50:51.196497+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2673636?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2673636?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2673636?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2673636?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2673636?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2673636?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2673636"
+    },
+    "created": "2023-07-03T06:16:21.738942+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Belhaj, Adil"
+      },
+      {
+       "full_name": "Ennadifi, Salah Eddine"
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "64",
+       "artid": "51",
+       "year": 2025,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214707"
+       },
+       "page_start": "51",
+       "journal_issue": "2",
+       "journal_title": "Int.J.Theor.Phys."
+      },
+      {
+       "pubinfo_freetext": "Int.J.Theo.Phys.(2025)",
+       "material": "publication"
+      }
+     ],
+     "number_of_pages": 12,
+     "control_number": 2714214,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1007/s10773-025-05908-8"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-ph"
+       ],
+       "value": "2310.15327"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "On Quark Substructures in an Inspired Unified Model"
+      },
+      {
+       "source": "arXiv",
+       "title": "On Quark Substructures in an Inspired Unified Model"
+      }
+     ],
+     "earliest_date": "2023-10-23"
+    },
+    "id": "2714214",
+    "updated": "2025-02-18T05:33:38.200012+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2714214?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2714214?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2714214?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2714214?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2714214?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2714214?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2714214"
+    },
+    "created": "2023-10-26T15:24:20.179172+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Gresnigt, Niels"
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "2667",
+       "artid": "012061",
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/2696376"
+       },
+       "year": 2023,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212279"
+       },
+       "journal_issue": "1",
+       "journal_title": "J.Phys.Conf.Ser.",
+       "cnum": "C23-07-24.6"
+      }
+     ],
+     "number_of_pages": 7,
+     "control_number": 2739650,
+     "dois": [
+      {
+       "source": "IOP",
+       "value": "10.1088/1742-6596/2667/1/012061"
+      }
+     ],
+     "titles": [
+      {
+       "source": "IOP",
+       "title": "A sedenion algebraic representation of three colored fermion generations"
+      }
+     ],
+     "earliest_date": "2023"
+    },
+    "id": "2739650",
+    "updated": "2025-07-11T19:16:31.069997+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2739650?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2739650?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2739650?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2739650?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2739650?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2739650?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2739650"
+    },
+    "created": "2023-12-21T11:42:51.395098+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Singh, Tejinder P."
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "4",
+       "page_end": "969",
+       "year": 2022,
+       "curated_relation": true,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1721862"
+       },
+       "page_start": "948",
+       "journal_issue": "3",
+       "journal_title": "MDPI Physics"
+      }
+     ],
+     "number_of_pages": 22,
+     "control_number": 2148203,
+     "dois": [
+      {
+       "source": "MDPI",
+       "value": "10.3390/physics4030063"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.3390/physics4030063"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "physics.gen-ph",
+        "gr-qc",
+        "hep-ph",
+        "hep-th"
+       ],
+       "value": "2209.03205"
+      }
+     ],
+     "titles": [
+      {
+       "source": "MDPI",
+       "title": "Why Do Elementary Particles Have Such Strange Mass Ratios?\u2014The Importance of Quantum Gravity at Low Energies \u2020"
+      },
+      {
+       "source": "arXiv",
+       "title": "Why do elementary particles have such strange mass ratios? - The role of quantum gravity at low energies"
+      }
+     ],
+     "earliest_date": "2022-08-25"
+    },
+    "id": "2148203",
+    "updated": "2026-03-25T08:45:38.879884+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2148203?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2148203?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2148203?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2148203?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2148203?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2148203?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2148203"
+    },
+    "created": "2022-09-08T03:57:37.879325+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Patel, Aditya Ankur"
+      },
+      {
+       "full_name": "Singh, Tejinder P."
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "9",
+       "artid": "440",
+       "year": 2023,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1388334"
+       },
+       "page_start": "440",
+       "journal_issue": "10",
+       "journal_title": "Universe"
+      },
+      {
+       "journal_volume": "9",
+       "pubinfo_freetext": "Universe 2023, 9, 440",
+       "artid": "440",
+       "material": "publication",
+       "year": 2023,
+       "page_start": "440",
+       "journal_title": "Universe"
+      }
+     ],
+     "number_of_pages": 36,
+     "control_number": 2655662,
+     "dois": [
+      {
+       "source": "MDPI",
+       "value": "10.3390/universe9100440"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.3390/universe9100440"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-ph"
+       ],
+       "value": "2305.00668"
+      }
+     ],
+     "titles": [
+      {
+       "source": "MDPI",
+       "title": "CKM Matrix Parameters from the Exceptional Jordan Algebra"
+      },
+      {
+       "source": "arXiv",
+       "title": "CKM matrix parameters from the exceptional Jordan algebra"
+      },
+      {
+       "source": "arXiv",
+       "title": "CKM matrix parameters from an algebra"
+      }
+     ],
+     "earliest_date": "2023-05-01"
+    },
+    "id": "2655662",
+    "updated": "2023-11-23T11:24:36.247315+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2655662?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2655662?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2655662?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2655662?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2655662?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2655662?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2655662"
+    },
+    "created": "2023-05-02T03:04:26.605517+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Gresnigt, N.G."
+      },
+      {
+       "full_name": "Gourlay, L."
+      },
+      {
+       "full_name": "Varma, A."
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "54",
+       "page_end": "1010",
+       "year": 2023,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214648"
+       },
+       "page_start": "1006",
+       "journal_issue": "6",
+       "journal_title": "Phys.Part.Nucl."
+      }
+     ],
+     "number_of_pages": 5,
+     "control_number": 2729405,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1134/S1063779623060138"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "Toward a Three Generation Model of Standard Model Fermions Based on Cayley\u2013Dickson Sedenions"
+      }
+     ],
+     "earliest_date": "2023-11-29"
+    },
+    "id": "2729405",
+    "updated": "2024-10-01T13:26:39.302050+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2729405?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2729405?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2729405?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2729405?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2729405?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2729405?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2729405"
+    },
+    "created": "2023-12-04T09:17:07.720358+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Raj, Sherry"
+      },
+      {
+       "full_name": "Singh, Tejinder P."
+      }
+     ],
+     "number_of_pages": 16,
+     "control_number": 2139860,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "A Lagrangian with $E_8\\times E_8$ symmetry for the standard model and pre-gravitation I. - The bosonic Lagrangian, and a theoretical derivation of the weak mixing angle"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-ph",
+        "hep-th"
+       ],
+       "value": "2208.09811"
+      }
+     ],
+     "earliest_date": "2022-08-21"
+    },
+    "id": "2139860",
+    "updated": "2023-06-27T12:20:00.131665+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2139860?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2139860?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2139860?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2139860?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2139860?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2139860?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2139860"
+    },
+    "created": "2022-08-23T03:21:23.162100+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Singh, Tejinder P."
+      }
+     ],
+     "number_of_pages": 20,
+     "control_number": 3167904,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "The Residual $288$ of the $E_8\\times\u03c9E_8$ Program as Adjoint-Lineage Scaffolding Labels: an Ontology, and the Status of the Bifermionic Lagrangian"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-ph",
+        "hep-th"
+       ],
+       "value": "2606.12477"
+      }
+     ],
+     "earliest_date": "2026-06-10"
+    },
+    "id": "3167904",
+    "updated": "2026-06-13T04:05:18.409974+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/3167904?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/3167904?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/3167904?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/3167904?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/3167904?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/3167904?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A3167904"
+    },
+    "created": "2026-06-12T04:13:58.256443+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Gresnigt, Niels G."
+      },
+      {
+       "full_name": "Gourlay, Liam"
+      },
+      {
+       "full_name": "Varma, Abhinav"
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "83",
+       "artid": "747",
+       "year": 2023,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1613946"
+       },
+       "page_start": "747",
+       "journal_issue": "8",
+       "journal_title": "Eur.Phys.J.C"
+      }
+     ],
+     "number_of_pages": 18,
+     "control_number": 2671346,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1140/epjc/s10052-023-11923-y"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1140/epjc/s10052-023-11923-y"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "physics.gen-ph"
+       ],
+       "value": "2306.13098"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "Three generations of colored fermions with $S_3$ family symmetry from Cayley\u2013Dickson sedenions"
+      },
+      {
+       "source": "arXiv",
+       "title": "Three generations of colored fermions with $S_3$ family symmetry from Cayley-Dickson sedenions"
+      }
+     ],
+     "earliest_date": "2023-06-11"
+    },
+    "id": "2671346",
+    "updated": "2024-02-17T03:35:33.374390+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2671346?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2671346?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2671346?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2671346?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2671346?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2671346?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2671346"
+    },
+    "created": "2023-06-26T05:41:05.056045+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Marrani, Alessio"
+      },
+      {
+       "full_name": "Corradetti, Daniele"
+      },
+      {
+       "full_name": "Zucconi, Francesco"
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "58",
+       "artid": "075202",
+       "year": 2025,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1613983"
+       },
+       "journal_issue": "7",
+       "journal_title": "J.Phys.A"
+      }
+     ],
+     "number_of_pages": 18,
+     "control_number": 2704878,
+     "dois": [
+      {
+       "source": "IOP",
+       "value": "10.1088/1751-8121/adafef"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1088/1751-8121/adafef"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "math-ph",
+        "math.MP",
+        "math.RA"
+       ],
+       "value": "2309.17435"
+      }
+     ],
+     "titles": [
+      {
+       "source": "IOP",
+       "title": "Physics with non-unital algebras? An invitation to the Okubo algebra"
+      },
+      {
+       "source": "arXiv",
+       "title": "Physics with non-unital algebras? An invitation to the Okubo algebra"
+      }
+     ],
+     "earliest_date": "2023-09-29"
+    },
+    "id": "2704878",
+    "updated": "2025-05-28T09:04:58.655426+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2704878?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2704878?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2704878?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2704878?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2704878?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2704878?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2704878"
+    },
+    "created": "2023-10-02T02:39:46.241888+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Vaibhav, Vatsalya"
+      },
+      {
+       "full_name": "Singh, Tejinder P."
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "33",
+       "artid": "32",
+       "year": 2023,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212855"
+       },
+       "page_start": "32",
+       "journal_issue": "3",
+       "journal_title": "Adv.Appl.Clifford Algebras"
+      }
+     ],
+     "number_of_pages": 20,
+     "control_number": 1899046,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1007/s00006-023-01278-8"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1007/s00006-023-01278-8"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-ph",
+        "gr-qc",
+        "hep-th"
+       ],
+       "value": "2108.01858"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "Left-Right Symmetric Fermions and Sterile Neutrinos from Complex Split Biquaternions and Bioctonions"
+      },
+      {
+       "source": "arXiv",
+       "title": "Left-Right symmetric fermions and sterile neutrinos from complex split biquaternions and bioctonions"
+      }
+     ],
+     "earliest_date": "2021-08-04"
+    },
+    "id": "1899046",
+    "updated": "2025-08-07T20:30:32.268004+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1899046?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1899046?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1899046?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1899046?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1899046?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1899046?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1899046"
+    },
+    "created": "2021-08-05T10:18:13.004226+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Furquan, Mohammad"
+      },
+      {
+       "full_name": "Singh, Tejinder P."
+      },
+      {
+       "full_name": "Wesley, P. Samuel"
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "11",
+       "artid": "137",
+       "year": 2025,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1388334"
+       },
+       "page_start": "137",
+       "journal_issue": "5",
+       "journal_title": "Universe"
+      },
+      {
+       "journal_volume": "11",
+       "pubinfo_freetext": "Universe 2025, 11, 137",
+       "artid": "137",
+       "material": "publication",
+       "year": 2025,
+       "journal_title": "Universe"
+      }
+     ],
+     "number_of_pages": 21,
+     "control_number": 2925146,
+     "dois": [
+      {
+       "source": "MDPI",
+       "value": "10.3390/universe11050137"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "physics.gen-ph"
+       ],
+       "value": "2505.18797"
+      }
+     ],
+     "titles": [
+      {
+       "source": "MDPI",
+       "title": "Time-like Extra Dimensions: Quantum Nonlocality, Spin, and Tsirelson Bound"
+      },
+      {
+       "source": "arXiv",
+       "title": "Time-like Extra Dimensions: Quantum Nonlocality, Spin, and Tsirelson Bound"
+      }
+     ],
+     "earliest_date": "2025-04-27"
+    },
+    "id": "2925146",
+    "updated": "2026-02-09T14:41:50.268346+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2925146?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2925146?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2925146?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2925146?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2925146?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2925146?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2925146"
+    },
+    "created": "2025-05-27T09:06:40.088246+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Finster, Felix"
+      },
+      {
+       "full_name": "Isidro, Jos\u00e9 M."
+      },
+      {
+       "full_name": "Paganini, Claudio F."
+      },
+      {
+       "full_name": "Singh, Tejinder P."
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "10",
+       "artid": "123",
+       "year": 2024,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1388334"
+       },
+       "page_start": "123",
+       "journal_issue": "3",
+       "journal_title": "Universe"
+      },
+      {
+       "journal_volume": "10",
+       "pubinfo_freetext": "Universe 2024, 10, 123",
+       "artid": "123",
+       "material": "publication",
+       "year": 2024,
+       "page_start": "123",
+       "journal_title": "Universe"
+      }
+     ],
+     "control_number": 2737282,
+     "dois": [
+      {
+       "source": "MDPI",
+       "value": "10.3390/universe10030123"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.3390/universe10030123"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "gr-qc",
+        "astro-ph.CO",
+        "astro-ph.GA",
+        "hep-ph"
+       ],
+       "value": "2312.08811"
+      }
+     ],
+     "titles": [
+      {
+       "source": "MDPI",
+       "title": "Theoretically Motivated Dark Electromagnetism as the Origin of Relativistic Modified Newtonian Dynamics"
+      },
+      {
+       "source": "arXiv",
+       "title": "Theoretically motivated dark electromagnetism as the origin of relativistic MOND"
+      }
+     ],
+     "earliest_date": "2023-12-14"
+    },
+    "id": "2737282",
+    "updated": "2026-02-27T09:05:36.667653+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2737282?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2737282?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2737282?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2737282?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2737282?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2737282?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2737282"
+    },
+    "created": "2023-12-16T03:37:03.605418+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Singh, Tejinder P."
+      }
+     ],
+     "number_of_pages": 207,
+     "control_number": 2960515,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Fermion mass ratios from the exceptional Jordan algebra"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-ph"
+       ],
+       "value": "2508.10131"
+      }
+     ],
+     "earliest_date": "2025-08-13"
+    },
+    "id": "2960515",
+    "updated": "2026-05-19T04:05:58.045644+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2960515?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2960515?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2960515?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2960515?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2960515?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2960515?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2960515"
+    },
+    "created": "2025-08-15T04:10:57.360002+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Singh, Tejinder P."
+      }
+     ],
+     "number_of_pages": 21,
+     "control_number": 3141813,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Experimental predictions of the $E_8 \\times \u03c9E_8$ octonionic unification program : A falsification-oriented catalogue for quantum foundations, particle physics, gravitation, and cosmology"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-ph",
+        "gr-qc",
+        "quant-ph"
+       ],
+       "value": "2604.06288"
+      }
+     ],
+     "earliest_date": "2026-04-07"
+    },
+    "id": "3141813",
+    "updated": "2026-04-10T04:11:15.962611+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/3141813?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/3141813?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/3141813?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/3141813?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/3141813?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/3141813?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A3141813"
+    },
+    "created": "2026-04-09T04:14:44.623378+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Wesley, P. Samuel"
+      },
+      {
+       "full_name": "Singh, Tejinder P."
+      },
+      {
+       "full_name": "Isidro, J.M."
+      }
+     ],
+     "number_of_pages": 88,
+     "control_number": 3122905,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Gravity and electroweak sector from symmetry breaking of an $SO(3,3)$ BF theory"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "gr-qc"
+       ],
+       "value": "2602.19151"
+      }
+     ],
+     "earliest_date": "2026-02-22"
+    },
+    "id": "3122905",
+    "updated": "2026-04-01T04:11:10.844673+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/3122905?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/3122905?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/3122905?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/3122905?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/3122905?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/3122905?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A3122905"
+    },
+    "created": "2026-02-24T04:18:49.052549+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Jackson, David J."
+      }
+     ],
+     "number_of_pages": 84,
+     "control_number": 2691503,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Generalised Proper Time and the Universal Bootstrap"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "physics.gen-ph"
+       ],
+       "value": "2308.13528"
+      }
+     ],
+     "earliest_date": "2023-08-08"
+    },
+    "id": "2691503",
+    "updated": "2025-06-18T16:31:11.093402+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2691503?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2691503?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2691503?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2691503?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2691503?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2691503?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2691503"
+    },
+    "created": "2023-08-29T05:24:02.603905+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Jackson, David J."
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "1",
+       "year": 2025
+      }
+     ],
+     "control_number": 2971677,
+     "dois": [
+      {
+       "value": "10.14293/PR2199.001769.v1"
+      }
+     ],
+     "titles": [
+      {
+       "source": "submitter",
+       "title": "Unification by Generalising Proper Time Beyond the Extra Spatial Dimensions Paradigm"
+      }
+     ],
+     "earliest_date": "2025-06-27"
+    },
+    "id": "2971677",
+    "updated": "2026-04-16T12:55:08.150916+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2971677?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2971677?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2971677?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2971677?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2971677?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2971677?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2971677"
+    },
+    "created": "2025-09-22T15:20:06.214659+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Acquaviva, Giovanni"
+      },
+      {
+       "full_name": "Iorio, Alfredo"
+      },
+      {
+       "full_name": "Pais, Pablo"
+      },
+      {
+       "full_name": "Smaldone, Luca"
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "8",
+       "artid": "455",
+       "year": 2022,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1388334"
+       },
+       "page_start": "455",
+       "journal_issue": "9",
+       "journal_title": "Universe"
+      }
+     ],
+     "number_of_pages": 27,
+     "control_number": 2109053,
+     "dois": [
+      {
+       "source": "MDPI",
+       "value": "10.3390/universe8090455"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.3390/universe8090455"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "cond-mat.mtrl-sci",
+        "cond-mat.other",
+        "gr-qc"
+       ],
+       "value": "2207.04097"
+      }
+     ],
+     "titles": [
+      {
+       "source": "MDPI",
+       "title": "Hunting Quantum Gravity with Analogs: The Case of Graphene \u2020"
+      },
+      {
+       "source": "arXiv",
+       "title": "Hunting Quantum Gravity with Analogs: the case of graphene"
+      }
+     ],
+     "earliest_date": "2022-07-08"
+    },
+    "id": "2109053",
+    "updated": "2024-10-01T15:43:08.561148+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2109053?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2109053?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2109053?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2109053?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2109053?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2109053?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2109053"
+    },
+    "created": "2022-07-12T03:06:44.855249+00:00"
+   },
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Gourlay, Liam"
+      }
+     ],
+     "publication_info": [
+      {
+       "year": 2025
+      }
+     ],
+     "number_of_pages": 208,
+     "control_number": 3121895,
+     "dois": [
+      {
+       "source": "U. Liverpool (main)",
+       "value": "10.17638/03196062"
+      }
+     ],
+     "titles": [
+      {
+       "source": "U. Liverpool (main)",
+       "title": "An Algebraic Framework for Describing Three Fermion Generations Using a Discrete Family Symmetry"
+      }
+     ],
+     "earliest_date": "2025-12-01"
+    },
+    "id": "3121895",
+    "updated": "2026-03-16T09:26:39.474725+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/3121895?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/3121895?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/3121895?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/3121895?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/3121895?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/3121895?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A3121895"
+    },
+    "created": "2026-02-20T18:01:28.664519+00:00"
+   }
+  ],
+  "total": 25
+ },
+ "links": {
+  "self": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2095962&size=1000&page=1&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages",
+  "bibtex": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2095962&size=1000&page=1&format=bibtex",
+  "latex-eu": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2095962&size=1000&page=1&format=latex-eu",
+  "latex-us": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2095962&size=1000&page=1&format=latex-us",
+  "json": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2095962&size=1000&page=1&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages&format=json",
+  "json-expanded": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2095962&size=1000&page=1&format=json-expanded",
+  "cv": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2095962&size=1000&page=1&format=cv"
+ }
+}

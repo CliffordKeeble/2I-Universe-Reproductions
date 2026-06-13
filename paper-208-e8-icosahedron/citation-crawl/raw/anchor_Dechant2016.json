@@ -1,0 +1,71 @@
+{
+ "hits": {
+  "hits": [
+   {
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Dechant, Pierre-Philippe"
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "472",
+       "artid": "20150504",
+       "year": 2016,
+       "journal_title": "Proc.Roy.Soc.Lond.A"
+      }
+     ],
+     "number_of_pages": 14,
+     "control_number": 1422619,
+     "dois": [
+      {
+       "value": "10.1098/rspa.2015.0504"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "math-ph",
+        "hep-ph",
+        "hep-th",
+        "math.MP",
+        "math.RT"
+       ],
+       "value": "1602.05985"
+      }
+     ],
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "The Birth of $E_8$ out of the Spinors of the Icosahedron"
+      }
+     ],
+     "earliest_date": "2016-01-01"
+    },
+    "created": "2016-02-22T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1422619?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1422619?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1422619?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1422619?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1422619?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1422619?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1422619"
+    },
+    "updated": "2023-03-06T14:48:53.646308+00:00",
+    "id": "1422619"
+   }
+  ],
+  "total": 1
+ },
+ "links": {
+  "self": "https://inspirehep.net/api/literature/?q=arxiv%3A1602.05985&size=3&page=1&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages",
+  "bibtex": "https://inspirehep.net/api/literature/?q=arxiv%3A1602.05985&size=3&page=1&format=bibtex",
+  "latex-eu": "https://inspirehep.net/api/literature/?q=arxiv%3A1602.05985&size=3&page=1&format=latex-eu",
+  "latex-us": "https://inspirehep.net/api/literature/?q=arxiv%3A1602.05985&size=3&page=1&format=latex-us",
+  "json": "https://inspirehep.net/api/literature/?q=arxiv%3A1602.05985&size=3&page=1&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages&format=json",
+  "json-expanded": "https://inspirehep.net/api/literature/?q=arxiv%3A1602.05985&size=3&page=1&format=json-expanded",
+  "cv": "https://inspirehep.net/api/literature/?q=arxiv%3A1602.05985&size=3&page=1&format=cv"
+ }
+}

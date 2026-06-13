@@ -1,0 +1,1665 @@
+{
+ "hits": {
+  "hits": [
+   {
+    "created": "2019-12-11T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1769886?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1769886?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1769886?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1769886?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1769886?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1769886?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1769886"
+    },
+    "updated": "2023-10-03T07:31:55.500958+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "60",
+       "artid": "113502",
+       "year": 2019,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214658"
+       },
+       "journal_issue": "11",
+       "journal_title": "J.Math.Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Gresnigt, N."
+      }
+     ],
+     "number_of_pages": 7,
+     "control_number": 1769886,
+     "dois": [
+      {
+       "source": "AIP",
+       "value": "10.1063/1.5055046"
+      }
+     ],
+     "titles": [
+      {
+       "source": "AIP",
+       "title": "A combing algorithm for orientable braided 3-belts"
+      }
+     ],
+     "earliest_date": "2019-11-08"
+    },
+    "id": "1769886"
+   },
+   {
+    "created": "2020-11-19T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1831168?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1831168?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1831168?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1831168?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1831168?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1831168?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1831168"
+    },
+    "updated": "2023-03-06T18:13:13.078731+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "EPS-HEP2019",
+       "artid": "615",
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/1716510"
+       },
+       "year": 2020,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213080"
+       },
+       "page_start": "615",
+       "journal_title": "PoS",
+       "parent_record": {
+        "$ref": "https://inspirehep.net/api/literature/1830715"
+       },
+       "cnum": "C19-07-10.1"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Gresnigt, Niels"
+      }
+     ],
+     "number_of_pages": 6,
+     "control_number": 1831168,
+     "dois": [
+      {
+       "source": "SISSA",
+       "value": "10.22323/1.364.0615"
+      }
+     ],
+     "titles": [
+      {
+       "source": "SISSA",
+       "title": "Sedenions, the Clifford algebra $\\mathbb{C}l(8)$, and three fermion generations"
+      }
+     ],
+     "earliest_date": "2019-10-28"
+    },
+    "id": "1831168"
+   },
+   {
+    "created": "2022-11-04T11:13:33.819554+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2176286?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2176286?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2176286?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2176286?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2176286?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2176286?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2176286"
+    },
+    "updated": "2023-12-17T10:07:52.440562+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "ICHEP2022",
+       "artid": "413",
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/1707423"
+       },
+       "year": 2022,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213080"
+       },
+       "page_start": "413",
+       "journal_title": "PoS",
+       "cnum": "C22-07-06"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Masi, Nicolo"
+      }
+     ],
+     "number_of_pages": 6,
+     "control_number": 2176286,
+     "dois": [
+      {
+       "source": "SISSA",
+       "value": "10.22323/1.414.0413"
+      }
+     ],
+     "titles": [
+      {
+       "source": "SISSA",
+       "title": "An exceptional G(2) extension of the Standard Model from an algebraic conjecture: implications for the strong sector and dark matter"
+      }
+     ],
+     "earliest_date": "2022-10-20"
+    },
+    "id": "2176286"
+   },
+   {
+    "created": "2020-08-11T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1811069?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1811069?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1811069?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1811069?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1811069?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1811069?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1811069"
+    },
+    "updated": "2026-02-09T11:37:42.088924+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "12",
+       "artid": "1214",
+       "year": 2020,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1211800"
+       },
+       "page_start": "1214",
+       "journal_issue": "8",
+       "journal_title": "Symmetry"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Capozziello, Salvatore"
+      },
+      {
+       "full_name": "Pin\u010d\u00e1k, Richard"
+      },
+      {
+       "full_name": "Barto\u0161, Erik"
+      }
+     ],
+     "number_of_pages": 32,
+     "control_number": 1811069,
+     "dois": [
+      {
+       "source": "MDPI",
+       "value": "10.3390/sym12081214"
+      }
+     ],
+     "titles": [
+      {
+       "source": "MDPI",
+       "title": "A Supersymmetry and Quantum Cryptosystem with Path Integral Approach in Biology"
+      }
+     ],
+     "earliest_date": "2020-07-24"
+    },
+    "id": "1811069"
+   },
+   {
+    "created": "2022-01-22T11:05:10.158520+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2015081?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2015081?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2015081?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2015081?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2015081?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2015081?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2015081"
+    },
+    "updated": "2023-11-23T10:21:46.034835+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "81",
+       "artid": "506",
+       "year": 2021,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1613946"
+       },
+       "page_start": "506",
+       "journal_issue": "6",
+       "journal_title": "Eur.Phys.J.C"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Gresnigt, Niels G."
+      }
+     ],
+     "control_number": 2015081,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1140/epjc/s10052-021-09288-1"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "Topological preons from algebraic spinors"
+      }
+     ],
+     "earliest_date": "2021-06-07"
+    },
+    "id": "2015081"
+   },
+   {
+    "created": "2021-06-03T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1866846?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1866846?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1866846?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1866846?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1866846?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1866846?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1866846"
+    },
+    "updated": "2023-10-03T07:54:58.851171+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "104",
+       "artid": "086021",
+       "material": "publication",
+       "year": 2021,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1613970"
+       },
+       "journal_issue": "8",
+       "journal_title": "Phys.Rev.D"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Gresnigt, Niels"
+      },
+      {
+       "full_name": "Marciano, Antonino"
+      },
+      {
+       "full_name": "Zappala, Emanuele"
+      }
+     ],
+     "number_of_pages": 15,
+     "control_number": 1866846,
+     "dois": [
+      {
+       "material": "publication",
+       "source": "APS",
+       "value": "10.1103/PhysRevD.104.086021"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1103/PhysRevD.104.086021"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "gr-qc"
+       ],
+       "value": "2106.01332"
+      }
+     ],
+     "titles": [
+      {
+       "source": "APS",
+       "title": "Braided matter interactions in quantum gravity via one-handle attachment"
+      },
+      {
+       "source": "arXiv",
+       "title": "Braided matter interactions in quantum gravity via 1-handle attachment"
+      }
+     ],
+     "earliest_date": "2021-05-31"
+    },
+    "id": "1866846"
+   },
+   {
+    "created": "2020-03-20T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1787104?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1787104?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1787104?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1787104?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1787104?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1787104?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1787104"
+    },
+    "updated": "2023-03-10T15:56:25.693432+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "80",
+       "artid": "583",
+       "year": 2020,
+       "page_start": "583",
+       "journal_issue": "6",
+       "journal_title": "Eur.Phys.J.C"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Gresnigt, Niels G."
+      }
+     ],
+     "number_of_pages": 13,
+     "control_number": 1787104,
+     "dois": [
+      {
+       "source": "bibmatch",
+       "value": "10.1140/epjc/s10052-020-8141-1"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1140/epjc/s10052-020-8141-1"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "physics.gen-ph"
+       ],
+       "value": "2003.08814"
+      }
+     ],
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "The Standard Model particle content with complete gauge symmetries from the minimal ideals of two Clifford algebras"
+      },
+      {
+       "source": "arXiv",
+       "title": "The Standard Model gauge symmetries and particle content from the minimal ideals of two Clifford algebras"
+      }
+     ],
+     "earliest_date": "2020-03-29"
+    },
+    "id": "1787104"
+   },
+   {
+    "created": "2019-06-13T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1739592?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1739592?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1739592?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1739592?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1739592?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1739592?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1739592"
+    },
+    "updated": "2023-03-06T17:23:58.627468+00:00",
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Gillard, Adam B."
+      },
+      {
+       "full_name": "Gresnigt, Niels G."
+      }
+     ],
+     "number_of_pages": 23,
+     "control_number": 1739592,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "The $C\\ell(8)$ algebra of three fermion generations with spin and full internal symmetries"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "physics.gen-ph",
+        "hep-th"
+       ],
+       "value": "1906.05102"
+      }
+     ],
+     "earliest_date": "2019-05-20"
+    },
+    "id": "1739592"
+   },
+   {
+    "created": "2020-04-24T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1792464?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1792464?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1792464?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1792464?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1792464?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1792464?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1792464"
+    },
+    "updated": "2023-10-03T07:29:31.912133+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "808",
+       "artid": "135687",
+       "year": 2020,
+       "journal_title": "Phys.Lett.B"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Gresnigt, Niels G."
+      }
+     ],
+     "number_of_pages": 11,
+     "control_number": 1792464,
+     "dois": [
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1016/j.physletb.2020.135687"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "physics.gen-ph"
+       ],
+       "value": "2004.11140"
+      }
+     ],
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "A topological model of composite preons from the minimal ideals of two Clifford algebras"
+      }
+     ],
+     "earliest_date": "2020-04-16"
+    },
+    "id": "1792464"
+   },
+   {
+    "created": "2021-04-08T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1856681?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1856681?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1856681?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1856681?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1856681?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1856681?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1856681"
+    },
+    "updated": "2026-04-13T11:28:04.057355+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "13",
+       "artid": "581",
+       "year": 2021,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1211800"
+       },
+       "page_start": "581",
+       "journal_issue": "4",
+       "journal_title": "Symmetry"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Heusler, Stefan"
+      },
+      {
+       "full_name": "Schlummer, Paul"
+      },
+      {
+       "full_name": "Ubben, Malte S."
+      }
+     ],
+     "number_of_pages": 30,
+     "control_number": 1856681,
+     "dois": [
+      {
+       "source": "MDPI",
+       "value": "10.3390/sym13040581"
+      }
+     ],
+     "titles": [
+      {
+       "source": "MDPI",
+       "title": "The Topological Origin of Quantum Randomness"
+      }
+     ],
+     "earliest_date": "2021-04-01"
+    },
+    "id": "1856681"
+   },
+   {
+    "created": "2020-03-24T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1787633?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1787633?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1787633?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1787633?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1787633?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1787633?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1787633"
+    },
+    "updated": "2023-03-06T18:09:45.618518+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "12",
+       "artid": "98",
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/1715037"
+       },
+       "year": 2020,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1211800"
+       },
+       "page_start": "98",
+       "journal_issue": "1",
+       "journal_title": "Symmetry",
+       "parent_record": {
+        "$ref": "https://inspirehep.net/api/literature/1773118"
+       },
+       "cnum": "C19-09-01"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Asselmeyer-Maluga, Torsten"
+      },
+      {
+       "full_name": "Kr\u00f3l, Jerzy"
+      },
+      {
+       "full_name": "Miller, Tomasz"
+      }
+     ],
+     "number_of_pages": 12,
+     "control_number": 1787633,
+     "dois": [
+      {
+       "source": "MDPI",
+       "value": "10.3390/sym12010098"
+      }
+     ],
+     "titles": [
+      {
+       "source": "MDPI",
+       "title": "Does Our Universe Prefer Exotic Smoothness?"
+      }
+     ],
+     "earliest_date": "2020-01-05"
+    },
+    "id": "1787633"
+   },
+   {
+    "created": "2019-01-08T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1712385?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1712385?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1712385?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1712385?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1712385?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1712385?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1712385"
+    },
+    "updated": "2023-03-06T16:18:38.733995+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "1194",
+       "artid": "012040",
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/1704251"
+       },
+       "year": 2019,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212279"
+       },
+       "journal_issue": "1",
+       "journal_title": "J.Phys.Conf.Ser.",
+       "parent_record": {
+        "$ref": "https://inspirehep.net/api/literature/1732444"
+       },
+       "cnum": "C18-07-09.9"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Gresnigt, Niels G."
+      }
+     ],
+     "number_of_pages": 10,
+     "control_number": 1712385,
+     "dois": [
+      {
+       "source": "bibmatch",
+       "value": "10.1088/1742-6596/1194/1/012040"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1088/1742-6596/1194/1/012040"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "physics.gen-ph",
+        "hep-th"
+       ],
+       "value": "1901.01312"
+      }
+     ],
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Braided fermions from Hurwitz algebras"
+      }
+     ],
+     "earliest_date": "2018-12-20"
+    },
+    "id": "1712385"
+   },
+   {
+    "created": "2019-04-09T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1728675?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1728675?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1728675?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1728675?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1728675?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1728675?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1728675"
+    },
+    "updated": "2023-03-06T17:26:06.394811+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "79",
+       "pubinfo_freetext": "Eur. Phys. J. C (2019) 79: 446",
+       "artid": "446",
+       "material": "publication",
+       "year": 2019,
+       "page_start": "446",
+       "journal_issue": "5",
+       "journal_title": "Eur.Phys.J.C"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Gillard, Adam B."
+      },
+      {
+       "full_name": "Gresnigt, Niels G."
+      }
+     ],
+     "number_of_pages": 22,
+     "control_number": 1728675,
+     "dois": [
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1140/epjc/s10052-019-6967-1"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "1904.03186"
+      }
+     ],
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Three fermion generations with two unbroken gauge symmetries from the complex sedenions"
+      }
+     ],
+     "earliest_date": "2019-04-05"
+    },
+    "id": "1728675"
+   },
+   {
+    "created": "2023-12-21T11:42:51.395098+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2739650?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2739650?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2739650?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2739650?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2739650?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2739650?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2739650"
+    },
+    "updated": "2025-07-11T19:16:31.069997+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "2667",
+       "artid": "012061",
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/2696376"
+       },
+       "year": 2023,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212279"
+       },
+       "journal_issue": "1",
+       "journal_title": "J.Phys.Conf.Ser.",
+       "cnum": "C23-07-24.6"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Gresnigt, Niels"
+      }
+     ],
+     "number_of_pages": 7,
+     "control_number": 2739650,
+     "dois": [
+      {
+       "source": "IOP",
+       "value": "10.1088/1742-6596/2667/1/012061"
+      }
+     ],
+     "titles": [
+      {
+       "source": "IOP",
+       "title": "A sedenion algebraic representation of three colored fermion generations"
+      }
+     ],
+     "earliest_date": "2023"
+    },
+    "id": "2739650"
+   },
+   {
+    "created": "2019-04-30T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1732150?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1732150?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1732150?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1732150?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1732150?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1732150?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1732150"
+    },
+    "updated": "2026-02-09T11:13:47.947462+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "1194",
+       "artid": "012097",
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/1704251"
+       },
+       "year": 2019,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212279"
+       },
+       "journal_issue": "1",
+       "journal_title": "J.Phys.Conf.Ser.",
+       "parent_record": {
+        "$ref": "https://inspirehep.net/api/literature/1732444"
+       },
+       "cnum": "C18-07-09.9"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Sheppeard, M.D."
+      }
+     ],
+     "number_of_pages": 9,
+     "control_number": 1732150,
+     "dois": [
+      {
+       "source": "IOP",
+       "value": "10.1088/1742-6596/1194/1/012097"
+      }
+     ],
+     "titles": [
+      {
+       "source": "IOP",
+       "title": "Constraining the Standard Model in Motivic Quantum Gravity"
+      }
+     ],
+     "earliest_date": "2019-04-24"
+    },
+    "id": "1732150"
+   },
+   {
+    "created": "2025-01-08T08:00:56.562303+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2865995?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2865995?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2865995?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2865995?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2865995?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2865995?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2865995"
+    },
+    "updated": "2025-12-16T04:04:56.366041+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "64",
+       "artid": "221",
+       "year": 2025,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214707"
+       },
+       "page_start": "221",
+       "journal_issue": "8",
+       "journal_title": "Int.J.Theor.Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Chester, David"
+      },
+      {
+       "full_name": "Arsiwalla, Xerxes D."
+      },
+      {
+       "full_name": "Kauffman, Louis H."
+      }
+     ],
+     "number_of_pages": 32,
+     "control_number": 2865995,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1007/s10773-025-06087-2"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1007/s10773-025-06087-2"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "physics.gen-ph"
+       ],
+       "value": "2501.03260"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "Preons, Braid Topology, and Representations of Fundamental Particles"
+      },
+      {
+       "source": "arXiv",
+       "title": "Preons, Braid Topology, and Representations of Fundamental Particles"
+      }
+     ],
+     "earliest_date": "2025-01-02"
+    },
+    "id": "2865995"
+   },
+   {
+    "created": "2023-12-04T09:17:07.720358+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2729405?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2729405?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2729405?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2729405?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2729405?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2729405?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2729405"
+    },
+    "updated": "2024-10-01T13:26:39.302050+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "54",
+       "page_end": "1010",
+       "year": 2023,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214648"
+       },
+       "page_start": "1006",
+       "journal_issue": "6",
+       "journal_title": "Phys.Part.Nucl."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Gresnigt, N.G."
+      },
+      {
+       "full_name": "Gourlay, L."
+      },
+      {
+       "full_name": "Varma, A."
+      }
+     ],
+     "number_of_pages": 5,
+     "control_number": 2729405,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1134/S1063779623060138"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "Toward a Three Generation Model of Standard Model Fermions Based on Cayley\u2013Dickson Sedenions"
+      }
+     ],
+     "earliest_date": "2023-11-29"
+    },
+    "id": "2729405"
+   },
+   {
+    "created": "2025-10-10T07:50:34.121341+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/3066220?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/3066220?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/3066220?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/3066220?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/3066220?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/3066220?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A3066220"
+    },
+    "updated": "2025-10-10T15:32:27.296281+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "112",
+       "artid": "043510",
+       "material": "publication",
+       "year": 2025,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1613967"
+       },
+       "journal_issue": "4",
+       "journal_title": "Phys.Rev.A"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Hu, Keran"
+      },
+      {
+       "full_name": "Shi, Aoqian"
+      },
+      {
+       "full_name": "Bao, Linsheng"
+      },
+      {
+       "full_name": "Li, Shilong"
+      },
+      {
+       "full_name": "Wen, Shuangchun"
+      },
+      {
+       "full_name": "Liu, Jianjun"
+      }
+     ],
+     "number_of_pages": 10,
+     "control_number": 3066220,
+     "dois": [
+      {
+       "material": "publication",
+       "source": "APS",
+       "value": "10.1103/xwx2-lbpg"
+      }
+     ],
+     "titles": [
+      {
+       "source": "APS",
+       "title": "Non-Abelian braiding in Stampfli-type quasicrystals"
+      }
+     ],
+     "earliest_date": "2025-10-09"
+    },
+    "id": "3066220"
+   },
+   {
+    "created": "2023-06-26T05:41:05.056045+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2671346?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2671346?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2671346?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2671346?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2671346?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2671346?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2671346"
+    },
+    "updated": "2024-02-17T03:35:33.374390+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "83",
+       "artid": "747",
+       "year": 2023,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1613946"
+       },
+       "page_start": "747",
+       "journal_issue": "8",
+       "journal_title": "Eur.Phys.J.C"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Gresnigt, Niels G."
+      },
+      {
+       "full_name": "Gourlay, Liam"
+      },
+      {
+       "full_name": "Varma, Abhinav"
+      }
+     ],
+     "number_of_pages": 18,
+     "control_number": 2671346,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1140/epjc/s10052-023-11923-y"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1140/epjc/s10052-023-11923-y"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "physics.gen-ph"
+       ],
+       "value": "2306.13098"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "Three generations of colored fermions with $S_3$ family symmetry from Cayley\u2013Dickson sedenions"
+      },
+      {
+       "source": "arXiv",
+       "title": "Three generations of colored fermions with $S_3$ family symmetry from Cayley-Dickson sedenions"
+      }
+     ],
+     "earliest_date": "2023-06-11"
+    },
+    "id": "2671346"
+   },
+   {
+    "created": "2023-12-21T03:46:32.313762+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2739236?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2739236?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2739236?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2739236?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2739236?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2739236?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2739236"
+    },
+    "updated": "2025-04-10T20:33:41.244203+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "537",
+       "artid": "2400323",
+       "year": 2025,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214862"
+       },
+       "journal_issue": "4",
+       "journal_title": "Annalen Phys."
+      },
+      {
+       "pubinfo_freetext": "Annalen der Physik (2023): 2400323",
+       "material": "publication"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Furey, Nichol"
+      }
+     ],
+     "number_of_pages": 6,
+     "control_number": 2739236,
+     "dois": [
+      {
+       "source": "WILEY",
+       "value": "10.1002/andp.202400323"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1002/andp.202400323"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-ph",
+        "hep-th"
+       ],
+       "value": "2312.12799"
+      }
+     ],
+     "titles": [
+      {
+       "source": "WILEY",
+       "title": "An Algebraic Roadmap of Particle Theories"
+      },
+      {
+       "source": "arXiv",
+       "title": "An Algebraic Roadmap of Particle Theories, Part II: Theoretical checkpoints"
+      }
+     ],
+     "earliest_date": "2023-12-20"
+    },
+    "id": "2739236"
+   },
+   {
+    "created": "2019-10-23T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1760194?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1760194?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1760194?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1760194?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1760194?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1760194?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1760194"
+    },
+    "updated": "2025-06-06T10:57:11.976287+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "11",
+       "pubinfo_freetext": "Symmetry 11(10):1298, 2019, special issue \"Number theory and\n  Symmetry\"",
+       "artid": "1298",
+       "material": "publication",
+       "year": 2019,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1211800"
+       },
+       "page_start": "1298",
+       "journal_issue": "10",
+       "journal_title": "Symmetry"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Asselmeyer-Maluga, Torsten"
+      }
+     ],
+     "number_of_pages": 37,
+     "control_number": 1760194,
+     "dois": [
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.3390/sym11101298"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "physics.gen-ph",
+        "hep-th"
+       ],
+       "value": "1910.09966"
+      }
+     ],
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Braids, 3-manifolds, elementary particles: number theory and symmetry in particle physics"
+      }
+     ],
+     "earliest_date": "2019-10-15"
+    },
+    "id": "1760194"
+   },
+   {
+    "created": "2024-12-12T20:07:26.019711+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2858643?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2858643?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2858643?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2858643?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2858643?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2858643?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2858643"
+    },
+    "updated": "2024-12-16T07:37:30.912834+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "2912",
+       "artid": "012019",
+       "year": 2024,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212279"
+       },
+       "journal_issue": "1",
+       "journal_title": "J.Phys.Conf.Ser."
+      },
+      {
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/2858639"
+       },
+       "cnum": "C24-07-01.17"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Gresnigt, N."
+      },
+      {
+       "full_name": "Gourlay, L."
+      }
+     ],
+     "number_of_pages": 8,
+     "control_number": 2858643,
+     "dois": [
+      {
+       "source": "IOP",
+       "value": "10.1088/1742-6596/2912/1/012019"
+      }
+     ],
+     "titles": [
+      {
+       "source": "IOP",
+       "title": "Modelling three fermion generations with S$_{3}$ family symmetry within \u2102\u2113(8)"
+      }
+     ],
+     "earliest_date": "2024"
+    },
+    "id": "2858643"
+   },
+   {
+    "created": "2018-05-15T00:00:00+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1673127?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1673127?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1673127?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1673127?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1673127?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1673127?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1673127"
+    },
+    "updated": "2023-03-14T08:20:24.843810+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "78",
+       "artid": "375",
+       "year": 2018,
+       "page_start": "375",
+       "journal_issue": "5",
+       "journal_title": "Eur.Phys.J.C"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Furey, C."
+      }
+     ],
+     "number_of_pages": 12,
+     "control_number": 1673127,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1140/epjc/s10052-018-5844-7"
+      },
+      {
+       "value": "10.1140/epjc/s10052-018-5844-7"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th"
+       ],
+       "value": "1806.00612"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "$SU(3)_C\\times SU(2)_L\\times U(1)_Y\\left( \\times U(1)_X \\right) $ as a symmetry of division algebraic ladder operators"
+      },
+      {
+       "source": "arXiv",
+       "title": "$SU(3)_C\\times SU(2)_L\\times U(1)_Y\\left( \\times U(1)_X \\right)$ as a symmetry of division algebraic ladder operators"
+      }
+     ],
+     "earliest_date": "2018-05-12"
+    },
+    "id": "1673127"
+   },
+   {
+    "created": "2023-12-11T11:14:11.276860+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2734540?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2734540?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2734540?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2734540?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2734540?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2734540?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2734540"
+    },
+    "updated": "2026-02-09T13:37:47.277150+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "56",
+       "artid": "106981",
+       "material": "publication",
+       "year": 2024,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1398140"
+       },
+       "journal_title": "Results Phys."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "G\u00fcnd\u00fcz, G\u00fcng\u00f6r"
+      }
+     ],
+     "number_of_pages": 30,
+     "control_number": 2734540,
+     "dois": [
+      {
+       "material": "publication",
+       "source": "Elsevier B.V.",
+       "value": "10.1016/j.rinp.2023.106981"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Elsevier B.V.",
+       "title": "Physics in deformable spacetime: Physical laws emerging from the surface minimality principle and the masses of particles"
+      }
+     ],
+     "earliest_date": "2023-09-27"
+    },
+    "id": "2734540"
+   },
+   {
+    "created": "2023-12-20T03:55:06.547998+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2738810?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2738810?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2738810?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2738810?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2738810?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2738810?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2738810"
+    },
+    "updated": "2025-04-10T20:33:37.797910+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "537",
+       "artid": "2400322",
+       "year": 2025,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214862"
+       },
+       "journal_issue": "4",
+       "journal_title": "Annalen Phys."
+      },
+      {
+       "pubinfo_freetext": "Annalen der Physik (2023): 2400322",
+       "material": "publication"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Furey, Nichol"
+      }
+     ],
+     "number_of_pages": 15,
+     "control_number": 2738810,
+     "dois": [
+      {
+       "source": "WILEY",
+       "value": "10.1002/andp.202400322"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1002/andp.202400322"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-ph",
+        "hep-th"
+       ],
+       "value": "2312.12377"
+      }
+     ],
+     "titles": [
+      {
+       "source": "WILEY",
+       "title": "An Algebraic Roadmap of Particle Theories"
+      },
+      {
+       "source": "arXiv",
+       "title": "An Algebraic Roadmap of Particle Theories, Part I: General construction"
+      }
+     ],
+     "earliest_date": "2023-12-19"
+    },
+    "id": "2738810"
+   },
+   {
+    "created": "2024-07-03T04:19:43.413659+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2803926?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2803926?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2803926?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2803926?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2803926?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2803926?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2803926"
+    },
+    "updated": "2024-11-06T04:10:18.120348+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "84",
+       "artid": "1129",
+       "year": 2024,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1613946"
+       },
+       "page_start": "1129",
+       "journal_issue": "10",
+       "journal_title": "Eur.Phys.J.C"
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Gourlay, Liam"
+      },
+      {
+       "full_name": "Gresnigt, Niels"
+      }
+     ],
+     "number_of_pages": 20,
+     "control_number": 2803926,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1140/epjc/s10052-024-13476-0"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1140/epjc/s10052-024-13476-0"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "Algebraic realisation of three fermion generations with $S_3$ family and unbroken gauge symmetry from $\\mathbb {C}\\ell (8)$"
+      },
+      {
+       "source": "arXiv",
+       "title": "Algebraic realisation of three fermion generations with $S_3$ family and unbroken gauge symmetry from $\\mathbb{C}\\ell(8)$"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "math-ph",
+        "math.MP"
+       ],
+       "value": "2407.01580"
+      }
+     ],
+     "earliest_date": "2024-06-11"
+    },
+    "id": "2803926"
+   },
+   {
+    "created": "2021-11-21T18:51:56.715470+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/1971857?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/1971857?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/1971857?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/1971857?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/1971857?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/1971857?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1971857"
+    },
+    "updated": "2026-02-09T12:05:17.990460+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "journal_volume": "11",
+       "pubinfo_freetext": "Scientific Reports 11:22528 (2021), Nature Portfolio",
+       "artid": "22528",
+       "material": "publication",
+       "year": 2021,
+       "journal_title": "Sci.Rep."
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Masi, Nicol\u00f2"
+      }
+     ],
+     "number_of_pages": 18,
+     "control_number": 1971857,
+     "dois": [
+      {
+       "value": "10.1038/s41598-021-01814-1"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1038/s41598-021-01814-1"
+      }
+     ],
+     "titles": [
+      {
+       "source": "submitter",
+       "title": "An exceptional $G(2)$ extension of the Standard Model from the correspondence with Cayley\u2013Dickson algebras automorphism groups"
+      },
+      {
+       "source": "arXiv",
+       "title": "An Exceptional G(2) Extension of the Standard Model from the Correspondence with Cayley-Dickson Algebras Automorphism Groups"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-ph",
+        "hep-th"
+       ],
+       "value": "2111.11849"
+      }
+     ],
+     "earliest_date": "2021-11-19"
+    },
+    "id": "1971857"
+   },
+   {
+    "created": "2026-02-20T18:01:28.664519+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/3121895?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/3121895?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/3121895?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/3121895?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/3121895?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/3121895?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A3121895"
+    },
+    "updated": "2026-03-16T09:26:39.474725+00:00",
+    "metadata": {
+     "publication_info": [
+      {
+       "year": 2025
+      }
+     ],
+     "authors": [
+      {
+       "full_name": "Gourlay, Liam"
+      }
+     ],
+     "number_of_pages": 208,
+     "control_number": 3121895,
+     "dois": [
+      {
+       "source": "U. Liverpool (main)",
+       "value": "10.17638/03196062"
+      }
+     ],
+     "titles": [
+      {
+       "source": "U. Liverpool (main)",
+       "title": "An Algebraic Framework for Describing Three Fermion Generations Using a Discrete Family Symmetry"
+      }
+     ],
+     "earliest_date": "2025-12-01"
+    },
+    "id": "3121895"
+   }
+  ],
+  "total": 28
+ },
+ "links": {
+  "self": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1658866&size=1000&page=1&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages",
+  "bibtex": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1658866&size=1000&page=1&format=bibtex",
+  "latex-eu": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1658866&size=1000&page=1&format=latex-eu",
+  "latex-us": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1658866&size=1000&page=1&format=latex-us",
+  "json": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1658866&size=1000&page=1&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages&format=json",
+  "json-expanded": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1658866&size=1000&page=1&format=json-expanded",
+  "cv": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A1658866&size=1000&page=1&format=cv"
+ }
+}

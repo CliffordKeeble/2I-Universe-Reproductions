@@ -1,0 +1,849 @@
+{
+ "hits": {
+  "hits": [
+   {
+    "created": "2024-04-15T03:47:03.197724+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2776898?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2776898?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2776898?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2776898?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2776898?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2776898?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2776898"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Thierry-Mieg, Jean"
+      }
+     ],
+     "number_of_pages": 10,
+     "control_number": 2776898,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "A new SU(2/1) supergroup with determinant 1 explains many mysteries of the weak interactions"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "hep-ph"
+       ],
+       "value": "2404.08641"
+      }
+     ],
+     "earliest_date": "2024-03-25"
+    },
+    "updated": "2024-04-29T16:26:59.048817+00:00",
+    "id": "2776898"
+   },
+   {
+    "created": "2023-11-21T06:01:44.773744+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2724487?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2724487?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2724487?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2724487?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2724487?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2724487?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2724487"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Corradetti, Daniele"
+      },
+      {
+       "full_name": "Marrani, Alessio"
+      },
+      {
+       "full_name": "Zucconi, Francesco"
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "37",
+       "artid": "2450027",
+       "year": 2025,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1213524"
+       },
+       "journal_issue": "01",
+       "journal_title": "Rev.Math.Phys."
+      },
+      {
+       "journal_volume": "3",
+       "pubinfo_freetext": "Reviews in Mathematical Physics 3 (2024) 2450027",
+       "artid": "2450027",
+       "material": "publication",
+       "year": 2024,
+       "journal_title": "Rev.Math.Phys."
+      }
+     ],
+     "number_of_pages": 28,
+     "control_number": 2724487,
+     "dois": [
+      {
+       "source": "WSP",
+       "value": "10.1142/S0129055X24500272"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1142/S0129055X24500272"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "math.RA",
+        "math-ph",
+        "math.MP"
+       ],
+       "value": "2311.11907"
+      }
+     ],
+     "titles": [
+      {
+       "source": "WSP",
+       "title": "Collineation groups of octonionic and split-octonionic planes"
+      },
+      {
+       "source": "arXiv",
+       "title": "Collineation groups of octonionic and split-octonionic planes"
+      }
+     ],
+     "earliest_date": "2023-11-20"
+    },
+    "updated": "2025-07-17T06:26:53.956133+00:00",
+    "id": "2724487"
+   },
+   {
+    "created": "2023-05-23T08:02:20.895897+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2661584?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2661584?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2661584?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2661584?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2661584?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2661584?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2661584"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Dereli, Tekin"
+      },
+      {
+       "full_name": "Senikoglu, Yorgo"
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "55",
+       "artid": "126",
+       "year": 2023,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214738"
+       },
+       "page_start": "126",
+       "journal_issue": "11",
+       "journal_title": "Gen.Rel.Grav."
+      },
+      {
+       "journal_volume": "55",
+       "pubinfo_freetext": "General Relativity and Gravitation (2023) 55:126",
+       "artid": "126",
+       "material": "publication",
+       "year": 2023,
+       "page_start": "126",
+       "journal_title": "Gen.Rel.Grav."
+      }
+     ],
+     "number_of_pages": 19,
+     "control_number": 2661584,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1007/s10714-023-03175-8"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1007/s10714-023-03175-8"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "gr-qc"
+       ],
+       "value": "2305.12367"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "Weyl neutrinos in plane symmetric spacetimes"
+      },
+      {
+       "source": "arXiv",
+       "title": "Weyl Neutrinos In Plane Symmetric Spacetimes"
+      }
+     ],
+     "earliest_date": "2023-05-21"
+    },
+    "updated": "2023-11-23T10:29:23.767413+00:00",
+    "id": "2661584"
+   },
+   {
+    "created": "2024-03-06T10:02:08.290421+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2765357?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2765357?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2765357?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2765357?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2765357?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2765357?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2765357"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Rathore, A.K."
+      },
+      {
+       "full_name": "Sharma, V.K."
+      },
+      {
+       "full_name": "Chanyal, B.C."
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "139",
+       "artid": "210",
+       "year": 2024,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1211677"
+       },
+       "page_start": "210",
+       "journal_issue": "3",
+       "journal_title": "Eur.Phys.J.Plus"
+      }
+     ],
+     "number_of_pages": 10,
+     "control_number": 2765357,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1140/epjp/s13360-024-05021-5"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "Complex octonion-based SU(3) flavor symmetry with the concept of octet representation for quark composite particles"
+      }
+     ],
+     "earliest_date": "2024-03-03"
+    },
+    "updated": "2024-03-30T17:29:36.054467+00:00",
+    "id": "2765357"
+   },
+   {
+    "created": "2023-12-04T09:17:07.720358+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2729405?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2729405?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2729405?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2729405?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2729405?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2729405?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2729405"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Gresnigt, N.G."
+      },
+      {
+       "full_name": "Gourlay, L."
+      },
+      {
+       "full_name": "Varma, A."
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "54",
+       "page_end": "1010",
+       "year": 2023,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1214648"
+       },
+       "page_start": "1006",
+       "journal_issue": "6",
+       "journal_title": "Phys.Part.Nucl."
+      }
+     ],
+     "number_of_pages": 5,
+     "control_number": 2729405,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1134/S1063779623060138"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "Toward a Three Generation Model of Standard Model Fermions Based on Cayley\u2013Dickson Sedenions"
+      }
+     ],
+     "earliest_date": "2023-11-29"
+    },
+    "updated": "2024-10-01T13:26:39.302050+00:00",
+    "id": "2729405"
+   },
+   {
+    "created": "2023-06-26T05:41:05.056045+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2671346?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2671346?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2671346?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2671346?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2671346?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2671346?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2671346"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Gresnigt, Niels G."
+      },
+      {
+       "full_name": "Gourlay, Liam"
+      },
+      {
+       "full_name": "Varma, Abhinav"
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "83",
+       "artid": "747",
+       "year": 2023,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1613946"
+       },
+       "page_start": "747",
+       "journal_issue": "8",
+       "journal_title": "Eur.Phys.J.C"
+      }
+     ],
+     "number_of_pages": 18,
+     "control_number": 2671346,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1140/epjc/s10052-023-11923-y"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1140/epjc/s10052-023-11923-y"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "physics.gen-ph"
+       ],
+       "value": "2306.13098"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "Three generations of colored fermions with $S_3$ family symmetry from Cayley\u2013Dickson sedenions"
+      },
+      {
+       "source": "arXiv",
+       "title": "Three generations of colored fermions with $S_3$ family symmetry from Cayley-Dickson sedenions"
+      }
+     ],
+     "earliest_date": "2023-06-11"
+    },
+    "updated": "2024-02-17T03:35:33.374390+00:00",
+    "id": "2671346"
+   },
+   {
+    "created": "2024-12-12T20:07:26.019711+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2858643?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2858643?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2858643?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2858643?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2858643?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2858643?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2858643"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Gresnigt, N."
+      },
+      {
+       "full_name": "Gourlay, L."
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "2912",
+       "artid": "012019",
+       "year": 2024,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1212279"
+       },
+       "journal_issue": "1",
+       "journal_title": "J.Phys.Conf.Ser."
+      },
+      {
+       "conference_record": {
+        "$ref": "https://inspirehep.net/api/conferences/2858639"
+       },
+       "cnum": "C24-07-01.17"
+      }
+     ],
+     "number_of_pages": 8,
+     "control_number": 2858643,
+     "dois": [
+      {
+       "source": "IOP",
+       "value": "10.1088/1742-6596/2912/1/012019"
+      }
+     ],
+     "titles": [
+      {
+       "source": "IOP",
+       "title": "Modelling three fermion generations with S$_{3}$ family symmetry within \u2102\u2113(8)"
+      }
+     ],
+     "earliest_date": "2024"
+    },
+    "updated": "2024-12-16T07:37:30.912834+00:00",
+    "id": "2858643"
+   },
+   {
+    "created": "2024-07-03T04:19:43.413659+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2803926?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2803926?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2803926?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2803926?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2803926?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2803926?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2803926"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Gourlay, Liam"
+      },
+      {
+       "full_name": "Gresnigt, Niels"
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "84",
+       "artid": "1129",
+       "year": 2024,
+       "journal_record": {
+        "$ref": "https://inspirehep.net/api/journals/1613946"
+       },
+       "page_start": "1129",
+       "journal_issue": "10",
+       "journal_title": "Eur.Phys.J.C"
+      }
+     ],
+     "number_of_pages": 20,
+     "control_number": 2803926,
+     "dois": [
+      {
+       "source": "Springer",
+       "value": "10.1140/epjc/s10052-024-13476-0"
+      },
+      {
+       "material": "publication",
+       "source": "arXiv",
+       "value": "10.1140/epjc/s10052-024-13476-0"
+      }
+     ],
+     "titles": [
+      {
+       "source": "Springer",
+       "title": "Algebraic realisation of three fermion generations with $S_3$ family and unbroken gauge symmetry from $\\mathbb {C}\\ell (8)$"
+      },
+      {
+       "source": "arXiv",
+       "title": "Algebraic realisation of three fermion generations with $S_3$ family and unbroken gauge symmetry from $\\mathbb{C}\\ell(8)$"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-th",
+        "math-ph",
+        "math.MP"
+       ],
+       "value": "2407.01580"
+      }
+     ],
+     "earliest_date": "2024-06-11"
+    },
+    "updated": "2024-11-06T04:10:18.120348+00:00",
+    "id": "2803926"
+   },
+   {
+    "created": "2025-07-17T04:14:25.568729+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2947424?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2947424?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2947424?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2947424?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2947424?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2947424?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2947424"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Quinta, Gon\u00e7alo M."
+      }
+     ],
+     "number_of_pages": 17,
+     "control_number": 2947424,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Spacetime Grand Unified Theory"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-ph",
+        "hep-th"
+       ],
+       "value": "2507.11564"
+      }
+     ],
+     "earliest_date": "2025-07-14"
+    },
+    "updated": "2026-05-19T04:05:51.903024+00:00",
+    "id": "2947424"
+   },
+   {
+    "created": "2026-01-27T14:17:18.348944+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/3111865?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/3111865?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/3111865?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/3111865?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/3111865?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/3111865?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A3111865"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Gazeau, Jean-Pierre"
+      },
+      {
+       "full_name": "Pejhan, Hamed"
+      },
+      {
+       "full_name": "Todorov, Ivan"
+      }
+     ],
+     "number_of_pages": 180,
+     "control_number": 3111865,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Massless Representations in Conformal Space and Their de Sitter Restrictions"
+      },
+      {
+       "source": "arXiv",
+       "title": "Massless Representations in Conformal Space and Their de Sitter (dS) Restrictions"
+      },
+      {
+       "source": "arXiv",
+       "title": "Massless Representations in Conformal Space and Their de Sitter (dS) Restrictions. The Split-Octonionic Fabric of Inflationary Field Dynamics"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "math-ph",
+        "math.GR",
+        "math.MP",
+        "math.RT"
+       ],
+       "value": "2601.18433"
+      }
+     ],
+     "earliest_date": "2026-01-26"
+    },
+    "updated": "2026-04-08T04:07:03.253876+00:00",
+    "id": "3111865"
+   },
+   {
+    "created": "2026-04-09T04:14:44.623378+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/3141813?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/3141813?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/3141813?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/3141813?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/3141813?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/3141813?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A3141813"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Singh, Tejinder P."
+      }
+     ],
+     "number_of_pages": 21,
+     "control_number": 3141813,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Experimental predictions of the $E_8 \\times \u03c9E_8$ octonionic unification program : A falsification-oriented catalogue for quantum foundations, particle physics, gravitation, and cosmology"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "hep-ph",
+        "gr-qc",
+        "quant-ph"
+       ],
+       "value": "2604.06288"
+      }
+     ],
+     "earliest_date": "2026-04-07"
+    },
+    "updated": "2026-04-10T04:11:15.962611+00:00",
+    "id": "3141813"
+   },
+   {
+    "created": "2023-08-29T05:24:02.603905+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2691503?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2691503?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2691503?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2691503?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2691503?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2691503?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2691503"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Jackson, David J."
+      }
+     ],
+     "number_of_pages": 84,
+     "control_number": 2691503,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Generalised Proper Time and the Universal Bootstrap"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "physics.gen-ph"
+       ],
+       "value": "2308.13528"
+      }
+     ],
+     "earliest_date": "2023-08-08"
+    },
+    "updated": "2025-06-18T16:31:11.093402+00:00",
+    "id": "2691503"
+   },
+   {
+    "created": "2026-06-12T11:37:09.873869+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/3168177?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/3168177?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/3168177?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/3168177?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/3168177?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/3168177?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A3168177"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Ogonowski, Piotr"
+      }
+     ],
+     "control_number": 3168177,
+     "titles": [
+      {
+       "source": "arXiv",
+       "title": "Self-Reconstructing Codazzi Defects, $\\mathbb{CP}^1$ Quantization, and the Minimal Standard-Model Carrier"
+      }
+     ],
+     "arxiv_eprints": [
+      {
+       "categories": [
+        "physics.gen-ph"
+       ],
+       "value": "2606.12693"
+      }
+     ],
+     "earliest_date": "2026-06-10"
+    },
+    "updated": "2026-06-13T04:09:49.551078+00:00",
+    "id": "3168177"
+   },
+   {
+    "created": "2025-09-22T15:20:06.214659+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2971677?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2971677?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2971677?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2971677?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2971677?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2971677?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2971677"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Jackson, David J."
+      }
+     ],
+     "publication_info": [
+      {
+       "journal_volume": "1",
+       "year": 2025
+      }
+     ],
+     "control_number": 2971677,
+     "dois": [
+      {
+       "value": "10.14293/PR2199.001769.v1"
+      }
+     ],
+     "titles": [
+      {
+       "source": "submitter",
+       "title": "Unification by Generalising Proper Time Beyond the Extra Spatial Dimensions Paradigm"
+      }
+     ],
+     "earliest_date": "2025-06-27"
+    },
+    "updated": "2026-04-16T12:55:08.150916+00:00",
+    "id": "2971677"
+   },
+   {
+    "created": "2026-02-20T18:01:28.664519+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/3121895?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/3121895?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/3121895?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/3121895?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/3121895?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/3121895?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A3121895"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Gourlay, Liam"
+      }
+     ],
+     "publication_info": [
+      {
+       "year": 2025
+      }
+     ],
+     "number_of_pages": 208,
+     "control_number": 3121895,
+     "dois": [
+      {
+       "source": "U. Liverpool (main)",
+       "value": "10.17638/03196062"
+      }
+     ],
+     "titles": [
+      {
+       "source": "U. Liverpool (main)",
+       "title": "An Algebraic Framework for Describing Three Fermion Generations Using a Discrete Family Symmetry"
+      }
+     ],
+     "earliest_date": "2025-12-01"
+    },
+    "updated": "2026-03-16T09:26:39.474725+00:00",
+    "id": "3121895"
+   },
+   {
+    "created": "2024-10-07T02:14:46.561618+00:00",
+    "links": {
+     "bibtex": "https://inspirehep.net/api/literature/2837223?format=bibtex",
+     "latex-eu": "https://inspirehep.net/api/literature/2837223?format=latex-eu",
+     "latex-us": "https://inspirehep.net/api/literature/2837223?format=latex-us",
+     "json": "https://inspirehep.net/api/literature/2837223?format=json",
+     "json-expanded": "https://inspirehep.net/api/literature/2837223?format=json-expanded",
+     "cv": "https://inspirehep.net/api/literature/2837223?format=cv",
+     "citations": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2837223"
+    },
+    "metadata": {
+     "authors": [
+      {
+       "full_name": "Da Silva Hartmann, Angelo Eduardo"
+      }
+     ],
+     "publication_info": [
+      {
+       "year": 2024
+      }
+     ],
+     "number_of_pages": 123,
+     "control_number": 2837223,
+     "titles": [
+      {
+       "source": "UNITesi",
+       "title": "Clifford algebra automorphisms in Theoretical Physics"
+      }
+     ],
+     "earliest_date": "2024-01-09"
+    },
+    "updated": "2025-07-10T14:09:22.193068+00:00",
+    "id": "2837223"
+   }
+  ],
+  "total": 16
+ },
+ "links": {
+  "self": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2667356&size=1000&page=1&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages",
+  "bibtex": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2667356&size=1000&page=1&format=bibtex",
+  "latex-eu": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2667356&size=1000&page=1&format=latex-eu",
+  "latex-us": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2667356&size=1000&page=1&format=latex-us",
+  "json": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2667356&size=1000&page=1&fields=titles,arxiv_eprints,dois,control_number,publication_info,earliest_date,authors.full_name,number_of_pages&format=json",
+  "json-expanded": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2667356&size=1000&page=1&format=json-expanded",
+  "cv": "https://inspirehep.net/api/literature/?q=refersto%3Arecid%3A2667356&size=1000&page=1&format=cv"
+ }
+}
