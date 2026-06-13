@@ -1,0 +1,10 @@
+quantity,value
+elegant_k_set,3;5;7;8;11;13;14;16;17;18;19;20;22;23
+l_grid_span_fm,"[0.01,1.0]"
+l_grid_points,4000
+pm5pct_hits,12
+total_pairs,56000
+pm5pct_fraction,0.00021428571
+in_range_elegant_k,19
+l_star_19_fm,0.468931853019
+pm5pct_l_band_fm,"[0.4656869426,0.4723922009]"
