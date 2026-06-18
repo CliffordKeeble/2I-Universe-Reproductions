@@ -69,17 +69,35 @@ class Complex:
         return self.N - len(self.edges) + len(self.triangles) - len(self.tets)
 
 
+def _hull_complex(pts, N):
+    hull = ConvexHull(pts)
+    tets = [tuple(s) for s in hull.simplices]
+    cx = Complex(N, tets)
+    cx.hull_points = pts  # kept ONLY for the round-reference metric / verification
+    return cx
+
+
 def generic_s3(N, seed=20260618):
     """Generic combinatorial 3-sphere = boundary of the 4D convex hull of N pts on S^3."""
     rng = np.random.default_rng(seed)
     pts = rng.standard_normal((N, 4))
     pts /= np.linalg.norm(pts, axis=1, keepdims=True)
-    hull = ConvexHull(pts)
-    # each hull simplex is a tetrahedral facet (4 vertex indices) of the boundary S^3
-    tets = [tuple(s) for s in hull.simplices]
-    cx = Complex(N, tets)
-    cx.hull_points = pts  # kept ONLY for building the metric / verification; not used by the flow
-    return cx
+    return _hull_complex(pts, N)
+
+
+def defective_s3(N, seed=20260618, concentration=6.0):
+    """
+    DEFECTIVE-mesh null (brief v1.1 control #2): points heavily clustered toward one
+    pole, so the triangulation has dense and starved regions -> sliver tets that cannot
+    reach round S^3 at fixed connectivity. A valid combinatorial S^3 (convex hull always
+    is), but a known-can't-reach-round negative control: gives "the variance got small"
+    its discriminative teeth.
+    """
+    rng = np.random.default_rng(seed)
+    pts = rng.standard_normal((N, 4))
+    pts[:, 0] += concentration            # bias toward the (1,0,0,0) pole
+    pts /= np.linalg.norm(pts, axis=1, keepdims=True)
+    return _hull_complex(pts, N)
 
 
 # ---------------------------------------------------------------------------

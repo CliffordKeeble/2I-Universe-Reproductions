@@ -111,3 +111,52 @@ The flow needs to be made faithful first; candidate fixes, in order of preferenc
 I recommend (1) as the crude-and-honest first move, re-running Control #3 as the gate.
 **Stage 2 (field) and Stage 3 (coupled) remain gated and untouched** — Stage 1 has not
 passed.
+
+---
+
+## STAGE 1 v1.1 — PRE-REGISTRATION (committed BEFORE the forcing run; hard gate §5)
+
+*Per brief v1.1 (Mr Adversary cycle-1 + the v1.0 instrument finding). Supersedes the
+v1.0 Stage 1 above; the v1.0 record is kept as honest history.*
+
+**Flow (decided):** Option 1 — fixed-volume **curvature-variance minimisation**,
+`min_ℓ E = Σ_e w_e (K_e − K̄)²` (`w_e = V_e^dual`), volume held fixed by renormalisation,
+solved by L-BFGS-B on `log ℓ` over the vectorised energy. Round S³ is the global minimum,
+so **Control #3 (round-init stays round) holds by construction** — the fix for the v1.0
+neckpinch-of-a-round-metric instrument failure.
+
+**VERDICT = the SPECTRUM, not the variance (Mr A #2):** the relaxed scalar-Laplacian
+spectrum (FEM Laplace–Beltrami, `spectral_s3.py`, validated to reproduce `k(k+2)` on
+round-init) must approach round S³. Operationalised as the **spectral distance to the
+round-init reference on the same mesh**: `dist_init → dist_relaxed`. Variance/CoV is the
+engine and a diagnostic only (CoV is unreliable near `K̄=0` and a glass can be locally
+uniform — hence the spectrum judges).
+
+**Stage 0 gate (committed, Mr A #4):** generic complex must be 2I-free —
+WL-colour-refinement bound `|Aut| = 1` (all colour classes singletons). Abort Stage 1 if
+it fails.
+
+**Controls:** (#3) round-init stays round — by construction; **(NULL) defective mesh**
+(clustered points, sliver tets, known-can't-reach-round) — its relaxed spectrum must
+*not* approach round; this gives "the variance/spectrum improved" its discriminating
+teeth.
+
+**PREDICTION — CONJECTURED (Mr A #3; the discrete flow cannot borrow Hamilton's smooth
+guarantee):** on the generic arm, `E` drops substantially and the relaxed spectral
+distance to round-init falls toward the N-dependent round-init floor; on the defective
+null it does not.
+
+**NULL:** generic arm traps with a spectrum far from round (glass) — a real result,
+calling for finer mesh / surgery, **not** a tuned fix.
+
+**Anti-circularity (§4):** the relaxed generic spectrum must show NO 2I-sieve structure
+(no ⟨12,20,30⟩ missing-even-degree pattern). If it does → STOP (leak hunt).
+
+**FSS observable (Mr A #7):** the round-init spectral floor and the relaxed
+spectrum-match error → 0 as N grows (reported where tractable).
+
+---
+
+## STAGE 1 v1.1 — RESULTS
+
+*(filled after this pre-registration is committed.)*
