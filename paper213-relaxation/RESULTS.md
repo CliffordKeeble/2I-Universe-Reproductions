@@ -52,4 +52,62 @@ it would call for a Perelman-surgery analogue or finer mesh, **not** a tuned pat
 
 ## STAGE 1 — RESULTS
 
-*(filled after this pre-registration is committed.)*
+*Run of record: `seed=20260618`, `python ricci_flow.py 150 2000`. Artefact:
+`results_stage1_N150.json`.*
+
+### Verdict: NO VALID VERDICT — the flow instrument FAILED its own sanity control
+
+> **The pre-registered normalized-Ricci-flow scheme is unfaithful: it neckpinches an
+> already-round metric. Control #3 invalidated the instrument before any Stage 1 verdict
+> could be banked. The frustrated-arm "neckpinch" is therefore an artefact of the flow
+> scheme, NOT a geometric result. Stage 1 is HELD pending a faithful flow.** `[OBSERVED]`
+
+This is the discipline working — a mirror of the Arm-2 `z=+13.9 → +0.64` episode the
+brief names: a result that *looked* like the pre-registered null (neckpinch/glass) is
+suspect until the control validates the instrument. It did not.
+
+### What IS validated (substrate + curvature diagnostic)
+
+| metric (N=150) | initial CoV(K) | initial K̄ | reading |
+|---|---|---|---|
+| **round-init** (chord lengths on actual S³ points) | **0.73** | **+3.56** | low scatter, positive curvature — *correctly reads as round* |
+| **frustrated** (all ℓ_e = 1) | **55.7** | **−0.32** | high scatter, net-negative — *correctly reads as far-from-round* |
+
+So `geometry.py` (substrate, Regge deficits, the curvature measure `K_e = δ_e/a_e`) is
+sound: a round metric registers round, a frustrated one registers frustrated. The
+**floor** achievable on this coarse mesh is the round-init value `CoV ≈ 0.73`, not 0 —
+my pre-registered `CoV_final ≲ 0.3` target was too strict for N=150 (a discretisation
+resolution effect; higher N lowers the round-init floor). `[OBSERVED]`
+
+### What FAILED (the flow)
+
+| flow from | CoV(K): start → end | outcome |
+|---|---|---|
+| frustrated ℓ=1 | 55.7 → 21.9 | neckpinch (min tet vol 0.118 → 0.010 over 5 steps, accelerating) |
+| **round-init** | **0.73 → 2.71** | **neckpinch — CoV got WORSE; an already-round metric should stay round** |
+
+The flow `d(log ℓ_e)/dτ = −(K_e − K̄)` with `K_e = δ_e/a_e` (barycentric dual) does
+**not** have the round metric as a stable fixed point — it drives even round S³ into a
+degenerate tet, and `K̄` runs away during the frustrated flow (−0.32 → −3.31). The crude
+barycentric dual area and the explicit-Euler integration make the scheme unfaithful as a
+discrete Ricci flow. This is a scheme problem, not a step-size problem (smaller `cap` did
+not save it; the round-init failure is the proof). `[OBSERVED]`
+
+### Stop point and proposed fix (CinC's call — non-trivial method change)
+
+Per discipline, I am **not** swapping the pre-registered scheme on my own initiative.
+The flow needs to be made faithful first; candidate fixes, in order of preference:
+
+1. **Fixed-volume curvature-variance minimisation** — minimise `E = Σ_e w_e (K_e − K̄)²`
+   at fixed total volume with a robust optimiser (L-BFGS). Round S³ is the global min, so
+   round-init stays round by construction; the question becomes whether the frustrated
+   metric reaches the same low-CoV basin or gets stuck (glass) — a clean, stable test.
+2. **Glickenstein / circumcentric-dual discrete Ricci flow** — replace the crude
+   barycentric `a_e` with a geometrically rigorous dual; round becomes a stable fixed
+   point. Heavier to implement, closer to the literal "Ricci flow."
+3. **Implicit (backward-Euler) integration** of the current flow — may damp the
+   instability, but won't fix an incorrect fixed point if the dual is the root cause.
+
+I recommend (1) as the crude-and-honest first move, re-running Control #3 as the gate.
+**Stage 2 (field) and Stage 3 (coupled) remain gated and untouched** — Stage 1 has not
+passed.
