@@ -316,3 +316,51 @@ hunt the cause (group-action bug, wrong eigenspace) before interpretation.
 **confirmed discretely** here. Consistency on imported 2I — **not** an emergence, not a
 discovery. Licenses: *"on S³/2I the geometry selects one Beltrami chirality; the handedness
 is in the one-sided manifold, not in any pump."* Stage 3 (back-reaction) remains gated.
+
+---
+
+## STAGE 1 FSS — PRE-REGISTRATION (committed BEFORE the ladder; hard gate §2/§6)
+
+**The hinge.** Stage 1 gave a glass null at N=100 (d_frust ≈ 0.249). Is the generic-arm
+glass FUNDAMENTAL (round S³ not a generic attractor — headline survives, unhedged) or a
+COARSE-MESH ARTEFACT (round reachable at fine N — headline falls, honest negative on
+generality)? The FSS ladder decides.
+
+**Primary observable:** `d_frust(N) = spectral_distance(relaxed frustrated endpoint,
+same-mesh round reference)` — same-mesh round-init, NOT the analytic k(k+2) ladder
+(topology-dominated, blunt). **Secondary (cross-check, not a vote):** the variance gap
+`CoV_frust(N) − CoV_round(N)`.
+
+**Pre-registered fit (frozen):**  `d_frust(N) = d_∞ + c · N^(−p)`.
+- **d_∞ consistent with 0** → **ARTEFACT.** Headline falls; paper carries the negative on
+  generality (round *is* reachable on a generic substrate at fine N) + stands on the
+  methodology and the exact-symmetry chirality (Stage 2).
+- **d_∞ a positive constant, bounded away from 0** → **FUNDAMENTAL glass.** Headline
+  survives, unhedged: round S³ is not a generic attractor.
+
+No tuning of the fit, the fit form, or the frustration recipe to favour either outcome.
+
+**Ladder:** N = 100, 200, 500, 1000 (floor for a verdict); extend to 3000, 10⁴ as
+tractable. Report where compute bites.
+
+**Hygiene:** (i) consistent frustration recipe across N — generic_s3(N) (4D-hull of N
+random S³ points, coords discarded) with frustrated ℓ_e=1 — same *character*, only
+resolution differs; (ii) same-mesh round reference at each N; (iii) converge the
+relaxation at each N (L-BFGS to a reported local min; confirm by identical-endpoint
+re-run at the largest N). Efficiency: an O(N) local finite-difference gradient
+(perturbing edge f touches only the tets containing f), verified against the numerical
+gradient before use — this is what makes N=10³ tractable; it does not change the scheme.
+
+**Controls:** Control #3 at each N (round-init stays round — instrument validity
+precondition; if it fails at some N, STOP and report); reference sanity `d_round(N)`
+(round-init's residual distance to analytic round) must fall toward 0 as N grows, else
+the reference is suspect — report before reading d_frust.
+
+**Status:** the verdict (fundamental vs artefact) is OBSERVED once the ladder is in; the
+extrapolation is the evidence, fit residuals reported.
+
+---
+
+## STAGE 1 FSS — RESULTS
+
+*(filled after this pre-registration is committed.)*
