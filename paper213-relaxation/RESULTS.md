@@ -233,3 +233,33 @@ Recommendation: (1) — run Stage 2 (chirality on the 2I arm, handedness out of 
 on an analytic round S³, since that is the next *independent* question and does not
 depend on the generic arm reaching round; carry the Stage 1 glass-null as an honest,
 separately-reported finding. **Stage 3 (back-reaction) remains gated.**
+
+---
+
+## STAGE 2 (chirality, 2I arm) — INSTRUMENT STATUS (curl gate)
+
+*Per the Stage-2 brief §6: instrument-first. Substrate + curl-MAGNITUDE validated; the
+SIGNED curl (the chirality crux) is an open instrument blocker — held before the 2I
+sieve/dynamics.*
+
+- **Substrate (600-cell):** built as the convex hull of the 120 unit icosians; verified
+  V=120, E=720, F=1200, C=600, χ=0; fully 2I-symmetric (5 tets/edge, edge=1/φ). Scalar
+  `k(k+2)` ladder clean (mult 4, ~9). `[VALIDATED]`
+- **Curl MAGNITUDE (Nédélec curl-curl `K=∫curl(W)·curl(W)`):** annihilates gradients
+  exactly (`max|K·d₀|=4e-15`), clean kernel dim=119=V−1, and lowest nonzero
+  `μ=4.43 (mult 6)`, `μ≈9 (mult ~16, smeared)` — the analytic `|λ|=2,3` with `n(n+2)`
+  multiplicities. **MAGNITUDE GATE PASS.** `[VALIDATED]`
+- **Curl SIGN (helicity split): OPEN — blocker.** The Whitney helicity form
+  `H[e,e']=∫W_e∧dW_e'` (now correctly gradient-annihilating, `max|H·d₀|=1e-16`) gives
+  helicity ≈ ±0.01 — i.e. **~0** — on the μ=4 Hopf-sextet modes, instead of ±2. The
+  symmetric part is tiny and the non-symmetric solve gives complex eigenvalues. So the
+  +2/−2 chirality is **not cleanly recoverable** from this form on the coarse 600-cell.
+  This gates Stage 2 §3–§5 (2I sieve, dynamics, amphichiral control) — not run on an
+  unvalidated signed curl (W-108). `[HELD]`
+
+**Proposed fixes (CinC's call):** (a) a proper DEC **primal–dual signed curl**
+(`⋆₁,⋆₂` Hodge stars + topological `d₁`), the literal `⋆d`, rather than the Whitney
+helicity quadratic form; (b) a **2I-symmetric refinement** of the 600-cell for
+resolution (the brief allows it) — the coarse 120-vertex mesh may simply not resolve the
+helicity sign; (c) a known closed-form signed-curl construction if Fizz has one. The
+magnitude result (the `n(n+2)` fingerprint) stands regardless.
