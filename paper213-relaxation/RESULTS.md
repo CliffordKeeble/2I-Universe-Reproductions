@@ -159,4 +159,77 @@ spectrum-match error → 0 as N grows (reported where tractable).
 
 ## STAGE 1 v1.1 — RESULTS
 
-*(filled after this pre-registration is committed.)*
+*Run of record: `seed=20260618`, `python run_stage1.py 100 50` (artefact
+`results_stage1_v11_N100.json`). A full-budget re-run (`iters=250`) reached the
+IDENTICAL generic endpoint (E→61.5, dist 0.249) and L-BFGS reported a local minimum
+(line-search exhausted) — so the result is CONVERGED, not budget-limited.*
+
+### Verdict: NULL — GLASS (variance minimises, spectrum does NOT reach round) `[OBSERVED]`
+
+> **The instrument is now sound (Control #3 holds: round-init stays round). On the
+> generic frustrated metric, fixed-volume curvature-variance minimisation drives the
+> energy down ×5.6 to a local minimum — but the scalar-Laplacian SPECTRUM does not
+> converge to round S³ (dist-to-round 0.280 → 0.249, ~11% of the way). Variance
+> collapses; the spectrum stays glassy. This is the pre-registered NULL, and it is
+> exactly the failure mode Mr A #2 built the spectrum-verdict to catch.** A fixed
+> generic triangulation does not relax to round by edge-length flow alone.
+
+### The numbers
+
+| arm (N=100) | E: start → end | CoV | spectral dist-to-round: init → relaxed | verdict |
+|---|---|---|---|---|
+| **GENERIC** (test) | 342.7 → 61.5 (**×5.6**) | 275 → 7 | **0.280 → 0.249** | variance down, **spectrum NOT round** → glass |
+| **round-init** (Control #3) | 8.42 → 3.05 | 0.73 → low | 0 (reference) | **stays round ✓ — instrument valid** |
+| **DEFECTIVE** (null) | 326.3 → 72.5 (×4.5) | 156 → 8 | 0.150 → 0.123 | also glasses |
+
+- **Stage 0 gate:** PASS — `|Aut| = 1` (all 100 WL colour classes singleton), 2I-free.
+- **Anti-circularity (§4): CLEAN** — generic relaxed spectrum `[3.0, 3.6, 3.8, 4.1, 6.5,
+  6.8, 7.2, …]` shows the plain `k(k+2)`-ish ladder, **no 2I sieve / missing-even-degree
+  pattern**. No leak. `[OBSERVED]`
+- The relaxed spectrum diverges from the round reference in the **higher modes** (relaxed
+  jumps 4.1→6.5; round rises smoothly 3.9→4.6→5.1→…) — the glass keeps a different mode
+  structure even after variance is minimised.
+
+### Honest limitations (flagged)
+
+- **Defective null did not give a clean contrast** — both generic and defective glass
+  (neither reaches round). So the discriminative content is "low variance ⇏ round"
+  (both achieved low variance, neither round), realised as *both-glass* rather than
+  *generic-separates-from-defective*. The negative control still does its job (it proves
+  small variance is not sufficient) but does not isolate the generic arm as special.
+- **Single N (=100), coarse.** No finite-size scaling yet. The spectral-distance metric
+  has compressed dynamic range here (the round reference itself match-errs 0.275 to the
+  analytic `k(k+2)` at N=100), so 0.280→0.249 should be read qualitatively (a small move),
+  not over-quantified. FSS across 10²–10⁴ is owed (Mr A #7).
+- **L-BFGS terminated `ABNORMAL`** (numerical-gradient line-search failure near the flat
+  minimum) — benign (it marks the local min), but an analytic gradient would let it probe
+  deeper.
+
+### What this licenses (and what it does not)
+
+- **Licenses:** the v1.0 instrument failure is fixed (round is a stable fixed point by
+  construction); and a clean, pre-registered observation — *edge-length curvature-variance
+  minimisation on a FIXED generic triangulation does not reach round S³; it glasses*.
+  `[OBSERVED]` Per the brief's own pre-registered response, reaching round calls for the
+  **connectivity degrees of freedom** (finer mesh / remeshing / a Perelman-surgery
+  analogue), **not** a tuned fix.
+- **Does NOT license:** any claim that round S³ is unreachable in principle (this is one
+  fixed mesh at one N), nor any chirality/2I claim (Stage 2 territory).
+
+### Handed up to CinC — staging decision (NOT taken here)
+
+Stage 1 did **not** pass (generic arm glasses, no relaxed-round metric produced).
+Per debugger discipline ("Stage N after N−1 passes"), I am **not** proceeding to Stage 2
+unilaterally. The options, for CinC:
+1. **Proceed to Stage 2 on an analytic round S³ / the 2I arm** (the brief explicitly
+   permits "an analytic round S³ at this stage, for cleanliness") — the chirality test
+   does not strictly need the generic arm to have reached round.
+2. **Address the substrate first** — finer mesh / remeshing moves (edge flips) so the
+   generic arm *can* reach round, then re-run Stage 1. This is the brief's prescribed
+   response to the glass null, but it is a materially larger build.
+3. **Accept the glass null as the Stage 1 result** for the generic arm and record it.
+
+Recommendation: (1) — run Stage 2 (chirality on the 2I arm, handedness out of the drive)
+on an analytic round S³, since that is the next *independent* question and does not
+depend on the generic arm reaching round; carry the Stage 1 glass-null as an honest,
+separately-reported finding. **Stage 3 (back-reaction) remains gated.**
