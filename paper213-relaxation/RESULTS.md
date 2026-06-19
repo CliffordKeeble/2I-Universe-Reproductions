@@ -263,3 +263,25 @@ helicity quadratic form; (b) a **2I-symmetric refinement** of the 600-cell for
 resolution (the brief allows it) — the coarse 120-vertex mesh may simply not resolve the
 helicity sign; (c) a known closed-form signed-curl construction if Fizz has one. The
 magnitude result (the `n(n+2)` fingerprint) stands regardless.
+
+---
+
+## STAGE 2 CHIRALITY — PRE-REGISTRATION (committed BEFORE the run; Fizz reroute)
+
+The signed curl is OFF the critical path. curl-curl is sign-blind (its μ=4 eigenspace is
+the full sextet +2⊕−2, so a real solver returns helicity-cancelling mixtures — that is
+why the helicity form read ~0). The chirality is read instead from the **exact** left/right
+2I action: **+2 modes are left-invariant, −2 modes are right-invariant**. Project the
+validated μ=4 Hopf sextet onto the left- and right-2I-invariant subspaces (averaging the
+exact signed edge-permutation reps over the 120 group elements). The one-sided quotient
+S³/2I keeps one half, kills the mirror. No signed operator, no "+2/−2" label needed
+(respects Mr A #5 by construction); the 2I action is an exact permutation so dimensions
+are clean integers at N=120.
+
+**PRE-REGISTERED PREDICTION:**
+`dim left-2I-invariant(μ=4) = 3`, `dim right-2I-invariant(μ=4) = 3`, `intersection = 0`.
+→ the sextet splits into two chiral triples; the S³/2I quotient retains one (+2 Hopf),
+kills the mirror = the Beltrami sieve, confirmed discretely by exact symmetry.
+
+**NULL / surprise:** any other split (e.g. 6/0, 0/0, nonzero intersection) → STOP and
+hunt the cause (group-action bug, wrong eigenspace) before interpretation.
