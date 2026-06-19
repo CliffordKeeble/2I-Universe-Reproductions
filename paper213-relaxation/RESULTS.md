@@ -285,3 +285,34 @@ kills the mirror = the Beltrami sieve, confirmed discretely by exact symmetry.
 
 **NULL / surprise:** any other split (e.g. 6/0, 0/0, nonzero intersection) → STOP and
 hunt the cause (group-action bug, wrong eigenspace) before interpretation.
+
+## STAGE 2 CHIRALITY — RESULT: CLEAN SIEVE (prediction confirmed) `[OBSERVED-as-consistency]`
+
+*Run of record: `python chirality_sieve.py` on the round 600-cell, seed-free (exact).*
+
+> **The μ=4 Hopf sextet splits exactly into two disjoint chiral triples by the exact
+> left/right 2I action. The one-sided S³/2I quotient keeps one (+2 Hopf, left-invariant)
+> and kills the mirror (−2, right-invariant). The Beltrami sieve is confirmed discretely
+> — by exact symmetry, with no signed curl.**
+
+| quantity (μ=4 sextet) | predicted | observed |
+|---|---|---|
+| dim **left**-2I-invariant | 3 | **rank 3** (proj. trace 2.968) |
+| dim **right**-2I-invariant | 3 | **rank 3** (proj. trace 2.968) |
+| intersection (both-invariant) | 0 | **0** (principal cos ≈ 0.003) |
+
+- The **amphichiral control is intrinsic:** on the *full* round S³ both triples are present
+  (sextet = 3⊕3, mirror-symmetric → no chirality preference). The chirality appears *only*
+  under the one-sided quotient — exactly the contrast that proves the selection is
+  **geometric**, not put in by any drive (there is no drive here).
+- **Orientation convention (Mr A #5):** "left = +2" is the convention; an orientation flip
+  relabels left↔right. The convention-independent content is *one chirality survives the
+  one-sided quotient, its mirror does not*.
+- Trace 2.968 (not 3.000) is the coarse-mesh smearing of the μ=4 block (μ∈[4.27,4.53]);
+  the **rank is the clean integer 3** and the intersection is exactly 0 because the 2I
+  action is an *exact* edge permutation, not a discretised operator.
+
+**Status:** CONJECTURED-from-rep-theory (the +2 Hopf survives S³/2I, −2 projected out),
+**confirmed discretely** here. Consistency on imported 2I — **not** an emergence, not a
+discovery. Licenses: *"on S³/2I the geometry selects one Beltrami chirality; the handedness
+is in the one-sided manifold, not in any pump."* Stage 3 (back-reaction) remains gated.
