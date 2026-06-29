@@ -60,63 +60,85 @@ def measure(G, meta, em, k=None):
     }
 
 
-def run_fss(N_list):
-    rows = []
+def checkpoint(results):
+    """Write results.json after every stage/N so a session-boundary interruption
+    (which has bitten this work before) preserves partial FSS, not nothing."""
+    with open(os.path.join(HERE, "results.json"), "w") as f:
+        json.dump(results, f, indent=2, default=float)
+
+
+def run_fss(N_list, results):
+    rows = results.setdefault("fss", [])
+    done = {r["N"] for r in rows}
     for N in N_list:
+        if N in done:        # resume: skip N already checkpointed
+            continue
         t0 = time.time()
         G, meta, em = grow(N, d_max=4, k=2, C="flat-triangles", rho=rho_GR1,
                            seed_a=5.0)
         r = measure(G, meta, em)
         r["wall_s"] = round(time.time() - t0, 1)
         rows.append(r)
+        checkpoint(results)
         print(f"[FSS] N={N:>7} d_s={r['d_s']:.3f}+/-{r['d_s_se']:.3f}  "
               f"kk2(Ls)={r['sig_Ls']['kk2_score']:.2f} "
               f"kk2(Lc)={r['sig_Lc']['kk2_score']:.2f}  "
-              f"({r['wall_s']}s)")
+              f"({r['wall_s']}s)", flush=True)
     return rows
 
 
-def run_controls(N):
-    rows = []
+def run_controls(N, results):
+    rows = results.setdefault("controls", [])
+    done = {r["control"] for r in rows}
     for spec in CONTROL_SPECS:
+        if spec["name"] in done:
+            continue
         kw = {k: v for k, v in spec.items() if k != "name"}
         G, meta, em = grow(N, d_max=4, k=2, rho=rho_GR1, **kw)
         r = measure(G, meta, em)
         r["control"] = spec["name"]
         rows.append(r)
+        checkpoint(results)
         print(f"[CTRL] {spec['name']:<18} d_s={r['d_s']:.3f}  "
               f"kk2(Ls)={r['sig_Ls']['kk2_score']:.2f} "
               f"kk2(Lc)={r['sig_Lc']['kk2_score']:.2f} "
-              f"sg_hit(Lc)={r['sig_Lc']['semigroup_hit']:.2f}")
+              f"sg_hit(Lc)={r['sig_Lc']['semigroup_hit']:.2f}", flush=True)
     return rows
 
 
-def run_rulespace(N, logpath):
+def run_rulespace(N, logpath, results):
     """rho x C x d_max sweep -> jsonl. Honest about nulls (maps the rule space)."""
-    rows = []
+    rows = results.setdefault("rulespace", [])
+    done = {(r["rho"], r["C"], r["d_max"]) for r in rows}
     rhos = {"rho_GR1": rho_GR1, "rho_allR": rho_allR}
-    with open(logpath, "w") as f:
-        for rho_name, rho in rhos.items():
-            for C in C_VARIANTS:
-                for dmax in DMAX_SWEEP:
-                    G, meta, em = grow(N, d_max=dmax, k=2, C=C, rho=rho,
-                                       seed_a=5.0)
-                    r = measure(G, meta, em)
-                    rec = {"rho": rho_name, "C": C, "d_max": dmax,
-                           "N": r["N"], "E": r["E"],
-                           "mean_degree": round(r["mean_degree"], 3),
-                           "n_triangles": r["n_triangles"],
-                           "d_s": round(r["d_s"], 4),
-                           "d_s_se": round(r["d_s_se"], 4),
-                           "kk2_Ls": round(r["sig_Ls"]["kk2_score"], 3),
-                           "kk2_Lc": round(r["sig_Lc"]["kk2_score"], 3),
-                           "sg_hit_Lc": round(r["sig_Lc"]["semigroup_hit"], 3),
-                           "gap_avoid_Lc": round(r["sig_Lc"]["gap_avoidance"], 3),
-                           "n_neg_Lc": r["sig_Lc"]["n_negative"],
-                           "lambda1_Lc": round(r["sig_Lc"]["lambda1"], 4)}
-                    f.write(json.dumps(rec) + "\n")
-                    rows.append(rec)
-        print(f"[RULE] {len(rows)} (rho,C,d_max) trials -> {logpath}")
+    f = open(logpath, "a")
+    for rho_name, rho in rhos.items():
+        for C in C_VARIANTS:
+            for dmax in DMAX_SWEEP:
+                if (rho_name, C, dmax) in done:
+                    continue
+                G, meta, em = grow(N, d_max=dmax, k=2, C=C, rho=rho,
+                                   seed_a=5.0)
+                r = measure(G, meta, em)
+                rec = {"rho": rho_name, "C": C, "d_max": dmax,
+                       "N": r["N"], "E": r["E"],
+                       "mean_degree": round(r["mean_degree"], 3),
+                       "n_triangles": r["n_triangles"],
+                       "d_s": round(r["d_s"], 4),
+                       "d_s_se": round(r["d_s_se"], 4),
+                       "kk2_Ls": round(r["sig_Ls"]["kk2_score"], 3),
+                       "kk2_Lc": round(r["sig_Lc"]["kk2_score"], 3),
+                       "sg_hit_Lc": round(r["sig_Lc"]["semigroup_hit"], 3),
+                       "gap_avoid_Lc": round(r["sig_Lc"]["gap_avoidance"], 3),
+                       "n_neg_Lc": r["sig_Lc"]["n_negative"],
+                       "lambda1_Lc": round(r["sig_Lc"]["lambda1"], 4)}
+                f.write(json.dumps(rec) + "\n"); f.flush()
+                rows.append(rec)
+                checkpoint(results)
+                print(f"[RULE] {rho_name}/{C}/d{dmax} d_s={rec['d_s']:.2f} "
+                      f"kk2_Lc={rec['kk2_Lc']:.2f}", flush=True)
+    f.close()
+    print(f"[RULE] {len(rows)} (rho,C,d_max) trials -> {logpath}")
     return rows
 
 
@@ -169,18 +191,37 @@ def main():
         N_ctrl = 32000
         N_rule = 16000
 
-    print(f"=== Paper 213 Arm 1 :: scale={args.scale} ===")
+    print(f"=== Paper 213 Arm 1 :: scale={args.scale} ===", flush=True)
     t0 = time.time()
-    fss = run_fss(N_list)
-    ctrl = run_controls(N_ctrl)
-    rule = run_rulespace(N_rule, os.path.join(LOGDIR, "rule_trials.jsonl"))
+
+    # Resume from a prior checkpoint of the SAME scale if present (a long prod run
+    # may span a session boundary; debug-scale results.json must not be reused).
+    rpath = os.path.join(HERE, "results.json")
+    results = {"scale": args.scale}
+    if os.path.exists(rpath):
+        try:
+            prev = json.load(open(rpath))
+            if prev.get("scale") == args.scale:
+                results = prev
+                print(f"[RESUME] continuing from checkpoint "
+                      f"({len(prev.get('fss', []))} FSS, "
+                      f"{len(prev.get('controls', []))} ctrl, "
+                      f"{len(prev.get('rulespace', []))} rule)", flush=True)
+        except Exception:
+            pass
+
+    rule_log = os.path.join(LOGDIR, "rule_trials.jsonl")
+    if not results.get("rulespace") and os.path.exists(rule_log):
+        open(rule_log, "w").close()   # fresh sweep if not resuming rulespace
+
+    fss = run_fss(N_list, results)
+    ctrl = run_controls(N_ctrl, results)
+    rule = run_rulespace(N_rule, rule_log, results)
     make_figures(fss, rule)
 
-    results = {"scale": args.scale, "fss": fss, "controls": ctrl,
-               "rulespace": rule, "wall_s": round(time.time() - t0, 1)}
-    with open(os.path.join(HERE, "results.json"), "w") as f:
-        json.dump(results, f, indent=2, default=float)
-    print(f"=== done in {results['wall_s']}s -> results.json ===")
+    results["wall_s"] = round(time.time() - t0, 1)
+    checkpoint(results)
+    print(f"=== done in {results['wall_s']}s -> results.json ===", flush=True)
 
 
 if __name__ == "__main__":
