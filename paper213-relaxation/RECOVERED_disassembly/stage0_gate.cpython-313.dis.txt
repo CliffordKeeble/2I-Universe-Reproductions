@@ -1,0 +1,580 @@
+  0           RESUME                   0
+
+  1           LOAD_CONST               0 ("\nstage0_gate.py  —  rigorous symmetry gate (brief v1.1 §1, Mr A #4).\n\nBefore Stage 1 we must show the generic complex is NOT secretly symmetric — otherwise\nthe equilateral ell=1 init smuggles in an isometry group (the metric's isometry group =\nthe combinatorial automorphism group when all edges are equal). The degree-spread screen\nfrom the earlier run is NOT the gate; the automorphism computation is.\n\nMethod: Weisfeiler-Leman (1-WL) colour refinement on the 1-skeleton, seeded with each\nvertex's simplicial signature (graph degree, #tets, sorted incident edge-tet counts).\nRefine to a stable colouring. Any automorphism must preserve WL colours, so:\n\n    all colour classes singletons  =>  Aut = {id} (RIGOROUS upper bound |Aut| = 1)\n                                    =>  no order-120 / 2I subgroup => 2I-free. PASS.\n\nIf some class has size > 1, automorphism orbits are unions of those classes; we report\nthe largest class as an upper bound on any orbit and FLAG (the gate is not cleanly passed\nand the equilateral init is not licensed).\n\nStandalone:  python stage0_gate.py [N]\n")
+              STORE_NAME               0 (__doc__)
+
+ 23           LOAD_CONST               1 (0)
+              LOAD_CONST               2 (None)
+              IMPORT_NAME              1 (sys)
+              STORE_NAME               1 (sys)
+
+ 24           LOAD_CONST               1 (0)
+              LOAD_CONST               2 (None)
+              IMPORT_NAME              2 (numpy)
+              STORE_NAME               3 (np)
+
+ 25           LOAD_CONST               1 (0)
+              LOAD_CONST               3 (('defaultdict',))
+              IMPORT_NAME              4 (collections)
+              IMPORT_FROM              5 (defaultdict)
+              STORE_NAME               5 (defaultdict)
+              POP_TOP
+
+ 26           LOAD_CONST               1 (0)
+              LOAD_CONST               4 (('generic_s3',))
+              IMPORT_NAME              6 (geometry)
+              IMPORT_FROM              7 (generic_s3)
+              STORE_NAME               7 (generic_s3)
+              POP_TOP
+
+ 29           LOAD_CONST              13 ((50,))
+              LOAD_CONST               5 (<code object wl_refine at 0x00000204E6B559E0, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\stage0_gate.py", line 29>)
+              MAKE_FUNCTION
+              SET_FUNCTION_ATTRIBUTE   1 (defaults)
+              STORE_NAME               8 (wl_refine)
+
+ 60           LOAD_CONST               6 (<code object _relabel at 0x00000204E8CA5570, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\stage0_gate.py", line 60>)
+              MAKE_FUNCTION
+              STORE_NAME               9 (_relabel)
+
+ 70           LOAD_CONST              14 ((True,))
+              LOAD_CONST               7 (<code object gate at 0x00000204E6AF5D00, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\stage0_gate.py", line 70>)
+              MAKE_FUNCTION
+              SET_FUNCTION_ATTRIBUTE   1 (defaults)
+              STORE_NAME              10 (gate)
+
+ 92           LOAD_NAME               11 (__name__)
+              LOAD_CONST               8 ('__main__')
+              COMPARE_OP              88 (bool(==))
+              POP_JUMP_IF_FALSE       61 (to L3)
+
+ 93           LOAD_NAME               12 (len)
+              PUSH_NULL
+              LOAD_NAME                1 (sys)
+              LOAD_ATTR               26 (argv)
+              CALL                     1
+              LOAD_CONST               9 (1)
+              COMPARE_OP             148 (bool(>))
+              POP_JUMP_IF_FALSE       21 (to L1)
+              LOAD_NAME               14 (int)
+              PUSH_NULL
+              LOAD_NAME                1 (sys)
+              LOAD_ATTR               26 (argv)
+              LOAD_CONST               9 (1)
+              BINARY_SUBSCR
+              CALL                     1
+              JUMP_FORWARD             1 (to L2)
+      L1:     LOAD_CONST              10 (300)
+      L2:     STORE_NAME              15 (N)
+
+ 94           LOAD_NAME                7 (generic_s3)
+              PUSH_NULL
+              LOAD_NAME               15 (N)
+              LOAD_CONST              11 (20260618)
+              LOAD_CONST              12 (('seed',))
+              CALL_KW                  2
+              STORE_NAME              16 (cx)
+
+ 95           LOAD_NAME               10 (gate)
+              PUSH_NULL
+              LOAD_NAME               16 (cx)
+              CALL                     1
+              POP_TOP
+              RETURN_CONST             2 (None)
+
+ 92   L3:     RETURN_CONST             2 (None)
+
+Disassembly of <code object wl_refine at 0x00000204E6B559E0, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\stage0_gate.py", line 29>:
+  --            MAKE_CELL               12 (v)
+                MAKE_CELL               15 (colour)
+                MAKE_CELL               16 (edge_tet_count)
+
+  29            RESUME                   0
+
+  31            LOAD_FAST                0 (cx)
+                LOAD_ATTR                0 (N)
+                STORE_FAST               2 (N)
+
+  33            LOAD_GLOBAL              3 (defaultdict + NULL)
+                LOAD_GLOBAL              4 (list)
+                CALL                     1
+                STORE_FAST               3 (adj)
+
+  34            LOAD_FAST                0 (cx)
+                LOAD_ATTR                6 (edges)
+                GET_ITER
+        L1:     FOR_ITER                43 (to L2)
+                UNPACK_SEQUENCE          2
+                STORE_FAST_STORE_FAST   69 (a, b)
+
+  35            LOAD_FAST_LOAD_FAST     52 (adj, a)
+                BINARY_SUBSCR
+                LOAD_ATTR                9 (append + NULL|self)
+                LOAD_FAST                5 (b)
+                CALL                     1
+                POP_TOP
+                LOAD_FAST_LOAD_FAST     53 (adj, b)
+                BINARY_SUBSCR
+                LOAD_ATTR                9 (append + NULL|self)
+                LOAD_FAST                4 (a)
+                CALL                     1
+                POP_TOP
+                JUMP_BACKWARD           45 (to L1)
+
+  34    L2:     END_FOR
+                POP_TOP
+
+  37            LOAD_GLOBAL             10 (np)
+                LOAD_ATTR               12 (zeros)
+                PUSH_NULL
+                LOAD_FAST                2 (N)
+                LOAD_GLOBAL             14 (int)
+                LOAD_CONST               1 (('dtype',))
+                CALL_KW                  2
+                STORE_FAST               6 (tets_per_vertex)
+
+  38            LOAD_FAST                0 (cx)
+                LOAD_ATTR               16 (tets)
+                GET_ITER
+        L3:     FOR_ITER                25 (to L6)
+                STORE_FAST               7 (t)
+
+  39            LOAD_FAST                7 (t)
+                GET_ITER
+        L4:     FOR_ITER                16 (to L5)
+                STORE_DEREF             12 (v)
+
+  40            LOAD_FAST                6 (tets_per_vertex)
+                LOAD_DEREF              12 (v)
+                COPY                     2
+                COPY                     2
+                BINARY_SUBSCR
+                LOAD_CONST               2 (1)
+                BINARY_OP               13 (+=)
+                SWAP                     3
+                SWAP                     2
+                STORE_SUBSCR
+                JUMP_BACKWARD           18 (to L4)
+
+  39    L5:     END_FOR
+                POP_TOP
+                JUMP_BACKWARD           27 (to L3)
+
+  38    L6:     END_FOR
+                POP_TOP
+
+  41            LOAD_FAST                0 (cx)
+                LOAD_ATTR                6 (edges)
+                GET_ITER
+                LOAD_FAST_AND_CLEAR      8 (e)
+                SWAP                     2
+        L7:     BUILD_MAP                0
+                SWAP                     2
+                GET_ITER
+        L8:     FOR_ITER                27 (to L9)
+                STORE_FAST_LOAD_FAST   136 (e, e)
+                LOAD_GLOBAL             19 (len + NULL)
+                LOAD_FAST                0 (cx)
+                LOAD_ATTR               20 (_edge_tets)
+                LOAD_FAST                8 (e)
+                BINARY_SUBSCR
+                CALL                     1
+                MAP_ADD                  2
+                JUMP_BACKWARD           29 (to L8)
+        L9:     END_FOR
+                POP_TOP
+       L10:     SWAP                     2
+                STORE_FAST               8 (e)
+                STORE_DEREF             16 (edge_tet_count)
+
+  42            BUILD_LIST               0
+                STORE_FAST               9 (seed)
+
+  43            LOAD_GLOBAL             23 (range + NULL)
+                LOAD_FAST                2 (N)
+                CALL                     1
+                GET_ITER
+       L11:     FOR_ITER                81 (to L12)
+                STORE_DEREF             12 (v)
+
+  44            LOAD_GLOBAL             25 (sorted + NULL)
+                LOAD_FAST               16 (edge_tet_count)
+                LOAD_FAST               12 (v)
+                BUILD_TUPLE              2
+                LOAD_CONST               3 (<code object <genexpr> at 0x00000204E8CB2670, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\stage0_gate.py", line 44>)
+                MAKE_FUNCTION
+                SET_FUNCTION_ATTRIBUTE   8 (closure)
+                LOAD_FAST                3 (adj)
+                LOAD_DEREF              12 (v)
+                BINARY_SUBSCR
+                GET_ITER
+                CALL                     0
+                CALL                     1
+                STORE_FAST              10 (inc)
+
+  45            LOAD_FAST                9 (seed)
+                LOAD_ATTR                9 (append + NULL|self)
+                LOAD_GLOBAL             19 (len + NULL)
+                LOAD_FAST                3 (adj)
+                LOAD_DEREF              12 (v)
+                BINARY_SUBSCR
+                CALL                     1
+                LOAD_GLOBAL             15 (int + NULL)
+                LOAD_FAST                6 (tets_per_vertex)
+                LOAD_DEREF              12 (v)
+                BINARY_SUBSCR
+                CALL                     1
+                LOAD_GLOBAL             27 (tuple + NULL)
+                LOAD_FAST               10 (inc)
+                CALL                     1
+                BUILD_TUPLE              3
+                CALL                     1
+                POP_TOP
+                JUMP_BACKWARD           83 (to L11)
+
+  43   L12:     END_FOR
+                POP_TOP
+
+  47            LOAD_GLOBAL             29 (_relabel + NULL)
+                LOAD_FAST                9 (seed)
+                CALL                     1
+                STORE_DEREF             15 (colour)
+
+  48            LOAD_GLOBAL             23 (range + NULL)
+                LOAD_FAST                1 (max_iter)
+                CALL                     1
+                GET_ITER
+       L13:     FOR_ITER               140 (to L20)
+                STORE_FAST              11 (_)
+
+  49            LOAD_GLOBAL             23 (range + NULL)
+                LOAD_FAST                2 (N)
+                CALL                     1
+                GET_ITER
+                LOAD_FAST_AND_CLEAR     12 (v)
+                SWAP                     2
+       L14:     BUILD_LIST               0
+                SWAP                     2
+                GET_ITER
+       L15:     FOR_ITER                40 (to L16)
+                STORE_FAST              12 (v)
+                LOAD_DEREF              15 (colour)
+                LOAD_FAST               12 (v)
+                BINARY_SUBSCR
+                LOAD_GLOBAL             27 (tuple + NULL)
+                LOAD_GLOBAL             25 (sorted + NULL)
+                LOAD_FAST               15 (colour)
+                BUILD_TUPLE              1
+                LOAD_CONST               4 (<code object <genexpr> at 0x00000204E8D11430, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\stage0_gate.py", line 49>)
+                MAKE_FUNCTION
+                SET_FUNCTION_ATTRIBUTE   8 (closure)
+                LOAD_FAST_LOAD_FAST     60 (adj, v)
+                BINARY_SUBSCR
+                GET_ITER
+                CALL                     0
+                CALL                     1
+                CALL                     1
+                BUILD_TUPLE              2
+                LIST_APPEND              2
+                JUMP_BACKWARD           42 (to L15)
+       L16:     END_FOR
+                POP_TOP
+       L17:     STORE_FAST              13 (new)
+                STORE_FAST              12 (v)
+
+  50            LOAD_GLOBAL             29 (_relabel + NULL)
+                LOAD_FAST               13 (new)
+                CALL                     1
+                STORE_FAST              14 (new_colour)
+
+  51            LOAD_GLOBAL             31 (max + NULL)
+                LOAD_FAST               14 (new_colour)
+                CALL                     1
+                LOAD_GLOBAL             31 (max + NULL)
+                LOAD_DEREF              15 (colour)
+                CALL                     1
+                COMPARE_OP              88 (bool(==))
+                POP_JUMP_IF_FALSE        9 (to L18)
+                LOAD_FAST               14 (new_colour)
+                LOAD_DEREF              15 (colour)
+                COMPARE_OP              88 (bool(==))
+                POP_JUMP_IF_FALSE        3 (to L18)
+
+  52            POP_TOP
+
+  57            LOAD_DEREF              15 (colour)
+                RETURN_VALUE
+
+  53   L18:     LOAD_GLOBAL             31 (max + NULL)
+                LOAD_FAST               14 (new_colour)
+                CALL                     1
+                LOAD_GLOBAL             31 (max + NULL)
+                LOAD_DEREF              15 (colour)
+                CALL                     1
+                COMPARE_OP              88 (bool(==))
+                POP_JUMP_IF_FALSE        5 (to L19)
+
+  54            LOAD_FAST               14 (new_colour)
+                STORE_DEREF             15 (colour)
+
+  55            POP_TOP
+
+  57            LOAD_DEREF              15 (colour)
+                RETURN_VALUE
+
+  56   L19:     LOAD_FAST               14 (new_colour)
+                STORE_DEREF             15 (colour)
+                JUMP_BACKWARD          142 (to L13)
+
+  48   L20:     END_FOR
+                POP_TOP
+
+  57            LOAD_DEREF              15 (colour)
+                RETURN_VALUE
+
+  --   L21:     SWAP                     2
+                POP_TOP
+
+  41            SWAP                     2
+                STORE_FAST               8 (e)
+                RERAISE                  0
+
+  --   L22:     SWAP                     2
+                POP_TOP
+
+  49            SWAP                     2
+                STORE_FAST              12 (v)
+                RERAISE                  0
+ExceptionTable:
+  L7 to L10 -> L21 [2]
+  L14 to L17 -> L22 [3]
+
+Disassembly of <code object <genexpr> at 0x00000204E8CB2670, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\stage0_gate.py", line 44>:
+  --           COPY_FREE_VARS           2
+
+  44           RETURN_GENERATOR
+               POP_TOP
+       L1:     RESUME                   0
+               LOAD_FAST                0 (.0)
+               GET_ITER
+       L2:     FOR_ITER                30 (to L3)
+               STORE_FAST               1 (u)
+               LOAD_DEREF               2 (edge_tet_count)
+               LOAD_GLOBAL              1 (tuple + NULL)
+               LOAD_GLOBAL              3 (sorted + NULL)
+               LOAD_DEREF               3 (v)
+               LOAD_FAST                1 (u)
+               BUILD_TUPLE              2
+               CALL                     1
+               CALL                     1
+               BINARY_SUBSCR
+               YIELD_VALUE              0
+               RESUME                   5
+               POP_TOP
+               JUMP_BACKWARD           32 (to L2)
+       L3:     END_FOR
+               POP_TOP
+               RETURN_CONST             0 (None)
+
+  --   L4:     CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+               RERAISE                  1
+ExceptionTable:
+  L1 to L4 -> L4 [0] lasti
+
+Disassembly of <code object <genexpr> at 0x00000204E8D11430, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\stage0_gate.py", line 49>:
+  --           COPY_FREE_VARS           1
+
+  49           RETURN_GENERATOR
+               POP_TOP
+       L1:     RESUME                   0
+               LOAD_FAST                0 (.0)
+               GET_ITER
+       L2:     FOR_ITER                10 (to L3)
+               STORE_FAST               1 (u)
+               LOAD_DEREF               2 (colour)
+               LOAD_FAST                1 (u)
+               BINARY_SUBSCR
+               YIELD_VALUE              0
+               RESUME                   5
+               POP_TOP
+               JUMP_BACKWARD           12 (to L2)
+       L3:     END_FOR
+               POP_TOP
+               RETURN_CONST             0 (None)
+
+  --   L4:     CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+               RERAISE                  1
+ExceptionTable:
+  L1 to L4 -> L4 [0] lasti
+
+Disassembly of <code object _relabel at 0x00000204E8CA5570, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\stage0_gate.py", line 60>:
+ 60           RESUME                   0
+
+ 61           BUILD_MAP                0
+              STORE_FAST               1 (order)
+
+ 62           BUILD_LIST               0
+              STORE_FAST               2 (out)
+
+ 63           LOAD_FAST                0 (signatures)
+              GET_ITER
+      L1:     FOR_ITER                40 (to L3)
+              STORE_FAST               3 (s)
+
+ 64           LOAD_FAST_LOAD_FAST     49 (s, order)
+              CONTAINS_OP              1
+              POP_JUMP_IF_FALSE       13 (to L2)
+
+ 65           LOAD_GLOBAL              1 (len + NULL)
+              LOAD_FAST                1 (order)
+              CALL                     1
+              LOAD_FAST_LOAD_FAST     19 (order, s)
+              STORE_SUBSCR
+
+ 66   L2:     LOAD_FAST                2 (out)
+              LOAD_ATTR                3 (append + NULL|self)
+              LOAD_FAST_LOAD_FAST     19 (order, s)
+              BINARY_SUBSCR
+              CALL                     1
+              POP_TOP
+              JUMP_BACKWARD           42 (to L1)
+
+ 63   L3:     END_FOR
+              POP_TOP
+
+ 67           LOAD_FAST                2 (out)
+              RETURN_VALUE
+
+Disassembly of <code object gate at 0x00000204E6AF5D00, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\stage0_gate.py", line 70>:
+ 70           RESUME                   0
+
+ 71           LOAD_GLOBAL              1 (wl_refine + NULL)
+              LOAD_FAST                0 (cx)
+              CALL                     1
+              STORE_FAST               2 (colour)
+
+ 72           LOAD_GLOBAL              3 (defaultdict + NULL)
+              LOAD_GLOBAL              4 (int)
+              CALL                     1
+              STORE_FAST               3 (classes)
+
+ 73           LOAD_FAST                2 (colour)
+              GET_ITER
+      L1:     FOR_ITER                15 (to L2)
+              STORE_FAST               4 (c)
+
+ 74           LOAD_FAST_LOAD_FAST     52 (classes, c)
+              COPY                     2
+              COPY                     2
+              BINARY_SUBSCR
+              LOAD_CONST               1 (1)
+              BINARY_OP               13 (+=)
+              SWAP                     3
+              SWAP                     2
+              STORE_SUBSCR
+              JUMP_BACKWARD           17 (to L1)
+
+ 73   L2:     END_FOR
+              POP_TOP
+
+ 75           LOAD_GLOBAL              7 (len + NULL)
+              LOAD_FAST                3 (classes)
+              CALL                     1
+              STORE_FAST               5 (n_classes)
+
+ 76           LOAD_GLOBAL              9 (max + NULL)
+              LOAD_FAST                3 (classes)
+              LOAD_ATTR               11 (values + NULL|self)
+              CALL                     0
+              CALL                     1
+              STORE_FAST               6 (max_class)
+
+ 77           LOAD_FAST                6 (max_class)
+              LOAD_CONST               1 (1)
+              COMPARE_OP              72 (==)
+              STORE_FAST               7 (trivial_aut)
+
+ 78           LOAD_GLOBAL             13 (dict + NULL)
+              LOAD_FAST                0 (cx)
+              LOAD_ATTR               14 (N)
+              LOAD_FAST_LOAD_FAST     86 (n_classes, max_class)
+
+ 79           LOAD_GLOBAL             17 (bool + NULL)
+              LOAD_FAST                7 (trivial_aut)
+              CALL                     1
+
+ 80           LOAD_FAST                7 (trivial_aut)
+              TO_BOOL
+              POP_JUMP_IF_FALSE        2 (to L3)
+              LOAD_CONST               2 ('1 (identity only)')
+              JUMP_FORWARD             4 (to L4)
+
+ 81   L3:     LOAD_CONST               3 ('orbits <= largest class = ')
+              LOAD_FAST                6 (max_class)
+              FORMAT_SIMPLE
+              BUILD_STRING             2
+
+ 82   L4:     LOAD_GLOBAL             17 (bool + NULL)
+              LOAD_FAST                7 (trivial_aut)
+              CALL                     1
+
+ 83           LOAD_GLOBAL             17 (bool + NULL)
+              LOAD_FAST                7 (trivial_aut)
+              CALL                     1
+
+ 78           LOAD_CONST               4 (('N', 'n_colour_classes', 'max_class_size', 'aut_trivial', 'aut_upper_bound', 'twoI_free', 'PASS'))
+              CALL_KW                  7
+              STORE_FAST               8 (res)
+
+ 84           LOAD_FAST                1 (verbose)
+              TO_BOOL
+              POP_JUMP_IF_FALSE       83 (to L5)
+
+ 85           LOAD_GLOBAL             19 (print + NULL)
+              LOAD_CONST               5 ('Stage 0 gate (N=')
+              LOAD_FAST                0 (cx)
+              LOAD_ATTR               14 (N)
+              FORMAT_SIMPLE
+              LOAD_CONST               6 ('): colour classes=')
+              LOAD_FAST                5 (n_classes)
+              FORMAT_SIMPLE
+              LOAD_CONST               7 ('/')
+              LOAD_FAST                0 (cx)
+              LOAD_ATTR               14 (N)
+              FORMAT_SIMPLE
+              LOAD_CONST               8 (', max class=')
+
+ 86           LOAD_FAST                6 (max_class)
+              FORMAT_SIMPLE
+
+ 85           BUILD_STRING             8
+              CALL                     1
+              POP_TOP
+
+ 87           LOAD_GLOBAL             19 (print + NULL)
+              LOAD_CONST               9 ('  Aut upper bound: ')
+              LOAD_FAST                8 (res)
+              LOAD_CONST              10 ('aut_upper_bound')
+              BINARY_SUBSCR
+              FORMAT_SIMPLE
+              BUILD_STRING             2
+              CALL                     1
+              POP_TOP
+
+ 88           LOAD_GLOBAL             19 (print + NULL)
+              LOAD_CONST              11 ('  2I-free: ')
+              LOAD_FAST                8 (res)
+              LOAD_CONST              12 ('twoI_free')
+              BINARY_SUBSCR
+              FORMAT_SIMPLE
+              LOAD_CONST              13 ('   GATE PASS: ')
+              LOAD_FAST                8 (res)
+              LOAD_CONST              14 ('PASS')
+              BINARY_SUBSCR
+              FORMAT_SIMPLE
+              BUILD_STRING             4
+              CALL                     1
+              POP_TOP
+
+ 89   L5:     LOAD_FAST                8 (res)
+              RETURN_VALUE

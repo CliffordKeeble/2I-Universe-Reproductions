@@ -1,0 +1,1507 @@
+  0           RESUME                   0
+
+  1           LOAD_CONST               0 ('\ncurl_instrument.py  —  the signed discrete curl (Beltrami) operator for Stage 2.\n\nEdge-element (Whitney 1-form / Nedelec) discretisation of curl = *d on 1-forms. The\nWhitney form for edge (a,b) is  W_ab = lam_a grad lam_b - lam_b grad lam_a,  with\ncurl(W_ab) = 2 grad lam_a x grad lam_b  (constant per tet). We assemble two global\nmatrices over edges:\n\n  M1[e,e\'] = integral W_e . W_e\'            (edge mass; SPD)\n  R [e,e\'] = integral curl(W_e) . W_e\'      (curl bilinear; symmetric on a closed\n                                             manifold, INDEFINITE -> SIGNED spectrum)\n\nand solve the generalized eigenproblem  R a = lambda M1 a. The signed eigenvalues are the\nBeltrami/curl eigenvalues; on round S^3 the lowest nonzero are +-2 (mult 3, the\nleft/right-invariant Hopf fields), then +-3, +-4, ...  The SIGN is the whole point of\nStage 2 (chirality), so R must be the genuine indefinite curl form, not curl-curl.\n\nORIENTATION CONVENTION (Mr A #5): each tet is embedded with a right-handed frame\n(tet_embed gives z3>0), fixing a global orientation; global edge orientation = (min->max)\nvertex id. "+2" is defined relative to this. An orientation FLIP (reflect the embedding)\nsends R -> -R, i.e. it RELABELS +2 <-> -2 without changing physics. Verified in __main__.\n\nPer-tet integrals on the flat (chord-length) tet:\n  int lam_i dV = V/4 ;  int lam_i lam_j dV = V(1+delta_ij)/20.\n\nStandalone:  python curl_instrument.py     # validate +-2/+-3 on the 600-cell\n')
+              STORE_NAME               0 (__doc__)
+
+ 29           LOAD_CONST               1 (0)
+              LOAD_CONST               2 (None)
+              IMPORT_NAME              1 (numpy)
+              STORE_NAME               2 (np)
+
+ 30           LOAD_CONST               1 (0)
+              LOAD_CONST               2 (None)
+              IMPORT_NAME              3 (scipy.linalg)
+              IMPORT_FROM              4 (linalg)
+              STORE_NAME               5 (sla)
+              POP_TOP
+
+ 31           LOAD_CONST               1 (0)
+              LOAD_CONST               3 (('tet_embed', 'TET_EDGES'))
+              IMPORT_NAME              6 (geometry)
+              IMPORT_FROM              7 (tet_embed)
+              STORE_NAME               7 (tet_embed)
+              IMPORT_FROM              8 (TET_EDGES)
+              STORE_NAME               8 (TET_EDGES)
+              POP_TOP
+
+ 34           LOAD_CONST               4 (<code object _tet_grads at 0x00000204E8A52310, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\curl_instrument.py", line 34>)
+              MAKE_FUNCTION
+              STORE_NAME               9 (_tet_grads)
+
+ 48           LOAD_CONST              46 ((False,))
+              LOAD_CONST               5 (<code object build_curl at 0x00000204E6B35330, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\curl_instrument.py", line 48>)
+              MAKE_FUNCTION
+              SET_FUNCTION_ATTRIBUTE   1 (defaults)
+              STORE_NAME              10 (build_curl)
+
+112           NOP
+
+113           NOP
+
+112           LOAD_CONST              47 ((False, None, None, None, 1e-06, None))
+              LOAD_CONST               6 (<code object beltrami_spectrum at 0x00000204E6B559E0, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\curl_instrument.py", line 112>)
+              MAKE_FUNCTION
+              SET_FUNCTION_ATTRIBUTE   1 (defaults)
+              STORE_NAME              11 (beltrami_spectrum)
+
+151           LOAD_CONST              48 ((0.08,))
+              LOAD_CONST               7 (<code object cluster_signed at 0x00000204E6AF5D00, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\curl_instrument.py", line 151>)
+              MAKE_FUNCTION
+              SET_FUNCTION_ATTRIBUTE   1 (defaults)
+              STORE_NAME              12 (cluster_signed)
+
+168           LOAD_CONST               8 (<code object d0_incidence at 0x00000204E8A4EF70, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\curl_instrument.py", line 168>)
+              MAKE_FUNCTION
+              STORE_NAME              13 (d0_incidence)
+
+177           LOAD_CONST              49 ((0.1, 1e-06))
+              LOAD_CONST               9 (<code object cluster_mu at 0x00000204E6AF5680, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\curl_instrument.py", line 177>)
+              MAKE_FUNCTION
+              SET_FUNCTION_ATTRIBUTE   1 (defaults)
+              STORE_NAME              14 (cluster_mu)
+
+191           LOAD_NAME               15 (__name__)
+              LOAD_CONST              10 ('__main__')
+              COMPARE_OP              88 (bool(==))
+              EXTENDED_ARG             2
+              POP_JUMP_IF_FALSE      594 (to L6)
+
+192           LOAD_CONST               1 (0)
+              LOAD_CONST              11 (('build_600cell', 'round_metric'))
+              IMPORT_NAME             16 (sixhundred_cell)
+              IMPORT_FROM             17 (build_600cell)
+              STORE_NAME              17 (build_600cell)
+              IMPORT_FROM             18 (round_metric)
+              STORE_NAME              18 (round_metric)
+              POP_TOP
+
+193           LOAD_NAME               17 (build_600cell)
+              PUSH_NULL
+              CALL                     0
+              UNPACK_SEQUENCE          2
+              STORE_NAME              19 (cx)
+              STORE_NAME              20 (_)
+
+194           LOAD_NAME               18 (round_metric)
+              PUSH_NULL
+              LOAD_NAME               19 (cx)
+              CALL                     1
+              STORE_NAME              21 (ell)
+
+195           LOAD_NAME               22 (print)
+              PUSH_NULL
+              LOAD_CONST              12 ('Curl instrument validation on the round 600-cell (E=')
+              LOAD_NAME               23 (len)
+              PUSH_NULL
+              LOAD_NAME               19 (cx)
+              LOAD_ATTR               48 (edges)
+              CALL                     1
+              FORMAT_SIMPLE
+              LOAD_CONST              13 (')')
+              BUILD_STRING             3
+              CALL                     1
+              POP_TOP
+
+196           LOAD_NAME               22 (print)
+              PUSH_NULL
+              LOAD_CONST              14 ('  analytic round-S^3: |lambda|=2 (mu=4, mult 6 = +-2 x3), |lambda|=3 (mu=9, mult 16)')
+              CALL                     1
+              POP_TOP
+
+197           LOAD_NAME               10 (build_curl)
+              PUSH_NULL
+              LOAD_NAME               19 (cx)
+              LOAD_NAME               21 (ell)
+              CALL                     2
+              UNPACK_SEQUENCE          3
+              STORE_NAME              25 (K)
+              STORE_NAME              26 (R)
+              STORE_NAME              27 (M1)
+
+198           LOAD_NAME               13 (d0_incidence)
+              PUSH_NULL
+              LOAD_NAME               19 (cx)
+              CALL                     1
+              STORE_NAME              28 (d0)
+
+199           LOAD_NAME               29 (float)
+              PUSH_NULL
+              LOAD_NAME                2 (np)
+              LOAD_ATTR               60 (abs)
+              PUSH_NULL
+              LOAD_NAME               25 (K)
+              LOAD_NAME               28 (d0)
+              BINARY_OP                4 (@)
+              CALL                     1
+              LOAD_ATTR               63 (max + NULL|self)
+              CALL                     0
+              CALL                     1
+              STORE_NAME              32 (res)
+              LOAD_NAME               29 (float)
+              PUSH_NULL
+              LOAD_NAME                2 (np)
+              LOAD_ATTR               60 (abs)
+              PUSH_NULL
+              LOAD_NAME               25 (K)
+              CALL                     1
+              LOAD_ATTR               63 (max + NULL|self)
+              CALL                     0
+              CALL                     1
+              STORE_NAME              33 (knorm)
+
+200           LOAD_NAME               32 (res)
+              LOAD_CONST              15 (1e-08)
+              LOAD_NAME               31 (max)
+              PUSH_NULL
+              LOAD_NAME               33 (knorm)
+              LOAD_CONST              16 (1.0)
+              CALL                     2
+              BINARY_OP                5 (*)
+              COMPARE_OP               2 (<)
+              STORE_NAME              34 (GATE_seq)
+
+201           LOAD_NAME                5 (sla)
+              LOAD_ATTR               70 (eigh)
+              PUSH_NULL
+              LOAD_NAME               25 (K)
+              LOAD_NAME               27 (M1)
+              CALL                     2
+              UNPACK_SEQUENCE          2
+              STORE_NAME              36 (mu)
+              STORE_NAME              20 (_)
+
+202           LOAD_NAME               37 (int)
+              PUSH_NULL
+              LOAD_NAME                2 (np)
+              LOAD_ATTR               76 (sum)
+              PUSH_NULL
+              LOAD_NAME               36 (mu)
+              LOAD_CONST              15 (1e-08)
+              COMPARE_OP              42 (<=)
+              CALL                     1
+              CALL                     1
+              STORE_NAME              39 (nzero)
+
+203           LOAD_NAME               22 (print)
+              PUSH_NULL
+              LOAD_CONST              17 ('  --- MAGNITUDE (curl-curl K) ---')
+              CALL                     1
+              POP_TOP
+
+204           LOAD_NAME               22 (print)
+              PUSH_NULL
+              LOAD_CONST              18 ('  exact-sequence max|K.d0|=')
+              LOAD_NAME               32 (res)
+              LOAD_CONST              19 ('.2e')
+              FORMAT_WITH_SPEC
+              LOAD_CONST              20 (' (annihilates gradients: ')
+              LOAD_NAME               34 (GATE_seq)
+              FORMAT_SIMPLE
+              LOAD_CONST              13 (')')
+              BUILD_STRING             5
+              CALL                     1
+              POP_TOP
+
+205           LOAD_NAME               22 (print)
+              PUSH_NULL
+              LOAD_CONST              21 ('  gradient kernel dim=')
+              LOAD_NAME               39 (nzero)
+              FORMAT_SIMPLE
+              LOAD_CONST              22 (' (expect V-1=')
+              LOAD_NAME               19 (cx)
+              LOAD_ATTR               80 (N)
+              LOAD_CONST              23 (1)
+              BINARY_OP               10 (-)
+              FORMAT_SIMPLE
+              LOAD_CONST              13 (')')
+              BUILD_STRING             5
+              CALL                     1
+              POP_TOP
+
+206           LOAD_NAME               22 (print)
+              PUSH_NULL
+              LOAD_CONST              24 ('  lowest nonzero mu clusters [expect ~4 x6, ~9 x16]:')
+              CALL                     1
+              POP_TOP
+
+207           LOAD_NAME               14 (cluster_mu)
+              PUSH_NULL
+              LOAD_NAME               36 (mu)
+              CALL                     1
+              LOAD_CONST               2 (None)
+              LOAD_CONST              25 (3)
+              BINARY_SLICE
+              GET_ITER
+      L1:     FOR_ITER                29 (to L2)
+              UNPACK_SEQUENCE          2
+              STORE_NAME              41 (val)
+              STORE_NAME              42 (m)
+
+208           LOAD_NAME               22 (print)
+              PUSH_NULL
+              LOAD_CONST              26 ('     mu=')
+              LOAD_NAME               41 (val)
+              LOAD_CONST              27 ('.3f')
+              FORMAT_WITH_SPEC
+              LOAD_CONST              28 (' x')
+              LOAD_NAME               42 (m)
+              FORMAT_SIMPLE
+              LOAD_CONST              29 ('  (|lambda|~')
+              LOAD_NAME               41 (val)
+              LOAD_CONST              30 (0.5)
+              BINARY_OP                8 (**)
+              LOAD_CONST              27 ('.3f')
+              FORMAT_WITH_SPEC
+              LOAD_CONST              13 (')')
+              BUILD_STRING             7
+              CALL                     1
+              POP_TOP
+              JUMP_BACKWARD           31 (to L1)
+
+207   L2:     END_FOR
+              POP_TOP
+
+209           LOAD_NAME               34 (GATE_seq)
+              COPY                     1
+              TO_BOOL
+              POP_JUMP_IF_FALSE       27 (to L3)
+              POP_TOP
+              LOAD_NAME               30 (abs)
+              PUSH_NULL
+              LOAD_NAME               39 (nzero)
+              LOAD_NAME               19 (cx)
+              LOAD_ATTR               80 (N)
+              LOAD_CONST              23 (1)
+              BINARY_OP               10 (-)
+              BINARY_OP               10 (-)
+              CALL                     1
+              LOAD_CONST              31 (2)
+              COMPARE_OP              42 (<=)
+      L3:     STORE_NAME              43 (MAG_GATE)
+
+210           LOAD_NAME               22 (print)
+              PUSH_NULL
+              LOAD_CONST              32 ('  >>> MAGNITUDE GATE: ')
+              LOAD_NAME               43 (MAG_GATE)
+              TO_BOOL
+              POP_JUMP_IF_FALSE        2 (to L4)
+              LOAD_CONST              33 ('PASS')
+              JUMP_FORWARD             1 (to L5)
+      L4:     LOAD_CONST              34 ('FAIL')
+      L5:     FORMAT_SIMPLE
+              LOAD_CONST              35 (' <<<')
+              BUILD_STRING             3
+              CALL                     1
+              POP_TOP
+
+211           LOAD_NAME               22 (print)
+              PUSH_NULL
+              LOAD_CONST              36 ('  --- SIGN (helicity split) : OPEN ---')
+              CALL                     1
+              POP_TOP
+
+212           LOAD_NAME               22 (print)
+              PUSH_NULL
+              LOAD_CONST              37 ('  H annihilates gradients: max|H.d0|=')
+              LOAD_NAME                2 (np)
+              LOAD_ATTR               60 (abs)
+              PUSH_NULL
+              LOAD_NAME               26 (R)
+              LOAD_NAME               28 (d0)
+              BINARY_OP                4 (@)
+              CALL                     1
+              LOAD_ATTR               63 (max + NULL|self)
+              CALL                     0
+              LOAD_CONST              19 ('.2e')
+              FORMAT_WITH_SPEC
+              BUILD_STRING             2
+              CALL                     1
+              POP_TOP
+
+213           LOAD_NAME                2 (np)
+              LOAD_ATTR               88 (where)
+              PUSH_NULL
+              LOAD_NAME               36 (mu)
+              LOAD_CONST              38 (3.5)
+              COMPARE_OP             132 (>)
+              LOAD_NAME               36 (mu)
+              LOAD_CONST              39 (5.5)
+              COMPARE_OP               2 (<)
+              BINARY_OP                1 (&)
+              CALL                     1
+              LOAD_CONST               1 (0)
+              BINARY_SUBSCR
+              STORE_NAME              45 (sel)
+
+214           LOAD_CONST               1 (0)
+              LOAD_CONST              40 (('multi_dot',))
+              IMPORT_NAME             46 (numpy.linalg)
+              IMPORT_FROM             47 (multi_dot)
+              STORE_NAME              47 (multi_dot)
+              POP_TOP
+
+215           LOAD_NAME                5 (sla)
+              LOAD_ATTR               70 (eigh)
+              PUSH_NULL
+              LOAD_NAME               25 (K)
+              LOAD_NAME               27 (M1)
+              CALL                     2
+              UNPACK_SEQUENCE          2
+              STORE_NAME              48 (mu4)
+              STORE_NAME              49 (V4)
+
+216           LOAD_NAME               49 (V4)
+              LOAD_CONST               2 (None)
+              LOAD_CONST               2 (None)
+              BUILD_SLICE              2
+              LOAD_NAME               45 (sel)
+              BUILD_TUPLE              2
+              BINARY_SUBSCR
+              STORE_NAME              50 (B)
+
+217           LOAD_NAME                2 (np)
+              LOAD_ATTR              102 (diag)
+              PUSH_NULL
+              LOAD_NAME               50 (B)
+              LOAD_ATTR              104 (T)
+              LOAD_NAME               26 (R)
+              BINARY_OP                4 (@)
+              LOAD_NAME               50 (B)
+              BINARY_OP                4 (@)
+              CALL                     1
+              STORE_NAME              53 (hel)
+
+218           LOAD_NAME               22 (print)
+              PUSH_NULL
+              LOAD_CONST              41 ('  helicity of the mu=4 (Hopf-sextet) modes: ')
+              LOAD_NAME                2 (np)
+              LOAD_ATTR              108 (round)
+              PUSH_NULL
+              LOAD_NAME               53 (hel)
+              LOAD_CONST              42 (4)
+              CALL                     2
+              FORMAT_SIMPLE
+              BUILD_STRING             2
+              CALL                     1
+              POP_TOP
+
+219           LOAD_NAME               22 (print)
+              PUSH_NULL
+              LOAD_CONST              43 ('  => helicity ~ 0 on the coarse 600-cell: the +2/-2 SIGN split is NOT')
+              CALL                     1
+              POP_TOP
+
+220           LOAD_NAME               22 (print)
+              PUSH_NULL
+              LOAD_CONST              44 ('     cleanly recoverable from the Whitney helicity form at this resolution.')
+              CALL                     1
+              POP_TOP
+
+221           LOAD_NAME               22 (print)
+              PUSH_NULL
+              LOAD_CONST              45 ('     MAGNITUDE validated; SIGN instrument is the open blocker (see findings).')
+              CALL                     1
+              POP_TOP
+              RETURN_CONST             2 (None)
+
+191   L6:     RETURN_CONST             2 (None)
+
+Disassembly of <code object _tet_grads at 0x00000204E8A52310, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\curl_instrument.py", line 34>:
+ 34           RESUME                   0
+
+ 36           LOAD_FAST                0 (P)
+              LOAD_CONST               1 (1)
+              LOAD_CONST               2 (None)
+              BINARY_SLICE
+              LOAD_FAST                0 (P)
+              LOAD_CONST               3 (0)
+              BINARY_SUBSCR
+              BINARY_OP               10 (-)
+              STORE_FAST               1 (e)
+
+ 37           LOAD_GLOBAL              0 (np)
+              LOAD_ATTR                2 (linalg)
+              LOAD_ATTR                5 (det + NULL|self)
+              LOAD_FAST                1 (e)
+              CALL                     1
+              STORE_FAST               2 (detM)
+
+ 38           LOAD_GLOBAL              7 (abs + NULL)
+              LOAD_FAST                2 (detM)
+              CALL                     1
+              LOAD_CONST               4 (6.0)
+              BINARY_OP               11 (/)
+              STORE_FAST               3 (V)
+
+ 39           LOAD_FAST                3 (V)
+              LOAD_CONST               5 (1e-12)
+              COMPARE_OP              18 (bool(<))
+              POP_JUMP_IF_FALSE        1 (to L1)
+
+ 40           RETURN_CONST             6 ((None, 0.0))
+
+ 41   L1:     LOAD_GLOBAL              0 (np)
+              LOAD_ATTR                2 (linalg)
+              LOAD_ATTR                9 (inv + NULL|self)
+              LOAD_FAST                1 (e)
+              CALL                     1
+              STORE_FAST               4 (Minv)
+
+ 42           LOAD_GLOBAL              0 (np)
+              LOAD_ATTR               10 (zeros)
+              PUSH_NULL
+              LOAD_CONST               7 ((4, 3))
+              CALL                     1
+              STORE_FAST               5 (grads)
+
+ 43           LOAD_FAST_LOAD_FAST     69 (Minv, grads)
+              LOAD_CONST               1 (1)
+              LOAD_CONST               2 (None)
+              STORE_SLICE
+
+ 44           LOAD_FAST                5 (grads)
+              LOAD_CONST               1 (1)
+              LOAD_CONST               2 (None)
+              BINARY_SLICE
+              LOAD_ATTR               13 (sum + NULL|self)
+              LOAD_CONST               3 (0)
+              LOAD_CONST               8 (('axis',))
+              CALL_KW                  1
+              UNARY_NEGATIVE
+              LOAD_FAST                5 (grads)
+              LOAD_CONST               3 (0)
+              STORE_SUBSCR
+
+ 45           LOAD_FAST_LOAD_FAST     83 (grads, V)
+              BUILD_TUPLE              2
+              RETURN_VALUE
+
+Disassembly of <code object build_curl at 0x00000204E6B35330, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\curl_instrument.py", line 48>:
+  48            RESUME                   0
+
+  61            LOAD_GLOBAL              1 (len + NULL)
+                LOAD_FAST                0 (cx)
+                LOAD_ATTR                2 (edges)
+                CALL                     1
+                STORE_FAST               3 (nE)
+
+  62            LOAD_GLOBAL              4 (np)
+                LOAD_ATTR                6 (zeros)
+                PUSH_NULL
+                LOAD_FAST_LOAD_FAST     51 (nE, nE)
+                BUILD_TUPLE              2
+                CALL                     1
+                STORE_FAST               4 (K)
+
+  63            LOAD_GLOBAL              4 (np)
+                LOAD_ATTR                6 (zeros)
+                PUSH_NULL
+                LOAD_FAST_LOAD_FAST     51 (nE, nE)
+                BUILD_TUPLE              2
+                CALL                     1
+                STORE_FAST               5 (R)
+
+  64            LOAD_GLOBAL              4 (np)
+                LOAD_ATTR                6 (zeros)
+                PUSH_NULL
+                LOAD_FAST_LOAD_FAST     51 (nE, nE)
+                BUILD_TUPLE              2
+                CALL                     1
+                STORE_FAST               6 (M1)
+
+  65            LOAD_FAST                0 (cx)
+                LOAD_ATTR                8 (tets)
+                GET_ITER
+        L1:     EXTENDED_ARG             2
+                FOR_ITER               700 (to L19)
+                STORE_FAST               7 (t)
+
+  66            LOAD_GLOBAL              4 (np)
+                LOAD_ATTR               10 (array)
+                PUSH_NULL
+
+  67            LOAD_GLOBAL             12 (TET_EDGES)
+                GET_ITER
+
+  66            LOAD_FAST_AND_CLEAR      8 (a)
+                LOAD_FAST_AND_CLEAR      9 (b)
+                SWAP                     3
+        L2:     BUILD_LIST               0
+                SWAP                     2
+
+  67            GET_ITER
+        L3:     FOR_ITER                46 (to L4)
+                UNPACK_SEQUENCE          2
+                STORE_FAST_STORE_FAST  137 (a, b)
+
+  66            LOAD_FAST_LOAD_FAST     16 (ell, cx)
+                LOAD_ATTR               14 (edge_index)
+                LOAD_GLOBAL             17 (tuple + NULL)
+                LOAD_GLOBAL             19 (sorted + NULL)
+                LOAD_FAST_LOAD_FAST    120 (t, a)
+                BINARY_SUBSCR
+                LOAD_FAST_LOAD_FAST    121 (t, b)
+                BINARY_SUBSCR
+                BUILD_TUPLE              2
+                CALL                     1
+                CALL                     1
+                BINARY_SUBSCR
+                BINARY_SUBSCR
+                LIST_APPEND              2
+                JUMP_BACKWARD           48 (to L3)
+
+  67    L4:     END_FOR
+                POP_TOP
+
+  66    L5:     SWAP                     3
+                STORE_FAST               9 (b)
+                STORE_FAST               8 (a)
+                CALL                     1
+                STORE_FAST              10 (L6)
+
+  68            LOAD_GLOBAL             21 (tet_embed + NULL)
+                LOAD_FAST               10 (L6)
+                CALL                     1
+                STORE_FAST              11 (P)
+
+  69            LOAD_FAST               11 (P)
+                POP_JUMP_IF_NOT_NONE     2 (to L6)
+
+  70            JUMP_BACKWARD          106 (to L1)
+
+  71    L6:     LOAD_FAST                2 (flip)
+                TO_BOOL
+                POP_JUMP_IF_FALSE       32 (to L7)
+
+  72            LOAD_FAST               11 (P)
+                LOAD_ATTR               23 (copy + NULL|self)
+                CALL                     0
+                STORE_FAST_LOAD_FAST   187 (P, P)
+                LOAD_CONST               1 (None)
+                LOAD_CONST               1 (None)
+                BUILD_SLICE              2
+                LOAD_CONST               2 (2)
+                BUILD_TUPLE              2
+                COPY                     2
+                COPY                     2
+                BINARY_SUBSCR
+                LOAD_CONST               3 (-1.0)
+                BINARY_OP               18 (*=)
+                SWAP                     3
+                SWAP                     2
+                STORE_SUBSCR
+
+  73    L7:     LOAD_GLOBAL             25 (_tet_grads + NULL)
+                LOAD_FAST               11 (P)
+                CALL                     1
+                UNPACK_SEQUENCE          2
+                STORE_FAST_STORE_FAST  205 (g4, V)
+
+  74            LOAD_FAST               13 (V)
+                LOAD_CONST               4 (0)
+                COMPARE_OP              58 (bool(<=))
+                POP_JUMP_IF_FALSE        2 (to L8)
+
+  75            JUMP_BACKWARD          166 (to L1)
+
+  76    L8:     LOAD_FAST_LOAD_FAST    204 (g4, g4)
+                LOAD_ATTR               26 (T)
+                BINARY_OP                4 (@)
+                STORE_FAST              14 (g)
+
+  78            LOAD_GLOBAL              4 (np)
+                LOAD_ATTR               28 (empty)
+                PUSH_NULL
+                LOAD_CONST               5 (6)
+                LOAD_GLOBAL             30 (int)
+                LOAD_CONST               6 (('dtype',))
+                CALL_KW                  2
+                STORE_FAST              15 (eidx)
+
+  79            LOAD_GLOBAL              4 (np)
+                LOAD_ATTR               28 (empty)
+                PUSH_NULL
+                LOAD_CONST               5 (6)
+                CALL                     1
+                STORE_FAST              16 (sgn)
+
+  80            LOAD_GLOBAL             33 (enumerate + NULL)
+                LOAD_GLOBAL             12 (TET_EDGES)
+                CALL                     1
+                GET_ITER
+        L9:     FOR_ITER                67 (to L12)
+                UNPACK_SEQUENCE          2
+                STORE_FAST              17 (k)
+                UNPACK_SEQUENCE          2
+                STORE_FAST_STORE_FAST  137 (a, b)
+
+  81            LOAD_FAST_LOAD_FAST    120 (t, a)
+                BINARY_SUBSCR
+                LOAD_FAST_LOAD_FAST    121 (t, b)
+                BINARY_SUBSCR
+                STORE_FAST              19 (vb)
+                STORE_FAST              18 (va)
+
+  82            LOAD_FAST                0 (cx)
+                LOAD_ATTR               14 (edge_index)
+                LOAD_GLOBAL             17 (tuple + NULL)
+                LOAD_GLOBAL             19 (sorted + NULL)
+                LOAD_FAST               18 (va)
+                LOAD_FAST               19 (vb)
+                BUILD_TUPLE              2
+                CALL                     1
+                CALL                     1
+                BINARY_SUBSCR
+                LOAD_FAST               15 (eidx)
+                LOAD_FAST               17 (k)
+                STORE_SUBSCR
+
+  83            LOAD_FAST               18 (va)
+                LOAD_FAST               19 (vb)
+                COMPARE_OP              18 (bool(<))
+                POP_JUMP_IF_FALSE        2 (to L10)
+                LOAD_CONST               7 (1.0)
+                JUMP_FORWARD             1 (to L11)
+       L10:     LOAD_CONST               3 (-1.0)
+       L11:     LOAD_FAST               16 (sgn)
+                LOAD_FAST               17 (k)
+                STORE_SUBSCR
+                JUMP_BACKWARD           69 (to L9)
+
+  80   L12:     END_FOR
+                POP_TOP
+
+  85            LOAD_GLOBAL              4 (np)
+                LOAD_ATTR               34 (ones)
+                PUSH_NULL
+                LOAD_CONST               8 ((4, 4))
+                CALL                     1
+                LOAD_GLOBAL              4 (np)
+                LOAD_ATTR               36 (eye)
+                PUSH_NULL
+                LOAD_CONST               9 (4)
+                CALL                     1
+                BINARY_OP                0 (+)
+                LOAD_FAST               13 (V)
+                LOAD_CONST              10 (20.0)
+                BINARY_OP               11 (/)
+                BINARY_OP                5 (*)
+                STORE_FAST              20 (I)
+
+  86            LOAD_GLOBAL              4 (np)
+                LOAD_ATTR                6 (zeros)
+                PUSH_NULL
+                LOAD_CONST              11 ((6, 3))
+                CALL                     1
+                STORE_FAST              21 (cross)
+
+  87            LOAD_GLOBAL              4 (np)
+                LOAD_ATTR                6 (zeros)
+                PUSH_NULL
+                LOAD_CONST              11 ((6, 3))
+                CALL                     1
+                STORE_FAST              22 (intW)
+
+  88            LOAD_GLOBAL             33 (enumerate + NULL)
+                LOAD_GLOBAL             12 (TET_EDGES)
+                CALL                     1
+                GET_ITER
+       L13:     FOR_ITER                59 (to L14)
+                UNPACK_SEQUENCE          2
+                STORE_FAST              17 (k)
+                UNPACK_SEQUENCE          2
+                STORE_FAST_STORE_FAST  137 (a, b)
+
+  89            LOAD_CONST              12 (2.0)
+                LOAD_GLOBAL              4 (np)
+                LOAD_ATTR               38 (cross)
+                PUSH_NULL
+                LOAD_FAST_LOAD_FAST    200 (g4, a)
+                BINARY_SUBSCR
+                LOAD_FAST_LOAD_FAST    201 (g4, b)
+                BINARY_SUBSCR
+                CALL                     2
+                BINARY_OP                5 (*)
+                LOAD_FAST               21 (cross)
+                LOAD_FAST               17 (k)
+                STORE_SUBSCR
+
+  90            LOAD_FAST               13 (V)
+                LOAD_CONST              13 (4.0)
+                BINARY_OP               11 (/)
+                LOAD_FAST_LOAD_FAST    201 (g4, b)
+                BINARY_SUBSCR
+                LOAD_FAST_LOAD_FAST    200 (g4, a)
+                BINARY_SUBSCR
+                BINARY_OP               10 (-)
+                BINARY_OP                5 (*)
+                LOAD_FAST               22 (intW)
+                LOAD_FAST               17 (k)
+                STORE_SUBSCR
+                JUMP_BACKWARD           61 (to L13)
+
+  88   L14:     END_FOR
+                POP_TOP
+
+  91            LOAD_GLOBAL             33 (enumerate + NULL)
+                LOAD_GLOBAL             12 (TET_EDGES)
+                CALL                     1
+                GET_ITER
+       L15:     FOR_ITER               195 (to L18)
+                UNPACK_SEQUENCE          2
+                STORE_FAST              17 (k)
+                UNPACK_SEQUENCE          2
+                STORE_FAST_STORE_FAST  137 (a, b)
+
+  92            LOAD_GLOBAL             33 (enumerate + NULL)
+                LOAD_GLOBAL             12 (TET_EDGES)
+                CALL                     1
+                GET_ITER
+       L16:     FOR_ITER               168 (to L17)
+                UNPACK_SEQUENCE          2
+                STORE_FAST              23 (l)
+                UNPACK_SEQUENCE          2
+                STORE_FAST              24 (c)
+                STORE_FAST              25 (d)
+
+  94            LOAD_FAST               20 (I)
+                LOAD_FAST                8 (a)
+                LOAD_FAST               24 (c)
+                BUILD_TUPLE              2
+                BINARY_SUBSCR
+                LOAD_FAST_LOAD_FAST    233 (g, b)
+                LOAD_FAST               25 (d)
+                BUILD_TUPLE              2
+                BINARY_SUBSCR
+                BINARY_OP                5 (*)
+                LOAD_FAST               20 (I)
+                LOAD_FAST                8 (a)
+                LOAD_FAST               25 (d)
+                BUILD_TUPLE              2
+                BINARY_SUBSCR
+                LOAD_FAST_LOAD_FAST    233 (g, b)
+                LOAD_FAST               24 (c)
+                BUILD_TUPLE              2
+                BINARY_SUBSCR
+                BINARY_OP                5 (*)
+                BINARY_OP               10 (-)
+
+  95            LOAD_FAST               20 (I)
+                LOAD_FAST                9 (b)
+                LOAD_FAST               24 (c)
+                BUILD_TUPLE              2
+                BINARY_SUBSCR
+                LOAD_FAST_LOAD_FAST    232 (g, a)
+                LOAD_FAST               25 (d)
+                BUILD_TUPLE              2
+                BINARY_SUBSCR
+                BINARY_OP                5 (*)
+
+  94            BINARY_OP               10 (-)
+
+  95            LOAD_FAST               20 (I)
+                LOAD_FAST                9 (b)
+                LOAD_FAST               25 (d)
+                BUILD_TUPLE              2
+                BINARY_SUBSCR
+                LOAD_FAST_LOAD_FAST    232 (g, a)
+                LOAD_FAST               24 (c)
+                BUILD_TUPLE              2
+                BINARY_SUBSCR
+                BINARY_OP                5 (*)
+
+  94            BINARY_OP                0 (+)
+                STORE_FAST              26 (m)
+
+  98            LOAD_FAST               22 (intW)
+                LOAD_FAST               17 (k)
+                BINARY_SUBSCR
+                LOAD_FAST               21 (cross)
+                LOAD_FAST               23 (l)
+                BINARY_SUBSCR
+                BINARY_OP                4 (@)
+                STORE_FAST              27 (r)
+
+ 100            LOAD_FAST               13 (V)
+                LOAD_FAST               21 (cross)
+                LOAD_FAST               17 (k)
+                BINARY_SUBSCR
+                LOAD_FAST               21 (cross)
+                LOAD_FAST               23 (l)
+                BINARY_SUBSCR
+                BINARY_OP                4 (@)
+                BINARY_OP                5 (*)
+                STORE_FAST              28 (kk)
+
+ 101            LOAD_FAST               15 (eidx)
+                LOAD_FAST               17 (k)
+                BINARY_SUBSCR
+                LOAD_FAST               15 (eidx)
+                LOAD_FAST               23 (l)
+                BINARY_SUBSCR
+                LOAD_FAST               16 (sgn)
+                LOAD_FAST               17 (k)
+                BINARY_SUBSCR
+                LOAD_FAST               16 (sgn)
+                LOAD_FAST               23 (l)
+                BINARY_SUBSCR
+                BINARY_OP                5 (*)
+                STORE_FAST              31 (s)
+                STORE_FAST              30 (el)
+                STORE_FAST              29 (ek)
+
+ 102            LOAD_FAST                6 (M1)
+                LOAD_FAST               29 (ek)
+                LOAD_FAST               30 (el)
+                BUILD_TUPLE              2
+                COPY                     2
+                COPY                     2
+                BINARY_SUBSCR
+                LOAD_FAST               31 (s)
+                LOAD_FAST               26 (m)
+                BINARY_OP                5 (*)
+                BINARY_OP               13 (+=)
+                SWAP                     3
+                SWAP                     2
+                STORE_SUBSCR
+
+ 103            LOAD_FAST                5 (R)
+                LOAD_FAST               29 (ek)
+                LOAD_FAST               30 (el)
+                BUILD_TUPLE              2
+                COPY                     2
+                COPY                     2
+                BINARY_SUBSCR
+                LOAD_FAST               31 (s)
+                LOAD_FAST               27 (r)
+                BINARY_OP                5 (*)
+                BINARY_OP               13 (+=)
+                SWAP                     3
+                SWAP                     2
+                STORE_SUBSCR
+
+ 104            LOAD_FAST                4 (K)
+                LOAD_FAST               29 (ek)
+                LOAD_FAST               30 (el)
+                BUILD_TUPLE              2
+                COPY                     2
+                COPY                     2
+                BINARY_SUBSCR
+                LOAD_FAST               31 (s)
+                LOAD_FAST               28 (kk)
+                BINARY_OP                5 (*)
+                BINARY_OP               13 (+=)
+                SWAP                     3
+                SWAP                     2
+                STORE_SUBSCR
+                JUMP_BACKWARD          170 (to L16)
+
+  92   L17:     END_FOR
+                POP_TOP
+                JUMP_BACKWARD          197 (to L15)
+
+  91   L18:     END_FOR
+                POP_TOP
+                EXTENDED_ARG             2
+                JUMP_BACKWARD          703 (to L1)
+
+  65   L19:     END_FOR
+                POP_TOP
+
+ 105            LOAD_CONST              14 (0.5)
+                LOAD_FAST_LOAD_FAST     68 (K, K)
+                LOAD_ATTR               26 (T)
+                BINARY_OP                0 (+)
+                BINARY_OP                5 (*)
+                STORE_FAST               4 (K)
+
+ 106            LOAD_CONST              14 (0.5)
+                LOAD_FAST_LOAD_FAST    102 (M1, M1)
+                LOAD_ATTR               26 (T)
+                BINARY_OP                0 (+)
+                BINARY_OP                5 (*)
+                STORE_FAST               6 (M1)
+
+ 109            LOAD_FAST_LOAD_FAST     69 (K, R)
+                LOAD_FAST                6 (M1)
+                BUILD_TUPLE              3
+                RETURN_VALUE
+
+  --   L20:     SWAP                     2
+                POP_TOP
+
+  66            SWAP                     3
+                STORE_FAST               9 (b)
+                STORE_FAST               8 (a)
+                RERAISE                  0
+ExceptionTable:
+  L2 to L5 -> L20 [6]
+
+Disassembly of <code object beltrami_spectrum at 0x00000204E6B559E0, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\curl_instrument.py", line 112>:
+112           RESUME                   0
+
+125           LOAD_FAST                3 (K)
+              POP_JUMP_IF_NOT_NONE    13 (to L1)
+
+126           LOAD_GLOBAL              1 (build_curl + NULL)
+              LOAD_FAST_LOAD_FAST      1 (cx, ell)
+              LOAD_FAST                2 (flip)
+              LOAD_CONST               2 (('flip',))
+              CALL_KW                  3
+              UNPACK_SEQUENCE          3
+              STORE_FAST_STORE_FAST   52 (K, R)
+              STORE_FAST               5 (M1)
+
+127   L1:     LOAD_FAST                7 (basis)
+              POP_JUMP_IF_NONE        54 (to L2)
+
+128           LOAD_FAST                7 (basis)
+              LOAD_ATTR                2 (T)
+              LOAD_FAST                3 (K)
+              BINARY_OP                4 (@)
+              LOAD_FAST                7 (basis)
+              BINARY_OP                4 (@)
+              STORE_FAST               3 (K)
+
+129           LOAD_FAST                7 (basis)
+              LOAD_ATTR                2 (T)
+              LOAD_FAST                4 (R)
+              BINARY_OP                4 (@)
+              LOAD_FAST                7 (basis)
+              BINARY_OP                4 (@)
+              STORE_FAST               4 (R)
+
+130           LOAD_FAST                7 (basis)
+              LOAD_ATTR                2 (T)
+              LOAD_FAST                5 (M1)
+              BINARY_OP                4 (@)
+              LOAD_FAST                7 (basis)
+              BINARY_OP                4 (@)
+              STORE_FAST               5 (M1)
+
+131   L2:     LOAD_GLOBAL              4 (sla)
+              LOAD_ATTR                6 (eigh)
+              PUSH_NULL
+              LOAD_FAST_LOAD_FAST     53 (K, M1)
+              CALL                     2
+              UNPACK_SEQUENCE          2
+              STORE_FAST_STORE_FAST  137 (mu, V)
+
+132           LOAD_GLOBAL              8 (np)
+              LOAD_ATTR               10 (real)
+              PUSH_NULL
+              LOAD_FAST                8 (mu)
+              CALL                     1
+              STORE_FAST               8 (mu)
+
+133           BUILD_LIST               0
+              STORE_FAST              10 (signed)
+
+134           LOAD_CONST               3 (0)
+              STORE_FAST              11 (i)
+
+135           LOAD_GLOBAL             13 (len + NULL)
+              LOAD_FAST                8 (mu)
+              CALL                     1
+              STORE_FAST              12 (n)
+
+136           LOAD_FAST_LOAD_FAST    188 (i, n)
+              COMPARE_OP              18 (bool(<))
+              EXTENDED_ARG             1
+              POP_JUMP_IF_FALSE      268 (to L7)
+
+137   L3:     LOAD_FAST               11 (i)
+              STORE_FAST              13 (j)
+
+138           LOAD_FAST               13 (j)
+              LOAD_CONST               4 (1)
+              BINARY_OP                0 (+)
+              LOAD_FAST               12 (n)
+              COMPARE_OP              18 (bool(<))
+              POP_JUMP_IF_FALSE      114 (to L5)
+              LOAD_GLOBAL             15 (abs + NULL)
+              LOAD_FAST_LOAD_FAST    141 (mu, j)
+              LOAD_CONST               4 (1)
+              BINARY_OP                0 (+)
+              BINARY_SUBSCR
+              LOAD_FAST_LOAD_FAST    139 (mu, i)
+              BINARY_SUBSCR
+              BINARY_OP               10 (-)
+              CALL                     1
+              LOAD_CONST               5 (0.08)
+              LOAD_GLOBAL             17 (max + NULL)
+              LOAD_GLOBAL             15 (abs + NULL)
+              LOAD_FAST_LOAD_FAST    139 (mu, i)
+              BINARY_SUBSCR
+              CALL                     1
+              LOAD_CONST               6 (1.0)
+              CALL                     2
+              BINARY_OP                5 (*)
+              COMPARE_OP              58 (bool(<=))
+              POP_JUMP_IF_FALSE       65 (to L5)
+
+139   L4:     LOAD_FAST               13 (j)
+              LOAD_CONST               4 (1)
+              BINARY_OP               13 (+=)
+              STORE_FAST              13 (j)
+
+138           LOAD_FAST               13 (j)
+              LOAD_CONST               4 (1)
+              BINARY_OP                0 (+)
+              LOAD_FAST               12 (n)
+              COMPARE_OP              18 (bool(<))
+              POP_JUMP_IF_FALSE       51 (to L5)
+              LOAD_GLOBAL             15 (abs + NULL)
+              LOAD_FAST_LOAD_FAST    141 (mu, j)
+              LOAD_CONST               4 (1)
+              BINARY_OP                0 (+)
+              BINARY_SUBSCR
+              LOAD_FAST_LOAD_FAST    139 (mu, i)
+              BINARY_SUBSCR
+              BINARY_OP               10 (-)
+              CALL                     1
+              LOAD_CONST               5 (0.08)
+              LOAD_GLOBAL             17 (max + NULL)
+              LOAD_GLOBAL             15 (abs + NULL)
+              LOAD_FAST_LOAD_FAST    139 (mu, i)
+              BINARY_SUBSCR
+              CALL                     1
+              LOAD_CONST               6 (1.0)
+              CALL                     2
+              BINARY_OP                5 (*)
+              COMPARE_OP              58 (bool(<=))
+              POP_JUMP_IF_FALSE        2 (to L5)
+              JUMP_BACKWARD           65 (to L4)
+
+140   L5:     LOAD_FAST                9 (V)
+              LOAD_CONST               1 (None)
+              LOAD_CONST               1 (None)
+              BUILD_SLICE              2
+              LOAD_FAST_LOAD_FAST    189 (i, j)
+              LOAD_CONST               4 (1)
+              BINARY_OP                0 (+)
+              BUILD_SLICE              2
+              BUILD_TUPLE              2
+              BINARY_SUBSCR
+              STORE_FAST              14 (block)
+
+141           LOAD_FAST_LOAD_FAST    139 (mu, i)
+              BINARY_SUBSCR
+              LOAD_FAST                6 (mu_tol)
+              COMPARE_OP             148 (bool(>))
+              POP_JUMP_IF_FALSE      109 (to L6)
+
+142           LOAD_FAST               14 (block)
+              LOAD_ATTR                2 (T)
+              LOAD_FAST                4 (R)
+              BINARY_OP                4 (@)
+              LOAD_FAST               14 (block)
+              BINARY_OP                4 (@)
+              STORE_FAST              15 (Rb)
+
+143           LOAD_FAST               14 (block)
+              LOAD_ATTR                2 (T)
+              LOAD_FAST                5 (M1)
+              BINARY_OP                4 (@)
+              LOAD_FAST               14 (block)
+              BINARY_OP                4 (@)
+              STORE_FAST              16 (Mb)
+
+144           LOAD_GLOBAL              4 (sla)
+              LOAD_ATTR                6 (eigh)
+              PUSH_NULL
+              LOAD_FAST               15 (Rb)
+              LOAD_FAST               16 (Mb)
+              LOAD_CONST               7 (True)
+              LOAD_CONST               8 (('eigvals_only',))
+              CALL_KW                  3
+              STORE_FAST              17 (lam)
+
+145           LOAD_FAST               10 (signed)
+              LOAD_ATTR               19 (extend + NULL|self)
+              LOAD_GLOBAL              8 (np)
+              LOAD_ATTR               10 (real)
+              PUSH_NULL
+              LOAD_FAST               17 (lam)
+              CALL                     1
+              LOAD_ATTR               21 (tolist + NULL|self)
+              CALL                     0
+              CALL                     1
+              POP_TOP
+
+146   L6:     LOAD_FAST               13 (j)
+              LOAD_CONST               4 (1)
+              BINARY_OP                0 (+)
+              STORE_FAST              11 (i)
+
+136           LOAD_FAST_LOAD_FAST    188 (i, n)
+              COMPARE_OP              18 (bool(<))
+              POP_JUMP_IF_FALSE        3 (to L7)
+              EXTENDED_ARG             1
+              JUMP_BACKWARD          268 (to L3)
+
+147   L7:     LOAD_GLOBAL              8 (np)
+              LOAD_ATTR               22 (array)
+              PUSH_NULL
+              LOAD_FAST               10 (signed)
+              CALL                     1
+              STORE_FAST              10 (signed)
+
+148           LOAD_FAST               10 (signed)
+              LOAD_GLOBAL              8 (np)
+              LOAD_ATTR               24 (argsort)
+              PUSH_NULL
+              LOAD_GLOBAL              8 (np)
+              LOAD_ATTR               14 (abs)
+              PUSH_NULL
+              LOAD_FAST               10 (signed)
+              CALL                     1
+              CALL                     1
+              BINARY_SUBSCR
+              LOAD_FAST                8 (mu)
+              BUILD_TUPLE              2
+              RETURN_VALUE
+
+Disassembly of <code object cluster_signed at 0x00000204E6AF5D00, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\curl_instrument.py", line 151>:
+ 151            RESUME                   0
+
+ 153            BUILD_LIST               0
+                STORE_FAST               2 (out)
+
+ 154            LOAD_GLOBAL              0 (np)
+                LOAD_ATTR                2 (zeros)
+                PUSH_NULL
+                LOAD_GLOBAL              5 (len + NULL)
+                LOAD_FAST                0 (vals)
+                CALL                     1
+                LOAD_GLOBAL              6 (bool)
+                CALL                     2
+                STORE_FAST               3 (used)
+
+ 155            LOAD_GLOBAL              0 (np)
+                LOAD_ATTR                8 (argsort)
+                PUSH_NULL
+                LOAD_GLOBAL              0 (np)
+                LOAD_ATTR               10 (abs)
+                PUSH_NULL
+                LOAD_FAST                0 (vals)
+                CALL                     1
+                CALL                     1
+                STORE_FAST               4 (order)
+
+ 156            LOAD_FAST                4 (order)
+                GET_ITER
+        L1:     FOR_ITER               198 (to L17)
+                STORE_FAST               5 (i)
+
+ 157            LOAD_FAST_LOAD_FAST     53 (used, i)
+                BINARY_SUBSCR
+                TO_BOOL
+                POP_JUMP_IF_FALSE        2 (to L2)
+
+ 158            JUMP_BACKWARD           14 (to L1)
+
+ 159    L2:     LOAD_FAST_LOAD_FAST      5 (vals, i)
+                BINARY_SUBSCR
+                STORE_FAST               6 (v)
+
+ 160            LOAD_GLOBAL             13 (range + NULL)
+                LOAD_GLOBAL              5 (len + NULL)
+                LOAD_FAST                0 (vals)
+                CALL                     1
+                CALL                     1
+                GET_ITER
+                LOAD_FAST_AND_CLEAR      7 (j)
+                SWAP                     2
+        L3:     BUILD_LIST               0
+                SWAP                     2
+                GET_ITER
+        L4:     FOR_ITER                60 (to L9)
+                STORE_FAST               7 (j)
+
+ 161            LOAD_FAST_LOAD_FAST     55 (used, j)
+                BINARY_SUBSCR
+                TO_BOOL
+
+ 160    L5:     POP_JUMP_IF_FALSE        2 (to L6)
+                JUMP_BACKWARD           14 (to L4)
+
+ 161    L6:     LOAD_GLOBAL             11 (abs + NULL)
+                LOAD_FAST_LOAD_FAST      7 (vals, j)
+                BINARY_SUBSCR
+                LOAD_FAST                6 (v)
+                BINARY_OP               10 (-)
+                CALL                     1
+                LOAD_FAST                1 (reltol)
+                LOAD_GLOBAL             15 (max + NULL)
+                LOAD_GLOBAL             11 (abs + NULL)
+                LOAD_FAST                6 (v)
+                CALL                     1
+                LOAD_CONST               1 (1e-09)
+                CALL                     2
+                BINARY_OP                5 (*)
+                COMPARE_OP              58 (bool(<=))
+
+ 160    L7:     POP_JUMP_IF_TRUE         2 (to L8)
+                JUMP_BACKWARD           58 (to L4)
+        L8:     LOAD_FAST                7 (j)
+                LIST_APPEND              2
+                JUMP_BACKWARD           62 (to L4)
+        L9:     END_FOR
+                POP_TOP
+       L10:     STORE_FAST               8 (grp)
+                STORE_FAST               7 (j)
+
+ 162            LOAD_FAST                8 (grp)
+                GET_ITER
+       L11:     FOR_ITER                 7 (to L12)
+                STORE_FAST               7 (j)
+
+ 163            LOAD_CONST               2 (True)
+                LOAD_FAST_LOAD_FAST     55 (used, j)
+                STORE_SUBSCR
+                JUMP_BACKWARD            9 (to L11)
+
+ 162   L12:     END_FOR
+                POP_TOP
+
+ 164            LOAD_FAST                2 (out)
+                LOAD_ATTR               17 (append + NULL|self)
+                LOAD_GLOBAL             19 (float + NULL)
+                LOAD_GLOBAL              0 (np)
+                LOAD_ATTR               20 (mean)
+                PUSH_NULL
+                LOAD_FAST                8 (grp)
+                GET_ITER
+                LOAD_FAST_AND_CLEAR      7 (j)
+                SWAP                     2
+       L13:     BUILD_LIST               0
+                SWAP                     2
+                GET_ITER
+       L14:     FOR_ITER                 7 (to L15)
+                STORE_FAST_LOAD_FAST   112 (j, vals)
+                LOAD_FAST                7 (j)
+                BINARY_SUBSCR
+                LIST_APPEND              2
+                JUMP_BACKWARD            9 (to L14)
+       L15:     END_FOR
+                POP_TOP
+       L16:     SWAP                     2
+                STORE_FAST               7 (j)
+                CALL                     1
+                CALL                     1
+                LOAD_GLOBAL              5 (len + NULL)
+                LOAD_FAST                8 (grp)
+                CALL                     1
+                BUILD_TUPLE              2
+                CALL                     1
+                POP_TOP
+                JUMP_BACKWARD          200 (to L1)
+
+ 156   L17:     END_FOR
+                POP_TOP
+
+ 165            LOAD_FAST                2 (out)
+                RETURN_VALUE
+
+  --   L18:     SWAP                     2
+                POP_TOP
+
+ 160            SWAP                     2
+                STORE_FAST               7 (j)
+                RERAISE                  0
+
+  --   L19:     SWAP                     2
+                POP_TOP
+
+ 164            SWAP                     2
+                STORE_FAST               7 (j)
+                RERAISE                  0
+ExceptionTable:
+  L3 to L5 -> L18 [3]
+  L6 to L7 -> L18 [3]
+  L8 to L10 -> L18 [3]
+  L13 to L16 -> L19 [9]
+
+Disassembly of <code object d0_incidence at 0x00000204E8A4EF70, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\curl_instrument.py", line 168>:
+168           RESUME                   0
+
+169           LOAD_GLOBAL              1 (len + NULL)
+              LOAD_FAST                0 (cx)
+              LOAD_ATTR                2 (edges)
+              CALL                     1
+              LOAD_FAST                0 (cx)
+              LOAD_ATTR                4 (N)
+              STORE_FAST_STORE_FAST   33 (V, E)
+
+170           LOAD_GLOBAL              6 (np)
+              LOAD_ATTR                8 (zeros)
+              PUSH_NULL
+              LOAD_FAST_LOAD_FAST     18 (E, V)
+              BUILD_TUPLE              2
+              CALL                     1
+              STORE_FAST               3 (d0)
+
+171           LOAD_GLOBAL             11 (enumerate + NULL)
+              LOAD_FAST                0 (cx)
+              LOAD_ATTR                2 (edges)
+              CALL                     1
+              GET_ITER
+      L1:     FOR_ITER                36 (to L2)
+              UNPACK_SEQUENCE          2
+              STORE_FAST               4 (ei)
+              UNPACK_SEQUENCE          2
+              STORE_FAST_STORE_FAST   86 (a, b)
+
+172           LOAD_FAST_LOAD_FAST     52 (d0, ei)
+              LOAD_FAST                6 (b)
+              BUILD_TUPLE              2
+              COPY                     2
+              COPY                     2
+              BINARY_SUBSCR
+              LOAD_CONST               1 (1.0)
+              BINARY_OP               13 (+=)
+              SWAP                     3
+              SWAP                     2
+              STORE_SUBSCR
+
+173           LOAD_FAST_LOAD_FAST     52 (d0, ei)
+              LOAD_FAST                5 (a)
+              BUILD_TUPLE              2
+              COPY                     2
+              COPY                     2
+              BINARY_SUBSCR
+              LOAD_CONST               1 (1.0)
+              BINARY_OP               23 (-=)
+              SWAP                     3
+              SWAP                     2
+              STORE_SUBSCR
+              JUMP_BACKWARD           38 (to L1)
+
+171   L2:     END_FOR
+              POP_TOP
+
+174           LOAD_FAST                3 (d0)
+              RETURN_VALUE
+
+Disassembly of <code object cluster_mu at 0x00000204E6AF5680, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\curl_instrument.py", line 177>:
+177           RESUME                   0
+
+179           LOAD_FAST_LOAD_FAST      0 (mu, mu)
+              LOAD_FAST                2 (mu_min)
+              COMPARE_OP             132 (>)
+              BINARY_SUBSCR
+              STORE_FAST               3 (nz)
+
+180           BUILD_LIST               0
+              STORE_FAST               4 (out)
+
+181           LOAD_CONST               1 (0)
+              STORE_FAST               5 (i)
+
+182           LOAD_FAST                5 (i)
+              LOAD_GLOBAL              1 (len + NULL)
+              LOAD_FAST                3 (nz)
+              CALL                     1
+              COMPARE_OP              18 (bool(<))
+              POP_JUMP_IF_FALSE      205 (to L4)
+
+183   L1:     LOAD_FAST                5 (i)
+              STORE_FAST               6 (j)
+
+184           LOAD_FAST                6 (j)
+              LOAD_CONST               2 (1)
+              BINARY_OP                0 (+)
+              LOAD_GLOBAL              1 (len + NULL)
+              LOAD_FAST                3 (nz)
+              CALL                     1
+              COMPARE_OP              18 (bool(<))
+              POP_JUMP_IF_FALSE      105 (to L3)
+              LOAD_GLOBAL              3 (abs + NULL)
+              LOAD_FAST_LOAD_FAST     54 (nz, j)
+              LOAD_CONST               2 (1)
+              BINARY_OP                0 (+)
+              BINARY_SUBSCR
+              LOAD_FAST_LOAD_FAST     53 (nz, i)
+              BINARY_SUBSCR
+              BINARY_OP               10 (-)
+              CALL                     1
+              LOAD_FAST                1 (reltol)
+              LOAD_GLOBAL              5 (max + NULL)
+              LOAD_FAST_LOAD_FAST     53 (nz, i)
+              BINARY_SUBSCR
+              LOAD_CONST               3 (1.0)
+              CALL                     2
+              BINARY_OP                5 (*)
+              COMPARE_OP              58 (bool(<=))
+              POP_JUMP_IF_FALSE       65 (to L3)
+
+185   L2:     LOAD_FAST                6 (j)
+              LOAD_CONST               2 (1)
+              BINARY_OP               13 (+=)
+              STORE_FAST               6 (j)
+
+184           LOAD_FAST                6 (j)
+              LOAD_CONST               2 (1)
+              BINARY_OP                0 (+)
+              LOAD_GLOBAL              1 (len + NULL)
+              LOAD_FAST                3 (nz)
+              CALL                     1
+              COMPARE_OP              18 (bool(<))
+              POP_JUMP_IF_FALSE       42 (to L3)
+              LOAD_GLOBAL              3 (abs + NULL)
+              LOAD_FAST_LOAD_FAST     54 (nz, j)
+              LOAD_CONST               2 (1)
+              BINARY_OP                0 (+)
+              BINARY_SUBSCR
+              LOAD_FAST_LOAD_FAST     53 (nz, i)
+              BINARY_SUBSCR
+              BINARY_OP               10 (-)
+              CALL                     1
+              LOAD_FAST                1 (reltol)
+              LOAD_GLOBAL              5 (max + NULL)
+              LOAD_FAST_LOAD_FAST     53 (nz, i)
+              BINARY_SUBSCR
+              LOAD_CONST               3 (1.0)
+              CALL                     2
+              BINARY_OP                5 (*)
+              COMPARE_OP              58 (bool(<=))
+              POP_JUMP_IF_FALSE        2 (to L3)
+              JUMP_BACKWARD           65 (to L2)
+
+186   L3:     LOAD_FAST                4 (out)
+              LOAD_ATTR                7 (append + NULL|self)
+              LOAD_GLOBAL              9 (float + NULL)
+              LOAD_GLOBAL             10 (np)
+              LOAD_ATTR               12 (mean)
+              PUSH_NULL
+              LOAD_FAST_LOAD_FAST     53 (nz, i)
+              LOAD_FAST                6 (j)
+              LOAD_CONST               2 (1)
+              BINARY_OP                0 (+)
+              BINARY_SLICE
+              CALL                     1
+              CALL                     1
+              LOAD_FAST_LOAD_FAST    101 (j, i)
+              BINARY_OP               10 (-)
+              LOAD_CONST               2 (1)
+              BINARY_OP                0 (+)
+              BUILD_TUPLE              2
+              CALL                     1
+              POP_TOP
+
+187           LOAD_FAST                6 (j)
+              LOAD_CONST               2 (1)
+              BINARY_OP                0 (+)
+              STORE_FAST               5 (i)
+
+182           LOAD_FAST                5 (i)
+              LOAD_GLOBAL              1 (len + NULL)
+              LOAD_FAST                3 (nz)
+              CALL                     1
+              COMPARE_OP              18 (bool(<))
+              POP_JUMP_IF_FALSE        2 (to L4)
+              JUMP_BACKWARD          205 (to L1)
+
+188   L4:     LOAD_FAST                4 (out)
+              RETURN_VALUE

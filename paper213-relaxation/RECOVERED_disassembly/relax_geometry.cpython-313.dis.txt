@@ -1,0 +1,645 @@
+  0           RESUME                   0
+
+  1           LOAD_CONST               0 ('\nrelax_geometry.py  —  Stage 1 flow, Option 1 (brief v1.1): fixed-volume curvature-\nvariance minimisation.\n\n    minimise   E(ell) = sum_e w_e (K_e - Kbar)^2 / sum_e w_e       (w_e = V_e^dual)\n    subject to total volume fixed.\n\nRound S^3 is the global minimum (constant curvature => E = 0 in the continuum), so the\nalready-round metric is a fixed point BY CONSTRUCTION — this is the fix for the v1.0\ninstrument failure (the explicit-Euler Ricci flow neckpinched even a round metric).\n\nImplementation: backtracking line search in the homogenising direction u = -(K - Kbar),\naccepting only steps that DECREASE E and keep every tet embeddable, with volume\nrenormalised each step. No fixed Euler step to overshoot; at a round metric u ~ 0 and the\nsearch makes no move => stays round. Variance is the engine; the SPECTRUM (spectral_s3)\nis the verdict.\n\nStandalone:  python relax_geometry.py [N] [iters]\n')
+              STORE_NAME               0 (__doc__)
+
+ 21           LOAD_CONST               1 (0)
+              LOAD_CONST               2 (None)
+              IMPORT_NAME              1 (sys)
+              STORE_NAME               1 (sys)
+
+ 22           LOAD_CONST               1 (0)
+              LOAD_CONST               2 (None)
+              IMPORT_NAME              2 (numpy)
+              STORE_NAME               3 (np)
+
+ 23           LOAD_CONST               1 (0)
+              LOAD_CONST               3 (('minimize',))
+              IMPORT_NAME              4 (scipy.optimize)
+              IMPORT_FROM              5 (minimize)
+              STORE_NAME               5 (minimize)
+              POP_TOP
+
+ 24           LOAD_CONST               1 (0)
+              LOAD_CONST               4 (('generic_s3', 'total_volume'))
+              IMPORT_NAME              6 (geometry)
+              IMPORT_FROM              7 (generic_s3)
+              STORE_NAME               7 (generic_s3)
+              IMPORT_FROM              8 (total_volume)
+              STORE_NAME               8 (total_volume)
+              POP_TOP
+
+ 25           LOAD_CONST               1 (0)
+              LOAD_CONST               5 (('precompute', 'fast_energy', 'fast_curvature'))
+              IMPORT_NAME              9 (fast_geometry)
+              IMPORT_FROM             10 (precompute)
+              STORE_NAME              10 (precompute)
+              IMPORT_FROM             11 (fast_energy)
+              STORE_NAME              11 (fast_energy)
+              IMPORT_FROM             12 (fast_curvature)
+              STORE_NAME              12 (fast_curvature)
+              POP_TOP
+
+ 28           LOAD_CONST              11 ((None,))
+              LOAD_CONST               6 (<code object energy at 0x00000204E8D10430, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\relax_geometry.py", line 28>)
+              MAKE_FUNCTION
+              SET_FUNCTION_ATTRIBUTE   1 (defaults)
+              STORE_NAME              13 (energy)
+
+ 35           LOAD_CONST               7 (<code object _fast_volume at 0x00000204E8D203C0, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\relax_geometry.py", line 35>)
+              MAKE_FUNCTION
+              STORE_NAME              14 (_fast_volume)
+
+ 40           LOAD_CONST              12 ((None, 120, True))
+              LOAD_CONST               8 (<code object variance_min at 0x00000204E6AF5680, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\relax_geometry.py", line 40>)
+              MAKE_FUNCTION
+              SET_FUNCTION_ATTRIBUTE   1 (defaults)
+              STORE_NAME              15 (variance_min)
+
+ 86           LOAD_CONST               9 (<code object main at 0x00000204E6AAAAD0, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\relax_geometry.py", line 86>)
+              MAKE_FUNCTION
+              STORE_NAME              16 (main)
+
+103           LOAD_NAME               17 (__name__)
+              LOAD_CONST              10 ('__main__')
+              COMPARE_OP              88 (bool(==))
+              POP_JUMP_IF_FALSE        8 (to L1)
+
+104           LOAD_NAME               16 (main)
+              PUSH_NULL
+              CALL                     0
+              POP_TOP
+              RETURN_CONST             2 (None)
+
+103   L1:     RETURN_CONST             2 (None)
+
+Disassembly of <code object energy at 0x00000204E8D10430, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\relax_geometry.py", line 28>:
+ 28           RESUME                   0
+
+ 30           LOAD_FAST                2 (pre)
+              POP_JUMP_IF_NOT_NONE    11 (to L1)
+
+ 31           LOAD_GLOBAL              1 (precompute + NULL)
+              LOAD_FAST                0 (cx)
+              CALL                     1
+              STORE_FAST               2 (pre)
+
+ 32   L1:     LOAD_GLOBAL              3 (fast_energy + NULL)
+              LOAD_FAST_LOAD_FAST     18 (ell, pre)
+              CALL                     2
+              RETURN_VALUE
+
+Disassembly of <code object _fast_volume at 0x00000204E8D203C0, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\relax_geometry.py", line 35>:
+ 35           RESUME                   0
+
+ 36           LOAD_GLOBAL              1 (fast_curvature + NULL)
+              LOAD_FAST_LOAD_FAST      1 (ell, pre)
+              CALL                     2
+              UNPACK_SEQUENCE          4
+              POP_TOP
+              STORE_FAST_STORE_FAST   35 (_, Vd)
+              STORE_FAST               4 (ninv)
+
+ 37           LOAD_GLOBAL              3 (float + NULL)
+              LOAD_GLOBAL              4 (np)
+              LOAD_ATTR                6 (sum)
+              PUSH_NULL
+              LOAD_FAST                3 (Vd)
+              CALL                     1
+              CALL                     1
+              LOAD_FAST                4 (ninv)
+              BUILD_TUPLE              2
+              RETURN_VALUE
+
+Disassembly of <code object variance_min at 0x00000204E6AF5680, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\relax_geometry.py", line 40>:
+  --           MAKE_CELL                2 (pre)
+               MAKE_CELL                3 (iters)
+               MAKE_CELL                4 (verbose)
+               MAKE_CELL               18 (V_target)
+               MAKE_CELL               19 (_renorm)
+               MAKE_CELL               20 (hist)
+               MAKE_CELL               21 (it_box)
+
+  40           RESUME                   0
+
+  46           LOAD_DEREF               2 (pre)
+               POP_JUMP_IF_NOT_NONE    11 (to L1)
+
+  47           LOAD_GLOBAL              1 (precompute + NULL)
+               LOAD_FAST                0 (cx)
+               CALL                     1
+               STORE_DEREF              2 (pre)
+
+  48   L1:     LOAD_GLOBAL              3 (_fast_volume + NULL)
+               LOAD_FAST                1 (ell0)
+               LOAD_DEREF               2 (pre)
+               CALL                     2
+               UNPACK_SEQUENCE          2
+               STORE_DEREF             18 (V_target)
+               STORE_FAST               5 (_)
+
+  49           LOAD_GLOBAL              4 (np)
+               LOAD_ATTR                6 (log)
+               PUSH_NULL
+               LOAD_FAST                1 (ell0)
+               CALL                     1
+               STORE_FAST               6 (x0)
+
+  50           BUILD_LIST               0
+               STORE_DEREF             20 (hist)
+
+  52           LOAD_FAST               18 (V_target)
+               LOAD_FAST                2 (pre)
+               BUILD_TUPLE              2
+               LOAD_CONST               1 (<code object _renorm at 0x00000204E8CA6970, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\relax_geometry.py", line 52>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               STORE_DEREF             19 (_renorm)
+
+  59           LOAD_FAST               19 (_renorm)
+               LOAD_FAST                2 (pre)
+               BUILD_TUPLE              2
+               LOAD_CONST               2 (<code object f at 0x00000204E8A17B40, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\relax_geometry.py", line 59>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               STORE_FAST               7 (f)
+
+  65           LOAD_CONST               3 ('n')
+               LOAD_CONST               4 (0)
+               BUILD_MAP                1
+               STORE_DEREF             21 (it_box)
+
+  67           LOAD_FAST               19 (_renorm)
+               LOAD_FAST               20 (hist)
+               LOAD_FAST               21 (it_box)
+               LOAD_FAST                3 (iters)
+               LOAD_FAST                2 (pre)
+               LOAD_FAST                4 (verbose)
+               BUILD_TUPLE              6
+               LOAD_CONST               5 (<code object cb at 0x00000204E8A0B230, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\relax_geometry.py", line 67>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               STORE_FAST               8 (cb)
+
+  74           LOAD_GLOBAL              9 (fast_energy + NULL)
+               LOAD_FAST                1 (ell0)
+               LOAD_DEREF               2 (pre)
+               CALL                     2
+               UNPACK_SEQUENCE          4
+               STORE_FAST_STORE_FAST  154 (E0, cov0)
+               STORE_FAST_STORE_FAST  181 (Kbar0, _)
+
+  75           LOAD_DEREF              20 (hist)
+               LOAD_ATTR               11 (append + NULL|self)
+               LOAD_GLOBAL             13 (dict + NULL)
+               LOAD_CONST               4 (0)
+               LOAD_GLOBAL             15 (float + NULL)
+               LOAD_FAST                9 (E0)
+               CALL                     1
+               LOAD_GLOBAL             15 (float + NULL)
+               LOAD_FAST               10 (cov0)
+               CALL                     1
+               LOAD_GLOBAL             15 (float + NULL)
+               LOAD_FAST               11 (Kbar0)
+               CALL                     1
+               LOAD_CONST               6 (('it', 'E', 'cov', 'Kbar'))
+               CALL_KW                  4
+               CALL                     1
+               POP_TOP
+
+  76           LOAD_GLOBAL             17 (minimize + NULL)
+               LOAD_FAST_LOAD_FAST    118 (f, x0)
+               LOAD_CONST               7 ('L-BFGS-B')
+
+  77           LOAD_DEREF               3 (iters)
+               LOAD_DEREF               3 (iters)
+               LOAD_GLOBAL             19 (len + NULL)
+               LOAD_FAST                6 (x0)
+               CALL                     1
+               LOAD_CONST               8 (5)
+               BINARY_OP                0 (+)
+               BINARY_OP                5 (*)
+               LOAD_CONST               9 (('maxiter', 'maxfun'))
+               BUILD_CONST_KEY_MAP      2
+
+  78           LOAD_FAST                8 (cb)
+
+  76           LOAD_CONST              10 (('method', 'options', 'callback'))
+               CALL_KW                  5
+               STORE_FAST              12 (res)
+
+  79           LOAD_DEREF              19 (_renorm)
+               PUSH_NULL
+               LOAD_FAST               12 (res)
+               LOAD_ATTR               20 (x)
+               CALL                     1
+               STORE_FAST              13 (ell)
+
+  80           LOAD_GLOBAL              9 (fast_energy + NULL)
+               LOAD_FAST               13 (ell)
+               LOAD_DEREF               2 (pre)
+               CALL                     2
+               UNPACK_SEQUENCE          4
+               STORE_FAST_STORE_FAST  239 (Ef, covf)
+               STORE_FAST              16 (Kbarf)
+               STORE_FAST              17 (ninvf)
+
+  81           LOAD_DEREF              20 (hist)
+               LOAD_ATTR               11 (append + NULL|self)
+               LOAD_GLOBAL             13 (dict + NULL)
+               LOAD_DEREF              21 (it_box)
+               LOAD_CONST               3 ('n')
+               BINARY_SUBSCR
+               LOAD_GLOBAL             15 (float + NULL)
+               LOAD_FAST               14 (Ef)
+               CALL                     1
+               LOAD_GLOBAL             15 (float + NULL)
+               LOAD_FAST               15 (covf)
+               CALL                     1
+               LOAD_GLOBAL             15 (float + NULL)
+               LOAD_FAST               16 (Kbarf)
+               CALL                     1
+
+  82           LOAD_CONST              11 ('L-BFGS done: ')
+               LOAD_FAST               12 (res)
+               LOAD_ATTR               22 (message)
+               FORMAT_SIMPLE
+               BUILD_STRING             2
+               LOAD_GLOBAL             25 (bool + NULL)
+               LOAD_FAST               12 (res)
+               LOAD_ATTR               26 (success)
+               CALL                     1
+
+  81           LOAD_CONST              12 (('it', 'E', 'cov', 'Kbar', 'note', 'success'))
+               CALL_KW                  6
+               CALL                     1
+               POP_TOP
+
+  83           LOAD_FAST               13 (ell)
+               LOAD_DEREF              20 (hist)
+               BUILD_TUPLE              2
+               RETURN_VALUE
+
+Disassembly of <code object _renorm at 0x00000204E8CA6970, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\relax_geometry.py", line 52>:
+  --           COPY_FREE_VARS           2
+
+  52           RESUME                   0
+
+  53           LOAD_GLOBAL              0 (np)
+               LOAD_ATTR                2 (exp)
+               PUSH_NULL
+               LOAD_FAST                0 (x)
+               CALL                     1
+               STORE_FAST               1 (ell)
+
+  54           LOAD_GLOBAL              5 (_fast_volume + NULL)
+               LOAD_FAST                1 (ell)
+               LOAD_DEREF               5 (pre)
+               CALL                     2
+               UNPACK_SEQUENCE          2
+               STORE_FAST_STORE_FAST   35 (Vn, _)
+
+  55           LOAD_FAST                2 (Vn)
+               LOAD_CONST               1 (1e-09)
+               COMPARE_OP             148 (bool(>))
+               POP_JUMP_IF_FALSE       11 (to L1)
+
+  56           LOAD_FAST                1 (ell)
+               LOAD_DEREF               4 (V_target)
+               LOAD_FAST                2 (Vn)
+               BINARY_OP               11 (/)
+               LOAD_CONST               2 (0.3333333333333333)
+               BINARY_OP                8 (**)
+               BINARY_OP                5 (*)
+               STORE_FAST               1 (ell)
+
+  57   L1:     LOAD_FAST                1 (ell)
+               RETURN_VALUE
+
+Disassembly of <code object f at 0x00000204E8A17B40, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\relax_geometry.py", line 59>:
+  --           COPY_FREE_VARS           2
+
+  59           RESUME                   0
+
+  60           LOAD_GLOBAL              1 (fast_energy + NULL)
+               LOAD_DEREF               5 (_renorm)
+               PUSH_NULL
+               LOAD_FAST                0 (x)
+               CALL                     1
+               LOAD_DEREF               6 (pre)
+               CALL                     2
+               UNPACK_SEQUENCE          4
+               STORE_FAST_STORE_FAST   18 (E, cov)
+               STORE_FAST_STORE_FAST   52 (Kbar, ninv)
+
+  61           LOAD_FAST                4 (ninv)
+               LOAD_CONST               1 (0)
+               COMPARE_OP             148 (bool(>))
+               POP_JUMP_IF_TRUE        27 (to L1)
+               LOAD_GLOBAL              2 (np)
+               LOAD_ATTR                4 (isfinite)
+               PUSH_NULL
+               LOAD_FAST                1 (E)
+               CALL                     1
+               TO_BOOL
+               POP_JUMP_IF_TRUE         8 (to L2)
+
+  62   L1:     LOAD_CONST               2 (1000.0)
+               LOAD_CONST               3 (1)
+               LOAD_FAST                4 (ninv)
+               BINARY_OP                0 (+)
+               BINARY_OP                5 (*)
+               RETURN_VALUE
+
+  63   L2:     LOAD_FAST                1 (E)
+               RETURN_VALUE
+
+Disassembly of <code object cb at 0x00000204E8A0B230, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\relax_geometry.py", line 67>:
+  --           COPY_FREE_VARS           6
+
+  67           RESUME                   0
+
+  68           LOAD_GLOBAL              1 (fast_energy + NULL)
+               LOAD_DEREF               5 (_renorm)
+               PUSH_NULL
+               LOAD_FAST                0 (xk)
+               CALL                     1
+               LOAD_DEREF               9 (pre)
+               CALL                     2
+               UNPACK_SEQUENCE          4
+               STORE_FAST_STORE_FAST   18 (E, cov)
+               STORE_FAST_STORE_FAST   52 (Kbar, ninv)
+
+  69           LOAD_DEREF               6 (hist)
+               LOAD_ATTR                3 (append + NULL|self)
+               LOAD_GLOBAL              5 (dict + NULL)
+               LOAD_DEREF               7 (it_box)
+               LOAD_CONST               1 ('n')
+               BINARY_SUBSCR
+               LOAD_GLOBAL              7 (float + NULL)
+               LOAD_FAST                1 (E)
+               CALL                     1
+               LOAD_GLOBAL              7 (float + NULL)
+               LOAD_FAST                2 (cov)
+               CALL                     1
+               LOAD_GLOBAL              7 (float + NULL)
+               LOAD_FAST                3 (Kbar)
+               CALL                     1
+               LOAD_CONST               2 (('it', 'E', 'cov', 'Kbar'))
+               CALL_KW                  4
+               CALL                     1
+               POP_TOP
+
+  70           LOAD_DEREF              10 (verbose)
+               TO_BOOL
+               POP_JUMP_IF_FALSE       55 (to L1)
+               LOAD_DEREF               7 (it_box)
+               LOAD_CONST               1 ('n')
+               BINARY_SUBSCR
+               LOAD_GLOBAL              9 (max + NULL)
+               LOAD_CONST               3 (1)
+               LOAD_DEREF               8 (iters)
+               LOAD_CONST               4 (12)
+               BINARY_OP                2 (//)
+               CALL                     2
+               BINARY_OP                6 (%)
+               LOAD_CONST               5 (0)
+               COMPARE_OP              88 (bool(==))
+               POP_JUMP_IF_FALSE       30 (to L1)
+
+  71           LOAD_GLOBAL             11 (print + NULL)
+               LOAD_CONST               6 ('  it=')
+               LOAD_DEREF               7 (it_box)
+               LOAD_CONST               1 ('n')
+               BINARY_SUBSCR
+               LOAD_CONST               7 ('4d')
+               FORMAT_WITH_SPEC
+               LOAD_CONST               8 ('  E=')
+               LOAD_FAST                1 (E)
+               LOAD_CONST               9 ('.5e')
+               FORMAT_WITH_SPEC
+               LOAD_CONST              10 ('  CoV(K)=')
+               LOAD_FAST                2 (cov)
+               LOAD_CONST              11 ('.4f')
+               FORMAT_WITH_SPEC
+               LOAD_CONST              12 ('  Kbar=')
+               LOAD_FAST                3 (Kbar)
+               LOAD_CONST              13 ('+.4f')
+               FORMAT_WITH_SPEC
+               BUILD_STRING             8
+               CALL                     1
+               POP_TOP
+
+  72   L1:     LOAD_DEREF               7 (it_box)
+               LOAD_CONST               1 ('n')
+               COPY                     2
+               COPY                     2
+               BINARY_SUBSCR
+               LOAD_CONST               3 (1)
+               BINARY_OP               13 (+=)
+               SWAP                     3
+               SWAP                     2
+               STORE_SUBSCR
+               RETURN_CONST             0 (None)
+
+Disassembly of <code object main at 0x00000204E6AAAAD0, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\relax_geometry.py", line 86>:
+  86            RESUME                   0
+
+  87            LOAD_GLOBAL              1 (len + NULL)
+                LOAD_GLOBAL              2 (sys)
+                LOAD_ATTR                4 (argv)
+                CALL                     1
+                LOAD_CONST               1 (1)
+                COMPARE_OP             148 (bool(>))
+                POP_JUMP_IF_FALSE       28 (to L1)
+                LOAD_GLOBAL              7 (int + NULL)
+                LOAD_GLOBAL              2 (sys)
+                LOAD_ATTR                4 (argv)
+                LOAD_CONST               1 (1)
+                BINARY_SUBSCR
+                CALL                     1
+                JUMP_FORWARD             1 (to L2)
+        L1:     LOAD_CONST               2 (150)
+        L2:     STORE_FAST               0 (N)
+
+  88            LOAD_GLOBAL              1 (len + NULL)
+                LOAD_GLOBAL              2 (sys)
+                LOAD_ATTR                4 (argv)
+                CALL                     1
+                LOAD_CONST               3 (2)
+                COMPARE_OP             148 (bool(>))
+                POP_JUMP_IF_FALSE       28 (to L3)
+                LOAD_GLOBAL              7 (int + NULL)
+                LOAD_GLOBAL              2 (sys)
+                LOAD_ATTR                4 (argv)
+                LOAD_CONST               3 (2)
+                BINARY_SUBSCR
+                CALL                     1
+                JUMP_FORWARD             1 (to L4)
+        L3:     LOAD_CONST               4 (400)
+        L4:     STORE_FAST               1 (iters)
+
+  89            LOAD_GLOBAL              9 (generic_s3 + NULL)
+                LOAD_FAST                0 (N)
+                LOAD_CONST               5 (20260618)
+                LOAD_CONST               6 (('seed',))
+                CALL_KW                  2
+                STORE_FAST               2 (cx)
+
+  90            LOAD_GLOBAL             11 (precompute + NULL)
+                LOAD_FAST                2 (cx)
+                CALL                     1
+                STORE_FAST               3 (pre)
+
+  91            LOAD_FAST                2 (cx)
+                LOAD_ATTR               12 (hull_points)
+                STORE_FAST               4 (P)
+
+  92            LOAD_GLOBAL             14 (np)
+                LOAD_ATTR               16 (array)
+                PUSH_NULL
+                LOAD_FAST                2 (cx)
+                LOAD_ATTR               18 (edges)
+                GET_ITER
+                LOAD_FAST_AND_CLEAR      5 (i)
+                LOAD_FAST_AND_CLEAR      6 (j)
+                SWAP                     3
+        L5:     BUILD_LIST               0
+                SWAP                     2
+                GET_ITER
+        L6:     FOR_ITER                43 (to L7)
+                UNPACK_SEQUENCE          2
+                STORE_FAST_STORE_FAST   86 (i, j)
+                LOAD_GLOBAL             14 (np)
+                LOAD_ATTR               20 (linalg)
+                LOAD_ATTR               23 (norm + NULL|self)
+                LOAD_FAST_LOAD_FAST     69 (P, i)
+                BINARY_SUBSCR
+                LOAD_FAST_LOAD_FAST     70 (P, j)
+                BINARY_SUBSCR
+                BINARY_OP               10 (-)
+                CALL                     1
+                LIST_APPEND              2
+                JUMP_BACKWARD           45 (to L6)
+        L7:     END_FOR
+                POP_TOP
+        L8:     SWAP                     3
+                STORE_FAST               6 (j)
+                STORE_FAST               5 (i)
+                CALL                     1
+                STORE_FAST               7 (ell_round)
+
+  93            LOAD_GLOBAL             25 (print + NULL)
+                LOAD_CONST               7 ('Stage 1 Option-1 variance minimisation (N=')
+                LOAD_FAST                0 (N)
+                FORMAT_SIMPLE
+                LOAD_CONST               8 (')')
+                BUILD_STRING             3
+                CALL                     1
+                POP_TOP
+
+  94            LOAD_CONST               9 ('frustrated ell=1')
+                LOAD_GLOBAL             14 (np)
+                LOAD_ATTR               26 (ones)
+                PUSH_NULL
+                LOAD_GLOBAL              1 (len + NULL)
+                LOAD_FAST                2 (cx)
+                LOAD_ATTR               18 (edges)
+                CALL                     1
+                CALL                     1
+                BUILD_TUPLE              2
+
+  95            LOAD_CONST              10 ('round-init (control #3)')
+                LOAD_FAST                7 (ell_round)
+                BUILD_TUPLE              2
+
+  94            BUILD_TUPLE              2
+                GET_ITER
+        L9:     FOR_ITER               113 (to L10)
+                UNPACK_SEQUENCE          2
+                STORE_FAST_STORE_FAST  137 (label, ell0)
+
+  96            LOAD_GLOBAL             29 (fast_energy + NULL)
+                LOAD_FAST_LOAD_FAST    147 (ell0, pre)
+                CALL                     2
+                UNPACK_SEQUENCE          4
+                STORE_FAST_STORE_FAST  171 (E0, cov0)
+                STORE_FAST_STORE_FAST  205 (Kbar0, _)
+
+  97            LOAD_GLOBAL             25 (print + NULL)
+                LOAD_CONST              11 ('\n[')
+                LOAD_FAST                8 (label)
+                FORMAT_SIMPLE
+                LOAD_CONST              12 ('] start E=')
+                LOAD_FAST               10 (E0)
+                LOAD_CONST              13 ('.5e')
+                FORMAT_WITH_SPEC
+                LOAD_CONST              14 (' CoV=')
+                LOAD_FAST               11 (cov0)
+                LOAD_CONST              15 ('.4f')
+                FORMAT_WITH_SPEC
+                LOAD_CONST              16 (' Kbar=')
+                LOAD_FAST               12 (Kbar0)
+                LOAD_CONST              17 ('+.4f')
+                FORMAT_WITH_SPEC
+                BUILD_STRING             8
+                CALL                     1
+                POP_TOP
+
+  98            LOAD_GLOBAL             31 (variance_min + NULL)
+                LOAD_FAST_LOAD_FAST     41 (cx, ell0)
+                LOAD_FAST_LOAD_FAST     49 (pre, iters)
+                LOAD_CONST              18 (('pre', 'iters'))
+                CALL_KW                  4
+                UNPACK_SEQUENCE          2
+                STORE_FAST_STORE_FAST  239 (ell, hist)
+
+  99            LOAD_GLOBAL             25 (print + NULL)
+                LOAD_CONST              19 ('[')
+                LOAD_FAST                8 (label)
+                FORMAT_SIMPLE
+                LOAD_CONST              20 ('] end   E=')
+                LOAD_FAST               15 (hist)
+                LOAD_CONST              21 (-1)
+                BINARY_SUBSCR
+                LOAD_CONST              22 ('E')
+                BINARY_SUBSCR
+                LOAD_CONST              13 ('.5e')
+                FORMAT_WITH_SPEC
+                LOAD_CONST              14 (' CoV=')
+                LOAD_FAST               15 (hist)
+                LOAD_CONST              21 (-1)
+                BINARY_SUBSCR
+                LOAD_CONST              23 ('cov')
+                BINARY_SUBSCR
+                LOAD_CONST              15 ('.4f')
+                FORMAT_WITH_SPEC
+                LOAD_CONST              24 (' note=')
+
+ 100            LOAD_FAST               15 (hist)
+                LOAD_CONST              21 (-1)
+                BINARY_SUBSCR
+                LOAD_ATTR               33 (get + NULL|self)
+                LOAD_CONST              25 ('note')
+                LOAD_CONST              26 ('max-iters')
+                CALL                     2
+                FORMAT_SIMPLE
+
+  99            BUILD_STRING             8
+                CALL                     1
+                POP_TOP
+                JUMP_BACKWARD          115 (to L9)
+
+  94   L10:     END_FOR
+                POP_TOP
+                RETURN_CONST             0 (None)
+
+  --   L11:     SWAP                     2
+                POP_TOP
+
+  92            SWAP                     3
+                STORE_FAST               6 (j)
+                STORE_FAST               5 (i)
+                RERAISE                  0
+ExceptionTable:
+  L5 to L8 -> L11 [5]

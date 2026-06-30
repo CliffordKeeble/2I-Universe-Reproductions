@@ -1,0 +1,6 @@
+=== Stage 1 FSS ladder: N = [100, 200, 500, 1000] ===
+    PRIMARY: d_frust(N) = spectral_distance(relaxed frustrated, same-mesh round)
+
+N=  100 (E:343->55.6, iters=11)
+   d_frust_init=0.280 -> d_frust=0.250   d_round(ref sanity)=0.275
+   CoV gap (frust-round)=5.66   Control#3 stays_round=True

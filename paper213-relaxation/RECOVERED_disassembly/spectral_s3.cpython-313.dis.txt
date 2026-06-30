@@ -1,0 +1,1040 @@
+   0            RESUME                   0
+
+   1            LOAD_CONST               0 ('\nspectral_s3.py  —  the VERDICT instrument for Paper 213 Approach B v1.1.\n\nPer Mr A #2 (via brief v1.1): variance drives the flow, but the SPECTRUM is the\njudgment. Convergence to round S^3 = the relaxed scalar-Laplacian spectrum matches the\nanalytic round-S^3 spectrum\n\n        lambda_k = k(k+2),   multiplicity (k+1)^2,   k = 0,1,2,...\n        => 0 (x1), 3 (x4), 8 (x9), 15 (x16), 24 (x25), ...\n\nWe build the linear-FEM Laplace-Beltrami operator on the tetrahedral mesh purely from\nedge lengths (each tet embedded via geometry.tet_embed; hat-function gradients give the\nelement stiffness; lumped vertex volumes give the mass matrix), then solve the\ngeneralized eigenproblem L u = lambda M u.\n\nVALIDATION (run before trusting it): on the round-init metric (chord lengths on the\nactual S^3 hull points) the low spectrum must approximate 0,3,8,15 with multiplicity\npattern 1,4,9,16. The round-init spectrum on a given mesh is ALSO the empirical "round"\nreference for that mesh (removes discretisation bias from the verdict).\n\nStandalone:  python spectral_s3.py [N]\n')
+                STORE_NAME               0 (__doc__)
+
+  24            LOAD_CONST               1 (0)
+                LOAD_CONST               2 (None)
+                IMPORT_NAME              1 (sys)
+                STORE_NAME               1 (sys)
+
+  25            LOAD_CONST               1 (0)
+                LOAD_CONST               2 (None)
+                IMPORT_NAME              2 (numpy)
+                STORE_NAME               3 (np)
+
+  26            LOAD_CONST               1 (0)
+                LOAD_CONST               2 (None)
+                IMPORT_NAME              4 (scipy.sparse)
+                IMPORT_FROM              5 (sparse)
+                STORE_NAME               6 (sp)
+                POP_TOP
+
+  27            LOAD_CONST               1 (0)
+                LOAD_CONST               3 (('eigsh',))
+                IMPORT_NAME              7 (scipy.sparse.linalg)
+                IMPORT_FROM              8 (eigsh)
+                STORE_NAME               8 (eigsh)
+                POP_TOP
+
+  28            LOAD_CONST               1 (0)
+                LOAD_CONST               4 (('generic_s3', 'tet_embed', 'TET_EDGES'))
+                IMPORT_NAME              9 (geometry)
+                IMPORT_FROM             10 (generic_s3)
+                STORE_NAME              10 (generic_s3)
+                IMPORT_FROM             11 (tet_embed)
+                STORE_NAME              11 (tet_embed)
+                IMPORT_FROM             12 (TET_EDGES)
+                STORE_NAME              12 (TET_EDGES)
+                POP_TOP
+
+  31            LOAD_CONST               5 (<code object fem_laplacian at 0x00000204E6AEC330, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\spectral_s3.py", line 31>)
+                MAKE_FUNCTION
+                STORE_NAME              13 (fem_laplacian)
+
+  65            LOAD_CONST              35 ((40,))
+                LOAD_CONST               7 (<code object low_spectrum at 0x00000204E6BF6650, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\spectral_s3.py", line 65>)
+                MAKE_FUNCTION
+                SET_FUNCTION_ATTRIBUTE   1 (defaults)
+                STORE_NAME              14 (low_spectrum)
+
+  82            LOAD_CONST               8 (<code object normalized_spectrum at 0x00000204E8CA5570, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\spectral_s3.py", line 82>)
+                MAKE_FUNCTION
+                STORE_NAME              15 (normalized_spectrum)
+
+  91            LOAD_CONST              36 ((6,))
+                LOAD_CONST               9 (<code object round_ladder at 0x00000204E8A179F0, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\spectral_s3.py", line 91>)
+                MAKE_FUNCTION
+                SET_FUNCTION_ATTRIBUTE   1 (defaults)
+                STORE_NAME              16 (round_ladder)
+
+  95            LOAD_CONST              37 ((4,))
+                LOAD_CONST              11 (<code object spectrum_match_error at 0x00000204E6AF5D00, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\spectral_s3.py", line 95>)
+                MAKE_FUNCTION
+                SET_FUNCTION_ATTRIBUTE   1 (defaults)
+                STORE_NAME              17 (spectrum_match_error)
+
+ 119            LOAD_CONST              38 ((4, 0.25))
+                LOAD_CONST              12 (<code object multiplicity_report at 0x00000204E61DBDB0, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\spectral_s3.py", line 119>)
+                MAKE_FUNCTION
+                SET_FUNCTION_ATTRIBUTE   1 (defaults)
+                STORE_NAME              18 (multiplicity_report)
+
+ 128            LOAD_NAME               19 (__name__)
+                LOAD_CONST              13 ('__main__')
+                COMPARE_OP              88 (bool(==))
+                EXTENDED_ARG             1
+                POP_JUMP_IF_FALSE      366 (to L9)
+
+ 129            LOAD_NAME               20 (len)
+                PUSH_NULL
+                LOAD_NAME                1 (sys)
+                LOAD_ATTR               42 (argv)
+                CALL                     1
+                LOAD_CONST              14 (1)
+                COMPARE_OP             148 (bool(>))
+                POP_JUMP_IF_FALSE       21 (to L1)
+                LOAD_NAME               22 (int)
+                PUSH_NULL
+                LOAD_NAME                1 (sys)
+                LOAD_ATTR               42 (argv)
+                LOAD_CONST              14 (1)
+                BINARY_SUBSCR
+                CALL                     1
+                JUMP_FORWARD             1 (to L2)
+        L1:     LOAD_CONST              15 (300)
+        L2:     STORE_NAME              23 (N)
+
+ 130            LOAD_NAME               10 (generic_s3)
+                PUSH_NULL
+                LOAD_NAME               23 (N)
+                LOAD_CONST              16 (20260618)
+                LOAD_CONST              17 (('seed',))
+                CALL_KW                  2
+                STORE_NAME              24 (cx)
+
+ 131            LOAD_NAME               24 (cx)
+                LOAD_ATTR               50 (hull_points)
+                STORE_NAME              26 (P)
+
+ 132            LOAD_NAME                3 (np)
+                LOAD_ATTR               54 (array)
+                PUSH_NULL
+                LOAD_NAME               24 (cx)
+                LOAD_ATTR               56 (edges)
+                GET_ITER
+                LOAD_FAST_AND_CLEAR      0 (i)
+                LOAD_FAST_AND_CLEAR      1 (j)
+                SWAP                     3
+        L3:     BUILD_LIST               0
+                SWAP                     2
+                GET_ITER
+        L4:     FOR_ITER                41 (to L5)
+                UNPACK_SEQUENCE          2
+                STORE_FAST_STORE_FAST    1 (i, j)
+                LOAD_NAME                3 (np)
+                LOAD_ATTR               58 (linalg)
+                LOAD_ATTR               61 (norm + NULL|self)
+                LOAD_NAME               26 (P)
+                LOAD_FAST                0 (i)
+                BINARY_SUBSCR
+                LOAD_NAME               26 (P)
+                LOAD_FAST                1 (j)
+                BINARY_SUBSCR
+                BINARY_OP               10 (-)
+                CALL                     1
+                LIST_APPEND              2
+                JUMP_BACKWARD           43 (to L4)
+        L5:     END_FOR
+                POP_TOP
+        L6:     SWAP                     3
+                STORE_FAST               1 (j)
+                STORE_FAST               0 (i)
+                CALL                     1
+                STORE_NAME              31 (ell_round)
+
+ 133            LOAD_NAME                3 (np)
+                LOAD_ATTR               64 (ones)
+                PUSH_NULL
+                LOAD_NAME               20 (len)
+                PUSH_NULL
+                LOAD_NAME               24 (cx)
+                LOAD_ATTR               56 (edges)
+                CALL                     1
+                CALL                     1
+                STORE_NAME              33 (ell_frust)
+
+ 135            LOAD_NAME               34 (print)
+                PUSH_NULL
+                LOAD_CONST              18 ('FEM Laplace-Beltrami spectrum validation (N=')
+                LOAD_NAME               23 (N)
+                FORMAT_SIMPLE
+                LOAD_CONST              19 (', tets=')
+                LOAD_NAME               20 (len)
+                PUSH_NULL
+                LOAD_NAME               24 (cx)
+                LOAD_ATTR               70 (tets)
+                CALL                     1
+                FORMAT_SIMPLE
+                LOAD_CONST              20 (')')
+                BUILD_STRING             5
+                CALL                     1
+                POP_TOP
+
+ 136            LOAD_NAME               34 (print)
+                PUSH_NULL
+                LOAD_CONST              21 ('  analytic round S^3 ladder: 3(x4) 8(x9) 15(x16) 24(x25)')
+                CALL                     1
+                POP_TOP
+
+ 137            LOAD_CONST              22 ('round-init')
+                LOAD_NAME               31 (ell_round)
+                BUILD_TUPLE              2
+                LOAD_CONST              23 ('frustrated ell=1')
+                LOAD_NAME               33 (ell_frust)
+                BUILD_TUPLE              2
+                BUILD_TUPLE              2
+                GET_ITER
+        L7:     FOR_ITER               133 (to L8)
+                UNPACK_SEQUENCE          2
+                STORE_NAME              36 (label)
+                STORE_NAME              37 (ell)
+
+ 138            LOAD_NAME               14 (low_spectrum)
+                PUSH_NULL
+                LOAD_NAME               24 (cx)
+                LOAD_NAME               37 (ell)
+                LOAD_CONST               6 (40)
+                LOAD_CONST              24 (('k',))
+                CALL_KW                  3
+                UNPACK_SEQUENCE          2
+                STORE_NAME              38 (eigs)
+                STORE_NAME              39 (nbad)
+
+ 139            LOAD_NAME               15 (normalized_spectrum)
+                PUSH_NULL
+                LOAD_NAME               38 (eigs)
+                CALL                     1
+                STORE_NAME              40 (ns)
+
+ 140            LOAD_NAME               17 (spectrum_match_error)
+                PUSH_NULL
+                LOAD_NAME               38 (eigs)
+                LOAD_CONST              10 (4)
+                CALL                     2
+                STORE_NAME              41 (err)
+
+ 141            LOAD_NAME               18 (multiplicity_report)
+                PUSH_NULL
+                LOAD_NAME               38 (eigs)
+                LOAD_CONST              10 (4)
+                CALL                     2
+                STORE_NAME              42 (mult)
+
+ 142            LOAD_NAME               34 (print)
+                PUSH_NULL
+                LOAD_CONST              25 ('\n[')
+                LOAD_NAME               36 (label)
+                FORMAT_SIMPLE
+                LOAD_CONST              26 ('] bad_tets=')
+                LOAD_NAME               39 (nbad)
+                FORMAT_SIMPLE
+                BUILD_STRING             4
+                CALL                     1
+                POP_TOP
+
+ 143            LOAD_NAME               34 (print)
+                PUSH_NULL
+                LOAD_CONST              27 ('  low normalized spectrum: ')
+                LOAD_NAME                3 (np)
+                LOAD_ATTR               86 (round)
+                PUSH_NULL
+                LOAD_NAME               40 (ns)
+                LOAD_CONST               2 (None)
+                LOAD_CONST              28 (16)
+                BINARY_SLICE
+                LOAD_CONST              29 (2)
+                CALL                     2
+                FORMAT_SIMPLE
+                BUILD_STRING             2
+                CALL                     1
+                POP_TOP
+
+ 144            LOAD_NAME               34 (print)
+                PUSH_NULL
+                LOAD_CONST              30 ('  spectrum match error (vs k(k+2), 4 levels): ')
+                LOAD_NAME               41 (err)
+                LOAD_CONST              31 ('.3f')
+                FORMAT_WITH_SPEC
+                BUILD_STRING             2
+                CALL                     1
+                POP_TOP
+
+ 145            LOAD_NAME               34 (print)
+                PUSH_NULL
+                LOAD_CONST              32 ('  multiplicities [level: got/expected]: ')
+
+ 146            LOAD_CONST              33 (', ')
+                LOAD_ATTR               89 (join + NULL|self)
+                LOAD_CONST              34 (<code object <genexpr> at 0x00000204E8D64360, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\spectral_s3.py", line 146>)
+                MAKE_FUNCTION
+                LOAD_NAME               42 (mult)
+                GET_ITER
+                CALL                     0
+                CALL                     1
+                FORMAT_SIMPLE
+
+ 145            BUILD_STRING             2
+                CALL                     1
+                POP_TOP
+                JUMP_BACKWARD          135 (to L7)
+
+ 137    L8:     END_FOR
+                POP_TOP
+                RETURN_CONST             2 (None)
+
+ 128    L9:     RETURN_CONST             2 (None)
+
+  --   L10:     SWAP                     2
+                POP_TOP
+
+ 132            SWAP                     3
+                STORE_FAST               1 (j)
+                STORE_FAST               0 (i)
+                RERAISE                  0
+ExceptionTable:
+  L3 to L6 -> L10 [5]
+
+Disassembly of <code object fem_laplacian at 0x00000204E6AEC330, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\spectral_s3.py", line 31>:
+  31            RESUME                   0
+
+  33            LOAD_FAST                0 (cx)
+                LOAD_ATTR                0 (N)
+                STORE_FAST               2 (N)
+
+  34            BUILD_LIST               0
+                BUILD_LIST               0
+                BUILD_LIST               0
+                STORE_FAST_STORE_FAST   84 (data, cols)
+                STORE_FAST               3 (rows)
+
+  35            LOAD_GLOBAL              2 (np)
+                LOAD_ATTR                4 (zeros)
+                PUSH_NULL
+                LOAD_FAST                2 (N)
+                CALL                     1
+                STORE_FAST               6 (mass)
+
+  36            LOAD_CONST               1 (0)
+                STORE_FAST               7 (n_bad)
+
+  37            LOAD_FAST                0 (cx)
+                LOAD_ATTR                6 (tets)
+                GET_ITER
+        L1:     EXTENDED_ARG             1
+                FOR_ITER               394 (to L12)
+                STORE_FAST               8 (t)
+
+  38            LOAD_GLOBAL              2 (np)
+                LOAD_ATTR                8 (array)
+                PUSH_NULL
+
+  39            LOAD_GLOBAL             10 (TET_EDGES)
+                GET_ITER
+
+  38            LOAD_FAST_AND_CLEAR      9 (a)
+                LOAD_FAST_AND_CLEAR     10 (b)
+                SWAP                     3
+        L2:     BUILD_LIST               0
+                SWAP                     2
+
+  39            GET_ITER
+        L3:     FOR_ITER                46 (to L4)
+                UNPACK_SEQUENCE          2
+                STORE_FAST_STORE_FAST  154 (a, b)
+
+  38            LOAD_FAST_LOAD_FAST     16 (ell, cx)
+                LOAD_ATTR               12 (edge_index)
+                LOAD_GLOBAL             15 (tuple + NULL)
+                LOAD_GLOBAL             17 (sorted + NULL)
+                LOAD_FAST_LOAD_FAST    137 (t, a)
+                BINARY_SUBSCR
+                LOAD_FAST_LOAD_FAST    138 (t, b)
+                BINARY_SUBSCR
+                BUILD_TUPLE              2
+                CALL                     1
+                CALL                     1
+                BINARY_SUBSCR
+                BINARY_SUBSCR
+                LIST_APPEND              2
+                JUMP_BACKWARD           48 (to L3)
+
+  39    L4:     END_FOR
+                POP_TOP
+
+  38    L5:     SWAP                     3
+                STORE_FAST              10 (b)
+                STORE_FAST               9 (a)
+                CALL                     1
+                STORE_FAST              11 (L6)
+
+  40            LOAD_GLOBAL             19 (tet_embed + NULL)
+                LOAD_FAST               11 (L6)
+                CALL                     1
+                STORE_FAST              12 (P)
+
+  41            LOAD_FAST               12 (P)
+                POP_JUMP_IF_NOT_NONE     7 (to L6)
+
+  42            LOAD_FAST                7 (n_bad)
+                LOAD_CONST               3 (1)
+                BINARY_OP               13 (+=)
+                STORE_FAST               7 (n_bad)
+
+  43            JUMP_BACKWARD          111 (to L1)
+
+  44    L6:     LOAD_FAST               12 (P)
+                LOAD_CONST               3 (1)
+                LOAD_CONST               2 (None)
+                BINARY_SLICE
+                LOAD_FAST               12 (P)
+                LOAD_CONST               1 (0)
+                BINARY_SUBSCR
+                BINARY_OP               10 (-)
+                STORE_FAST              13 (e)
+
+  45            LOAD_GLOBAL              2 (np)
+                LOAD_ATTR               20 (linalg)
+                LOAD_ATTR               23 (det + NULL|self)
+                LOAD_FAST               13 (e)
+                CALL                     1
+                STORE_FAST              14 (detM)
+
+  46            LOAD_GLOBAL             25 (abs + NULL)
+                LOAD_FAST               14 (detM)
+                CALL                     1
+                LOAD_CONST               4 (6.0)
+                BINARY_OP               11 (/)
+                STORE_FAST              15 (V)
+
+  47            LOAD_FAST               15 (V)
+                LOAD_CONST               5 (1e-12)
+                COMPARE_OP              18 (bool(<))
+                POP_JUMP_IF_FALSE        7 (to L7)
+
+  48            LOAD_FAST                7 (n_bad)
+                LOAD_CONST               3 (1)
+                BINARY_OP               13 (+=)
+                STORE_FAST               7 (n_bad)
+
+  49            JUMP_BACKWARD          180 (to L1)
+
+  50    L7:     LOAD_GLOBAL              2 (np)
+                LOAD_ATTR               20 (linalg)
+                LOAD_ATTR               27 (inv + NULL|self)
+                LOAD_FAST               13 (e)
+                CALL                     1
+                STORE_FAST              16 (Minv)
+
+  51            LOAD_GLOBAL              2 (np)
+                LOAD_ATTR                4 (zeros)
+                PUSH_NULL
+                LOAD_CONST               6 ((4, 3))
+                CALL                     1
+                STORE_FAST              17 (grads)
+
+  52            LOAD_FAST               16 (Minv)
+                LOAD_FAST               17 (grads)
+                LOAD_CONST               3 (1)
+                LOAD_CONST               2 (None)
+                STORE_SLICE
+
+  53            LOAD_FAST               17 (grads)
+                LOAD_CONST               3 (1)
+                LOAD_CONST               2 (None)
+                BINARY_SLICE
+                LOAD_ATTR               29 (sum + NULL|self)
+                LOAD_CONST               1 (0)
+                LOAD_CONST               7 (('axis',))
+                CALL_KW                  1
+                UNARY_NEGATIVE
+                LOAD_FAST               17 (grads)
+                LOAD_CONST               1 (0)
+                STORE_SUBSCR
+
+  54            LOAD_FAST               15 (V)
+                LOAD_FAST               17 (grads)
+                LOAD_FAST               17 (grads)
+                LOAD_ATTR               30 (T)
+                BINARY_OP                4 (@)
+                BINARY_OP                5 (*)
+                STORE_FAST              18 (Ke)
+
+  55            LOAD_GLOBAL             33 (range + NULL)
+                LOAD_CONST               8 (4)
+                CALL                     1
+                GET_ITER
+        L8:     FOR_ITER               101 (to L11)
+                STORE_FAST              19 (ia)
+
+  56            LOAD_FAST_LOAD_FAST    104 (mass, t)
+                LOAD_FAST               19 (ia)
+                BINARY_SUBSCR
+                COPY                     2
+                COPY                     2
+                BINARY_SUBSCR
+                LOAD_FAST               15 (V)
+                LOAD_CONST               9 (4.0)
+                BINARY_OP               11 (/)
+                BINARY_OP               13 (+=)
+                SWAP                     3
+                SWAP                     2
+                STORE_SUBSCR
+
+  57            LOAD_GLOBAL             33 (range + NULL)
+                LOAD_CONST               8 (4)
+                CALL                     1
+                GET_ITER
+        L9:     FOR_ITER                65 (to L10)
+                STORE_FAST              20 (ib)
+
+  58            LOAD_FAST                3 (rows)
+                LOAD_ATTR               35 (append + NULL|self)
+                LOAD_FAST                8 (t)
+                LOAD_FAST               19 (ia)
+                BINARY_SUBSCR
+                CALL                     1
+                POP_TOP
+                LOAD_FAST                4 (cols)
+                LOAD_ATTR               35 (append + NULL|self)
+                LOAD_FAST                8 (t)
+                LOAD_FAST               20 (ib)
+                BINARY_SUBSCR
+                CALL                     1
+                POP_TOP
+                LOAD_FAST                5 (data)
+                LOAD_ATTR               35 (append + NULL|self)
+                LOAD_FAST               18 (Ke)
+                LOAD_FAST               19 (ia)
+                LOAD_FAST               20 (ib)
+                BUILD_TUPLE              2
+                BINARY_SUBSCR
+                CALL                     1
+                POP_TOP
+                JUMP_BACKWARD           67 (to L9)
+
+  57   L10:     END_FOR
+                POP_TOP
+                JUMP_BACKWARD          103 (to L8)
+
+  55   L11:     END_FOR
+                POP_TOP
+                EXTENDED_ARG             1
+                JUMP_BACKWARD          397 (to L1)
+
+  37   L12:     END_FOR
+                POP_TOP
+
+  59            LOAD_GLOBAL             36 (sp)
+                LOAD_ATTR               38 (coo_matrix)
+                PUSH_NULL
+                LOAD_FAST_LOAD_FAST     83 (data, rows)
+                LOAD_FAST                4 (cols)
+                BUILD_TUPLE              2
+                BUILD_TUPLE              2
+                LOAD_FAST_LOAD_FAST     34 (N, N)
+                BUILD_TUPLE              2
+                LOAD_CONST              10 (('shape',))
+                CALL_KW                  2
+                LOAD_ATTR               41 (tocsr + NULL|self)
+                CALL                     0
+                STORE_FAST              21 (Lmat)
+
+  60            LOAD_CONST              11 (0.5)
+                LOAD_FAST               21 (Lmat)
+                LOAD_FAST               21 (Lmat)
+                LOAD_ATTR               30 (T)
+                BINARY_OP                0 (+)
+                BINARY_OP                5 (*)
+                STORE_FAST              21 (Lmat)
+
+  61            LOAD_GLOBAL             36 (sp)
+                LOAD_ATTR               42 (diags)
+                PUSH_NULL
+                LOAD_FAST                6 (mass)
+                CALL                     1
+                STORE_FAST              22 (Mmat)
+
+  62            LOAD_FAST               21 (Lmat)
+                LOAD_FAST               22 (Mmat)
+                LOAD_FAST                7 (n_bad)
+                BUILD_TUPLE              3
+                RETURN_VALUE
+
+  --   L13:     SWAP                     2
+                POP_TOP
+
+  38            SWAP                     3
+                STORE_FAST              10 (b)
+                STORE_FAST               9 (a)
+                RERAISE                  0
+ExceptionTable:
+  L2 to L5 -> L13 [6]
+
+Disassembly of <code object low_spectrum at 0x00000204E6BF6650, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\spectral_s3.py", line 65>:
+  65           RESUME                   0
+
+  66           LOAD_GLOBAL              1 (fem_laplacian + NULL)
+               LOAD_FAST_LOAD_FAST      1 (cx, ell)
+               CALL                     2
+               UNPACK_SEQUENCE          3
+               STORE_FAST_STORE_FAST   52 (L, M)
+               STORE_FAST               5 (n_bad)
+
+  67           LOAD_GLOBAL              3 (min + NULL)
+               LOAD_FAST_LOAD_FAST     32 (k, cx)
+               LOAD_ATTR                4 (N)
+               LOAD_CONST               1 (2)
+               BINARY_OP               10 (-)
+               CALL                     2
+               STORE_FAST               2 (k)
+
+  69           LOAD_CONST               2 ((-1e-06, -0.0001, 0.0))
+               GET_ITER
+       L1:     FOR_ITER                51 (to L4)
+               STORE_FAST               6 (sigma)
+
+  70           NOP
+
+  71   L2:     LOAD_GLOBAL              7 (eigsh + NULL)
+               LOAD_FAST_LOAD_FAST     50 (L, k)
+               LOAD_FAST_LOAD_FAST     70 (M, sigma)
+               LOAD_CONST               3 ('LM')
+
+  72           LOAD_CONST               4 (False)
+               LOAD_CONST               5 (5000)
+
+  71           LOAD_CONST               6 (('k', 'M', 'sigma', 'which', 'return_eigenvectors', 'maxiter'))
+               CALL_KW                  7
+               STORE_FAST               7 (vals)
+
+  73           LOAD_GLOBAL              8 (np)
+               LOAD_ATTR               10 (sort)
+               PUSH_NULL
+               LOAD_FAST                7 (vals)
+               LOAD_ATTR               12 (real)
+               CALL                     1
+               LOAD_FAST                5 (n_bad)
+               BUILD_TUPLE              2
+       L3:     SWAP                     2
+               POP_TOP
+               RETURN_VALUE
+
+  69   L4:     END_FOR
+               POP_TOP
+
+  76           LOAD_GLOBAL              8 (np)
+               LOAD_ATTR               16 (array)
+               PUSH_NULL
+               LOAD_FAST                4 (M)
+               LOAD_ATTR               19 (diagonal + NULL|self)
+               CALL                     0
+               CALL                     1
+               STORE_FAST               8 (Md)
+
+  77           LOAD_GLOBAL             20 (sp)
+               LOAD_ATTR               22 (diags)
+               PUSH_NULL
+               LOAD_CONST               7 (1.0)
+               LOAD_GLOBAL              8 (np)
+               LOAD_ATTR               24 (sqrt)
+               PUSH_NULL
+               LOAD_FAST                8 (Md)
+               CALL                     1
+               BINARY_OP               11 (/)
+               CALL                     1
+               STORE_FAST               9 (Dinv)
+
+  78           LOAD_GLOBAL              8 (np)
+               LOAD_ATTR               26 (linalg)
+               LOAD_ATTR               29 (eigvalsh + NULL|self)
+               LOAD_FAST_LOAD_FAST    147 (Dinv, L)
+               BINARY_OP                4 (@)
+               LOAD_FAST                9 (Dinv)
+               BINARY_OP                4 (@)
+               LOAD_ATTR               31 (toarray + NULL|self)
+               CALL                     0
+               CALL                     1
+               STORE_FAST               7 (vals)
+
+  79           LOAD_GLOBAL              8 (np)
+               LOAD_ATTR               10 (sort)
+               PUSH_NULL
+               LOAD_FAST                7 (vals)
+               LOAD_ATTR               12 (real)
+               CALL                     1
+               LOAD_CONST               0 (None)
+               LOAD_FAST                2 (k)
+               BINARY_SLICE
+               LOAD_FAST                5 (n_bad)
+               BUILD_TUPLE              2
+               RETURN_VALUE
+
+  --   L5:     PUSH_EXC_INFO
+
+  74           LOAD_GLOBAL             14 (Exception)
+               CHECK_EXC_MATCH
+               POP_JUMP_IF_FALSE        4 (to L7)
+               POP_TOP
+
+  75   L6:     POP_EXCEPT
+               JUMP_BACKWARD          236 (to L1)
+
+  74   L7:     RERAISE                  0
+
+  --   L8:     COPY                     3
+               POP_EXCEPT
+               RERAISE                  1
+ExceptionTable:
+  L2 to L3 -> L5 [1]
+  L5 to L6 -> L8 [2] lasti
+  L7 to L8 -> L8 [2] lasti
+
+Disassembly of <code object normalized_spectrum at 0x00000204E8CA5570, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\spectral_s3.py", line 82>:
+ 82           RESUME                   0
+
+ 84           LOAD_GLOBAL              0 (np)
+              LOAD_ATTR                2 (array)
+              PUSH_NULL
+              LOAD_FAST                0 (eigs)
+              CALL                     1
+              STORE_FAST               1 (e)
+
+ 85           LOAD_FAST_LOAD_FAST     17 (e, e)
+              LOAD_CONST               1 (1e-06)
+              COMPARE_OP             132 (>)
+              BINARY_SUBSCR
+              STORE_FAST               1 (e)
+
+ 86           LOAD_GLOBAL              5 (len + NULL)
+              LOAD_FAST                1 (e)
+              CALL                     1
+              LOAD_CONST               2 (0)
+              COMPARE_OP              88 (bool(==))
+              POP_JUMP_IF_FALSE        2 (to L1)
+
+ 87           LOAD_FAST                1 (e)
+              RETURN_VALUE
+
+ 88   L1:     LOAD_FAST                1 (e)
+              LOAD_CONST               3 (3.0)
+              LOAD_FAST                1 (e)
+              LOAD_CONST               2 (0)
+              BINARY_SUBSCR
+              BINARY_OP               11 (/)
+              BINARY_OP                5 (*)
+              RETURN_VALUE
+
+Disassembly of <code object round_ladder at 0x00000204E8A179F0, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\spectral_s3.py", line 91>:
+  91           RESUME                   0
+
+  92           LOAD_GLOBAL              0 (np)
+               LOAD_ATTR                2 (array)
+               PUSH_NULL
+               LOAD_GLOBAL              5 (range + NULL)
+               LOAD_CONST               1 (1)
+               LOAD_FAST                0 (n_levels)
+               LOAD_CONST               1 (1)
+               BINARY_OP                0 (+)
+               CALL                     2
+               GET_ITER
+               LOAD_FAST_AND_CLEAR      1 (k)
+               SWAP                     2
+       L1:     BUILD_LIST               0
+               SWAP                     2
+               GET_ITER
+       L2:     FOR_ITER                10 (to L3)
+               STORE_FAST_LOAD_FAST    17 (k, k)
+               LOAD_FAST                1 (k)
+               LOAD_CONST               2 (2)
+               BINARY_OP                0 (+)
+               BINARY_OP                5 (*)
+               LIST_APPEND              2
+               JUMP_BACKWARD           12 (to L2)
+       L3:     END_FOR
+               POP_TOP
+       L4:     SWAP                     2
+               STORE_FAST               1 (k)
+               LOAD_GLOBAL              6 (float)
+               LOAD_CONST               3 (('dtype',))
+               CALL_KW                  2
+               RETURN_VALUE
+
+  --   L5:     SWAP                     2
+               POP_TOP
+
+  92           SWAP                     2
+               STORE_FAST               1 (k)
+               RERAISE                  0
+ExceptionTable:
+  L1 to L4 -> L5 [4]
+
+Disassembly of <code object spectrum_match_error at 0x00000204E6AF5D00, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\spectral_s3.py", line 95>:
+ 95           RESUME                   0
+
+101           LOAD_GLOBAL              1 (normalized_spectrum + NULL)
+              LOAD_FAST                0 (eigs)
+              CALL                     1
+              STORE_FAST               2 (e)
+
+102           LOAD_GLOBAL              3 (round_ladder + NULL)
+              LOAD_FAST                1 (n_levels)
+              CALL                     1
+              STORE_FAST               3 (ladder)
+
+103           LOAD_GLOBAL              5 (len + NULL)
+              LOAD_FAST                2 (e)
+              CALL                     1
+              LOAD_FAST                1 (n_levels)
+              LOAD_CONST               1 (1)
+              BINARY_OP                0 (+)
+              COMPARE_OP              18 (bool(<))
+              POP_JUMP_IF_FALSE       16 (to L1)
+
+104           LOAD_GLOBAL              6 (np)
+              LOAD_ATTR                8 (nan)
+              RETURN_VALUE
+
+106   L1:     LOAD_FAST_LOAD_FAST     34 (e, e)
+              LOAD_FAST                3 (ladder)
+              LOAD_CONST               2 (-1)
+              BINARY_SUBSCR
+              LOAD_CONST               3 (1.3)
+              BINARY_OP                5 (*)
+              COMPARE_OP              42 (<=)
+              BINARY_SUBSCR
+              STORE_FAST               4 (use)
+
+107           LOAD_GLOBAL              5 (len + NULL)
+              LOAD_FAST                4 (use)
+              CALL                     1
+              LOAD_CONST               4 (0)
+              COMPARE_OP              88 (bool(==))
+              POP_JUMP_IF_FALSE       16 (to L2)
+
+108           LOAD_GLOBAL              6 (np)
+              LOAD_ATTR                8 (nan)
+              RETURN_VALUE
+
+109   L2:     BUILD_LIST               0
+              STORE_FAST               5 (errs)
+
+110           LOAD_FAST                3 (ladder)
+              GET_ITER
+      L3:     FOR_ITER               114 (to L5)
+              STORE_FAST               6 (lv)
+
+111           LOAD_FAST                4 (use)
+              LOAD_GLOBAL              6 (np)
+              LOAD_ATTR               10 (abs)
+              PUSH_NULL
+              LOAD_FAST_LOAD_FAST     70 (use, lv)
+              BINARY_OP               10 (-)
+              CALL                     1
+              LOAD_FAST                6 (lv)
+              BINARY_OP               11 (/)
+              LOAD_CONST               5 (0.5)
+              COMPARE_OP               2 (<)
+              BINARY_SUBSCR
+              STORE_FAST               7 (near)
+
+112           LOAD_GLOBAL              5 (len + NULL)
+              LOAD_FAST                7 (near)
+              CALL                     1
+              TO_BOOL
+              POP_JUMP_IF_FALSE       45 (to L4)
+
+113           LOAD_FAST                5 (errs)
+              LOAD_ATTR               13 (append + NULL|self)
+              LOAD_GLOBAL              6 (np)
+              LOAD_ATTR               14 (mean)
+              PUSH_NULL
+              LOAD_FAST                7 (near)
+              CALL                     1
+              LOAD_FAST                6 (lv)
+              BINARY_OP               10 (-)
+              LOAD_FAST                6 (lv)
+              BINARY_OP               11 (/)
+              CALL                     1
+              POP_TOP
+              JUMP_BACKWARD           97 (to L3)
+
+115   L4:     LOAD_FAST                5 (errs)
+              LOAD_ATTR               13 (append + NULL|self)
+              LOAD_CONST               6 (1.0)
+              CALL                     1
+              POP_TOP
+              JUMP_BACKWARD          116 (to L3)
+
+110   L5:     END_FOR
+              POP_TOP
+
+116           LOAD_GLOBAL             17 (float + NULL)
+              LOAD_GLOBAL              6 (np)
+              LOAD_ATTR               18 (sqrt)
+              PUSH_NULL
+              LOAD_GLOBAL              6 (np)
+              LOAD_ATTR               14 (mean)
+              PUSH_NULL
+              LOAD_GLOBAL              6 (np)
+              LOAD_ATTR               20 (array)
+              PUSH_NULL
+              LOAD_FAST                5 (errs)
+              CALL                     1
+              LOAD_CONST               7 (2)
+              BINARY_OP                8 (**)
+              CALL                     1
+              CALL                     1
+              CALL                     1
+              RETURN_VALUE
+
+Disassembly of <code object multiplicity_report at 0x00000204E61DBDB0, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\spectral_s3.py", line 119>:
+ 119            RESUME                   0
+
+ 121            LOAD_GLOBAL              1 (normalized_spectrum + NULL)
+                LOAD_FAST                0 (eigs)
+                CALL                     1
+                STORE_FAST               3 (e)
+
+ 122            LOAD_GLOBAL              3 (round_ladder + NULL)
+                LOAD_FAST                1 (n_levels)
+                CALL                     1
+                STORE_FAST               4 (ladder)
+
+ 123            LOAD_GLOBAL              5 (range + NULL)
+                LOAD_CONST               1 (1)
+                LOAD_FAST                1 (n_levels)
+                LOAD_CONST               1 (1)
+                BINARY_OP                0 (+)
+                CALL                     2
+                GET_ITER
+                LOAD_FAST_AND_CLEAR      5 (k)
+                SWAP                     2
+        L1:     BUILD_LIST               0
+                SWAP                     2
+                GET_ITER
+        L2:     FOR_ITER                10 (to L3)
+                STORE_FAST_LOAD_FAST    85 (k, k)
+                LOAD_CONST               1 (1)
+                BINARY_OP                0 (+)
+                LOAD_CONST               2 (2)
+                BINARY_OP                8 (**)
+                LIST_APPEND              2
+                JUMP_BACKWARD           12 (to L2)
+        L3:     END_FOR
+                POP_TOP
+        L4:     STORE_FAST               6 (expected)
+                STORE_FAST               5 (k)
+
+ 124            LOAD_FAST                4 (ladder)
+                GET_ITER
+                LOAD_FAST_AND_CLEAR      7 (lv)
+                SWAP                     2
+        L5:     BUILD_LIST               0
+                SWAP                     2
+                GET_ITER
+        L6:     FOR_ITER                62 (to L7)
+                STORE_FAST               7 (lv)
+                LOAD_GLOBAL              7 (int + NULL)
+                LOAD_GLOBAL              8 (np)
+                LOAD_ATTR               10 (sum)
+                PUSH_NULL
+                LOAD_GLOBAL              8 (np)
+                LOAD_ATTR               12 (abs)
+                PUSH_NULL
+                LOAD_FAST_LOAD_FAST     55 (e, lv)
+                BINARY_OP               10 (-)
+                CALL                     1
+                LOAD_FAST                7 (lv)
+                BINARY_OP               11 (/)
+                LOAD_FAST                2 (tol)
+                COMPARE_OP               2 (<)
+                CALL                     1
+                CALL                     1
+                LIST_APPEND              2
+                JUMP_BACKWARD           64 (to L6)
+        L7:     END_FOR
+                POP_TOP
+        L8:     STORE_FAST               8 (counts)
+                STORE_FAST               7 (lv)
+
+ 125            LOAD_GLOBAL             15 (list + NULL)
+                LOAD_GLOBAL             17 (zip + NULL)
+                LOAD_FAST                4 (ladder)
+                GET_ITER
+                LOAD_FAST_AND_CLEAR      9 (l)
+                SWAP                     2
+        L9:     BUILD_LIST               0
+                SWAP                     2
+                GET_ITER
+       L10:     FOR_ITER                14 (to L11)
+                STORE_FAST               9 (l)
+                LOAD_GLOBAL              7 (int + NULL)
+                LOAD_FAST                9 (l)
+                CALL                     1
+                LIST_APPEND              2
+                JUMP_BACKWARD           16 (to L10)
+       L11:     END_FOR
+                POP_TOP
+       L12:     SWAP                     2
+                STORE_FAST               9 (l)
+                LOAD_FAST_LOAD_FAST    134 (counts, expected)
+                CALL                     3
+                CALL                     1
+                RETURN_VALUE
+
+  --   L13:     SWAP                     2
+                POP_TOP
+
+ 123            SWAP                     2
+                STORE_FAST               5 (k)
+                RERAISE                  0
+
+  --   L14:     SWAP                     2
+                POP_TOP
+
+ 124            SWAP                     2
+                STORE_FAST               7 (lv)
+                RERAISE                  0
+
+  --   L15:     SWAP                     2
+                POP_TOP
+
+ 125            SWAP                     2
+                STORE_FAST               9 (l)
+                RERAISE                  0
+ExceptionTable:
+  L1 to L4 -> L13 [2]
+  L5 to L8 -> L14 [2]
+  L9 to L12 -> L15 [6]
+
+Disassembly of <code object <genexpr> at 0x00000204E8D64360, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\spectral_s3.py", line 146>:
+ 146           RETURN_GENERATOR
+               POP_TOP
+       L1:     RESUME                   0
+               LOAD_FAST                0 (.0)
+               GET_ITER
+       L2:     FOR_ITER                17 (to L3)
+               UNPACK_SEQUENCE          3
+               STORE_FAST_STORE_FAST   18 (l, g)
+               STORE_FAST_LOAD_FAST    49 (e, l)
+               FORMAT_SIMPLE
+               LOAD_CONST               0 (':')
+               LOAD_FAST                2 (g)
+               FORMAT_SIMPLE
+               LOAD_CONST               1 ('/')
+               LOAD_FAST                3 (e)
+               FORMAT_SIMPLE
+               BUILD_STRING             5
+               YIELD_VALUE              0
+               RESUME                   5
+               POP_TOP
+               JUMP_BACKWARD           19 (to L2)
+       L3:     END_FOR
+               POP_TOP
+               RETURN_CONST             2 (None)
+
+  --   L4:     CALL_INTRINSIC_1         3 (INTRINSIC_STOPITERATION_ERROR)
+               RERAISE                  1
+ExceptionTable:
+  L1 to L4 -> L4 [0] lasti
