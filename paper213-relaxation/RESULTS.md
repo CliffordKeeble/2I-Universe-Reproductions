@@ -364,3 +364,44 @@ extrapolation is the evidence, fit residuals reported.
 ## STAGE 1 FSS — RESULTS
 
 *(filled after this pre-registration is committed.)*
+
+## STAGE 1 FSS — RESULTS (3 of 4 rungs; N=1000 owed) `[OBSERVED, verdict leaning ARTEFACT]`
+
+*Run of record: `python fss_stage1.py`, seed=20260618, O(N) local-FD gradient
+(verified vs numerical to 3e-6). Each rung's relaxation converged to a reported local
+min; Control #3 holds at every rung.*
+
+> **The generic-arm glass is a COARSE-MESH ARTEFACT, not a fundamental trap (strong, on
+> 3 converged rungs; N=1000 confirmation owed).** d_frust collapses toward 0 as the mesh
+> resolves round S³ — so the frustrated metric *does* reach round at fine resolution, and
+> the headline *"round S³ is not a generic attractor"* does NOT survive. Caught before
+> print — exactly what the ladder was for.
+
+| N | d_frust | d_round (ref, →0?) | Control #3 |
+|---|---|---|---|
+| 100 | 0.250 | 0.275 | round ✓ |
+| 200 | 0.164 | 0.272 | round ✓ |
+| 500 | **0.037** | 0.251 | round ✓ |
+| 1000 | *owed* | — | — |
+
+- **Trend:** `d_frust ∝ N^(−1.20)` (log-log), dropping ×1.5 then ×4.4 — a steep power-law
+  decline toward 0; power-law extrapolation gives `d_frust(1000) ≈ 0.018`. At N=500 the
+  relaxed frustrated metric is essentially *at* the same-mesh round (d_frust=0.037).
+- **Pre-registered fit `d_frust=d_∞+c N^(−p)`:** with 3 points (3 params) the fit is
+  exactly determined / degenerate, pushing `d_∞` to ≤0 — consistent with **ARTEFACT
+  (d_∞≈0)** but not yet a committed value. The 4th rung (N=1000) is needed for the
+  non-degenerate fit and the formally-committed verdict.
+- **Reference sanity:** `d_round(N)` falls slowly (0.275→0.251) — the same-mesh round
+  reference improves with N, as required (not suspect).
+- **Variance cross-check:** the CoV gap is *not* informative here (223 at N=500 — K̄
+  crosses 0); the spectral distance is the verdict, exactly per Mr A #2.
+
+**N=1000 is owed and BLOCKED by infrastructure, not physics:** the N=1000 relaxation
+(~8 min) is auto-backgrounded by the harness, and every background job has been torn down
+at the session boundary before completing (5 attempts). To land it: a stable ~10-min
+window, or an O(1)-per-partial vectorised/analytic gradient (≈30 s total) — flagged for
+CinC. The 3-rung trend already makes the verdict clear; N=1000 firms the fit.
+
+**Verdict (pending N=1000):** **ARTEFACT** — round S³ *is* reachable on a generic
+substrate at fine N; the N=100 glass was resolution. The paper carries the honest negative
+on generality and stands on the methodology + the exact-symmetry chirality (Stage 2). `[OBSERVED]`
