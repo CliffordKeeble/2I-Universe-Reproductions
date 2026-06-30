@@ -1,0 +1,361 @@
+RECOVERED STRUCTURE from paper213-relaxation/__pycache__ (Python 3.13)
+
+======================================================================
+MODULE: curl_instrument
+======================================================================
+MODULE DOCSTRING:
+curl_instrument.py  —  the signed discrete curl (Beltrami) operator for Stage 2.
+
+Edge-element (Whitney 1-form / Nedelec) discretisation of curl = *d on 1-forms. The
+Whitney form for edge (a,b) is  W_ab = lam_a grad lam_b - lam_b grad lam_a,  with
+curl(W_ab) = 2 grad lam_a x grad lam_b  (constant per tet). We assemble two global
+matrices over edges:
+
+  M1[e,e'] = integral W_e . W_e'            (edge mass; SPD)
+  R [e,e'] = integral curl(W_e) . W_e'      (curl bilinear; symmetric on a closed
+                                             manifold, INDEFINITE -> SIGNED spectrum)
+
+and solve the generalized eigenproblem  R a = lambda M1 a. The signed eigenvalues are the
+Beltrami/curl eigenvalues; on round S^3 the lowest nonzero are +-2 (mult 3, the
+left/right-invariant Hopf fields), then +-3, +-4, ...  The SIGN is the whole point of
+Stage 2 (chirality), so R must be the genuine indefinite curl form, not curl-curl.
+
+ORIENTATION CONVENTION (Mr A #5): each tet is embedded with a right-handed frame
+(tet_embed gives z3>0), fixing a global orientation; global edge orientation = (min->max)
+vertex id. "+2" is defined relative to this. An orientation FLIP (reflect the embedding)
+sends R -> -R, i.e. it RELABELS +2 <-> -2 without changing physics. Verified in __main__.
+
+Per-tet integrals on the flat (chord-length) tet:
+  int lam_i dV = V/4 ;  int lam_i lam_j dV = V(1+delta_ij)/20.
+
+Standalone:  python curl_instrument.py     # validate +-2/+-3 on the 600-cell
+
+IMPORTS: numpy, scipy.linalg, geometry, sixhundred_cell, numpy.linalg
+
+MODULE-LEVEL NUMERIC CONSTANTS: 0, 1e-08, 1.0, 1, 3, 0.5, 2, 3.5, 5.5, 4
+
+DEFINITIONS (name(sig) + first docstring line, nested):
+    _tet_grads(P)
+        """grad lam_i (4x3) and volume V for an embedded tet (4x3 coords)."""
+    build_curl(cx, ell, flip)
+        """Assemble (K, R, M1) over edges with Whitney/Nedelec edge elements."""
+    beltrami_spectrum(cx, ell, flip, K, R, M1, mu_tol, basis)
+        """Signed Beltrami (curl) eigenvalues via curl-curl + helicity sign-split."""
+    cluster_signed(vals, reltol)
+        """Group signed eigenvalues into +-level clusters; return [(mean, count), ...]."""
+    d0_incidence(cx)
+    cluster_mu(mu, reltol, mu_min)
+        """Cluster nonzero mu into (value, multiplicity)."""
+
+======================================================================
+MODULE: fast_geometry
+======================================================================
+MODULE DOCSTRING:
+fast_geometry.py  —  vectorised Regge curvature for Paper 213 Approach B.
+
+Batches the per-tet embedding / dihedral / volume across ALL tets with numpy, so an
+energy evaluation is a handful of array ops instead of a Python loop over tets. This is
+what makes the Stage-1 L-BFGS variance minimisation practical at N >= 150.
+
+Verified against the scalar geometry.py (edge_deficits / total_volume) — same numbers.
+
+IMPORTS: numpy, geometry, time, ricci_flow
+
+MODULE-LEVEL NUMERIC CONSTANTS: 0, 150, 20260618, 200, 1000
+
+DEFINITIONS (name(sig) + first docstring line, nested):
+    precompute(cx)
+        """Per-tet array of its 6 global edge indices (TET_EDGES order). Shape (T,6)."""
+    _embed_batch(L6)
+        """Batched tet embedding from edge lengths L6 (T,6). Returns P (T,4,3) and valid mask."""
+    fast_curvature(ell, pre)
+        """Vectorised (K, deficits, Vd, n_invalid). K_e = delta_e / (Vd_e/ell_e)."""
+    fast_energy(ell, pre)
+
+======================================================================
+MODULE: geometry
+======================================================================
+MODULE DOCSTRING:
+geometry.py  —  substrate + Regge machinery for Paper 213 Approach B (relaxation).
+
+We GRANT the closed-3-sphere topology (the "first closure" axiom) and test whether
+the GEOMETRY relaxes to round S3. This module builds the substrate and the discrete
+geometry it carries:
+
+  generic_s3(N, seed) : a GENERIC combinatorial 3-sphere with N vertices, built as
+                        the boundary of the 4D convex hull of N points sampled on S^3
+                        (then coordinates are DISCARDED — only the abstract simplicial
+                        complex + free edge lengths survive). Generic => no 2I symmetry
+                        => the anti-circularity test on the main arm is meaningful.
+
+  Regge calculus (3D): hinges are EDGES; the deficit around edge e is
+                        delta_e = 2*pi - sum_{tets t ⊃ e} theta(t,e), theta = dihedral
+                        angle. Regge action S = sum_e ell_e * delta_e, and Schlafli's
+                        identity gives dS/d ell_e = delta_e (the gradient that drives
+                        normalized discrete Ricci flow in Stage 1).
+
+Dihedral angles are intrinsic (functions of the 6 edge lengths of a tet), so each tet
+is embedded independently in R^3 from its edge lengths; an invalid (non-realizable)
+tet -> NaN, which flags a non-embeddable metric.
+
+Standalone:  python geometry.py        # build + verify a generic S^3
+
+IMPORTS: numpy, scipy.spatial, itertools
+
+MODULE-LEVEL NUMERIC CONSTANTS: 0, 20260618, 200, 6, 0.3333333333333333
+
+DEFINITIONS (name(sig) + first docstring line, nested):
+    Complex()
+        """Complex"""
+        __init__(self, n_vertices, tets)
+        euler(self)
+    _hull_complex(pts, N)
+    generic_s3(N, seed)
+        """Generic combinatorial 3-sphere = boundary of the 4D convex hull of N pts on S^3."""
+    defective_s3(N, seed, concentration)
+        """DEFECTIVE-mesh null (brief v1.1 control #2): points heavily clustered toward one"""
+    verify_sphere(cx, check_links, max_link_checks)
+        """Return a dict of checks; a closed 3-sphere has chi=0, no boundary, S^2 links."""
+        <genexpr>(.0)
+    symmetry_probe(cx)
+        """Cheap 2I-freeness probe: the 600-cell (2I-symmetric) is vertex-transitive with a"""
+    tet_embed(L)
+        """Embed a tetrahedron in R^3 from its 6 edge lengths L = [l01,l02,l03,l12,l13,l23]."""
+    tet_volume(L)
+        """Signed-free volume of a tet from its embedding (0 if non-realizable)."""
+    _dihedral(P, a, b, c, d)
+        """Dihedral angle along edge (a,b) between faces (a,b,c) and (a,b,d)."""
+    tet_dihedrals(L)
+        """6 dihedral angles in TET_EDGES order; NaN if non-realizable."""
+    edge_deficits(cx, ell)
+        """delta_e = 2*pi - sum of dihedral angles of incident tets at e."""
+    total_volume(cx, ell)
+    regge_action(cx, ell)
+
+======================================================================
+MODULE: relax_fast
+======================================================================
+MODULE DOCSTRING:
+relax_fast.py  —  O(N) local-finite-difference gradient for the Stage-1 FSS ladder.
+
+The Stage-1 energy is  E = A/Vtot - (S/Vtot)^2  with
+  A = sum_e (delta_e * ell_e)^2 / Vd_e ,  S = sum_e delta_e ell_e ,  Vtot = sum_e Vd_e
+(identical to relax_geometry's variance energy; algebra in RESULTS). Perturbing edge f
+changes ONLY the tets containing f, so dE/d ell_f is computed by recomputing those ~5
+tets — O(1) per partial, O(N) for the whole gradient (vs O(N^2) for a global numerical
+gradient). This does NOT change the scheme; it only makes N=10^3 tractable. Verified
+against the global numerical gradient before use.
+
+IMPORTS: numpy, scipy.optimize, geometry, time
+
+MODULE-LEVEL NUMERIC CONSTANTS: 0, 1e-06, 100, 20260618, 1, 0.1, 1000, 2, 1.4, 0.0001
+
+DEFINITIONS (name(sig) + first docstring line, nested):
+    precompute_fss(cx)
+    base_geometry(ell, pre)
+        """deficits, Vd, per-tet base dihedrals+volumes, and (A,S,Vtot,E)."""
+    energy_grad(ell, pre, h)
+        """Return (E, grad) with grad by O(N) local central differences."""
+        perturbed_E(f, dh)
+    relax_fss(cx, ell0, pre, iters, verbose)
+        """Fixed-volume variance minimisation with the O(N) gradient; volume renormalised."""
+        renorm(x)
+        fun(x)
+    <lambda>(x)
+
+======================================================================
+MODULE: relax_geometry
+======================================================================
+MODULE DOCSTRING:
+relax_geometry.py  —  Stage 1 flow, Option 1 (brief v1.1): fixed-volume curvature-
+variance minimisation.
+
+    minimise   E(ell) = sum_e w_e (K_e - Kbar)^2 / sum_e w_e       (w_e = V_e^dual)
+    subject to total volume fixed.
+
+Round S^3 is the global minimum (constant curvature => E = 0 in the continuum), so the
+already-round metric is a fixed point BY CONSTRUCTION — this is the fix for the v1.0
+instrument failure (the explicit-Euler Ricci flow neckpinched even a round metric).
+
+Implementation: backtracking line search in the homogenising direction u = -(K - Kbar),
+accepting only steps that DECREASE E and keep every tet embeddable, with volume
+renormalised each step. No fixed Euler step to overshoot; at a round metric u ~ 0 and the
+search makes no move => stays round. Variance is the engine; the SPECTRUM (spectral_s3)
+is the verdict.
+
+Standalone:  python relax_geometry.py [N] [iters]
+
+IMPORTS: sys, numpy, scipy.optimize, geometry, fast_geometry
+
+MODULE-LEVEL NUMERIC CONSTANTS: 0
+
+DEFINITIONS (name(sig) + first docstring line, nested):
+    energy(cx, ell, pre)
+        """Volume-weighted mean-square curvature deviation E, plus (CoV, Kbar, ninv)."""
+    _fast_volume(ell, pre)
+    variance_min(cx, ell0, pre, iters, verbose)
+        """Minimise E over x = log(ell) with L-BFGS-B (numerical gradient, vectorised energy)."""
+        _renorm(x)
+        f(x)
+        cb(xk)
+    main()
+
+======================================================================
+MODULE: ricci_flow
+======================================================================
+MODULE DOCSTRING:
+ricci_flow.py  —  Stage 1 of Paper 213 Approach B.
+
+Normalized (volume-fixed) discrete Ricci flow on a frustrated metric: does the
+GEOMETRY relax to round S^3?
+
+SCHEME (documented, per brief §2 Stage 1 — Glickenstein/combinatorial discrete
+Ricci flow is the chosen route; literal gradient-descent on the Regge action is a
+saddle at the round metric — the conformal-mode problem — so we use the textbook
+curvature-homogenizing flow instead):
+
+  - discrete sectional curvature on edge e:   K_e = delta_e / a_e
+       a_e = dual area to edge e = V_e^dual / ell_e,  V_e^dual = (1/6) sum_{t⊃e} V_t
+       (barycentric dual; crude-and-honest). K_e is constant <=> round S^3.
+  - normalized Ricci flow (multiplicative, keeps ell>0):
+       d(log ell_e)/dtau = -(K_e - Kbar),   Kbar = volume-weighted mean curvature
+       => high-curvature edges shrink, low-curvature grow; mean curvature preserved.
+  - fix total volume each step (rescale ell). Fixed point: K_e = Kbar for all e = round.
+
+CONVERGENCE METRIC (pre-registered): curvature coefficient of variation
+       CoV = std(K_e) / |mean(K_e)|   ->  0  means round.
+We do NOT tune the metric or the flow sign to the prediction; the chosen sign is the
+standard homogenizing direction (shrink positive curvature), fixed before the run.
+
+A tet becoming non-embeddable mid-flow = discrete neckpinch/glass signal (reported,
+not patched).
+
+Standalone:  python ricci_flow.py [N] [iters]
+
+IMPORTS: sys, json, numpy, geometry
+
+MODULE-LEVEL NUMERIC CONSTANTS: 0
+
+DEFINITIONS (name(sig) + first docstring line, nested):
+    edge_dual_volume(cx, ell)
+        """V_e^dual = (1/6) sum_{t ⊃ e} V_t  (barycentric split of tet volume to its edges)."""
+    curvature(cx, ell)
+        """K_e = delta_e / a_e, with a_e = V_e^dual / ell_e. Returns (K, deficits, Vdual, n_invalid)."""
+    cov_curvature(K, Vd)
+        """Volume-weighted mean and coefficient of variation of K."""
+    run_flow(cx, iters, eta, tol, cap, seed_ell, verbose)
+        """`cap` = max |Delta log ell| per step (explicit-Euler stabilization for stiff"""
+    round_metric(cx)
+        """Control #3: the genuinely-round metric = chord lengths between the S^3 hull"""
+    _flow_and_report(cx, ell0, label, iters)
+    main()
+
+======================================================================
+MODULE: sixhundred_cell
+======================================================================
+MODULE DOCSTRING:
+sixhundred_cell.py  —  the 2I arm substrate for Paper 213 Stage 2.
+
+The 600-cell {3,3,5}: its 120 vertices ARE the unit icosians (the binary icosahedral
+group 2I on S^3), its 600 cells are regular tetrahedra. It is the 2I-symmetric
+triangulation of the round S^3 (2I IMPORTED via the symmetry). We build it as the convex
+hull of the 120 icosian points in R^4 and carry the ANALYTIC round metric (edge lengths =
+chord distances on the unit S^3) — we do NOT relax it (Stage 1 showed generic relaxation
+glasses; the chirality question is independent).
+
+Verify: V=120, E=720, F=1200, C=600, chi=0; 2I-symmetric (vertex/edge-transitive,
+5 tets/edge). Sanity: the round scalar spectrum reproduces k(k+2).
+
+Standalone:  python sixhundred_cell.py
+
+IMPORTS: itertools, numpy, geometry
+
+MODULE-LEVEL NUMERIC CONSTANTS: 0, 1.0, 5.0, 2.0, 120, 720, 1200, 600
+
+DEFINITIONS (name(sig) + first docstring line, nested):
+    _even_perms4()
+        <genexpr>(.0)
+    build_icosians()
+        """120 unit icosians (2I) as points on S^3 in R^4 (verified construction, Arm 2)."""
+    build_600cell()
+        """Return (Complex, points). 600-cell = convex hull of the 120 icosians."""
+    round_metric(cx)
+
+======================================================================
+MODULE: spectral_s3
+======================================================================
+MODULE DOCSTRING:
+spectral_s3.py  —  the VERDICT instrument for Paper 213 Approach B v1.1.
+
+Per Mr A #2 (via brief v1.1): variance drives the flow, but the SPECTRUM is the
+judgment. Convergence to round S^3 = the relaxed scalar-Laplacian spectrum matches the
+analytic round-S^3 spectrum
+
+        lambda_k = k(k+2),   multiplicity (k+1)^2,   k = 0,1,2,...
+        => 0 (x1), 3 (x4), 8 (x9), 15 (x16), 24 (x25), ...
+
+We build the linear-FEM Laplace-Beltrami operator on the tetrahedral mesh purely from
+edge lengths (each tet embedded via geometry.tet_embed; hat-function gradients give the
+element stiffness; lumped vertex volumes give the mass matrix), then solve the
+generalized eigenproblem L u = lambda M u.
+
+VALIDATION (run before trusting it): on the round-init metric (chord lengths on the
+actual S^3 hull points) the low spectrum must approximate 0,3,8,15 with multiplicity
+pattern 1,4,9,16. The round-init spectrum on a given mesh is ALSO the empirical "round"
+reference for that mesh (removes discretisation bias from the verdict).
+
+Standalone:  python spectral_s3.py [N]
+
+IMPORTS: sys, numpy, scipy.sparse, scipy.sparse.linalg, geometry
+
+MODULE-LEVEL NUMERIC CONSTANTS: 0, 40, 4, 1, 300, 20260618, 16, 2
+
+DEFINITIONS (name(sig) + first docstring line, nested):
+    fem_laplacian(cx, ell)
+        """Linear-FEM Laplace-Beltrami (stiffness L, lumped mass M) from edge lengths."""
+    low_spectrum(cx, ell, k)
+    normalized_spectrum(eigs)
+        """Drop the zero mode; rescale so the first nonzero eigenvalue = 3 (the k=1 level)."""
+    round_ladder(n_levels)
+    spectrum_match_error(eigs, n_levels)
+        """Compare the normalized low spectrum to the round ladder k(k+2). For each of the"""
+    multiplicity_report(eigs, n_levels, tol)
+        """Count eigenvalues within tol of each round level (expect 4,9,16,25)."""
+    <genexpr>(.0)
+        """:"""
+
+======================================================================
+MODULE: stage0_gate
+======================================================================
+MODULE DOCSTRING:
+stage0_gate.py  —  rigorous symmetry gate (brief v1.1 §1, Mr A #4).
+
+Before Stage 1 we must show the generic complex is NOT secretly symmetric — otherwise
+the equilateral ell=1 init smuggles in an isometry group (the metric's isometry group =
+the combinatorial automorphism group when all edges are equal). The degree-spread screen
+from the earlier run is NOT the gate; the automorphism computation is.
+
+Method: Weisfeiler-Leman (1-WL) colour refinement on the 1-skeleton, seeded with each
+vertex's simplicial signature (graph degree, #tets, sorted incident edge-tet counts).
+Refine to a stable colouring. Any automorphism must preserve WL colours, so:
+
+    all colour classes singletons  =>  Aut = {id} (RIGOROUS upper bound |Aut| = 1)
+                                    =>  no order-120 / 2I subgroup => 2I-free. PASS.
+
+If some class has size > 1, automorphism orbits are unions of those classes; we report
+the largest class as an upper bound on any orbit and FLAG (the gate is not cleanly passed
+and the equilateral init is not licensed).
+
+Standalone:  python stage0_gate.py [N]
+
+IMPORTS: sys, numpy, collections, geometry
+
+MODULE-LEVEL NUMERIC CONSTANTS: 0, 1, 300, 20260618
+
+DEFINITIONS (name(sig) + first docstring line, nested):
+    wl_refine(cx, max_iter)
+        """Return stable WL colour per vertex (as integers 0..C-1)."""
+        <genexpr>(.0)
+        <genexpr>(.0)
+    _relabel(signatures)
+    gate(cx, verbose)

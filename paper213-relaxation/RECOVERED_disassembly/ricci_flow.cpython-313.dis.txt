@@ -1,0 +1,1116 @@
+  0           RESUME                   0
+
+  1           LOAD_CONST               0 ('\nricci_flow.py  —  Stage 1 of Paper 213 Approach B.\n\nNormalized (volume-fixed) discrete Ricci flow on a frustrated metric: does the\nGEOMETRY relax to round S^3?\n\nSCHEME (documented, per brief §2 Stage 1 — Glickenstein/combinatorial discrete\nRicci flow is the chosen route; literal gradient-descent on the Regge action is a\nsaddle at the round metric — the conformal-mode problem — so we use the textbook\ncurvature-homogenizing flow instead):\n\n  - discrete sectional curvature on edge e:   K_e = delta_e / a_e\n       a_e = dual area to edge e = V_e^dual / ell_e,  V_e^dual = (1/6) sum_{t⊃e} V_t\n       (barycentric dual; crude-and-honest). K_e is constant <=> round S^3.\n  - normalized Ricci flow (multiplicative, keeps ell>0):\n       d(log ell_e)/dtau = -(K_e - Kbar),   Kbar = volume-weighted mean curvature\n       => high-curvature edges shrink, low-curvature grow; mean curvature preserved.\n  - fix total volume each step (rescale ell). Fixed point: K_e = Kbar for all e = round.\n\nCONVERGENCE METRIC (pre-registered): curvature coefficient of variation\n       CoV = std(K_e) / |mean(K_e)|   ->  0  means round.\nWe do NOT tune the metric or the flow sign to the prediction; the chosen sign is the\nstandard homogenizing direction (shrink positive curvature), fixed before the run.\n\nA tet becoming non-embeddable mid-flow = discrete neckpinch/glass signal (reported,\nnot patched).\n\nStandalone:  python ricci_flow.py [N] [iters]\n')
+              STORE_NAME               0 (__doc__)
+
+ 31           LOAD_CONST               1 (0)
+              LOAD_CONST               2 (None)
+              IMPORT_NAME              1 (sys)
+              STORE_NAME               1 (sys)
+
+ 32           LOAD_CONST               1 (0)
+              LOAD_CONST               2 (None)
+              IMPORT_NAME              2 (json)
+              STORE_NAME               2 (json)
+
+ 33           LOAD_CONST               1 (0)
+              LOAD_CONST               2 (None)
+              IMPORT_NAME              3 (numpy)
+              STORE_NAME               4 (np)
+
+ 34           LOAD_CONST               1 (0)
+              LOAD_CONST               3 (('generic_s3', 'verify_sphere', 'symmetry_probe', 'edge_deficits', 'total_volume', 'tet_volume', 'TET_EDGES'))
+              IMPORT_NAME              5 (geometry)
+              IMPORT_FROM              6 (generic_s3)
+              STORE_NAME               6 (generic_s3)
+              IMPORT_FROM              7 (verify_sphere)
+              STORE_NAME               7 (verify_sphere)
+              IMPORT_FROM              8 (symmetry_probe)
+              STORE_NAME               8 (symmetry_probe)
+              IMPORT_FROM              9 (edge_deficits)
+              STORE_NAME               9 (edge_deficits)
+              IMPORT_FROM             10 (total_volume)
+              STORE_NAME              10 (total_volume)
+              IMPORT_FROM             11 (tet_volume)
+              STORE_NAME              11 (tet_volume)
+              IMPORT_FROM             12 (TET_EDGES)
+              STORE_NAME              12 (TET_EDGES)
+              POP_TOP
+
+ 38           LOAD_CONST               4 (<code object edge_dual_volume at 0x00000204E6AFF190, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\ricci_flow.py", line 38>)
+              MAKE_FUNCTION
+              STORE_NAME              13 (edge_dual_volume)
+
+ 52           LOAD_CONST               5 (<code object curvature at 0x00000204E8A23E10, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\ricci_flow.py", line 52>)
+              MAKE_FUNCTION
+              STORE_NAME              14 (curvature)
+
+ 61           LOAD_CONST               6 (<code object cov_curvature at 0x00000204E6AF2FA0, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\ricci_flow.py", line 61>)
+              MAKE_FUNCTION
+              STORE_NAME              15 (cov_curvature)
+
+ 72           LOAD_CONST              12 ((300, 0.05, 1e-05, 0.05, None, True))
+              LOAD_CONST               7 (<code object run_flow at 0x00000204E6B5FA00, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\ricci_flow.py", line 72>)
+              MAKE_FUNCTION
+              SET_FUNCTION_ATTRIBUTE   1 (defaults)
+              STORE_NAME              16 (run_flow)
+
+112           LOAD_CONST               8 (<code object round_metric at 0x00000204E8A923A0, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\ricci_flow.py", line 112>)
+              MAKE_FUNCTION
+              STORE_NAME              17 (round_metric)
+
+121           LOAD_CONST               9 (<code object _flow_and_report at 0x00000204E6AF5680, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\ricci_flow.py", line 121>)
+              MAKE_FUNCTION
+              STORE_NAME              18 (_flow_and_report)
+
+137           LOAD_CONST              10 (<code object main at 0x00000204E6AF6AF0, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\ricci_flow.py", line 137>)
+              MAKE_FUNCTION
+              STORE_NAME              19 (main)
+
+165           LOAD_NAME               20 (__name__)
+              LOAD_CONST              11 ('__main__')
+              COMPARE_OP              88 (bool(==))
+              POP_JUMP_IF_FALSE        8 (to L1)
+
+166           LOAD_NAME               19 (main)
+              PUSH_NULL
+              CALL                     0
+              POP_TOP
+              RETURN_CONST             2 (None)
+
+165   L1:     RETURN_CONST             2 (None)
+
+Disassembly of <code object edge_dual_volume at 0x00000204E6AFF190, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\ricci_flow.py", line 38>:
+  38            RESUME                   0
+
+  40            LOAD_GLOBAL              0 (np)
+                LOAD_ATTR                2 (zeros)
+                PUSH_NULL
+                LOAD_GLOBAL              5 (len + NULL)
+                LOAD_FAST                0 (cx)
+                LOAD_ATTR                6 (edges)
+                CALL                     1
+                CALL                     1
+                STORE_FAST               2 (Vd)
+
+  41            LOAD_FAST                0 (cx)
+                LOAD_ATTR                8 (tets)
+                GET_ITER
+        L1:     FOR_ITER               196 (to L9)
+                STORE_FAST               3 (t)
+
+  42            LOAD_GLOBAL              0 (np)
+                LOAD_ATTR               10 (array)
+                PUSH_NULL
+
+  43            LOAD_GLOBAL             12 (TET_EDGES)
+                GET_ITER
+
+  42            LOAD_FAST_AND_CLEAR      4 (a)
+                LOAD_FAST_AND_CLEAR      5 (b)
+                SWAP                     3
+        L2:     BUILD_LIST               0
+                SWAP                     2
+
+  43            GET_ITER
+        L3:     FOR_ITER                46 (to L4)
+                UNPACK_SEQUENCE          2
+                STORE_FAST_STORE_FAST   69 (a, b)
+
+  42            LOAD_FAST_LOAD_FAST     16 (ell, cx)
+                LOAD_ATTR               14 (edge_index)
+                LOAD_GLOBAL             17 (tuple + NULL)
+                LOAD_GLOBAL             19 (sorted + NULL)
+                LOAD_FAST_LOAD_FAST     52 (t, a)
+                BINARY_SUBSCR
+                LOAD_FAST_LOAD_FAST     53 (t, b)
+                BINARY_SUBSCR
+                BUILD_TUPLE              2
+                CALL                     1
+                CALL                     1
+                BINARY_SUBSCR
+                BINARY_SUBSCR
+                LIST_APPEND              2
+                JUMP_BACKWARD           48 (to L3)
+
+  43    L4:     END_FOR
+                POP_TOP
+
+  42    L5:     SWAP                     3
+                STORE_FAST               5 (b)
+                STORE_FAST               4 (a)
+                CALL                     1
+                STORE_FAST               6 (L)
+
+  44            LOAD_GLOBAL             21 (tet_volume + NULL)
+                LOAD_FAST                6 (L)
+                CALL                     1
+                STORE_FAST               7 (v)
+
+  45            LOAD_GLOBAL              0 (np)
+                LOAD_ATTR               22 (isnan)
+                PUSH_NULL
+                LOAD_FAST                7 (v)
+                CALL                     1
+                TO_BOOL
+                POP_JUMP_IF_FALSE        2 (to L6)
+
+  46            JUMP_BACKWARD          129 (to L1)
+
+  47    L6:     LOAD_GLOBAL             12 (TET_EDGES)
+                GET_ITER
+        L7:     FOR_ITER                57 (to L8)
+                UNPACK_SEQUENCE          2
+                STORE_FAST_STORE_FAST   69 (a, b)
+
+  48            LOAD_FAST_LOAD_FAST     32 (Vd, cx)
+                LOAD_ATTR               14 (edge_index)
+                LOAD_GLOBAL             17 (tuple + NULL)
+                LOAD_GLOBAL             19 (sorted + NULL)
+                LOAD_FAST_LOAD_FAST     52 (t, a)
+                BINARY_SUBSCR
+                LOAD_FAST_LOAD_FAST     53 (t, b)
+                BINARY_SUBSCR
+                BUILD_TUPLE              2
+                CALL                     1
+                CALL                     1
+                BINARY_SUBSCR
+                COPY                     2
+                COPY                     2
+                BINARY_SUBSCR
+                LOAD_FAST                7 (v)
+                LOAD_CONST               1 (6.0)
+                BINARY_OP               11 (/)
+                BINARY_OP               13 (+=)
+                SWAP                     3
+                SWAP                     2
+                STORE_SUBSCR
+                JUMP_BACKWARD           59 (to L7)
+
+  47    L8:     END_FOR
+                POP_TOP
+                JUMP_BACKWARD          198 (to L1)
+
+  41    L9:     END_FOR
+                POP_TOP
+
+  49            LOAD_FAST                2 (Vd)
+                RETURN_VALUE
+
+  --   L10:     SWAP                     2
+                POP_TOP
+
+  42            SWAP                     3
+                STORE_FAST               5 (b)
+                STORE_FAST               4 (a)
+                RERAISE                  0
+ExceptionTable:
+  L2 to L5 -> L10 [6]
+
+Disassembly of <code object curvature at 0x00000204E8A23E10, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\ricci_flow.py", line 52>:
+ 52           RESUME                   0
+
+ 54           LOAD_GLOBAL              1 (edge_deficits + NULL)
+              LOAD_FAST_LOAD_FAST      1 (cx, ell)
+              CALL                     2
+              UNPACK_SEQUENCE          2
+              STORE_FAST_STORE_FAST   35 (deficits, ninv)
+
+ 55           LOAD_GLOBAL              3 (edge_dual_volume + NULL)
+              LOAD_FAST_LOAD_FAST      1 (cx, ell)
+              CALL                     2
+              STORE_FAST               4 (Vd)
+
+ 56           LOAD_GLOBAL              4 (np)
+              LOAD_ATTR                6 (where)
+              PUSH_NULL
+              LOAD_FAST                4 (Vd)
+              LOAD_CONST               1 (1e-12)
+              COMPARE_OP             132 (>)
+              LOAD_FAST_LOAD_FAST     65 (Vd, ell)
+              BINARY_OP               11 (/)
+              LOAD_GLOBAL              4 (np)
+              LOAD_ATTR                8 (nan)
+              CALL                     3
+              STORE_FAST               5 (a_e)
+
+ 57           LOAD_FAST_LOAD_FAST     37 (deficits, a_e)
+              BINARY_OP               11 (/)
+              STORE_FAST               6 (K)
+
+ 58           LOAD_FAST_LOAD_FAST     98 (K, deficits)
+              LOAD_FAST_LOAD_FAST     67 (Vd, ninv)
+              BUILD_TUPLE              4
+              RETURN_VALUE
+
+Disassembly of <code object cov_curvature at 0x00000204E6AF2FA0, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\ricci_flow.py", line 61>:
+ 61           RESUME                   0
+
+ 63           LOAD_GLOBAL              0 (np)
+              LOAD_ATTR                2 (isfinite)
+              PUSH_NULL
+              LOAD_FAST                0 (K)
+              CALL                     1
+              LOAD_FAST                1 (Vd)
+              LOAD_CONST               1 (1e-12)
+              COMPARE_OP             132 (>)
+              BINARY_OP                1 (&)
+              STORE_FAST               2 (good)
+
+ 64           LOAD_FAST_LOAD_FAST     18 (Vd, good)
+              BINARY_SUBSCR
+              STORE_FAST               3 (w)
+
+ 65           LOAD_FAST_LOAD_FAST      2 (K, good)
+              BINARY_SUBSCR
+              STORE_FAST               4 (Kg)
+
+ 66           LOAD_GLOBAL              0 (np)
+              LOAD_ATTR                4 (sum)
+              PUSH_NULL
+              LOAD_FAST_LOAD_FAST     52 (w, Kg)
+              BINARY_OP                5 (*)
+              CALL                     1
+              LOAD_GLOBAL              0 (np)
+              LOAD_ATTR                4 (sum)
+              PUSH_NULL
+              LOAD_FAST                3 (w)
+              CALL                     1
+              BINARY_OP               11 (/)
+              STORE_FAST               5 (Kbar)
+
+ 67           LOAD_GLOBAL              0 (np)
+              LOAD_ATTR                4 (sum)
+              PUSH_NULL
+              LOAD_FAST_LOAD_FAST     52 (w, Kg)
+              LOAD_FAST                5 (Kbar)
+              BINARY_OP               10 (-)
+              LOAD_CONST               2 (2)
+              BINARY_OP                8 (**)
+              BINARY_OP                5 (*)
+              CALL                     1
+              LOAD_GLOBAL              0 (np)
+              LOAD_ATTR                4 (sum)
+              PUSH_NULL
+              LOAD_FAST                3 (w)
+              CALL                     1
+              BINARY_OP               11 (/)
+              STORE_FAST               6 (var)
+
+ 68           LOAD_GLOBAL              7 (abs + NULL)
+              LOAD_FAST                5 (Kbar)
+              CALL                     1
+              LOAD_CONST               1 (1e-12)
+              COMPARE_OP             148 (bool(>))
+              POP_JUMP_IF_FALSE       34 (to L1)
+              LOAD_GLOBAL              0 (np)
+              LOAD_ATTR                8 (sqrt)
+              PUSH_NULL
+              LOAD_FAST                6 (var)
+              CALL                     1
+              LOAD_GLOBAL              7 (abs + NULL)
+              LOAD_FAST                5 (Kbar)
+              CALL                     1
+              BINARY_OP               11 (/)
+              JUMP_FORWARD            15 (to L2)
+      L1:     LOAD_GLOBAL              0 (np)
+              LOAD_ATTR               10 (inf)
+      L2:     STORE_FAST               7 (cov)
+
+ 69           LOAD_FAST_LOAD_FAST     87 (Kbar, cov)
+              BUILD_TUPLE              2
+              RETURN_VALUE
+
+Disassembly of <code object run_flow at 0x00000204E6B5FA00, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\ricci_flow.py", line 72>:
+  72            RESUME                   0
+
+  76            LOAD_FAST                5 (seed_ell)
+                POP_JUMP_IF_NOT_NONE    41 (to L1)
+                LOAD_GLOBAL              0 (np)
+                LOAD_ATTR                2 (ones)
+                PUSH_NULL
+                LOAD_GLOBAL              5 (len + NULL)
+                LOAD_FAST                0 (cx)
+                LOAD_ATTR                6 (edges)
+                CALL                     1
+                CALL                     1
+                JUMP_FORWARD            15 (to L2)
+        L1:     LOAD_FAST                5 (seed_ell)
+                LOAD_ATTR                9 (copy + NULL|self)
+                CALL                     0
+        L2:     STORE_FAST               7 (ell)
+
+  77            LOAD_GLOBAL             11 (total_volume + NULL)
+                LOAD_FAST_LOAD_FAST      7 (cx, ell)
+                CALL                     2
+                STORE_FAST               8 (V_target)
+
+  78            BUILD_LIST               0
+                STORE_FAST               9 (hist)
+
+  79            LOAD_CONST               1 (None)
+                STORE_FAST              10 (prev_cov)
+
+  80            LOAD_GLOBAL             13 (range + NULL)
+                LOAD_FAST                1 (iters)
+                CALL                     1
+                GET_ITER
+        L3:     EXTENDED_ARG             2
+                FOR_ITER               697 (to L19)
+                STORE_FAST              11 (it)
+
+  81            LOAD_GLOBAL             15 (curvature + NULL)
+                LOAD_FAST_LOAD_FAST      7 (cx, ell)
+                CALL                     2
+                UNPACK_SEQUENCE          4
+                STORE_FAST_STORE_FAST  205 (K, deficits)
+                STORE_FAST_STORE_FAST  239 (Vd, ninv)
+
+  82            LOAD_GLOBAL             17 (cov_curvature + NULL)
+                LOAD_FAST_LOAD_FAST    206 (K, Vd)
+                CALL                     2
+                UNPACK_SEQUENCE          2
+                STORE_FAST              16 (Kbar)
+                STORE_FAST              17 (cov)
+
+  83            LOAD_GLOBAL              0 (np)
+                LOAD_ATTR               18 (array)
+                PUSH_NULL
+
+  84            LOAD_FAST                0 (cx)
+                LOAD_ATTR               20 (tets)
+                GET_ITER
+
+  83            LOAD_FAST_AND_CLEAR     18 (t)
+                LOAD_FAST_AND_CLEAR     19 (a)
+                LOAD_FAST_AND_CLEAR     20 (b)
+                SWAP                     4
+        L4:     BUILD_LIST               0
+                SWAP                     2
+
+  84            GET_ITER
+        L5:     FOR_ITER               101 (to L10)
+                STORE_FAST              18 (t)
+
+  83            LOAD_GLOBAL             23 (tet_volume + NULL)
+                LOAD_GLOBAL              0 (np)
+                LOAD_ATTR               18 (array)
+                PUSH_NULL
+
+  84            LOAD_GLOBAL             24 (TET_EDGES)
+                GET_ITER
+
+  83            LOAD_FAST_AND_CLEAR     19 (a)
+                LOAD_FAST_AND_CLEAR     20 (b)
+                SWAP                     3
+        L6:     BUILD_LIST               0
+                SWAP                     2
+
+  84            GET_ITER
+        L7:     FOR_ITER                49 (to L8)
+                UNPACK_SEQUENCE          2
+                STORE_FAST              19 (a)
+                STORE_FAST              20 (b)
+
+  83            LOAD_FAST_LOAD_FAST    112 (ell, cx)
+                LOAD_ATTR               26 (edge_index)
+                LOAD_GLOBAL             29 (tuple + NULL)
+                LOAD_GLOBAL             31 (sorted + NULL)
+                LOAD_FAST               18 (t)
+                LOAD_FAST               19 (a)
+                BINARY_SUBSCR
+                LOAD_FAST               18 (t)
+                LOAD_FAST               20 (b)
+                BINARY_SUBSCR
+                BUILD_TUPLE              2
+                CALL                     1
+                CALL                     1
+                BINARY_SUBSCR
+                BINARY_SUBSCR
+                LIST_APPEND              2
+                JUMP_BACKWARD           51 (to L7)
+
+  84    L8:     END_FOR
+                POP_TOP
+
+  83    L9:     SWAP                     3
+                STORE_FAST              20 (b)
+                STORE_FAST              19 (a)
+                CALL                     1
+                CALL                     1
+                LIST_APPEND              2
+                JUMP_BACKWARD          103 (to L5)
+
+  84   L10:     END_FOR
+                POP_TOP
+
+  83   L11:     SWAP                     4
+                STORE_FAST              20 (b)
+                STORE_FAST              19 (a)
+                STORE_FAST              18 (t)
+                CALL                     1
+                STORE_FAST              21 (tet_vols)
+
+  85            LOAD_GLOBAL              0 (np)
+                LOAD_ATTR               32 (any)
+                PUSH_NULL
+                LOAD_GLOBAL              0 (np)
+                LOAD_ATTR               34 (isfinite)
+                PUSH_NULL
+                LOAD_FAST               21 (tet_vols)
+                CALL                     1
+                CALL                     1
+                TO_BOOL
+                POP_JUMP_IF_FALSE       31 (to L12)
+                LOAD_GLOBAL             37 (float + NULL)
+                LOAD_GLOBAL              0 (np)
+                LOAD_ATTR               38 (nanmin)
+                PUSH_NULL
+                LOAD_FAST               21 (tet_vols)
+                CALL                     1
+                CALL                     1
+                JUMP_FORWARD            15 (to L13)
+       L12:     LOAD_GLOBAL              0 (np)
+                LOAD_ATTR               40 (nan)
+       L13:     STORE_FAST              22 (min_tv)
+
+  86            LOAD_FAST                9 (hist)
+                LOAD_ATTR               43 (append + NULL|self)
+                LOAD_GLOBAL             45 (dict + NULL)
+                LOAD_FAST               11 (it)
+                LOAD_GLOBAL             37 (float + NULL)
+                LOAD_FAST               17 (cov)
+                CALL                     1
+                LOAD_GLOBAL             37 (float + NULL)
+                LOAD_FAST               16 (Kbar)
+                CALL                     1
+
+  87            LOAD_GLOBAL             37 (float + NULL)
+                LOAD_GLOBAL             11 (total_volume + NULL)
+                LOAD_FAST_LOAD_FAST      7 (cx, ell)
+                CALL                     2
+                CALL                     1
+
+  88            LOAD_GLOBAL             47 (int + NULL)
+                LOAD_FAST               15 (ninv)
+                CALL                     1
+                LOAD_FAST               22 (min_tv)
+
+  89            LOAD_GLOBAL             37 (float + NULL)
+                LOAD_FAST                7 (ell)
+                LOAD_ATTR               49 (min + NULL|self)
+                CALL                     0
+                CALL                     1
+                LOAD_GLOBAL             37 (float + NULL)
+                LOAD_FAST                7 (ell)
+                LOAD_ATTR               51 (max + NULL|self)
+                CALL                     0
+                CALL                     1
+
+  86            LOAD_CONST               2 (('it', 'cov', 'Kbar', 'volume', 'invalid_tets', 'min_tet_vol', 'ell_min', 'ell_max'))
+                CALL_KW                  8
+                CALL                     1
+                POP_TOP
+
+  90            LOAD_FAST                6 (verbose)
+                TO_BOOL
+                POP_JUMP_IF_FALSE      103 (to L15)
+                LOAD_FAST               11 (it)
+                LOAD_GLOBAL             51 (max + NULL)
+                LOAD_CONST               3 (1)
+                LOAD_FAST                1 (iters)
+                LOAD_CONST               4 (15)
+                BINARY_OP                2 (//)
+                CALL                     2
+                BINARY_OP                6 (%)
+                LOAD_CONST               5 (0)
+                COMPARE_OP              88 (bool(==))
+                POP_JUMP_IF_TRUE         8 (to L14)
+                LOAD_FAST_LOAD_FAST    177 (it, iters)
+                LOAD_CONST               3 (1)
+                BINARY_OP               10 (-)
+                COMPARE_OP              88 (bool(==))
+                POP_JUMP_IF_FALSE       73 (to L15)
+
+  91   L14:     LOAD_GLOBAL             53 (print + NULL)
+                LOAD_CONST               6 ('  it=')
+                LOAD_FAST               11 (it)
+                LOAD_CONST               7 ('4d')
+                FORMAT_WITH_SPEC
+                LOAD_CONST               8 ('  CoV(K)=')
+                LOAD_FAST               17 (cov)
+                LOAD_CONST               9 ('.4f')
+                FORMAT_WITH_SPEC
+                LOAD_CONST              10 ('  Kbar=')
+                LOAD_FAST               16 (Kbar)
+                LOAD_CONST              11 ('+.4f')
+                FORMAT_WITH_SPEC
+                LOAD_CONST              12 ('  V=')
+
+  92            LOAD_FAST                9 (hist)
+                LOAD_CONST              13 (-1)
+                BINARY_SUBSCR
+                LOAD_CONST              14 ('volume')
+                BINARY_SUBSCR
+                LOAD_CONST              15 ('.3f')
+                FORMAT_WITH_SPEC
+                LOAD_CONST              16 ('  invalid=')
+                LOAD_FAST               15 (ninv)
+                FORMAT_SIMPLE
+                LOAD_CONST              17 ('  ell in [')
+
+  93            LOAD_FAST                7 (ell)
+                LOAD_ATTR               49 (min + NULL|self)
+                CALL                     0
+                LOAD_CONST              15 ('.3f')
+                FORMAT_WITH_SPEC
+                LOAD_CONST              18 (',')
+                LOAD_FAST                7 (ell)
+                LOAD_ATTR               51 (max + NULL|self)
+                CALL                     0
+                LOAD_CONST              15 ('.3f')
+                FORMAT_WITH_SPEC
+                LOAD_CONST              19 (']')
+
+  91            BUILD_STRING            15
+                CALL                     1
+                POP_TOP
+
+  94   L15:     LOAD_FAST               15 (ninv)
+                LOAD_CONST               5 (0)
+                COMPARE_OP             148 (bool(>))
+                POP_JUMP_IF_FALSE       12 (to L16)
+
+  95            LOAD_CONST              20 ('non-embeddable tet -> neckpinch/glass signal')
+                LOAD_FAST                9 (hist)
+                LOAD_CONST              13 (-1)
+                BINARY_SUBSCR
+                LOAD_CONST              21 ('note')
+                STORE_SUBSCR
+
+  96            POP_TOP
+
+ 109            LOAD_FAST_LOAD_FAST    121 (ell, hist)
+                BUILD_TUPLE              2
+                RETURN_VALUE
+
+  97   L16:     LOAD_FAST               10 (prev_cov)
+                POP_JUMP_IF_NONE        36 (to L17)
+                LOAD_GLOBAL             55 (abs + NULL)
+                LOAD_FAST               10 (prev_cov)
+                LOAD_FAST               17 (cov)
+                BINARY_OP               10 (-)
+                CALL                     1
+                LOAD_FAST                3 (tol)
+                COMPARE_OP              18 (bool(<))
+                POP_JUMP_IF_FALSE       18 (to L17)
+                LOAD_FAST               17 (cov)
+                LOAD_CONST              22 (0.5)
+                COMPARE_OP              18 (bool(<))
+                POP_JUMP_IF_FALSE       12 (to L17)
+
+  98            LOAD_CONST              23 ('converged (CoV change < tol)')
+                LOAD_FAST                9 (hist)
+                LOAD_CONST              13 (-1)
+                BINARY_SUBSCR
+                LOAD_CONST              21 ('note')
+                STORE_SUBSCR
+
+  99            POP_TOP
+
+ 109            LOAD_FAST_LOAD_FAST    121 (ell, hist)
+                BUILD_TUPLE              2
+                RETURN_VALUE
+
+ 100   L17:     LOAD_FAST               17 (cov)
+                STORE_FAST              10 (prev_cov)
+
+ 102            LOAD_GLOBAL              0 (np)
+                LOAD_ATTR               56 (where)
+                PUSH_NULL
+                LOAD_GLOBAL              0 (np)
+                LOAD_ATTR               34 (isfinite)
+                PUSH_NULL
+                LOAD_FAST               12 (K)
+                CALL                     1
+                LOAD_FAST               12 (K)
+                LOAD_FAST               16 (Kbar)
+                BINARY_OP               10 (-)
+                UNARY_NEGATIVE
+                LOAD_CONST              24 (0.0)
+                CALL                     3
+                STORE_FAST              23 (upd)
+
+ 103            LOAD_GLOBAL              0 (np)
+                LOAD_ATTR               58 (clip)
+                PUSH_NULL
+                LOAD_FAST                2 (eta)
+                LOAD_FAST               23 (upd)
+                BINARY_OP                5 (*)
+                LOAD_FAST                4 (cap)
+                UNARY_NEGATIVE
+                LOAD_FAST                4 (cap)
+                CALL                     3
+                STORE_FAST              24 (step)
+
+ 104            LOAD_FAST                7 (ell)
+                LOAD_GLOBAL              0 (np)
+                LOAD_ATTR               60 (exp)
+                PUSH_NULL
+                LOAD_FAST               24 (step)
+                CALL                     1
+                BINARY_OP                5 (*)
+                STORE_FAST               7 (ell)
+
+ 106            LOAD_GLOBAL             11 (total_volume + NULL)
+                LOAD_FAST_LOAD_FAST      7 (cx, ell)
+                CALL                     2
+                STORE_FAST              25 (Vnow)
+
+ 107            LOAD_FAST               25 (Vnow)
+                LOAD_CONST              25 (1e-09)
+                COMPARE_OP             148 (bool(>))
+                POP_JUMP_IF_TRUE         3 (to L18)
+                EXTENDED_ARG             2
+                JUMP_BACKWARD          687 (to L3)
+
+ 108   L18:     LOAD_FAST_LOAD_FAST    120 (ell, V_target)
+                LOAD_FAST               25 (Vnow)
+                BINARY_OP               11 (/)
+                LOAD_CONST              26 (0.3333333333333333)
+                BINARY_OP                8 (**)
+                BINARY_OP               18 (*=)
+                STORE_FAST               7 (ell)
+                EXTENDED_ARG             2
+                JUMP_BACKWARD          700 (to L3)
+
+  80   L19:     END_FOR
+                POP_TOP
+
+ 109            LOAD_FAST_LOAD_FAST    121 (ell, hist)
+                BUILD_TUPLE              2
+                RETURN_VALUE
+
+  --   L20:     SWAP                     2
+                POP_TOP
+
+  83            SWAP                     3
+                STORE_FAST              20 (b)
+                STORE_FAST              19 (a)
+                RERAISE                  0
+
+  --   L21:     SWAP                     2
+                POP_TOP
+
+  83            SWAP                     4
+                STORE_FAST              20 (b)
+                STORE_FAST              19 (a)
+                STORE_FAST              18 (t)
+                RERAISE                  0
+ExceptionTable:
+  L4 to L6 -> L21 [7]
+  L6 to L9 -> L20 [15]
+  L9 to L11 -> L21 [7]
+  L20 to L21 -> L21 [7]
+
+Disassembly of <code object round_metric at 0x00000204E8A923A0, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\ricci_flow.py", line 112>:
+ 112           RESUME                   0
+
+ 116           LOAD_FAST                0 (cx)
+               LOAD_ATTR                0 (hull_points)
+               STORE_FAST               1 (P)
+
+ 117           LOAD_GLOBAL              2 (np)
+               LOAD_ATTR                4 (array)
+               PUSH_NULL
+               LOAD_FAST                0 (cx)
+               LOAD_ATTR                6 (edges)
+               GET_ITER
+               LOAD_FAST_AND_CLEAR      2 (i)
+               LOAD_FAST_AND_CLEAR      3 (j)
+               SWAP                     3
+       L1:     BUILD_LIST               0
+               SWAP                     2
+               GET_ITER
+       L2:     FOR_ITER                43 (to L3)
+               UNPACK_SEQUENCE          2
+               STORE_FAST_STORE_FAST   35 (i, j)
+               LOAD_GLOBAL              2 (np)
+               LOAD_ATTR                8 (linalg)
+               LOAD_ATTR               11 (norm + NULL|self)
+               LOAD_FAST_LOAD_FAST     18 (P, i)
+               BINARY_SUBSCR
+               LOAD_FAST_LOAD_FAST     19 (P, j)
+               BINARY_SUBSCR
+               BINARY_OP               10 (-)
+               CALL                     1
+               LIST_APPEND              2
+               JUMP_BACKWARD           45 (to L2)
+       L3:     END_FOR
+               POP_TOP
+       L4:     SWAP                     3
+               STORE_FAST               3 (j)
+               STORE_FAST               2 (i)
+               CALL                     1
+               STORE_FAST               4 (ell)
+
+ 118           LOAD_FAST                4 (ell)
+               RETURN_VALUE
+
+  --   L5:     SWAP                     2
+               POP_TOP
+
+ 117           SWAP                     3
+               STORE_FAST               3 (j)
+               STORE_FAST               2 (i)
+               RERAISE                  0
+ExceptionTable:
+  L1 to L4 -> L5 [5]
+
+Disassembly of <code object _flow_and_report at 0x00000204E6AF5680, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\ricci_flow.py", line 121>:
+121           RESUME                   0
+
+122           LOAD_GLOBAL              1 (curvature + NULL)
+              LOAD_FAST_LOAD_FAST      1 (cx, ell0)
+              CALL                     2
+              UNPACK_SEQUENCE          4
+              STORE_FAST_STORE_FAST   69 (K0, _)
+              STORE_FAST_STORE_FAST  101 (Vd0, _)
+
+123           LOAD_GLOBAL              3 (cov_curvature + NULL)
+              LOAD_FAST_LOAD_FAST     70 (K0, Vd0)
+              CALL                     2
+              UNPACK_SEQUENCE          2
+              STORE_FAST_STORE_FAST  120 (Kbar0, cov0)
+
+124           LOAD_GLOBAL              5 (print + NULL)
+              LOAD_CONST               1 ('\n[')
+              LOAD_FAST                2 (label)
+              FORMAT_SIMPLE
+              LOAD_CONST               2 ('] initial CoV(K)=')
+              LOAD_FAST                8 (cov0)
+              LOAD_CONST               3 ('.4f')
+              FORMAT_WITH_SPEC
+              LOAD_CONST               4 ('  Kbar=')
+              LOAD_FAST                7 (Kbar0)
+              LOAD_CONST               5 ('+.4f')
+              FORMAT_WITH_SPEC
+              BUILD_STRING             6
+              CALL                     1
+              POP_TOP
+
+125           LOAD_GLOBAL              7 (run_flow + NULL)
+              LOAD_FAST_LOAD_FAST      3 (cx, iters)
+              LOAD_FAST                1 (ell0)
+              LOAD_CONST               6 (('iters', 'seed_ell'))
+              CALL_KW                  3
+              UNPACK_SEQUENCE          2
+              STORE_FAST_STORE_FAST  154 (ell, hist)
+
+126           LOAD_FAST               10 (hist)
+              LOAD_CONST               7 (-1)
+              BINARY_SUBSCR
+              LOAD_CONST               8 ('cov')
+              BINARY_SUBSCR
+              STORE_FAST              11 (cov_final)
+
+127           LOAD_FAST               11 (cov_final)
+              LOAD_CONST               9 (0)
+              COMPARE_OP             148 (bool(>))
+              POP_JUMP_IF_FALSE        4 (to L1)
+              LOAD_FAST_LOAD_FAST    139 (cov0, cov_final)
+              BINARY_OP               11 (/)
+              JUMP_FORWARD            15 (to L2)
+      L1:     LOAD_GLOBAL              8 (np)
+              LOAD_ATTR               10 (inf)
+      L2:     STORE_FAST              12 (drop)
+
+128           LOAD_FAST               10 (hist)
+              LOAD_CONST               7 (-1)
+              BINARY_SUBSCR
+              LOAD_ATTR               13 (get + NULL|self)
+              LOAD_CONST              10 ('note')
+              LOAD_CONST              11 ('max-iters')
+              CALL                     2
+              STORE_FAST              13 (note)
+
+129           LOAD_GLOBAL              5 (print + NULL)
+              LOAD_CONST              12 ('[')
+              LOAD_FAST                2 (label)
+              FORMAT_SIMPLE
+              LOAD_CONST              13 ('] RESULT: CoV(K) ')
+              LOAD_FAST                8 (cov0)
+              LOAD_CONST               3 ('.4f')
+              FORMAT_WITH_SPEC
+              LOAD_CONST              14 (' -> ')
+              LOAD_FAST               11 (cov_final)
+              LOAD_CONST               3 ('.4f')
+              FORMAT_WITH_SPEC
+              LOAD_CONST              15 (' (x')
+
+130           LOAD_FAST               12 (drop)
+              LOAD_CONST              16 ('.1f')
+              FORMAT_WITH_SPEC
+              LOAD_CONST              17 (')  note=')
+              LOAD_FAST               13 (note)
+              FORMAT_SIMPLE
+
+129           BUILD_STRING            10
+              CALL                     1
+              POP_TOP
+
+131           LOAD_GLOBAL             15 (dict + NULL)
+              LOAD_FAST                2 (label)
+              LOAD_GLOBAL             17 (float + NULL)
+              LOAD_FAST                8 (cov0)
+              CALL                     1
+              LOAD_GLOBAL             17 (float + NULL)
+              LOAD_FAST               11 (cov_final)
+              CALL                     1
+
+132           LOAD_GLOBAL             17 (float + NULL)
+              LOAD_FAST                7 (Kbar0)
+              CALL                     1
+              LOAD_GLOBAL             17 (float + NULL)
+              LOAD_FAST               10 (hist)
+              LOAD_CONST               7 (-1)
+              BINARY_SUBSCR
+              LOAD_CONST              18 ('Kbar')
+              BINARY_SUBSCR
+              CALL                     1
+
+133           LOAD_GLOBAL             17 (float + NULL)
+              LOAD_FAST               12 (drop)
+              CALL                     1
+              LOAD_CONST              19 ('neckpinch')
+              LOAD_FAST               13 (note)
+              CONTAINS_OP              0
+
+134           LOAD_GLOBAL             19 (len + NULL)
+              LOAD_FAST               10 (hist)
+              CALL                     1
+              LOAD_FAST               10 (hist)
+
+131           LOAD_CONST              20 (('label', 'cov_initial', 'cov_final', 'Kbar_initial', 'Kbar_final', 'reduction_factor', 'neckpinch', 'iters_run', 'history'))
+              CALL_KW                  9
+              RETURN_VALUE
+
+Disassembly of <code object main at 0x00000204E6AF6AF0, file "C:\Dev\2I-Universe-Reproductions\paper213-relaxation\ricci_flow.py", line 137>:
+ 137            RESUME                   0
+
+ 138            LOAD_GLOBAL              1 (len + NULL)
+                LOAD_GLOBAL              2 (sys)
+                LOAD_ATTR                4 (argv)
+                CALL                     1
+                LOAD_CONST               1 (1)
+                COMPARE_OP             148 (bool(>))
+                POP_JUMP_IF_FALSE       28 (to L1)
+                LOAD_GLOBAL              7 (int + NULL)
+                LOAD_GLOBAL              2 (sys)
+                LOAD_ATTR                4 (argv)
+                LOAD_CONST               1 (1)
+                BINARY_SUBSCR
+                CALL                     1
+                JUMP_FORWARD             1 (to L2)
+        L1:     LOAD_CONST               2 (300)
+        L2:     STORE_FAST               0 (N)
+
+ 139            LOAD_GLOBAL              1 (len + NULL)
+                LOAD_GLOBAL              2 (sys)
+                LOAD_ATTR                4 (argv)
+                CALL                     1
+                LOAD_CONST               3 (2)
+                COMPARE_OP             148 (bool(>))
+                POP_JUMP_IF_FALSE       28 (to L3)
+                LOAD_GLOBAL              7 (int + NULL)
+                LOAD_GLOBAL              2 (sys)
+                LOAD_ATTR                4 (argv)
+                LOAD_CONST               3 (2)
+                BINARY_SUBSCR
+                CALL                     1
+                JUMP_FORWARD             1 (to L4)
+        L3:     LOAD_CONST               4 (1000)
+        L4:     STORE_FAST               1 (iters)
+
+ 140            LOAD_GLOBAL              9 (print + NULL)
+                LOAD_CONST               5 ('Stage 1 — normalized discrete Ricci flow on generic S^3 (N=')
+                LOAD_FAST                0 (N)
+                FORMAT_SIMPLE
+                LOAD_CONST               6 (')')
+                BUILD_STRING             3
+                CALL                     1
+                POP_TOP
+
+ 141            LOAD_GLOBAL              9 (print + NULL)
+                LOAD_CONST               7 ('  *** topology GRANTED (closed S^3 axiom); testing geometry relaxation ***')
+                CALL                     1
+                POP_TOP
+
+ 142            LOAD_GLOBAL             11 (generic_s3 + NULL)
+                LOAD_FAST                0 (N)
+                LOAD_CONST               8 (20260618)
+                LOAD_CONST               9 (('seed',))
+                CALL_KW                  2
+                STORE_FAST               2 (cx)
+
+ 143            LOAD_GLOBAL             13 (verify_sphere + NULL)
+                LOAD_FAST                2 (cx)
+                LOAD_CONST              10 (120)
+                LOAD_CONST              11 (('max_link_checks',))
+                CALL_KW                  2
+                STORE_FAST               3 (chk)
+
+ 144            LOAD_GLOBAL             15 (symmetry_probe + NULL)
+                LOAD_FAST                2 (cx)
+                CALL                     1
+                STORE_FAST               4 (sym)
+
+ 145            LOAD_GLOBAL              9 (print + NULL)
+                LOAD_CONST              12 ('  substrate: edges=')
+                LOAD_GLOBAL              1 (len + NULL)
+                LOAD_FAST                2 (cx)
+                LOAD_ATTR               16 (edges)
+                CALL                     1
+                FORMAT_SIMPLE
+                LOAD_CONST              13 (' tets=')
+                LOAD_GLOBAL              1 (len + NULL)
+                LOAD_FAST                2 (cx)
+                LOAD_ATTR               18 (tets)
+                CALL                     1
+                FORMAT_SIMPLE
+                LOAD_CONST              14 (' chi=')
+
+ 146            LOAD_FAST                3 (chk)
+                LOAD_CONST              15 ('euler_char')
+                BINARY_SUBSCR
+                FORMAT_SIMPLE
+                LOAD_CONST              16 (' closed=')
+                LOAD_FAST                3 (chk)
+                LOAD_CONST              17 ('closed_no_boundary')
+                BINARY_SUBSCR
+                FORMAT_SIMPLE
+                LOAD_CONST              18 (' links_ok=')
+
+ 147            LOAD_FAST                3 (chk)
+                LOAD_CONST              19 ('links_ok')
+                BINARY_SUBSCR
+                FORMAT_SIMPLE
+                LOAD_CONST              20 (' 2I_regular=')
+                LOAD_FAST                4 (sym)
+                LOAD_CONST              21 ('looks_2I_regular')
+                BINARY_SUBSCR
+                FORMAT_SIMPLE
+
+ 145            BUILD_STRING            12
+                CALL                     1
+                POP_TOP
+
+ 150            LOAD_GLOBAL             21 (_flow_and_report + NULL)
+                LOAD_FAST                2 (cx)
+                LOAD_GLOBAL             22 (np)
+                LOAD_ATTR               24 (ones)
+                PUSH_NULL
+                LOAD_GLOBAL              1 (len + NULL)
+                LOAD_FAST                2 (cx)
+                LOAD_ATTR               16 (edges)
+                CALL                     1
+                CALL                     1
+                LOAD_CONST              22 ('frustrated ell=1')
+                LOAD_FAST                1 (iters)
+                CALL                     4
+                STORE_FAST               5 (res_frust)
+
+ 152            LOAD_GLOBAL             21 (_flow_and_report + NULL)
+                LOAD_FAST                2 (cx)
+                LOAD_GLOBAL             27 (round_metric + NULL)
+                LOAD_FAST                2 (cx)
+                CALL                     1
+                LOAD_CONST              23 ('round-init (control #3)')
+                LOAD_FAST                1 (iters)
+                CALL                     4
+                STORE_FAST               6 (res_round)
+
+ 154            LOAD_GLOBAL             29 (dict + NULL)
+                LOAD_FAST                0 (N)
+                LOAD_GLOBAL              1 (len + NULL)
+                LOAD_FAST                2 (cx)
+                LOAD_ATTR               16 (edges)
+                CALL                     1
+                LOAD_GLOBAL              1 (len + NULL)
+                LOAD_FAST                2 (cx)
+                LOAD_ATTR               18 (tets)
+                CALL                     1
+
+ 155            LOAD_FAST_LOAD_FAST     52 (chk, sym)
+
+ 156            LOAD_FAST_LOAD_FAST     86 (res_frust, res_round)
+
+ 154            LOAD_CONST              24 (('N', 'edges', 'tets', 'substrate', 'symmetry', 'frustrated', 'round_control'))
+                CALL_KW                  7
+                STORE_FAST               7 (out)
+
+ 157            LOAD_GLOBAL             31 (open + NULL)
+                LOAD_CONST              25 ('results_stage1_N')
+                LOAD_FAST                0 (N)
+                FORMAT_SIMPLE
+                LOAD_CONST              26 ('.json')
+                BUILD_STRING             3
+                LOAD_CONST              27 ('w')
+                CALL                     2
+                BEFORE_WITH
+        L5:     STORE_FAST               8 (f)
+
+ 158            LOAD_GLOBAL             32 (json)
+                LOAD_ATTR               34 (dump)
+                PUSH_NULL
+                LOAD_FAST_LOAD_FAST    120 (out, f)
+                LOAD_CONST               3 (2)
+                LOAD_CONST              28 (('indent',))
+                CALL_KW                  3
+                POP_TOP
+
+ 157    L6:     LOAD_CONST               0 (None)
+                LOAD_CONST               0 (None)
+                LOAD_CONST               0 (None)
+                CALL                     2
+                POP_TOP
+
+ 159    L7:     LOAD_GLOBAL              9 (print + NULL)
+                LOAD_CONST              29 ('\n  wrote results_stage1_N')
+                LOAD_FAST                0 (N)
+                FORMAT_SIMPLE
+                LOAD_CONST              26 ('.json')
+                BUILD_STRING             3
+                CALL                     1
+                POP_TOP
+
+ 160            LOAD_GLOBAL              9 (print + NULL)
+                LOAD_CONST              30 ('  SANITY READ: round-init must stay low-CoV & NOT neckpinch for the flow to')
+                CALL                     1
+                POP_TOP
+
+ 161            LOAD_GLOBAL              9 (print + NULL)
+                LOAD_CONST              31 ('  be trusted; only then is the frustrated-arm neckpinch a real result.')
+                CALL                     1
+                POP_TOP
+
+ 162            LOAD_FAST                7 (out)
+                RETURN_VALUE
+
+ 157    L8:     PUSH_EXC_INFO
+                WITH_EXCEPT_START
+                TO_BOOL
+                POP_JUMP_IF_TRUE         1 (to L9)
+                RERAISE                  2
+        L9:     POP_TOP
+       L10:     POP_EXCEPT
+                POP_TOP
+                POP_TOP
+                JUMP_BACKWARD_NO_INTERRUPT 53 (to L7)
+
+  --   L11:     COPY                     3
+                POP_EXCEPT
+                RERAISE                  1
+ExceptionTable:
+  L5 to L6 -> L8 [1] lasti
+  L8 to L10 -> L11 [3] lasti
