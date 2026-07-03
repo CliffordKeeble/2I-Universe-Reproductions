@@ -14,14 +14,14 @@ grounding of that "if" is Stage 2's open crux (see findings.md).
        antisymmetric (Lambda^2) parts; test whether p-n-binds / n-n-doesn't
        falls out of Fermi exchange or must be fitted.
 
-Run:  python3 beat_exchange.py     (needs sibling paper92-spin-statistics)
+Run:  python3 beat_exchange.py     (needs sibling paper_092_spin_statistics)
 """
 import os
 import sys
 from fractions import Fraction as F
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.join(HERE, "..", "paper92-spin-statistics"))
+sys.path.insert(0, os.path.join(HERE, "..", "paper_092_spin_statistics"))
 from twoI_character_table import (   # noqa: E402
     Q5, build_2I, conjugacy_classes, cheb_U, qkey, IDENT, order_of,
 )

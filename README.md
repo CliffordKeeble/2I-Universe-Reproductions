@@ -29,25 +29,25 @@ the search space *before* the result — then run the script.
 2I-Universe-Reproductions/
 ├── README.md
 ├── LICENSE
-├── paper101-massratio-null/      # Paper 101 §5.3: the 2I mode l=42 (λ=1848)
+├── paper_101_massratio_null/     # Paper 101 §5.3: the 2I mode l=42 (λ=1848)
 │   ├── PRE-REGISTRATION.md        #   minus icosahedral 12 lands on m_p/m_e = 1836,
 │   ├── spectrum.py                #   uniquely, at the 0.01% window.
 │   ├── massratio_null.py
 │   ├── findings.md
 │   └── environment.txt
-├── paper92-spin-statistics/      # Paper 92 gate: does the 2I P-e-P standing
+├── paper_092_spin_statistics/    # Paper 92 gate: does the 2I P-e-P standing
 │   ├── PRE-REGISTRATION.md        #   wave give the right spin & statistics?
 │   ├── twoI_character_table.py    #   DERIVED: consistent iff bound core is
 │   ├── composite_parity.py        #   integer-spin; neutrino ejection forces it
 │   ├── findings.md                #   -> OUTCOME 1 (conditional). Cures neutron,
 │   ├── twoI_character_table.csv   #   deuteron, and nitrogen-14 together.
 │   └── environment.txt
-├── paper92-hodge-dual/           # Paper 92 follow-up: is the bridge node the
+├── paper_092_hodge_dual/         # Paper 92 follow-up: is the bridge node the
 │   ├── PRE-REGISTRATION.md        #   Hodge dual of the proton, p* = *(proton)?
 │   ├── hodge_dual.py              #   Corpus: *(proton) = electron. LANDING 3
 │   ├── findings.md                #   (clash bites): magnetic moment not cured
 │   └── environment.txt            #   (~1836x), form-degree != spin grading.
-└── paper92-odd-sector/           # Papers 92+174: the spinorial spectrum 174
+└── paper_092_odd_sector/         # Papers 92+174: the spinorial spectrum 174
     ├── PRE-REGISTRATION.md        #   skipped -- "where the actors live."
     ├── spinorial_spectrum.py      #   Spinorial Molien (E8 exponents), Galois
     ├── beat_exchange.py           #   2<->2'. LANDING B: proton=spinor-2 is
@@ -55,13 +55,13 @@ the search space *before* the result — then run the script.
     └── environment.txt            #   DUAL (2x2), not Galois; d!=nn from Fermi.
 ```
 
-Each directory is named to match the citation string used by the paper it supports, so
-references resolve directly.
+Each directory follows the programme's `paper_NNN_shortname` convention (matching the
+`2I-Universe-Papers` repo), so a paper and its reproduction share the same number prefix.
 
 ## Running
 
 ```
-cd paper101-massratio-null
+cd paper_101_massratio_null
 python spectrum.py        # reproduces the §4.3 2I spectrum (DERIVED)
 python massratio_null.py  # reproduces the §5.3 null (writes matches.csv)
 ```

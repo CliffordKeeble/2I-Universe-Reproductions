@@ -11,7 +11,7 @@ This script:
   (1) base-case assert  **=+1 on n=3 Riemannian for all k (W-002);
   (2) reads *(proton) = 3-form = electron -> moment scale (Gate 1(c), via D1);
   (3) tests the form-character claim (Gate 4, via D2): builds 2I (reused from
-      ../paper92-spin-statistics), the vector rep V3, the exterior powers
+      ../paper_092_spin_statistics), the vector rep V3, the exterior powers
       Lambda^k(V3) and the full form bundle Lambda*(V3); proves the form bundle
       carries ZERO spinorial content -- so "node is a form" => integer-spin is
       true for GENUINE forms, but the spin-1/2 proton/electron (the spinorial
@@ -20,14 +20,14 @@ This script:
   (5) states the landing.
 
 Exact arithmetic over Q(sqrt5); every identity an assert. Reuses the 2I machine.
-Run:  python3 hodge_dual.py        (needs the sibling paper92-spin-statistics dir)
+Run:  python3 hodge_dual.py        (needs the sibling paper_092_spin_statistics dir)
 """
 import os
 import sys
 from fractions import Fraction as F
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SIB = os.path.join(HERE, "..", "paper92-spin-statistics")
+SIB = os.path.join(HERE, "..", "paper_092_spin_statistics")
 sys.path.insert(0, SIB)
 from twoI_character_table import (   # noqa: E402  (reuse the locked backbone)
     Q5, build_2I, conjugacy_classes, cheb_U, qkey, IDENT, order_of,

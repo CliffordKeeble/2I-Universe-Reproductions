@@ -15,14 +15,14 @@ SPINORIAL irreps {2, 2', 4', 6} that live at ODD k -- "where the actors live."
        trivial row against 174; closed-form generating functions; the
        integer-even / spinorial-odd selection rule.
 
-Run:  python3 spinorial_spectrum.py     (needs sibling paper92-spin-statistics)
+Run:  python3 spinorial_spectrum.py     (needs sibling paper_092_spin_statistics)
 """
 import os
 import sys
 from fractions import Fraction as F
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.join(HERE, "..", "paper92-spin-statistics"))
+sys.path.insert(0, os.path.join(HERE, "..", "paper_092_spin_statistics"))
 from twoI_character_table import (   # noqa: E402  (reuse the locked backbone)
     Q5, build_2I, conjugacy_classes, cheb_U, qkey, IDENT, order_of,
 )
