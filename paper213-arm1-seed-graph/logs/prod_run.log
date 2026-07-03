@@ -1,0 +1,46 @@
+=== Paper 213 Arm 1 :: scale=prod ===
+[FSS] N=   1000 d_s=1.025+/-0.000  kk2(Ls)=0.20 kk2(Lc)=0.10  (0.5s)
+[FSS] N=   2000 d_s=1.015+/-0.000  kk2(Ls)=0.20 kk2(Lc)=0.10  (2.4s)
+[FSS] N=   4000 d_s=1.011+/-0.000  kk2(Ls)=0.20 kk2(Lc)=0.10  (27.9s)
+[FSS] N=   8000 d_s=1.006+/-0.000  kk2(Ls)=0.20 kk2(Lc)=0.10  (56.5s)
+[FSS] N=  16000 d_s=1.005+/-0.000  kk2(Ls)=0.20 kk2(Lc)=0.10  (114.5s)
+[FSS] N=  32000 d_s=1.005+/-0.000  kk2(Ls)=0.20 kk2(Lc)=0.10  (226.3s)
+[FSS] N=  64000 d_s=1.004+/-0.000  kk2(Ls)=0.20 kk2(Lc)=0.10  (460.1s)
+[FSS] N= 128000 d_s=1.004+/-0.000  kk2(Ls)=0.20 kk2(Lc)=0.10  (916.0s)
+[CTRL] nongolden_sqrt2    d_s=1.005  kk2(Ls)=0.20 kk2(Lc)=0.10 sg_hit(Lc)=0.20
+[CTRL] nongolden_sqrt3    d_s=1.005  kk2(Ls)=0.20 kk2(Lc)=0.10 sg_hit(Lc)=0.20
+[CTRL] nongolden_a7       d_s=1.005  kk2(Ls)=0.20 kk2(Lc)=0.10 sg_hit(Lc)=0.20
+[CTRL] scrambled          d_s=1.005  kk2(Ls)=0.20 kk2(Lc)=0.25 sg_hit(Lc)=0.75
+[RULE] rho_GR1/flat-triangles/d3 d_s=1.00 kk2_Lc=0.25
+[RULE] rho_GR1/flat-triangles/d4 d_s=1.00 kk2_Lc=0.10
+[RULE] rho_GR1/flat-triangles/d5 d_s=1.81 kk2_Lc=0.20
+[RULE] rho_GR1/flat-triangles/d6 d_s=1.84 kk2_Lc=0.17
+[RULE] rho_GR1/flat-triangles/d8 d_s=1.90 kk2_Lc=0.20
+[RULE] rho_GR1/flat-shortest/d3 d_s=1.00 kk2_Lc=0.38
+[RULE] rho_GR1/flat-shortest/d4 d_s=1.78 kk2_Lc=0.30
+[RULE] rho_GR1/flat-shortest/d5 d_s=1.84 kk2_Lc=0.12
+[RULE] rho_GR1/flat-shortest/d6 d_s=1.92 kk2_Lc=0.30
+[RULE] rho_GR1/flat-shortest/d8 d_s=2.18 kk2_Lc=0.10
+[RULE] rho_GR1/none/d3 d_s=1.00 kk2_Lc=0.43
+[RULE] rho_GR1/none/d4 d_s=1.00 kk2_Lc=0.14
+[RULE] rho_GR1/none/d5 d_s=1.81 kk2_Lc=0.12
+[RULE] rho_GR1/none/d6 d_s=1.84 kk2_Lc=0.50
+[RULE] rho_GR1/none/d8 d_s=1.90 kk2_Lc=0.12
+[RULE] rho_allR/flat-triangles/d3 d_s=1.00 kk2_Lc=0.29
+[RULE] rho_allR/flat-triangles/d4 d_s=1.00 kk2_Lc=0.11
+[RULE] rho_allR/flat-triangles/d5 d_s=1.81 kk2_Lc=0.20
+[RULE] rho_allR/flat-triangles/d6 d_s=1.84 kk2_Lc=0.20
+[RULE] rho_allR/flat-triangles/d8 d_s=1.90 kk2_Lc=0.60
+[RULE] rho_allR/flat-shortest/d3 d_s=1.01 kk2_Lc=0.29
+[RULE] rho_allR/flat-shortest/d4 d_s=1.02 kk2_Lc=0.14
+[RULE] rho_allR/flat-shortest/d5 d_s=1.62 kk2_Lc=0.14
+[RULE] rho_allR/flat-shortest/d6 d_s=2.00 kk2_Lc=0.22
+[RULE] rho_allR/flat-shortest/d8 d_s=nan kk2_Lc=0.11
+[RULE] rho_allR/none/d3 d_s=1.00 kk2_Lc=0.29
+[RULE] rho_allR/none/d4 d_s=1.00 kk2_Lc=0.50
+[RULE] rho_allR/none/d5 d_s=1.81 kk2_Lc=0.40
+[RULE] rho_allR/none/d6 d_s=1.84 kk2_Lc=0.30
+[RULE] rho_allR/none/d8 d_s=1.90 kk2_Lc=0.43
+[RULE] 30 (rho,C,d_max) trials -> C:\Dev\2I-Universe-Reproductions\paper213-arm1-seed-graph\logs\rule_trials.jsonl
+[FIG] wrote d_s_vs_N.png, signature_scatter.png
+=== done in 41413.0s -> results.json ===
