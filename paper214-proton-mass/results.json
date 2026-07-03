@@ -1,0 +1,94 @@
+{
+  "paper": 214,
+  "phase": 1,
+  "title": "B=1 Skyrme soliton: validation + section-0 quotient-independence",
+  "status": "Phase 1 complete (validation); Phase 2 (quantisation) not started",
+  "skyrmion_B1": {
+    "I2_quadratic": 5.802533675700026,
+    "I4_quartic": 5.804086330090722,
+    "I_total": 11.606620005790749,
+    "M_over_Fpi_e": 36.46327214320054,
+    "baryon_number": 0.9999999337274553,
+    "virial_rel_gap": 0.00013377317340629592,
+    "bogomolny_bound_I": 9.42477796076938,
+    "bogomolny_ratio": 1.2315006310072538,
+    "bogomolny_completion_check": 1.5304686795242668e-16,
+    "el_max_residual": 5.909579471669035e-05,
+    "Fprime_at_origin": -10.939917610900949,
+    "classical_mass_MeV_ANW": 863.0756158665815,
+    "inputs": {
+      "F_pi_MeV": 129.0,
+      "e": 5.45,
+      "note": "F_pi and e are MEASURED/ASSUMED inputs, not derived"
+    }
+  },
+  "icosahedral_group_2I": {
+    "order": 120,
+    "closed_under_mul": true,
+    "has_identity": true,
+    "inverse_closed": true
+  },
+  "section0_quotient_check": {
+    "convergence_ladder": [
+      {
+        "N": 48,
+        "L": 6.0,
+        "h": 0.25531914893617014,
+        "E_tilde": 33.01632965446636,
+        "B": -0.9071272482349442
+      },
+      {
+        "N": 72,
+        "L": 6.0,
+        "h": 0.16901408450704203,
+        "E_tilde": 34.85090236136002,
+        "B": -0.9580370367793348
+      },
+      {
+        "N": 96,
+        "L": 6.0,
+        "h": 0.1263157894736846,
+        "E_tilde": 35.51612270488728,
+        "B": -0.9763045629727971
+      },
+      {
+        "N": 120,
+        "L": 6.0,
+        "h": 0.10084033613445342,
+        "E_tilde": 35.82735821756841,
+        "B": -0.9848186428101336
+      }
+    ],
+    "E_tilde_extrapolated": 36.4235970530023,
+    "E_tilde_convergence_order": 1.8775098048369405,
+    "target_pi_times_I": 36.463272125008366,
+    "E_tilde_rel_error": 0.0010880831503560613,
+    "absB_extrapolated": 1.0008320247836096,
+    "baryon_sign_note": "B converges to -1; sign is the orientation convention of eps^{ijk} vs the SU(2) embedding. |B|->1 is the physics.",
+    "invariance_grid_N": 40,
+    "n_2I_elements": 120,
+    "max_dE_under_2I": 1.4210854715202004e-14,
+    "max_dB_under_2I": 1.1102230246251565e-16,
+    "mean_dE_under_2I": 1.4210854715202005e-15
+  },
+  "validation_anchors": {
+    "ANW_dimensionless_mass": {
+      "computed_M_e_over_Fpi": 36.46327214320054,
+      "literature": 36.5,
+      "status": "OBSERVED-matches-literature"
+    },
+    "bogomolny_ratio": {
+      "computed": 1.2315006310072538,
+      "literature": 1.232,
+      "status": "OBSERVED-matches-literature"
+    },
+    "virial_theorem_I2_eq_I4": {
+      "rel_gap": 0.00013377317340629592,
+      "status": "DERIVED-check-passed"
+    },
+    "baryon_number": {
+      "computed": 0.9999999337274553,
+      "status": "DERIVED-topological"
+    }
+  }
+}

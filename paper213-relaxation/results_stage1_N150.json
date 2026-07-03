@@ -1,0 +1,121 @@
+{
+  "N": 150,
+  "edges": 1035,
+  "tets": 885,
+  "substrate": {
+    "euler_char": 0,
+    "euler_ok": true,
+    "max_tri_tets": 2,
+    "min_tri_tets": 2,
+    "closed_no_boundary": true,
+    "links_checked": 120,
+    "links_bad": 0,
+    "links_ok": true
+  },
+  "symmetry": {
+    "vertex_deg_unique": 16,
+    "vertex_deg_min": 8,
+    "vertex_deg_max": 40,
+    "edge_tets_unique": 8,
+    "edge_tets_min": 3,
+    "edge_tets_max": 10,
+    "mean_tets_per_edge": 5.130434782608695,
+    "looks_2I_regular": false
+  },
+  "frustrated": {
+    "label": "frustrated ell=1",
+    "cov_initial": 55.72833662056625,
+    "cov_final": 21.935119667944566,
+    "Kbar_initial": -0.319254762920804,
+    "Kbar_final": 1.8380458400225617,
+    "reduction_factor": 2.540598704916402,
+    "neckpinch": true,
+    "iters_run": 5,
+    "history": [
+      {
+        "it": 0,
+        "cov": 55.72833662056625,
+        "Kbar": -0.319254762920804,
+        "volume": 104.29825022501716,
+        "invalid_tets": 0,
+        "min_tet_vol": 0.1178511301977579,
+        "ell_min": 1.0,
+        "ell_max": 1.0
+      },
+      {
+        "it": 1,
+        "cov": 19.09169053826609,
+        "Kbar": -1.0874155877414977,
+        "volume": 104.2982502250186,
+        "invalid_tets": 0,
+        "min_tet_vol": 0.10324829051484995,
+        "ell_min": 0.9568628774859862,
+        "ell_max": 1.0574970247836932
+      },
+      {
+        "it": 2,
+        "cov": 12.05101208964161,
+        "Kbar": -2.047721518625925,
+        "volume": 104.29825022501834,
+        "invalid_tets": 0,
+        "min_tet_vol": 0.09317931298499017,
+        "ell_min": 0.9246880619211487,
+        "ell_max": 1.129416549268273
+      },
+      {
+        "it": 3,
+        "cov": 9.538736066983088,
+        "Kbar": -3.311625782420612,
+        "volume": 104.29825022501679,
+        "invalid_tets": 0,
+        "min_tet_vol": 0.06808772737722135,
+        "ell_min": 0.9092803187736186,
+        "ell_max": 1.227400046852085
+      },
+      {
+        "it": 4,
+        "cov": 21.935119667944566,
+        "Kbar": 1.8380458400225617,
+        "volume": 104.29825022501791,
+        "invalid_tets": 85,
+        "min_tet_vol": 0.009863405412671875,
+        "ell_min": 0.931774463846045,
+        "ell_max": 1.3900441577969833,
+        "note": "non-embeddable tet -> neckpinch/glass signal"
+      }
+    ]
+  },
+  "round_control": {
+    "label": "round-init (control #3)",
+    "cov_initial": 0.7288981051558466,
+    "cov_final": 2.7074160924609365,
+    "Kbar_initial": 3.5629195874615758,
+    "Kbar_final": 75.38982143908007,
+    "reduction_factor": 0.26922278669523103,
+    "neckpinch": true,
+    "iters_run": 2,
+    "history": [
+      {
+        "it": 0,
+        "cov": 0.7288981051558466,
+        "Kbar": 3.5629195874615758,
+        "volume": 15.908504978275088,
+        "invalid_tets": 0,
+        "min_tet_vol": 0.00017584685668955115,
+        "ell_min": 0.06830240697016016,
+        "ell_max": 1.1513147076435672
+      },
+      {
+        "it": 1,
+        "cov": 2.7074160924609365,
+        "Kbar": 75.38982143908007,
+        "volume": 15.90850497827508,
+        "invalid_tets": 233,
+        "min_tet_vol": 0.0001851842668071541,
+        "ell_min": 0.07135332894503386,
+        "ell_max": 1.3292348895902593,
+        "note": "non-embeddable tet -> neckpinch/glass signal"
+      }
+    ]
+  }
+}
