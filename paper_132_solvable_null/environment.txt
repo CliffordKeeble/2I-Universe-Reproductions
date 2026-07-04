@@ -1,0 +1,7 @@
+Python 3.13.14
+Standard library only (math, csv, argparse, os, sys) — no external dependencies.
+Deterministic: exact integer point counting + Hilbert symbols, no random seed needed.
+
+Run:
+  python solvable_null.py            # X = 10^4 (~25 s)
+  python solvable_null.py --x 100000 # X = 10^5 trend check (~30 min)
