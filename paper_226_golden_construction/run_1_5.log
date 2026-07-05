@@ -1,0 +1,10 @@
+========================================================================
+RUN #1.5 — PLACE-PAIR TOY (exact 2x2 over Q(sqrt5,i); numeric at both places)
+========================================================================
+[PASS] B1.5-1 pair reads two dynamics: inf2 slot solves ev2(M_q)=sigma(M_q) = [swapped(Ga@d0), +q, a-, k-; swapped(Ga@d0), -q, a+, k-] -- the reversed-metric operator; slot pair solves (L_q@inf1, that@inf2)
+[FAIL] B1.5-2 C0 absorbs transposition: image slot-1 does NOT solve the literal -q operator M_{-q} at inf1 (prop=None); it solves [swapped(Ga@d0), +q, a+, k+; swapped(Ga@d0), -q, a-, k+] -- a SEED<->ADJOINT swapped operator
+        make-or-break FAIL per Fizz sec6: C0=Z(x)swap lands the q-solution on a swapped-order operator at every slot assignment, never the literal -q operator. The place structure does NOT absorb the A5 transposition -- the two golden directions (Gseed^2=+sqrt5 vs Gadj^2=-sqrt5) are genuinely inequivalent and Z(x)swap cannot reconcile them with -q dynamics. Y2 solves [literal(Gs@d0), +q, a-, k-; literal(Gs@d0), -q, a+, k-]. Not patched.
+[PASS] B1.5-3 Born = Galois norm: P = a.sigma(a) = p^2-5q^2 = N(a) [True]; C0-invariant [True]; slot inner product is sigma-fixed (in Q) [True]
+========================================================================
+SUMMARY: 2/3 match EXPECT
+========================================================================
