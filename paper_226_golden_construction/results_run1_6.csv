@@ -1,0 +1,5 @@
+item,expect,outcome,deviation
+B1.6-1 C_phys maps L_q -> L_{-q},pass,"PASS — M(k1,k0,-a1,-a0,-q) = Z.sigma(M_q).Z exactly => C_phys(chi)=Zsigma(chi) solves the LITERAL -q operator, no residual",
+B1.6-2 C_phys^2 = identity,pass,"PASS — C_phys^2: amplitude id [True], params id [True], C0^2=id [True], P01^2=A^2=1 [True]",
+B1.6-3 null-line lemma,pass,"PASS — x0<->x1: x+ fixed [True], x- -> -x- [True] (reflection in null line); lightcone gammas G+=Gseed+Gadj, G-=Gseed-Gadj are null-ray nilpotents [True]; L = G+ d+ + G- d- [True]",
+B1.6-4 factorisation frontier,pass,"PASS — sigma-coupling: lin=0, tau=0, sigma=0; i-coupling: lin=0, tau=2, sigma=0. Skeleton admits NO non-sigma C [True] (run #1 theorem reproduced); extension admits a linear/tau-borne C [True] -- 'the extension buys the factors'",
