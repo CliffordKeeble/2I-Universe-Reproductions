@@ -1,0 +1,3 @@
+item,expect,outcome,deviation
+B1.6-4b-i evaluation point derived,"tau -> -k (antilinear); lin, sigma -> +k","PASS — momentum signs from applying each map to e^(ikx): lin=+1k, sigma=+1k, tau=-1k — tau(e^(ikx))=e^(-ikx) gives -k by antilinearity",
+B1.6-4b-ii frontier reproduces run #1.6,dims 0/0/0 over K; tau-borne dim 2 over K(i),"PASS — sigma-coupling (K): lin=0, tau=0, sigma=0 => 0/0/0 [True]; i-coupling (K(i)): lin=0, tau=2, sigma=0 => tau-borne dim 2 [True]. Verdicts match run #1.6; the -k was produced by antilinearity, not chosen",
