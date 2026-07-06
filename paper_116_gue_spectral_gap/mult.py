@@ -35,8 +35,20 @@ def m_exact_series(name, kind, param, classes, order, l_max):
     raise ValueError(f"unknown kind {kind!r}")
 
 
-def m_char_series(name, kind, param, classes, order, l_max):
+def classes_order(name, kind, param):
+    """Conjugacy-class data (classes, order) for route A, from the 118 module."""
+    if kind == "poly":
+        return {"2T": scn.CLASSES_2T, "2O": scn.CLASSES_2O, "2I": scn.CLASSES_2I}[name]
+    if kind == "cyclic":
+        return scn.classes_cyclic(param)
+    if kind == "dihedral":
+        return scn.classes_dihedral(param)
+    raise ValueError(f"unknown kind {kind!r}")
+
+
+def m_char_series(name, kind, param, l_max):
     """Independent route A (mpmath character sum) for cross-checks (AT1)."""
+    classes, order = classes_order(name, kind, param)
     out = []
     for l in range(l_max + 1):
         mr, _res = scn.m_char(classes, order, l)

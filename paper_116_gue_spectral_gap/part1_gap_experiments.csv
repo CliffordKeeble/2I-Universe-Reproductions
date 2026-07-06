@@ -1,0 +1,8 @@
+group,row,l_gap_or,lambda1,n_zeros,Var,ratio_cvm,class_cvm
+Z120,natural,1,8,231,0.36918,2.9268,GOE
+Z120,gap l=4,4,24,322,0.2031,1.1957,GOE
+Z120,gap l=8,8,80,384,0.13344,0.224,GUE
+Z120,gap l=12,12,168,427,0.09759,0.456,GUE
+Z60,natural,1,8,245,0.47238,2.3367,GOE
+Z60,gap l=4,4,24,331,0.23389,0.4489,GUE
+Z60,gap l=8,8,80,397,0.13931,0.3922,GUE
