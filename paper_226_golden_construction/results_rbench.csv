@@ -1,0 +1,7 @@
+item,expect,outcome,deviation
+R1 embedding delta->sqrt5*sigma3,unital K-algebra embedding; j->Z; e± idempotents,PASS — delta->sqrt5*Z is a unital K-algebra homomorphism (a*b preserved); j->Z; e±->(I±Z)/2 orthogonal complete idempotents,
+R2 transported gauge action,"e^{th j} = diag(e^th,e^-th); reproduces A4 weights","PASS — e^{th j} -> diag(e^th, e^-th) (weights u, u^-1, product 1); (u,u^-1) preserves the pairing s*a, (u,u) does not — Run #1 A4 reproduced",
+R3 entrywise sigma = Galois sigma,entrywise sigma|embedded 𝕂 = delta->-delta,PASS — entrywise sigma(p*I + q*sqrt5*Z) = p*I - q*sqrt5*Z = emb(p - q*delta) — matches 𝕂's Galois sigma on the embedded copy,
+R4 null-ray signs,"sigma(G±)=∓? ; C0(G+)=+G+, C0(G-)=-G-","PASS — sigma(G+)=-G+ [True], sigma(G-)=+G- [True]; C0(G+)=+G+ [True], C0(G-)=-G- [True] — sigma is a chiral sign on one null ray, C0 the compensator",
+R5 even-sector control,C=sigma o (a-flip) maps q->-q with no coordinate factor,PASS — internal scalar EoM: D_{-A}(sigma a) = sigma(D_A a) exactly (uses sigma(j)=-j); so a q-solution maps to a (-q)-solution with the gauge-field flip alone — NO coordinate/reflection factor. Even sector is clean,
+R6 the dichotomy,sigma o (a-flip) fails on odd sector w/o reflection; ok on even,"PASS — geometric: O1=Z.sigma(Mq).Z is NOT the literal -q operator [fails_literal=True] but IS a reflected/swapped one [swapped-order, a+, k- (-1)] — reflection required (B1.5-2 reconfirmed); even-projected observable a.sigma(a)=N(a) is swap-invariant [True] — succeeds. Dichotomy holds on both halves",
