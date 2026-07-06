@@ -1,0 +1,4 @@
+item,expect,outcome,deviation
+W1 J = iZ properties,"J^2=-I; e^{thJ}=diag(e^{ith},e^{-ith}); tau(J)=-J; sigma(J)=+J","PASS — J=iZ: J^2=-I [True]; e^(thJ)=diag(e^(i th),e^(-i th)) [True]; tau(J)=-J [True]; sigma(J)=+J [True]",
+W2 two real forms of exp(C Z),exp(RZ) split (moduli e^{+-th}); exp(RJ) compact (1),"PASS — exp(R Z) split: eigenvalue moduli e^(+-th), not unit [True]; exp(R J) compact: moduli 1 [True]; both = exp(z Z) with z real (split) or z imaginary (compact) since th J = (i th) Z [True]",
+W3 compact-coupling reverser,tau maps q->-q with no matrix part (B=I),"PASS — tau(Mq) at -k = M_{-q} exactly [True] — entrywise tau (B=I, no matrix part) reverses the compact charge; and B=I lies in B1.6-4's tau-borne family (dim 2) [True]",
