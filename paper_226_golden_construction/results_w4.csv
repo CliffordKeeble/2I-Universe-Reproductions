@@ -1,0 +1,9 @@
+item,expect,outcome,deviation
+W4-ii-1 sigma(Gamma) signs,"sigma(Gs)=-Ga, sigma(Ga)=-Gs","PASS — sigma(Gamma_seed)=-Gamma_adj and sigma(Gamma_adj)=-Gamma_seed (both signs minus, exact+both places)",
+W4-ii-2 bivector B=Gs*Ga,B = sqrt5 Z,"PASS — B = Gamma_seed*Gamma_adj = sqrt5*Z (= [[sqrt(5), 0], [0, -sqrt(5)]])",
+W4-ii-3 C0(sqrt5 Z) flips,C0(sqrt5 Z) = -sqrt5 Z,"PASS — C0(B) = -sqrt5*Z (bivector flips); C0(B)=[[-sqrt(5), 0], [0, sqrt(5)]]",
+W4-ii-4 C0(J) fixed,C0(J) = +J,"PASS — C0(iZ) = +iZ = +J (compact generator fixed); C0(J)=[[I, 0], [0, -I]]",
+W4-ii-5 diff vs memo sec2,cold derivation agrees with memo (flip + fixed),"PASS — cold derivation MATCHES memo: C0(sqrt5 Z)=-sqrt5 Z (bivector flips) AND C0(J)=+J (generator fixed) — the keystone holds, fork stays closed",
+W4b-a C0 preserves J-sectors,"C0(e1) prop e1, C0(e2) prop e2","PASS — C0(e1)=1*e1, C0(e2)=-1*e2 — C0 keeps each compact-charge sector (does NOT flip the compact charge), consistent with C0(J)=+J",
+W4b-b tau(J) = -J,tau(J) = -J (=> compact coupling q -> -q),"PASS — tau(J) = -J: entrywise conjugation sends q A.J -> -q A.J, i.e. the compact charge q -> -q. This is 'tau flips the compact charge' (sharpened at solution level in W3)",
+"W4b-c eigenvector-gloss, precisely",clarify sense of 'tau exchanges sectors',"PASS — tau FIXES the J=iZ eigenvectors as vectors (they are real): tau(e1)=e1, tau(e2)=e2 — it does NOT permute them. The 'exchange' in the brief is the charge-level fact tau(J)=-J (b): +i-eigenspace of J = -i-eigenspace of tau(J). Verified, gloss clarified — not a permutation of eigenvectors.","clarification, not a failure: substance of W4b (C0 keeps compact charge, tau flips it) holds; only the parenthetical eigenspace wording is imprecise for J=iZ"
