@@ -1,0 +1,8 @@
+statistic,value,perm_z,perm_p
+"H_gap_primary_Spearman(lam1,Var)",-0.5316,-5.012,0.0001
+"H_gap_secondary_Spearman(lam1,ratio)",-0.0229,-0.222,0.82972
+"partial(lam1,Var|order)",-0.8173,,
+"partial(lam1,Var|density)",-0.4618,,
+"partial(lam1,Var|order,density)",-0.5784,,
+"H_correlate_rankpartial(solvable,Var|lam1)",0.0258,,
+2I_residual_on_trend,-5.306,,percentile=0.33
