@@ -1,0 +1,51 @@
+[PASS] j^2 = 1
+[PASS] sigma(j) = -j
+[PASS] sigma(ab) = sigma(a)sigma(b)
+[PASS] sigma^2 = id
+[PASS] N(a) = p^2 - 5 q^2 (real, i.e. d-part zero)
+[PASS] N(ab) = N(a) N(b)
+[PASS] N(sigma(a)) = N(a)
+[PASS] sigma-fixed subalgebra is the reals: sigma(a) = a forces q = 0
+[PASS] endomorphism eqns: exactly the four expected solutions
+[PASS] automorphisms: f(d) = +d or f(d) = -d only
+[PASS] f(d)=+sqrt5 is the projection killing e_minus (non-injective)
+[PASS] f(d)=-sqrt5 is the projection killing e_plus (non-injective)
+[PASS] e_+ e_- = 0
+[PASS] e_+^2 = e_+
+[PASS] e_+ + e_- = 1
+[PASS] sigma swaps e_+ and e_-
+[PASS] N in coordinates is a_plus * a_minus
+[PASS] Phi^2 = Phi + 1 (golden recursion inside KK)
+[PASS] N(Phi) = -1 (fundamental unit has norm -1)
+[PASS] N(Phi^2) = +1
+[PASS] coords(Phi) = (phi, psi): the two golden roots at the two places
+[PASS] coords(Phi^2) = (phi^2, phi^-2)
+[PASS] Phi^2 = e^{theta0 j} with theta0 = 2 ln phi = arcosh(3/2)
+[PASS] N(e^{theta j}) = 1
+[PASS] sigma(e^{theta j}) = e^{-theta j}  [phase inversion: the C mechanism]
+[PASS] norm-one group has two components: N(-1)=1 and -1 not a forward phase
+[PASS] Lie algebra condition X + sigma(X) = 0 forces X in R*j (Xp = 0)
+[PASS] phi^{2w} = phi^k  <=>  w = k/2  (charge quantised in half-integers)
+[PASS] gauge covariance: D'(e^{g th j} a) = e^{g th j} (D a) with A -> A + dth
+[PASS] current is real (d-part zero)
+[PASS] current = 2 sqrt5 (u v' - u' v)
+[PASS] current is C-odd: J[sigma(a)] = -J[a]
+[PASS] expansion sigma(Da)Da = sigma(da)da + gA*J - g^2 A^2 N(a) [seagull sign is NEGATIVE: structural difference from complex scalar QED]
+[PASS] C-invariance of full gauged kinetic term: sigma(D'a')D'a' = sigma(Da)Da
+[PASS] D(sigma a) with A -> -A equals sigma(D a)  [covariant conjugation]
+[PASS] mass term C-invariant: N(sigma a) = N(a)
+[PASS] F^2 C-invariant: (-dA/dx)^2 = (dA/dx)^2
+[PASS] sigma(e^{g theta j} a) = e^{-g theta j} sigma(a)  [charge g -> -g]
+[PASS] C^2 = id on amplitudes
+[PASS] (phase o C)^2 = id  [every representative of the sigma-class is involutive]
+[PASS] Gamma_seed^2 = +sqrt5 I
+[PASS] Gamma_adj^2 = -sqrt5 I
+[PASS] {Gamma_seed, Gamma_adj} = 0
+[PASS] Gamma_seed * Gamma_adj = +sqrt5 sigma_3  [Paper 192 measurement product]
+[PASS] sigma(Gamma_adj) = -Gamma_seed  [Paper 203 Face 1, our convention]
+[PASS] sigma(Gamma_seed) = -Gamma_adj  [involution closes]
+[PASS] spec(Gamma_seed) = {+-5^(1/4)} real
+[PASS] spec(Gamma_adj) = {+-i 5^(1/4)} imaginary
+[PASS] pairs (M, (M^T)^-1) satisfy the sigma-unitarity condition componentwise [U(n, KK, sigma) ~ GL(n, R)]
+
+ALL CHECKS PASSED (exact symbolic, sympy 1.14.0)
