@@ -1,0 +1,46 @@
+========================================================================
+BENCH F1-F4 -- Free Golden Dirac Dynamics (Paper 226), exact over Q(sqrt5,i)
+========================================================================
+
+[F1]
+[PASS] F1a joint anticommutant: dim(joint anticommutant)=1, basis = +-Z [True]; Gamma_s-only shape (x1,x2,x3,x4)=(-x4, -sqrt(5)*x3/5, x3, x4) = [[a,b],[-r5 b,-a]]
+[PASS] F1b dispersion / M^2 sign: s=1: M matches [True], detM=-m^2 s^2 -r5(k^2-E^2) [True], E^2=k^2+m^2 s^2/r5 [True], M^2=sqrt(5)/5 (>0 healthy); s=i: M matches [True], detM=-m^2 s^2 -r5(k^2-E^2) [True], E^2=k^2+m^2 s^2/r5 [True], M^2=-sqrt(5)/5 (<0 tachyonic)
+
+[F2]
+[PASS] F2a transpose intertwining: A=diag(r5,1): (Gs,Ga) parity=(+1,-1); A'=diag(-r5,1): (-1,+1); diag(+,+) never occurs [True]
+[PASS] F2b no neutral antisymmetriser: N (up to scale) = (1, 0, 0, -sqrt(5)/5) = diag(1,-1/r5) [True]; N Ga = (0, -1, -1, 0) symmetric [True], proportional to eps [False] -> no constant N antisymmetrises both
+
+[F3]
+[PASS] F3a unconstrained mass reality: B = r5 N(psi1)-N(psi2) [True]; Im[ev1 m*1*B] generically nonzero [True]; Im[ev1 m*i*B] generically nonzero [True] -> field-reality constraint mandatory
+[PASS] F3b tau-constrained mass reality: Im[ev1 m*1*B] under tau = 0 [real=True]; N(psi1)=f^2+5g^2 [True], N(psi2)=f^2+5g^2 [True] (real, positive)
+[PASS] F3 reconciliation sigma=tau on locus: sigma(psi)=tau(psi) on the tau-constrained field [True] (=> sigma-Majorana and tau-Majorana coincide on-shell; Paper 226 sec.5.3)
+
+  -- F3 sub-check 1: kinetic Im mod TD (the gate) --
+     [tau   | factor=1 ] Im mod TD = 5*f1*g2t - 5*f1t*g2 + 5*f2*g1t - 5*f2t*g1  -> real=False
+     [tau   | factor=i ] Im mod TD = sqrt(5)*(-f1*f2x + f1x*f2 - 5*g1*g2x + 5*g1x*g2)  -> real=False
+     [sigma | factor=1 ] Im mod TD = sqrt(5)*(-f1*g2x + f1x*g2 + f2*g1x - f2x*g1)  -> real=False
+     [sigma | factor=i ] Im mod TD = sqrt(5)*(-f1*f2x + f1x*f2 + g1*g2x - g1x*g2)  -> real=False
+     [C0    | factor=1 ] Im mod TD = 5*f1*g2t - 5*f1t*g2 - 5*f2*g1t + 5*f2t*g1  -> real=False
+     [C0    | factor=i ] Im mod TD = 5*f1*f2t - 5*f1t*f2 - 5*g1*g2t + 5*g1t*g2  -> real=False
+[PASS] F3 sub-check 2 EOM preserves tau: psi_i=f_i+i r5 g_i in EOM -> 4 real closed equations for (f_i,g_i); no term forces complex f,g [True] (a,d sectors evolve by the same golden-Dirac system)
+[PASS] F3 sub-check 3 nondegeneracy: d0 antisymmetric (symplectic) matrix rank=4/4, det=625 -> nondegenerate [True] (no K1 from degeneracy)
+
+  -- F3 VERDICT --
+     mass real at s=1 by constraint : {'tau': True, 'sigma': False, 'C0': False}
+     kinetic real (factor=1) by cons: {'tau': False, 'sigma': False, 'C0': False}
+     kinetic real (any factor)      : []
+[PASS] F3 JOINT-GATE VERDICT: COLLISION: no single constraint reales BOTH kinetic(literal L) and mass at s=1: mass real under ['tau'], kinetic(factor=1) real under none; kinetic Im mod TD under tau,s=1 = 5*f1*g2t - 5*f1t*g2 + 5*f2*g1t - 5*f2t*g1 (nonzero antisym d0 current) -> K1/K3 fire, split sigma-theory sick at free level, compact-or-bust
+
+  -- Genericity: real-quadratic (sqrt5) vs (sqrt13) --
+     D= 5: F2a parity(Gs,Ga)=(1, -1); kinetic Im mod TD under tau = 5*f1*g2t - 5*f1t*g2 + 5*f2*g1t - 5*f2t*g1 (real=False)
+     D=13: F2a parity(Gs,Ga)=(1, -1); kinetic Im mod TD under tau = 13*f1*g2t - 13*f1t*g2 + 13*f2*g1t - 13*f2t*g1 (real=False)
+[PASS] Genericity (real-quadratic, not golden): parity diag(+,-) for both D=5,13 [True]; kinetic Im mod TD nonzero for both [True] -> the no-go is a real-quadratic no-go, holds for Q(sqrt13) identically
+
+========================================================================
+F4 GATED OFF: F3 = COLLISION. Stop-condition (brief sec.6) -> do not run F4.
+========================================================================
+
+========================================================================
+SUMMARY: 11/11 items match EXPECT (see results_f1_f4.csv)
+F3 JOINT-GATE VERDICT: COLLISION
+========================================================================
