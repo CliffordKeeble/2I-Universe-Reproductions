@@ -1,0 +1,19 @@
+========================================================================
+BENCH F5 -- aligner sigma-type (step 1 + structural) + rechecks C1, C6
+exact over Q(sqrt5,i); F5 step 2 (legality) BLOCKED on requisition
+========================================================================
+
+[F5 step 1 -- the aligner family]
+[PASS] F5.1 aligner family: solution family dim=2, A=(0, b, c, 0) (a=d=0, b,c free) [antidiag=True]; A.Gs=diag(b*r5,c), A.Ga=diag(b*r5,-c) [shape=True], both symmetric [True] -> the (+,+) alignment exists, as Taussky-Zassenhaus guarantees
+[INFO] F5.1 structural data (CONJECTURED, not banked): det A = -b*c (nondegenerate iff b,c != 0); (sigma psi)^T A chi = b*p1*q2 + c*p2*q1 CROSS-component [True] vs A0 pairing r5*p1*q1 + p2*q2 same-component; member A(b=1,c=r5) = Gamma_s [True]; A = K2 . diag(c,b) i.e. component-swap x diagonal [True] -> off-diagonal 'place-swap' shape; legality decided by requisitioned axioms, NOT by this shape
+
+[C1 -- dispersion recheck, independent route]
+[PASS] C1 dispersion recheck (independent): s=1: hand-det=-m^2 s^2 -r5(k^2-E^2) [True]; u(k) is exact null vector Mu=0 on-shell [True]; two-place numeric Mu~0 [True]; s=i: hand-det=-m^2 s^2 -r5(k^2-E^2) [True]; u(k) is exact null vector Mu=0 on-shell [True]; two-place numeric Mu~0 [True]
+
+[C6 -- symplectic recheck, independent construction]
+[PASS] C6 symplectic recheck (independent): direct pairing-matrix (basis ['f1', 'g1', 'f2', 'g2']) -> antisymmetric Omega rank=4/4, det=625=5^4 [True]; rank 4 is the basis-independent nondegeneracy claim, the value 625 reflects the sqrt5-normalisation of the q-components
+
+========================================================================
+SUMMARY: 3 PASS, 1 INFO (structural) of 4 items
+F5 step 2 (sigma-legality): NOT RUN -- requisition raised (see findings_f5.md)
+========================================================================

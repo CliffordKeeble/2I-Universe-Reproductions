@@ -9,6 +9,17 @@ Status tags per programme convention: **DERIVED** (exact symbolic proof), **STRU
 
 ---
 
+> ## ⚠️ CORRECTION — 10 July 2026 (Mr A three-star review; see `findings_f5.md`)
+>
+> Two claims below are demoted by Mr A's review of the no-go and must be read with these corrections:
+>
+> 1. **The "never diag(+,+)" mechanism is NOT a theorem.** By Taussky–Zassenhaus a symmetric (+,+) aligner exists for *any* anticommuting invertible pair; F5 step 1 confirmed it concretely for the 191 pair (the antidiagonal family **A = [[0,b],[c,0]]**). So the F1–F4 COLLISION is a **bench result about the presentation A = diag(√5,1), not a proof.** Whether the no-go survives now hinges on whether *any* (+,+) aligner is a **legal σ-sesquilinear pairing** (F5 step 2 — REQUISITIONED, not yet decided). Everything below tagged "STRUCTURAL / never diag(+,+)" is downgraded to **presentation-specific, pending F5**.
+> 2. **"Real-quadratic-generic" is an overclaim on {5, 13}.** Both 5 and 13 are ≡ 1 (mod 4); genericity across d ≢ 1 (mod 4) (√2, √3) is **F6, not yet run**. Read the C8/genericity headline as **"generic on the fields tested {5, 13}"** until F6 lands.
+>
+> The exact-symbolic F1/F2/F3a/F3b/reconciliation/sub-check results and the C1/C6 numbers below are **unaffected** and were re-confirmed independently in `findings_f5.md`.
+
+---
+
 ## Headline
 
 > **F3 = COLLISION at the free level, at healthy s = 1.**
