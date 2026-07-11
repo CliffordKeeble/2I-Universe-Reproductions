@@ -1,0 +1,10 @@
+item,expect,outcome,deviation
+F7 §5 Fizz candidate algebra,"A=[[0,r5],[1,0]] -> A.Gs=diag(5,1), A.Ga=diag(5,-1), both symmetric & rational","PASS - A.Gs=(5, 0, 0, 1), A.Ga=(5, 0, 0, -1); both symmetric [True], rational (sigma-trivial) [True]",
+F7a reality: K2 (b=c=1),real (kinetic+mass) at a common phase under tau?,"PASS - remainder at (C,S)=(0,1) = 0; symplectic rank=4/4 det=125 nondegenerate [True]; EOM preserves tau [True]",
+F7a reality: r5*K2 (b=c=r5),real (kinetic+mass) at a common phase under tau?,"PASS - remainder at (C,S)=(0,1) = 0; symplectic rank=4/4 det=3125 nondegenerate [True]; EOM preserves tau [True]",
+"F7a reality: Fizz (b=r5,c=1)",real (kinetic+mass) at a common phase under tau?,"FAIL - not real at th in {0, pi/2}",
+"F7b frontier: K2 (b=c=1, a reality survivor)",226 §5.2 uniform scalar eps across both gammas?,"INFO - C=A: eps(Gs)=None, eps(Ga)=None, uniform [False]; C=sigma(A): eps(Gs)=None, eps(Ga)=None, uniform [False]; C=A^-1: eps(Gs)=None, eps(Ga)=None, uniform [False]",
+"F7b frontier: Fizz (b=r5,c=1)",226 §5.2 uniform scalar eps across both gammas?,"INFO - C=A: eps(Gs)=None, eps(Ga)=None, uniform [False]; C=sigma(A): eps(Gs)=None, eps(Ga)=None, uniform [False]; C=A^-1: eps(Gs)=None, eps(Ga)=None, uniform [False]",
+"F7 §6 sigma(M^2) equal-mass, s=1",M^2 sigma-even (equal mass at both places) under sigma-odd m^2,PASS - m^2=r5*mu^2 (sigma-odd); M^2=mu**2 sigma-even [True]; E^2=k^2+M^2 sigma-even [True] -> antiparticle axiom delivered by the algebra,
+"F7 §6 sigma(M^2) equal-mass, s=i",M^2 sigma-even (equal mass at both places) under sigma-odd m^2,PASS - m^2=r5*mu^2 (sigma-odd); M^2=-mu**2 sigma-even [True]; E^2=k^2+M^2 sigma-even [True] -> antiparticle axiom delivered by the algebra,
+F7 VERDICT: K-COLLAPSE,K-COLLAPSE / K-SURVIVE / K-INDETERMINATE,"INFO - K-COLLAPSE: aligners ['K2 (b=c=1)', 'r5*K2 (b=c=r5)'] give a REAL, nondegenerate, EOM-preserving first-order action at s=1 -> K1 UN-FIRES, F1-F4 no-go RETRACTED (it was specific to A0=diag(r5,1)). Halo DISCONFIRMED: sigma-EVEN b=c=1 works [True] -> sigma-odd b NOT required. Reality-variety = {b=c}.",

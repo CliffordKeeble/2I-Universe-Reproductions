@@ -1,0 +1,32 @@
+========================================================================
+BENCH F7 -- reality sweep over the aligner family A=[[0,b],[c,0]]
+does ANY aligner give a real nondegenerate action? (K1 criterion-free)
+========================================================================
+
+[§5 verify Fizz's algebra]
+[PASS] F7 §5 Fizz candidate algebra: A.Gs=(5, 0, 0, 1), A.Ga=(5, 0, 0, -1); both symmetric [True], rational (sigma-trivial) [True]
+
+[§3 F7a -- THE CRUX]
+
+  -- §3 F7a: reality sweep over A=[[0,b],[c,0]] (s=1 healthy) --
+     [tau] reality conditions (coeff=0): [-C*bi*m + C*ci*m - S*br*m + S*cr*m, -sqrt(5)*C*br*m - sqrt(5)*C*cr*m + sqrt(5)*S*bi*m + sqrt(5)*S*ci*m, 5*C*br - 5*S*bi, 5*C*br - 5*S*bi, sqrt(5)*C*br*m + sqrt(5)*C*cr*m - sqrt(5)*S*bi*m - sqrt(5)*S*ci*m, -5*C*bi*m + 5*C*ci*m - 5*S*br*m + 5*S*cr*m, -5*C*br + 5*S*bi, -5*C*br + 5*S*bi, sqrt(5)*C*cr - sqrt(5)*S*ci, -sqrt(5)*C*cr + sqrt(5)*S*ci, -sqrt(5)*C*cr + sqrt(5)*S*ci, sqrt(5)*C*cr - sqrt(5)*S*ci]
+     [tau] solution variety: [{C: -sqrt(1 - S**2), bi: -cr*sqrt(1 - S**2)/S, br: cr, ci: -cr*sqrt(1 - S**2)/S}, {C: sqrt(1 - S**2), bi: cr*sqrt(1 - S**2)/S, br: cr, ci: cr*sqrt(1 - S**2)/S}]   =>  b = c
+[PASS] F7a reality: K2 (b=c=1): remainder at (C,S)=(0,1) = 0; symplectic rank=4/4 det=125 nondegenerate [True]; EOM preserves tau [True]
+[PASS] F7a reality: r5*K2 (b=c=r5): remainder at (C,S)=(0,1) = 0; symplectic rank=4/4 det=3125 nondegenerate [True]; EOM preserves tau [True]
+[FAIL] F7a reality: Fizz (b=r5,c=1): not real at th in {0, pi/2}
+
+[§4 F7b -- frontier, side by side]
+[INFO] F7b frontier: K2 (b=c=1, a reality survivor): C=A: eps(Gs)=None, eps(Ga)=None, uniform [False]; C=sigma(A): eps(Gs)=None, eps(Ga)=None, uniform [False]; C=A^-1: eps(Gs)=None, eps(Ga)=None, uniform [False]
+[INFO] F7b frontier: Fizz (b=r5,c=1): C=A: eps(Gs)=None, eps(Ga)=None, uniform [False]; C=sigma(A): eps(Gs)=None, eps(Ga)=None, uniform [False]; C=A^-1: eps(Gs)=None, eps(Ga)=None, uniform [False]
+
+[§6 -- sigma(M^2) equal-mass]
+[PASS] F7 §6 sigma(M^2) equal-mass, s=1: m^2=r5*mu^2 (sigma-odd); M^2=mu**2 sigma-even [True]; E^2=k^2+M^2 sigma-even [True] -> antiparticle axiom delivered by the algebra
+[PASS] F7 §6 sigma(M^2) equal-mass, s=i: m^2=r5*mu^2 (sigma-odd); M^2=-mu**2 sigma-even [True]; E^2=k^2+M^2 sigma-even [True] -> antiparticle axiom delivered by the algebra
+
+  -- F7 VERDICT --
+[INFO] F7 VERDICT: K-COLLAPSE: aligners ['K2 (b=c=1)', 'r5*K2 (b=c=r5)'] give a REAL, nondegenerate, EOM-preserving first-order action at s=1 -> K1 UN-FIRES, F1-F4 no-go RETRACTED (it was specific to A0=diag(r5,1)). Halo DISCONFIRMED: sigma-EVEN b=c=1 works [True] -> sigma-odd b NOT required. Reality-variety = {b=c}.
+
+========================================================================
+F7 VERDICT: K-COLLAPSE
+STOP-CONDITION (§7): K-COLLAPSE -> report immediately, do NOT re-pose F4.
+========================================================================

@@ -20,6 +20,18 @@ Status tags per programme convention: **DERIVED** (exact symbolic proof), **STRU
 
 ---
 
+> ## ⛔ RETRACTION — 11 July 2026 (F7 reality sweep; see `findings_f7.md`)
+>
+> **The COLLISION headline below is RETRACTED. K1 does not fire for the theory.**
+>
+> F7 ran the reality test — *does the pairing give a real, nondegenerate first-order action?*, the actual K1 question — over the **whole aligner family** A = [[0,b],[c,0]], not just A₀. The reality-variety is **b = c**: the pairing **A = K₂ = [[0,1],[1,0]]** (and any b=c) gives a **real, nondegenerate (rank 4), EOM-preserving** action at healthy s = 1. **The F1–F4 COLLISION was an artefact of the specific pairing A₀ = diag(√5,1)** — exactly the presentation Mr A demoted. With an aligning pairing the free split σ-theory has a healthy first-order action, so **the no-go is withdrawn.**
+>
+> Everything computed below remains **arithmetically correct for A₀** — A₀ genuinely gives no real action. What is wrong is the *scope*: A₀ was never privileged, and the COLLISION does not hold class-wide. **Do not cite the COLLISION as a result.**
+>
+> **Two caveats (see `findings_f7.md`):** (1) K₂ **fails** 226 §5.2's frontier criterion — reality and the frontier **disagree** about σ (open question for Mr A/Tor, not adjudicated); (2) the physical sensibility of the antidiagonal/place-swap pairing (positivity, ± frequency split) is the re-posed F4 question, **deferred** — the retraction is "a real action exists", not "the QFT is fully vetted".
+
+---
+
 ## Headline
 
 > **F3 = COLLISION at the free level, at healthy s = 1.**
