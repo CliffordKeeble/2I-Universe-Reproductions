@@ -7,6 +7,10 @@
 
 Status tags: **DERIVED** (exact proof), **STRUCTURAL** (mechanism), **OBSERVED** (numeric). Nothing banks until the cold W-108 pass.
 
+> ## 🔭 SCOPE — 12 July 2026 (F9a connection check; see `findings_f9.md`)
+>
+> **The object of the F1–F8 arc carried NO icosahedral (2I) content.** F9a (DERIVED): the Paper 191 Clifford form ⟨√5,−√5⟩ is isotropic ≅ ⟨1,−1⟩ over K → Cl = split M₂(K), identical to standard (1,1); 2I (order 120, a subgroup of the *compact* SU(2)) does not embed in the abelian Spin(1,1) and does not respect the gammas (their centralizer is scalars). The √5 in the gamma entries is a **removable artefact**, not icosahedral content — every "real-quadratic-generic" result below was this diagnosis. K₂'s real nondegenerate action **stands**, but as a real-quadratic (1,1) Dirac theory (with **C = τ** per F9b), **not golden**. Read "golden" below as "over ℚ(√5)", not "icosahedral".
+
 ---
 
 ## Headline (Pattern 39 — reported flat; this retracts Mr Code's own F1–F4 result)

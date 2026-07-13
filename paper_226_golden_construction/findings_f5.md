@@ -7,6 +7,10 @@
 
 Status tags: **DERIVED** (exact proof), **STRUCTURAL/CONJECTURED** (shape-level, for interpretation, not banked).
 
+> ## 🔭 SCOPE — 12 July 2026 (F9a connection check; see `findings_f9.md`)
+>
+> **The object of the F1–F8 arc carried NO icosahedral (2I) content.** F9a (DERIVED): the Paper 191 Clifford form ⟨√5,−√5⟩ is isotropic ≅ ⟨1,−1⟩ over K → Cl = split M₂(K), identical to standard (1,1); 2I (order 120, a subgroup of the *compact* SU(2)) does not embed in the abelian Spin(1,1) and does not respect the gammas (their centralizer is scalars). The √5 in the gamma entries is a **removable artefact**, not icosahedral content. The aligner algebra below is real-quadratic, **not golden**. Read "golden" below as "over ℚ(√5)", not "icosahedral".
+
 ---
 
 ## Headline

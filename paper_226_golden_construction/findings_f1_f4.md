@@ -7,6 +7,10 @@
 
 Status tags per programme convention: **DERIVED** (exact symbolic proof), **STRUCTURAL** (mechanism-level, argued + computationally exhibited), **OBSERVED** (numeric). Nothing here is banked until merged and cold-checked by Mr Adversary (W-108).
 
+> ## 🔭 SCOPE — 12 July 2026 (F9a connection check; see `findings_f9.md`)
+>
+> **The object of this entire arc carried NO icosahedral (2I) content.** F9a (DERIVED): the Paper 191 Clifford form ⟨√5,−√5⟩ is isotropic ≅ ⟨1,−1⟩ over K → Cl = split M₂(K), identical to standard (1,1); 2I (order 120, a subgroup of the *compact* SU(2)) does not embed in the abelian Spin(1,1) and does not respect the gammas (their centralizer is scalars). **The √5 in the gamma entries was placed there by hand and is a removable artefact** — every "real-quadratic-generic" result below (and it was *every* result) was this diagnosis. The theory is a real-quadratic (1,1) Dirac theory, **not golden**. Read all "golden" language as "over ℚ(√5)", not "icosahedral".
+
 ---
 
 > ## ⚠️ CORRECTION — 10 July 2026 (Mr A three-star review; see `findings_f5.md`)
