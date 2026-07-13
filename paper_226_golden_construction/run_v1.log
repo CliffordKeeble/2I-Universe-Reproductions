@@ -1,0 +1,30 @@
+========================================================================
+BENCH V1 -- verification: 226 §5.2 frontier + co-descent (W-108) + M6/M7
+========================================================================
+
+[§2.1 -- the 226 §5.2 C-frontier: eight cell dimensions]
+     cell (g=1       , eps=+1) : dim C-space = 1
+     cell (g=1       , eps=-1) : dim C-space = 1
+     cell (g=tau     , eps=+1) : dim C-space = 1
+     cell (g=tau     , eps=-1) : dim C-space = 1
+     cell (g=sigma   , eps=+1) : dim C-space = 0
+     cell (g=sigma   , eps=-1) : dim C-space = 0
+     cell (g=sigmatau, eps=+1) : dim C-space = 0
+     cell (g=sigmatau, eps=-1) : dim C-space = 0
+[PASS] §2.1 frontier table: dims = { 1/+1:1, 1/-1:1, tau/+1:1, tau/-1:1, sigma/+1:0, sigma/-1:0, sigmatau/+1:0, sigmatau/-1:0 }; sigma & sigma-tau cells empty [True]; identity cell non-empty [True]
+
+[§2.3 -- the decorrelation (W-108) check: are the two obstructions independent?]
+[INFO] §2.3 co-descent verdict (PRIORITY): on the i-free gammas dress(1)=dress(tau) [True] and dress(sigma)=dress(sigmatau) [True]; empty cells = {'sigma', 'sigmatau'}; this tracks the sqrt5-SWAP {sigma,sigmatau} [True], NOT the i-MOTION {tau,sigmatau} [False]. Decisive tell: sigma-tau MOVES i yet is empty [True] and tau MOVES i yet is non-empty [True] -> the frontier emptiness is driven by the sqrt5 place-swap of the gamma pair, NOT by sigma fixing i. => the frontier result and the sigma-LINEARITY theorem (which IS driven by sigma fixing i) are INDEPENDENT [True] -> they MAY be counted as two confirmations. (Against Fizz's co-descent suspicion; reported flat.)
+
+[§2.2 -- is the frontier the standard C-matrix condition? (M6 reading)]
+[PASS] §2.2 M6 reading (C-matrix condition): the frontier equation is exactly the transpose-intertwiner C gamma C^-1 = eps gamma^T (the standard C-matrix condition; the g-dressing supplies the antilinear/field part of C = C-matrix o g). An empty sigma-cell => no C-matrix for the sigma-dressing => 'sigma cannot be C'. M6's reading is structurally correct -> M6 STANDS.
+
+[§2.4 -- M7: reality (pairing) vs frontier (conjugation) are different objects]
+[INFO] §2.4 M7 (dissolved tension): K2 as a CONJUGATION matrix satisfies the sigma-frontier [False] (False = fails, the 'named tension'); K2 as a PAIRING gives the metric K2 Gs = diag(sqrt5,1) [True] used in psibar=(sigma psi)^T K2. A pairing FORM and a conjugation INTERTWINER are different structures [same object = False] -> passing reality and failing the frontier is NO contradiction. M7 STANDS (the tension was a category confusion).
+
+[§1 spot-recompute (cheapest items, for the record)]
+[PASS] §1 spot-recompute (F1b, F9a): det [True], E^2 [True], (Gs+Ga)^2=0 [True], Z^2=+I [True] -- all match the findings
+
+========================================================================
+FRONTIER: sigma & sigma-tau cells EMPTY; co-descent verdict = INDEPENDENT (two confirmations OK); M6 stands; M7 stands
+========================================================================
