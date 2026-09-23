@@ -405,3 +405,18 @@ CinC. The 3-rung trend already makes the verdict clear; N=1000 firms the fit.
 **Verdict (pending N=1000):** **ARTEFACT** — round S³ *is* reachable on a generic
 substrate at fine N; the N=100 glass was resolution. The paper carries the honest negative
 on generality and stands on the methodology + the exact-symmetry chirality (Stage 2). `[OBSERVED]`
+
+---
+
+## 23 SEPTEMBER 2026 — SUPERSEDING NOTE, appended; nothing above is edited `[Fizz 🌀; Paper 213 v0.2 §3 and v0.3 §4]`
+
+**Stage 1 v1.1's *"the result is CONVERGED, not budget-limited"* is WITHDRAWN.** The re-run's *"L-BFGS reported a local minimum (line-search exhausted)"* was a line search that could not proceed, not a small gradient.
+- At the recorded endpoint (`E = 61.46`) the exact gradient is `|∇Ê| = 1.6 × 10²`, and the thinnest tetrahedron has `V/V_tot = 1.4 × 10⁻⁵`. That comes from an independent JAX evaluation that reproduces this run's energies to ten digits.
+- The energy has a square-root cusp where a cell flattens, `|∇Ê| ∝ 1/V`. A finite-difference quasi-Newton minimiser halts there.
+- An exact-derivative, log-barrier, Newton minimiser reaches `Ê = 0.065` from the same start, still descending, uncertified. It is a bench prototype, not in a repository.
+
+**So the Stage 1 glass verdict and the FSS rungs above, which use the same class of minimiser, are OPEN, not OBSERVED.** They are re-read at a certified minimum, commissioned 22 Sep 2026.
+
+**Stage 2's *"+2 Hopf"* is an orientation convention.** The convention-free result is that each one-sided quotient keeps one Hopf triple and the two sides keep opposite ones. A signed curl, `Icosian` `f529520`, keeps `−2` on the left and `+2` on the right in the code's orientation, and both labels flip with it.
+
+**Authority:** Paper 213 v0.2 and v0.3 in `2I-Universe-Papers`.

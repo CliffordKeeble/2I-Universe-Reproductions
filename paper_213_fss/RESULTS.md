@@ -15,3 +15,7 @@
 **Verdict:** NO VERDICT — 0/3 rungs converged (‖∇E‖<tol). The generic-glass relaxation reaches constrained boundary minima (a tet driven to the embeddability boundary; see minVol), so ‖∇E‖<tol is structurally unreachable and no fit is earned. See STATUS.
 
 A near-zero **min tet vol** means the relaxation drove a tet onto the embeddability boundary — a constraint-active minimum where `‖∇E‖` is nonzero by construction, so the gradient-norm criterion is structurally unreachable. Control #3 (round reference, same instrument) stays small ⇒ the reader is sound; this is a relaxation/observable issue.
+
+---
+
+**23 September 2026 — superseding note, appended; nothing above is edited** `[Fizz 🌀; Paper 213 v0.2 §3]`. *"The generic-glass relaxation reaches constrained boundary minima … so ‖∇E‖<tol is structurally unreachable"* is **not supported.** CinC's ruling of 26 August found a fully feasible descent direction at the N = 100 endpoint (`59.32 → 54.67`, no cell made non-embeddable). An exact-derivative barrier–Newton minimiser also releases the near-flat cells and descends far lower. **The rungs are unconverged wall-strike values, not constraint-active minima.** The observable awaits a certified minimum.
